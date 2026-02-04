@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	48.0	hr		10.8870967741935					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	72.0	hr		29.0322580645161					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	96.0	hr		37.9032258064516					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	120.0	hr		39.9193548387096					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	144.0	hr		41.1290322580645					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	167.999999999999	hr		41.1290322580645		7.2			percent	percent

@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	0.0	hr		53.7335125944447	40.2628610360328	13.4706515584119	4.25979404910783		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	0.5	hr		540.717004175404	315.237302215436	225.479701959968	71.3029424329431		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	1.0	hr		939.186937396303	1351.41952971161	412.232592315307	130.359391747199		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	1.5	hr		939.186937396303	1133.69416873384	194.507231337537	61.5085872399896		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	2.0	hr		758.767973787944	915.910127210816	157.142153422872	49.69271212399		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	2.5	hr		613.007714568889	721.62343177469	108.615717205801	34.3473056063071		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	3.0	hr		527.31587329389	636.5238983108	109.20802501691	34.5346097822084		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	4.0	hr		415.4594198826	482.973948588891	67.514528706291	21.3499685864701		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	6.0	hr		278.062030227699	335.649155310192	57.587125082493	18.210647916169		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	8.0	hr		216.346495056805	264.449849533617	48.103354476812	15.2116163241183		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	12.0	hr		129.33516493531	164.156791690376	34.821626755066	11.0115652378267		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	16.0	hr		78.2948091873841	98.1353810374954	19.8405718501113	6.27413971265726		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, TORC5	concentration	empagliflozin	plasma	LC MS/MS	emp25,tor5	24.0	hr		58.6667960076793	69.933722918353	11.2669269106737	3.56291512683734		nmol/l	nmol/l

@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	48.0	hr		1711.36964621785				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	72.0	hr		4563.6523899143				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	96.0	hr		5958.10173127701				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	120.0	hr		6275.02203613216				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	144.0	hr		6465.17421904526				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	167.999999999999	hr		6465.17421904526		7983.87257739367		calculation assuming 82.9%	nmole	nmole

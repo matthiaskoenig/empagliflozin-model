@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Macha2015a</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+</head>
+
+<body>
+<div id="app">
+    <!-- Vue app-->
+    <v-app>
+        <v-content>
+
+            <a href="../index.html">Experiments</a>
+            <h1>Macha2015a</h1>
+
+            <h2>Models</h2>
+            <p>
+            <ul>
+                <li><strong>model</strong>: <a href="../../../../models/results/models/empagliflozin_body_flat.xml">../../../../models/results/models/empagliflozin_body_flat.xml</a></li>
+            </ul>
+            </p>
+
+            <h2>Datasets</h2>
+            <p>
+            <ul>
+                <li><strong>empagliflozin_EMP10</strong>: <a href="Macha2015a_empagliflozin_EMP10.tsv">Macha2015a_empagliflozin_EMP10.tsv</a></li>
+                <li><strong>empagliflozin_EMP5</strong>: <a href="Macha2015a_empagliflozin_EMP5.tsv">Macha2015a_empagliflozin_EMP5.tsv</a></li>
+                <li><strong>uge_EMP10</strong>: <a href="Macha2015a_uge_EMP10.tsv">Macha2015a_uge_EMP10.tsv</a></li>
+                <li><strong>uge_EMP5</strong>: <a href="Macha2015a_uge_EMP5.tsv">Macha2015a_uge_EMP5.tsv</a></li>
+            </ul>
+            </p>
+
+            <h2>Figures</h2>
+            <p>
+            <ul>
+                <li><strong>Fig1_2</strong>: <a href="Macha2015a_Fig1_2.svg">Macha2015a_Fig1_2.svg</a></li>
+            </ul>
+            </p>
+
+            <h3>Fig1_2</h3>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <!--<v-img src="Macha2015a_Fig1_2.svg" max-width="600" width="600"></v-img>-->
+                        <img src="Macha2015a_Fig1_2.svg" width="600">
+                    </td>
+                    <!--
+                    <td>
+                    </td>
+                    -->
+                </tr>
+            </table>
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                <a href="../../../../experiments/studies/macha2015a.py">../../../../experiments/studies/macha2015a.py</a>
+            <pre>
+<code class="python">from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
+from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
+    Fasting, EmpagliflozinMappingMetaData, Coadministration
+from pkdb_models.models.empagliflozin.helpers import run_experiments
+
+
+class Macha2015a(EmpagliflozinSimulationExperiment):
+    """Simulation experiment of Macha2015a."""
+
+    doses = {
+        "EMP5": 5,
+        "EMP10": 10
+    }
+    interventions = list(doses.keys())
+
+    # colors = {
+    #     "EMP5": "tab:blue",
+    #     "EMP10": "tab:orange",
+    # }
+    info = {
+        "[Cve_emp]": "empagliflozin",
+        "KI__UGE": "uge",
+    }
+
+    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects)
+    #fpg = 7  # [mM] (healthy subjects, application with food)
+    bodyweight = 75   # [kg] (assuming weight in healthy subjects)
+    # gfr = EmpagliflozinSimulationExperiment.gfr_reference  # [ml/min] (healthy subjects, assuming 100 ml/min)
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+
+        for fig_id in ["Fig1", "Fig2"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+                dsets[f"{label}"] = dset
+
+        # console.print(dsets)
+        # console.print(dsets.keys())
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+
+        tcsims[f"po_EMP5"] = TimecourseSim([
+            Timecourse(
+                start=0,
+                end=12 * 60,  # [min]
+                steps=500,
+                changes={
+                    **self.default_changes(),
+                    "BW": Q_(self.bodyweight, "kg"),
+                    "[KI__fpg]": Q_(self.fpg, "mM"),
+                    "PODOSE_emp": Q_(5, "mg"),
+                },
+            ),
+            Timecourse(
+                start=0,
+                end=13 * 60,  # [min]
+                steps=500,
+                changes={
+                    "BW": Q_(self.bodyweight, "kg"),
+                    "[KI__fpg]": Q_(self.fpg, "mM"),
+                    "PODOSE_emp": Q_(5, "mg"),
+                },
+            )
+        ])
+
+        tcsims[f"po_EMP10"] = TimecourseSim(
+            Timecourse(
+                start=0,
+                end=25 * 60,  # [min]
+                steps=500,
+                changes={
+                    **self.default_changes(),
+                    "BW": Q_(self.bodyweight, "kg"),
+                    "[KI__fpg]": Q_(self.fpg, "mM"),
+                    "PODOSE_emp": Q_(10, "mg"),
+                },
+            )
+        )
+
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+        mappings = {}
+        for intervention in self.interventions:
+            for k, sid in enumerate(self.info.keys()):
+                name = self.info[sid]
+                mappings[f"fm_po_{name}_{intervention}"] = FitMapping(
+                    self,
+                    reference=FitData(
+                        self,
+                        dataset=f"{name}_{intervention}",
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd" if name == "uge" else None,
+                        count="count",
+                    ),
+                    observable=FitData(
+                        self, task=f"task_po_{intervention}", xid="time", yid=sid,
+                    ),
+                    metadata=EmpagliflozinMappingMetaData(
+                        tissue=Tissue.URINE if "uge" in name else Tissue.PLASMA,
+                        route=Route.PO,
+                        application_form=ApplicationForm.TABLET,
+                        dosing=Dosing.SINGLE if intervention == "EMP10" else Dosing.MULTIPLE,
+                        health=Health.HEALTHY,
+                        fasting=Fasting.FED,
+                        coadministration=Coadministration.NONE
+                    ),
+                )
+
+        # console.print(mappings)
+        return mappings
+
+
+    def figures(self) -> Dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="Fig1_2",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__} (Healthy)",
+        )
+        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots[1].set_yaxis(self.label_uge, unit=self.unit_uge)
+
+        for intervention in self.interventions:
+            dose = self.doses[intervention]
+            label = f"{dose} mg Emp"
+            color = self.dose_colors[dose]
+
+            for k, sid in enumerate(self.info.keys()):
+                name = self.info[sid]
+
+                # simulation
+                plots[k].add_data(
+                    task=f"task_po_{intervention}",
+                    xid="time",
+                    yid=sid,
+                    label=label,
+                    color=color,
+                )
+
+                # data
+                plots[k].add_data(
+                    dataset=f"{name}_{intervention}",
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd" if name == "uge" else None,
+                    count="count",
+                    label=label,
+                    color=color,
+                )
+
+        return {
+            fig.sid: fig,
+        }
+
+
+if __name__ == "__main__":
+    run_experiments(Macha2015a, output_dir=Macha2015a.__name__)</code>
+        </pre>
+            </p>
+
+        </v-content>
+    </v-app>
+</div>
+
+
+<!-- loading dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.6/dist/vuetify.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        delimiters: ['${', '}'],
+        data() {
+            return {}
+        }
+    })
+</script>
+
+
+</body>
+</html>

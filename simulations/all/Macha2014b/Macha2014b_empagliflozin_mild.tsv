@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	0.0	hr		355.444197391564					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	1.0	hr		931.390833969402					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	1.5	hr		1255.37450635515					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	2.0	hr		1210.17489131517					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	4.0	hr		980.433411874025					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	6.0	hr		701.191384860452					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	8.0	hr		570.351441940729					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	10.0	hr		412.590847243885					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	12.0	hr		358.311485746524					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	16.0	hr		222.692728901868					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	24.0	hr		131.616500182524					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	36.0	hr		30.9229084392527					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	48.0	hr		11.2501244482796					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	72.0	hr		7.88504297613963					nmol/l	nmol/l
+Macha2014b		mild	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_mild	96.0	hr		9.05983473268543					nmol/l	nmol/l

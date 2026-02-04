@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	0.0	hr		64.0530050544749	42.3353346662873	21.7176703881876	6.8677303899466		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	0.5	hr		520.740377286282	183.78293255196	336.957444734322	106.555299991077		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	1.0	hr		904.488958818552	507.834347149602	396.65461166895	125.433201728348		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	1.5	hr		999.999999999998	1237.77883337334	237.778833373342	75.1922692837419		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	2.0	hr		787.8758082654	975.215998797834	187.340190532434	59.2421699372404		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	2.5	hr		652.700426464961	758.767973787944	106.067547322983	33.5415035368322		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	3.0	hr		568.549644572737	669.288062613365	100.738418040628	31.8562848890581		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	4.0	hr		447.946510756752	520.740377286281	72.7938665295291	23.0194417923608		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	6.0	hr		299.805252338804	357.382691289029	57.577438950225	18.2075848922005		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	8.0	hr		239.191969064385	299.805252338804	60.613283274419	19.1676031608153		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	12.0	hr		148.478005599022	186.103597497436	37.625591898414	11.8982568710967		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	16.0	hr		88.7623686178664	118.459387368732	29.6970187508656	9.39102189694637		nmol/l	nmol/l
+Heise2015		all	10.0	EMP25, HCTZC25	concentration	empagliflozin	plasma	LC MS/MS	emp25,hctz25	24.0	hr		61.6865860714957	79.2834538703853	17.5968677988896	5.56461819293649		nmol/l	nmol/l

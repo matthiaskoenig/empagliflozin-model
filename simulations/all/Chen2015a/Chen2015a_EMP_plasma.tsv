@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	0.25	hr		439.330543933054	790.794979079497	351.464435146443	124.261442718975		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	0.5	hr		1556.48535564853	2259.41422594142	702.92887029289	248.522885437951		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	0.75	hr		2146.44351464435	2698.74476987447	552.30125523012	195.26798141553		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	1.0	hr		2171.54811715481	2686.19246861924	514.64435146443	181.954255409926		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	1.5	hr		1857.74058577405	2246.86192468619	389.12133891214	137.575168724581		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	2.0	hr		1569.03765690376	1933.05439330543	364.01673640167	128.699351387508		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	3.0	hr		1242.67782426778	1506.27615062761	263.59832635983	93.1960820392302		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	4.0	hr		1016.73640167364	1255.23012552301	238.49372384937	84.3202647021607		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	6.0	hr		753.138075313807	953.974895397489	200.836820083682	71.0065386965571		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	8.0	hr		564.853556485356	702.928870292887	138.075313807531	48.8169953538829		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	10.0	hr		439.330543933054	564.853556485356	125.523012552302	44.3790866853484		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	12.0	hr		326.359832635983	426.778242677824	100.418410041841	35.5032693482785		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	16.0	hr		225.941422594142	288.702928870292	62.76150627615	22.1895433426739		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin	plasma	radiochromatography/MS/MS	EMP_plasma	24.0	hr		112.97071129707	163.179916317991	50.209205020921	17.7516346741394		nmol/l	nmol/l

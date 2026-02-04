@@ -1,0 +1,14 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	0.0	hr		6.453476679186553e-05	38.799076212471	2.15115889306217e-05	5.070330135646683e-06		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	0.331797235023041	hr		0.00020743317897385392	187.066974595842	0.00020743317897385172	4.889246916516437e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	0.663594470046083	hr		0.0006591765465169114					mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	1.0	hr		0.0008297327158954135	550.115473441108	0.0003902816848841407	9.199027531816242e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	1.5	hr		0.000845098136560144	505.773672055427	0.00027657757196513933	6.518995888688671e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	2.0	hr		0.0007959287904330076	440.646651270207	0.0001813119638438133	4.27356397147369e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	2.5	hr		0.0007406132760399816	407.390300230946	0.00016287345904613567	3.838964245561078e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	3.0	hr		0.0006822246775140062	376.905311778291	0.00015365420664730135	3.621664382604871e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	4.0	hr		0.0005900321535256272	322.863741339491	0.00012599644945078498	2.9697647937359423e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	6.0	hr		0.00042101252621359956	235.565819861431	0.00010141177638721561	2.3902984925191335e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	8.0	hr		0.00031038149742754304	175.981524249422	7.990018745659546e-05	1.8832654789544985e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	12.0	hr		0.0001828485059102861	108.083140877598	5.685205645950026e-05	1.3400158215637701e-05		mole/meter^3	ng/ml
+Kim2023		Group1	18.0	EV5, EP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EV5, EP25	24.0	hr		6.453476679186553e-05	41.5704387990762	2.765775719651393e-05	6.518995888688671e-06		mole/meter^3	ng/ml

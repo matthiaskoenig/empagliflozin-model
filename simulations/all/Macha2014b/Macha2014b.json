@@ -1,0 +1,2552 @@
+{
+  "experiment_id": "Macha2014b",
+  "base_path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin",
+  "data_path": "[PosixPath('/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin/data/empagliflozin'), PosixPath('/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin/data/dapagliflozin'), PosixPath('/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin/data/hydrochlorothiazide')]",
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin/models/results/models/empagliflozin_body_flat.xml",
+        "path": "/home/mkoenig/git/pkdb_models/pkdb_models/models/empagliflozin/models/results/models/empagliflozin_body_flat.xml",
+        "content": "None"
+      },
+      "changes": {}
+    }
+  },
+  "tasks": {
+    "task_normal": {
+      "model": "model",
+      "simulation": "normal"
+    },
+    "task_mild": {
+      "model": "model",
+      "simulation": "mild"
+    },
+    "task_moderate": {
+      "model": "model",
+      "simulation": "moderate"
+    },
+    "task_severe": {
+      "model": "model",
+      "simulation": "severe"
+    }
+  },
+  "simulations": {
+    "normal": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 6000,
+          "steps": 500,
+          "changes": {
+            "ftissue_emp": {
+              "_magnitude": 0.3832934310804301,
+              "_units": "l_per_min"
+            },
+            "Kp_emp": {
+              "_magnitude": 0.573747586082099,
+              "_units": "dimensionless"
+            },
+            "GU__EMPABS_k": {
+              "_magnitude": 0.007439770316739214,
+              "_units": "GU__per_min"
+            },
+            "GU__METEXC_k": {
+              "_magnitude": 0.0008998014627372138,
+              "_units": "GU__per_min"
+            },
+            "LI__EMP2EG_Vmax": {
+              "_magnitude": 0.012490394598835162,
+              "_units": "LI__mmole_per_min_l"
+            },
+            "LI__EMP2EG_Km_emp": {
+              "_magnitude": 0.24667266695912698,
+              "_units": "LI__mM"
+            },
+            "LI__EGEX_k": {
+              "_magnitude": 0.014033858848302178,
+              "_units": "LI__per_min"
+            },
+            "LI__EGBIEX_k": {
+              "_magnitude": 0.00735528424770721,
+              "_units": "LI__per_min"
+            },
+            "KI__EMPEX_k": {
+              "_magnitude": 0.11795401426241267,
+              "_units": "KI__per_min"
+            },
+            "KI__EGEX_k": {
+              "_magnitude": 1.4994487519741735,
+              "_units": "KI__per_min"
+            },
+            "KI__RTG_E50": {
+              "_magnitude": 1.7063026384665662e-06,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_base": {
+              "_magnitude": 12.397702595815295,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_max_inhibition": {
+              "_magnitude": 0.6842787312726607,
+              "_units": "dimensionless"
+            },
+            "KI__RTG_m_fpg": {
+              "_magnitude": 0.8981650940449492,
+              "_units": "dimensionless"
+            },
+            "BW": {
+              "_magnitude": 75,
+              "_units": "kilogram"
+            },
+            "[KI__fpg]": {
+              "_magnitude": 6.5,
+              "_units": "KI__mmole / liter"
+            },
+            "PODOSE_emp": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "f_cirrhosis": {
+              "_magnitude": 0,
+              "_units": "dimensionless"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    },
+    "mild": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 6000,
+          "steps": 500,
+          "changes": {
+            "ftissue_emp": {
+              "_magnitude": 0.3832934310804301,
+              "_units": "l_per_min"
+            },
+            "Kp_emp": {
+              "_magnitude": 0.573747586082099,
+              "_units": "dimensionless"
+            },
+            "GU__EMPABS_k": {
+              "_magnitude": 0.007439770316739214,
+              "_units": "GU__per_min"
+            },
+            "GU__METEXC_k": {
+              "_magnitude": 0.0008998014627372138,
+              "_units": "GU__per_min"
+            },
+            "LI__EMP2EG_Vmax": {
+              "_magnitude": 0.012490394598835162,
+              "_units": "LI__mmole_per_min_l"
+            },
+            "LI__EMP2EG_Km_emp": {
+              "_magnitude": 0.24667266695912698,
+              "_units": "LI__mM"
+            },
+            "LI__EGEX_k": {
+              "_magnitude": 0.014033858848302178,
+              "_units": "LI__per_min"
+            },
+            "LI__EGBIEX_k": {
+              "_magnitude": 0.00735528424770721,
+              "_units": "LI__per_min"
+            },
+            "KI__EMPEX_k": {
+              "_magnitude": 0.11795401426241267,
+              "_units": "KI__per_min"
+            },
+            "KI__EGEX_k": {
+              "_magnitude": 1.4994487519741735,
+              "_units": "KI__per_min"
+            },
+            "KI__RTG_E50": {
+              "_magnitude": 1.7063026384665662e-06,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_base": {
+              "_magnitude": 12.397702595815295,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_max_inhibition": {
+              "_magnitude": 0.6842787312726607,
+              "_units": "dimensionless"
+            },
+            "KI__RTG_m_fpg": {
+              "_magnitude": 0.8981650940449492,
+              "_units": "dimensionless"
+            },
+            "BW": {
+              "_magnitude": 82.5,
+              "_units": "kilogram"
+            },
+            "[KI__fpg]": {
+              "_magnitude": 6.5,
+              "_units": "KI__mmole / liter"
+            },
+            "PODOSE_emp": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "f_cirrhosis": {
+              "_magnitude": 0.3994897959183674,
+              "_units": "dimensionless"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    },
+    "moderate": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 6000,
+          "steps": 500,
+          "changes": {
+            "ftissue_emp": {
+              "_magnitude": 0.3832934310804301,
+              "_units": "l_per_min"
+            },
+            "Kp_emp": {
+              "_magnitude": 0.573747586082099,
+              "_units": "dimensionless"
+            },
+            "GU__EMPABS_k": {
+              "_magnitude": 0.007439770316739214,
+              "_units": "GU__per_min"
+            },
+            "GU__METEXC_k": {
+              "_magnitude": 0.0008998014627372138,
+              "_units": "GU__per_min"
+            },
+            "LI__EMP2EG_Vmax": {
+              "_magnitude": 0.012490394598835162,
+              "_units": "LI__mmole_per_min_l"
+            },
+            "LI__EMP2EG_Km_emp": {
+              "_magnitude": 0.24667266695912698,
+              "_units": "LI__mM"
+            },
+            "LI__EGEX_k": {
+              "_magnitude": 0.014033858848302178,
+              "_units": "LI__per_min"
+            },
+            "LI__EGBIEX_k": {
+              "_magnitude": 0.00735528424770721,
+              "_units": "LI__per_min"
+            },
+            "KI__EMPEX_k": {
+              "_magnitude": 0.11795401426241267,
+              "_units": "KI__per_min"
+            },
+            "KI__EGEX_k": {
+              "_magnitude": 1.4994487519741735,
+              "_units": "KI__per_min"
+            },
+            "KI__RTG_E50": {
+              "_magnitude": 1.7063026384665662e-06,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_base": {
+              "_magnitude": 12.397702595815295,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_max_inhibition": {
+              "_magnitude": 0.6842787312726607,
+              "_units": "dimensionless"
+            },
+            "KI__RTG_m_fpg": {
+              "_magnitude": 0.8981650940449492,
+              "_units": "dimensionless"
+            },
+            "BW": {
+              "_magnitude": 75.5,
+              "_units": "kilogram"
+            },
+            "[KI__fpg]": {
+              "_magnitude": 6.5,
+              "_units": "KI__mmole / liter"
+            },
+            "PODOSE_emp": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "f_cirrhosis": {
+              "_magnitude": 0.6979591836734694,
+              "_units": "dimensionless"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    },
+    "severe": {
+      "type": "TimecourseSim",
+      "selections": null,
+      "reset": true,
+      "time_offset": 0.0,
+      "timecourses": [
+        {
+          "start": 0,
+          "end": 6000,
+          "steps": 500,
+          "changes": {
+            "ftissue_emp": {
+              "_magnitude": 0.3832934310804301,
+              "_units": "l_per_min"
+            },
+            "Kp_emp": {
+              "_magnitude": 0.573747586082099,
+              "_units": "dimensionless"
+            },
+            "GU__EMPABS_k": {
+              "_magnitude": 0.007439770316739214,
+              "_units": "GU__per_min"
+            },
+            "GU__METEXC_k": {
+              "_magnitude": 0.0008998014627372138,
+              "_units": "GU__per_min"
+            },
+            "LI__EMP2EG_Vmax": {
+              "_magnitude": 0.012490394598835162,
+              "_units": "LI__mmole_per_min_l"
+            },
+            "LI__EMP2EG_Km_emp": {
+              "_magnitude": 0.24667266695912698,
+              "_units": "LI__mM"
+            },
+            "LI__EGEX_k": {
+              "_magnitude": 0.014033858848302178,
+              "_units": "LI__per_min"
+            },
+            "LI__EGBIEX_k": {
+              "_magnitude": 0.00735528424770721,
+              "_units": "LI__per_min"
+            },
+            "KI__EMPEX_k": {
+              "_magnitude": 0.11795401426241267,
+              "_units": "KI__per_min"
+            },
+            "KI__EGEX_k": {
+              "_magnitude": 1.4994487519741735,
+              "_units": "KI__per_min"
+            },
+            "KI__RTG_E50": {
+              "_magnitude": 1.7063026384665662e-06,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_base": {
+              "_magnitude": 12.397702595815295,
+              "_units": "KI__mM"
+            },
+            "KI__RTG_max_inhibition": {
+              "_magnitude": 0.6842787312726607,
+              "_units": "dimensionless"
+            },
+            "KI__RTG_m_fpg": {
+              "_magnitude": 0.8981650940449492,
+              "_units": "dimensionless"
+            },
+            "BW": {
+              "_magnitude": 70.5,
+              "_units": "kilogram"
+            },
+            "[KI__fpg]": {
+              "_magnitude": 6.5,
+              "_units": "KI__mmole / liter"
+            },
+            "PODOSE_emp": {
+              "_magnitude": 50,
+              "_units": "milligram"
+            },
+            "f_cirrhosis": {
+              "_magnitude": 0.8127551020408164,
+              "_units": "dimensionless"
+            }
+          },
+          "model_changes": {},
+          "model_manipulations": {},
+          "discard": false
+        }
+      ]
+    }
+  },
+  "data": {
+    "task_normal__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__IVDOSE_emp": {
+      "type": "TASK",
+      "index": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__PODOSE_emp": {
+      "type": "TASK",
+      "index": "PODOSE_emp",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Cve_emp": {
+      "type": "TASK",
+      "index": "Cve_emp",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Cve_eg": {
+      "type": "TASK",
+      "index": "Cve_eg",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Cve_emptot": {
+      "type": "TASK",
+      "index": "Cve_emptot",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Aurine_emp": {
+      "type": "TASK",
+      "index": "Aurine_emp",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Aurine_eg": {
+      "type": "TASK",
+      "index": "Aurine_eg",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Aurine_emptot": {
+      "type": "TASK",
+      "index": "Aurine_emptot",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Afeces_emp": {
+      "type": "TASK",
+      "index": "Afeces_emp",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Afeces_eg": {
+      "type": "TASK",
+      "index": "Afeces_eg",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__Afeces_emptot": {
+      "type": "TASK",
+      "index": "Afeces_emptot",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__glc_urine": {
+      "type": "TASK",
+      "index": "KI__glc_urine",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__GLCEX": {
+      "type": "TASK",
+      "index": "KI__GLCEX",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__UGE": {
+      "type": "TASK",
+      "index": "KI__UGE",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__RTG": {
+      "type": "TASK",
+      "index": "KI__RTG",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__fpg": {
+      "type": "TASK",
+      "index": "KI__fpg",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_normal__f_cirrhosis": {
+      "type": "TASK",
+      "index": "f_cirrhosis",
+      "unit": null,
+      "task": "task_normal",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__IVDOSE_emp": {
+      "type": "TASK",
+      "index": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__PODOSE_emp": {
+      "type": "TASK",
+      "index": "PODOSE_emp",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Cve_emp": {
+      "type": "TASK",
+      "index": "Cve_emp",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Cve_eg": {
+      "type": "TASK",
+      "index": "Cve_eg",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Cve_emptot": {
+      "type": "TASK",
+      "index": "Cve_emptot",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Aurine_emp": {
+      "type": "TASK",
+      "index": "Aurine_emp",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Aurine_eg": {
+      "type": "TASK",
+      "index": "Aurine_eg",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Aurine_emptot": {
+      "type": "TASK",
+      "index": "Aurine_emptot",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Afeces_emp": {
+      "type": "TASK",
+      "index": "Afeces_emp",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Afeces_eg": {
+      "type": "TASK",
+      "index": "Afeces_eg",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__Afeces_emptot": {
+      "type": "TASK",
+      "index": "Afeces_emptot",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__glc_urine": {
+      "type": "TASK",
+      "index": "KI__glc_urine",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__GLCEX": {
+      "type": "TASK",
+      "index": "KI__GLCEX",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__UGE": {
+      "type": "TASK",
+      "index": "KI__UGE",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__RTG": {
+      "type": "TASK",
+      "index": "KI__RTG",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__fpg": {
+      "type": "TASK",
+      "index": "KI__fpg",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_mild__f_cirrhosis": {
+      "type": "TASK",
+      "index": "f_cirrhosis",
+      "unit": null,
+      "task": "task_mild",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__IVDOSE_emp": {
+      "type": "TASK",
+      "index": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__PODOSE_emp": {
+      "type": "TASK",
+      "index": "PODOSE_emp",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Cve_emp": {
+      "type": "TASK",
+      "index": "Cve_emp",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Cve_eg": {
+      "type": "TASK",
+      "index": "Cve_eg",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Cve_emptot": {
+      "type": "TASK",
+      "index": "Cve_emptot",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Aurine_emp": {
+      "type": "TASK",
+      "index": "Aurine_emp",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Aurine_eg": {
+      "type": "TASK",
+      "index": "Aurine_eg",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Aurine_emptot": {
+      "type": "TASK",
+      "index": "Aurine_emptot",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Afeces_emp": {
+      "type": "TASK",
+      "index": "Afeces_emp",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Afeces_eg": {
+      "type": "TASK",
+      "index": "Afeces_eg",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__Afeces_emptot": {
+      "type": "TASK",
+      "index": "Afeces_emptot",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__glc_urine": {
+      "type": "TASK",
+      "index": "KI__glc_urine",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__GLCEX": {
+      "type": "TASK",
+      "index": "KI__GLCEX",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__UGE": {
+      "type": "TASK",
+      "index": "KI__UGE",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__RTG": {
+      "type": "TASK",
+      "index": "KI__RTG",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__fpg": {
+      "type": "TASK",
+      "index": "KI__fpg",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_moderate__f_cirrhosis": {
+      "type": "TASK",
+      "index": "f_cirrhosis",
+      "unit": null,
+      "task": "task_moderate",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__time": {
+      "type": "TASK",
+      "index": "time",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__IVDOSE_emp": {
+      "type": "TASK",
+      "index": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__PODOSE_emp": {
+      "type": "TASK",
+      "index": "PODOSE_emp",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Cve_emp": {
+      "type": "TASK",
+      "index": "Cve_emp",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Cve_eg": {
+      "type": "TASK",
+      "index": "Cve_eg",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Cve_emptot": {
+      "type": "TASK",
+      "index": "Cve_emptot",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Aurine_emp": {
+      "type": "TASK",
+      "index": "Aurine_emp",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Aurine_eg": {
+      "type": "TASK",
+      "index": "Aurine_eg",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Aurine_emptot": {
+      "type": "TASK",
+      "index": "Aurine_emptot",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Afeces_emp": {
+      "type": "TASK",
+      "index": "Afeces_emp",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Afeces_eg": {
+      "type": "TASK",
+      "index": "Afeces_eg",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__Afeces_emptot": {
+      "type": "TASK",
+      "index": "Afeces_emptot",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__glc_urine": {
+      "type": "TASK",
+      "index": "KI__glc_urine",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__GLCEX": {
+      "type": "TASK",
+      "index": "KI__GLCEX",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__UGE": {
+      "type": "TASK",
+      "index": "KI__UGE",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__RTG": {
+      "type": "TASK",
+      "index": "KI__RTG",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__fpg": {
+      "type": "TASK",
+      "index": "KI__fpg",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__KI__f_renal_function": {
+      "type": "TASK",
+      "index": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    },
+    "task_severe__f_cirrhosis": {
+      "type": "TASK",
+      "index": "f_cirrhosis",
+      "unit": null,
+      "task": "task_severe",
+      "dataset": null,
+      "function": null,
+      "variables": null
+    }
+  },
+  "figures": {
+    "Fig1_2": {
+      "sid": "Fig1_2",
+      "name": "Macha2014b (Hepatic impairment)",
+      "num_rows": 1,
+      "num_cols": 5,
+      "width": 35.0,
+      "height": 5.0,
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1_2__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1_2__plot0_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1_2__plot0_yaxis",
+              "name": "Empagliflozin Plasma\n [\u00b5M]",
+              "label": "Empagliflozin Plasma\n",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1_2__plot0_curve0",
+                "name": "50 mg Emp (normal)",
+                "x": "task_normal__time",
+                "y": "task_normal__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1_2__plot0_curve1",
+                "name": "50 mg Emp (normal) (n=12)",
+                "x": "empagliflozin_normal__time",
+                "y": "empagliflozin_normal__mean",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1_2__plot0_curve2",
+                "name": "50 mg Emp (mild)",
+                "x": "task_mild__time",
+                "y": "task_mild__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1_2__plot0_curve3",
+                "name": "50 mg Emp (mild) (n=8)",
+                "x": "empagliflozin_mild__time",
+                "y": "empagliflozin_mild__mean",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1_2__plot0_curve4",
+                "name": "50 mg Emp (moderate)",
+                "x": "task_moderate__time",
+                "y": "task_moderate__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1_2__plot0_curve5",
+                "name": "50 mg Emp (moderate) (n=8)",
+                "x": "empagliflozin_moderate__time",
+                "y": "empagliflozin_moderate__mean",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1_2__plot0_curve6",
+                "name": "50 mg Emp (severe)",
+                "x": "task_severe__time",
+                "y": "task_severe__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#045a8dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1_2__plot0_curve7",
+                "name": "50 mg Emp (severe) (n=8)",
+                "x": "empagliflozin_severe__time",
+                "y": "empagliflozin_severe__mean",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#045a8dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1_2__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1_2__plot1_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1_2__plot1_yaxis",
+              "name": "Empagliflozin Urine\n [\u00b5mole]",
+              "label": "Empagliflozin Urine\n",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1_2__plot1_curve0",
+                "name": "50 mg Emp (normal)",
+                "x": "task_normal__time",
+                "y": "task_normal__Aurine_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1_2__plot1_curve1",
+                "name": "50 mg Emp (normal)\u00b1SD (n=12)",
+                "x": "empagliflozin_urine_normal__time",
+                "y": "empagliflozin_urine_normal__mean",
+                "xerr": null,
+                "yerr": "empagliflozin_urine_normal__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1_2__plot1_curve2",
+                "name": "50 mg Emp (mild)",
+                "x": "task_mild__time",
+                "y": "task_mild__Aurine_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1_2__plot1_curve3",
+                "name": "50 mg Emp (mild)\u00b1SD (n=8)",
+                "x": "empagliflozin_urine_mild__time",
+                "y": "empagliflozin_urine_mild__mean",
+                "xerr": null,
+                "yerr": "empagliflozin_urine_mild__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1_2__plot1_curve4",
+                "name": "50 mg Emp (moderate)",
+                "x": "task_moderate__time",
+                "y": "task_moderate__Aurine_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1_2__plot1_curve5",
+                "name": "50 mg Emp (moderate)\u00b1SD (n=8)",
+                "x": "empagliflozin_urine_moderate__time",
+                "y": "empagliflozin_urine_moderate__mean",
+                "xerr": null,
+                "yerr": "empagliflozin_urine_moderate__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1_2__plot1_curve6",
+                "name": "50 mg Emp (severe)",
+                "x": "task_severe__time",
+                "y": "task_severe__Aurine_emp",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#045a8dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1_2__plot1_curve7",
+                "name": "50 mg Emp (severe)\u00b1SD (n=8)",
+                "x": "empagliflozin_urine_severe__time",
+                "y": "empagliflozin_urine_severe__mean",
+                "xerr": null,
+                "yerr": "empagliflozin_urine_severe__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#045a8dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1_2__plot2",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1_2__plot2_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1_2__plot2_yaxis",
+              "name": "Empagliflozin-glucuronide\n Urine [\u00b5mole]",
+              "label": "Empagliflozin-glucuronide\n Urine",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1_2__plot2_curve0",
+                "name": "50 mg Emp (normal)",
+                "x": "task_normal__time",
+                "y": "task_normal__Aurine_eg",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1_2__plot2_curve1",
+                "name": "50 mg Emp (normal)\u00b1SD (n=12)",
+                "x": "eg_urine_normal__time",
+                "y": "eg_urine_normal__mean",
+                "xerr": null,
+                "yerr": "eg_urine_normal__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1_2__plot2_curve2",
+                "name": "50 mg Emp (mild)",
+                "x": "task_mild__time",
+                "y": "task_mild__Aurine_eg",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1_2__plot2_curve3",
+                "name": "50 mg Emp (mild)\u00b1SD (n=8)",
+                "x": "eg_urine_mild__time",
+                "y": "eg_urine_mild__mean",
+                "xerr": null,
+                "yerr": "eg_urine_mild__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1_2__plot2_curve4",
+                "name": "50 mg Emp (moderate)",
+                "x": "task_moderate__time",
+                "y": "task_moderate__Aurine_eg",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1_2__plot2_curve5",
+                "name": "50 mg Emp (moderate)\u00b1SD (n=8)",
+                "x": "eg_urine_moderate__time",
+                "y": "eg_urine_moderate__mean",
+                "xerr": null,
+                "yerr": "eg_urine_moderate__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1_2__plot2_curve6",
+                "name": "50 mg Emp (severe)",
+                "x": "task_severe__time",
+                "y": "task_severe__Aurine_eg",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#045a8dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1_2__plot2_curve7",
+                "name": "50 mg Emp (severe)\u00b1SD (n=8)",
+                "x": "eg_urine_severe__time",
+                "y": "eg_urine_severe__mean",
+                "xerr": null,
+                "yerr": "eg_urine_severe__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#045a8dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 3,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1_2__plot3",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1_2__plot3_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1_2__plot3_yaxis",
+              "name": "Empagliflozin Total\n Urine [\u00b5mole]",
+              "label": "Empagliflozin Total\n Urine",
+              "unit": "\u00b5mole",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1_2__plot3_curve0",
+                "name": "50 mg Emp (normal)",
+                "x": "task_normal__time",
+                "y": "task_normal__Aurine_emptot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1_2__plot3_curve1",
+                "name": "50 mg Emp (normal)\u00b1SD (n=12)",
+                "x": "emptot_urine_normal__time",
+                "y": "emptot_urine_normal__mean",
+                "xerr": null,
+                "yerr": "emptot_urine_normal__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1_2__plot3_curve2",
+                "name": "50 mg Emp (mild)",
+                "x": "task_mild__time",
+                "y": "task_mild__Aurine_emptot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1_2__plot3_curve3",
+                "name": "50 mg Emp (mild)\u00b1SD (n=8)",
+                "x": "emptot_urine_mild__time",
+                "y": "emptot_urine_mild__mean",
+                "xerr": null,
+                "yerr": "emptot_urine_mild__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1_2__plot3_curve4",
+                "name": "50 mg Emp (moderate)",
+                "x": "task_moderate__time",
+                "y": "task_moderate__Aurine_emptot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1_2__plot3_curve5",
+                "name": "50 mg Emp (moderate)\u00b1SD (n=8)",
+                "x": "emptot_urine_moderate__time",
+                "y": "emptot_urine_moderate__mean",
+                "xerr": null,
+                "yerr": "emptot_urine_moderate__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1_2__plot3_curve6",
+                "name": "50 mg Emp (severe)",
+                "x": "task_severe__time",
+                "y": "task_severe__Aurine_emptot",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#045a8dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1_2__plot3_curve7",
+                "name": "50 mg Emp (severe)\u00b1SD (n=8)",
+                "x": "emptot_urine_severe__time",
+                "y": "emptot_urine_severe__mean",
+                "xerr": null,
+                "yerr": "emptot_urine_severe__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "NONE",
+                    "color": "#045a8dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 4,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1_2__plot4",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1_2__plot4_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1_2__plot4_yaxis",
+              "name": "UGE [g]",
+              "label": "UGE",
+              "unit": "g",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1_2__plot4_curve0",
+                "name": "50 mg Emp (normal)",
+                "x": "task_normal__time",
+                "y": "task_normal__KI__UGE",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#000000ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1_2__plot4_curve1",
+                "name": "50 mg Emp (normal)\u00b1SD (n=12)",
+                "x": "uge_normal__time",
+                "y": "uge_normal__mean",
+                "xerr": null,
+                "yerr": "uge_normal__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#000000ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#000000ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#000000ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1_2__plot4_curve2",
+                "name": "50 mg Emp (mild)",
+                "x": "task_mild__time",
+                "y": "task_mild__KI__UGE",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#74a9cfff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1_2__plot4_curve3",
+                "name": "50 mg Emp (mild)\u00b1SD (n=8)",
+                "x": "uge_mild__time",
+                "y": "uge_mild__mean",
+                "xerr": null,
+                "yerr": "uge_mild__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#74a9cfff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#74a9cfff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#74a9cfff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1_2__plot4_curve4",
+                "name": "50 mg Emp (moderate)",
+                "x": "task_moderate__time",
+                "y": "task_moderate__KI__UGE",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#2b8cbeff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1_2__plot4_curve5",
+                "name": "50 mg Emp (moderate)\u00b1SD (n=8)",
+                "x": "uge_moderate__time",
+                "y": "uge_moderate__mean",
+                "xerr": null,
+                "yerr": "uge_moderate__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#2b8cbeff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#2b8cbeff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#2b8cbeff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              },
+              {
+                "sid": "Fig1_2__plot4_curve6",
+                "name": "50 mg Emp (severe)",
+                "x": "task_severe__time",
+                "y": "task_severe__KI__UGE",
+                "xerr": null,
+                "yerr": null,
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#045a8dff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 6
+              },
+              {
+                "sid": "Fig1_2__plot4_curve7",
+                "name": "50 mg Emp (severe)\u00b1SD (n=8)",
+                "x": "uge_severe__time",
+                "y": "uge_severe__mean",
+                "xerr": null,
+                "yerr": "uge_severe__mean_sd",
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#045a8dff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#045a8dff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#045a8dff",
+                    "second_color": null
+                  }
+                },
+                "order": 7
+              }
+            ],
+            "areas": []
+          },
+          "row": 1,
+          "col": 5,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+ElDash2021	evening	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_evening	4.0	hr	2560.04375	NA	NA	NA	2903.96379361469	NA	NA	mg	intervals of four hours starting from 0
+ElDash2021	evening	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_evening	8.0	hr	1593.65625	NA	NA	NA	785.55223078524	NA	NA	mg	units: g/dl
+ElDash2021	evening	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_evening	12.0	hr	2972.86875	NA	NA	NA	2219.16608480716	NA	NA	mg	NA
+ElDash2021	evening	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_evening	24.0	hr	8291.5625	NA	NA	NA	6566.84131800315	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	4.0	hr	3836.84375	NA	NA	NA	2635.36434090083	NA	NA	mg	intervals of four hours starting from 0
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	8.0	hr	2430.675	NA	NA	NA	2346.21707826308	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	12.0	hr	1484.91875	NA	NA	NA	1014.47525809734	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	24.0	hr	4643.971875	NA	NA	NA	4036.50166100832	NA	NA	mg	NA
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	4.0	hr	2560.04375	NA	NA	NA	2903.96379361469	NA	NA	mg	intervals of four hours starting from 0
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	8.0	hr	4153.7	NA	NA	NA	3008.33808304796	NA	NA	mg	units: g/dl
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	12.0	hr	7126.56875	NA	NA	NA	3738.28786129091	NA	NA	mg	NA
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	24.0	hr	15418.13125	NA	NA	NA	7556.33515864062	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning	4.0	hr	3836.84375	NA	NA	NA	2635.36434090083	NA	NA	mg	intervals of four hours starting from 0
+ElDash2021	morning	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning	8.0	hr	6267.51875	NA	NA	NA	3528.4387181337	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning	12.0	hr	7752.4375	NA	NA	NA	3671.38118926878	NA	NA	mg	NA
+ElDash2021	morning	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning	24.0	hr	12396.409375	NA	NA	NA	5456.40774651598	NA	NA	mg	NA

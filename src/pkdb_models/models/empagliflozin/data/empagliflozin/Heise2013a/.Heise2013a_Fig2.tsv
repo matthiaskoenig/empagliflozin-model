@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013a	NA	Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	1.0	day	NA	4.84507	NA	21.6941592052423	5.42353980131058	g	corrected with baseline
+Heise2013a	NA	Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	27.0	day	NA	4.0	NA	31.3818374724999	7.84545936812498	g	corrected with baseline
+Heise2013a	NA	Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	28.0	day	NA	5.69014	NA	28.1171254614977	7.02928136537441	g	corrected with baseline
+Heise2013a	NA	EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	1.0	day	NA	77.94085	NA	26.7607614062381	6.69019035155951	g	corrected with baseline
+Heise2013a	NA	EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	27.0	day	NA	70.33521	NA	32.8904569283189	7.60564	g	corrected with baseline
+Heise2013a	NA	EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	28.0	day	NA	68.6407	NA	29.8073555767431	6.76493000000001	g	corrected with baseline
+Heise2013a	NA	EMP25	16.0	EMP25	cumulative amount	glucose	urine	NR	uge_EMP25	1.0	day	NA	96.26761	NA	21.2978060753309	5.07042	g	corrected with baseline
+Heise2013a	NA	EMP25	16.0	EMP25	cumulative amount	glucose	urine	NR	uge_EMP25	27.0	day	NA	83.59155	NA	31.1091581877491	7.60563000000001	g	corrected with baseline
+Heise2013a	NA	EMP25	16.0	EMP25	cumulative amount	glucose	urine	NR	uge_EMP25	28.0	day	NA	70.91549	NA	27.8124955298585	6.76057	g	corrected with baseline
+Heise2013a	NA	EMP100	30.0	EMP100	cumulative amount	glucose	urine	NR	uge_EMP100	1.0	day	NA	87.27183	NA	21.4342899661267	3.38028	g	corrected with baseline
+Heise2013a	NA	EMP100	30.0	EMP100	cumulative amount	glucose	urine	NR	uge_EMP100	27.0	day	NA	77.97606	NA	29.797898739542	5.07042	g	corrected with baseline
+Heise2013a	NA	EMP100	30.0	EMP100	cumulative amount	glucose	urine	NR	uge_EMP100	28.0	day	NA	72.06056	NA	29.7979497876448	5.07043	g	corrected with baseline

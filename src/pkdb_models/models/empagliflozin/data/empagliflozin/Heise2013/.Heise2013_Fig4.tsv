@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013	NA	Placebo	12	Placebo	concentration change absolute	glucose	plasma	NR	8	day	NA	-21.4749262536873	-42.3303834808259	20.8554572271386	6.0204519220806	mg/dl	NA
+Heise2013	NA	EMP2.5	9	EMP2.5	concentration change absolute	glucose	plasma	NR	8	day	NA	-23.1268436578171	-34.2772861356932	11.1504424778761	3.71681415929203	mg/dl	NA
+Heise2013	NA	EMP10	9	EMP10	concentration change absolute	glucose	plasma	NR	8	day	NA	-39.8525073746312	-62.9793510324483	23.1268436578171	7.70894788593903	mg/dl	NA
+Heise2013	NA	EMP25	9	EMP25	concentration change absolute	glucose	plasma	NR	8	day	NA	-26.0176991150442	-54.3067846607669	28.2890855457227	9.42969518190757	mg/dl	NA
+Heise2013	NA	EMP100	9	EMP100	concentration change absolute	glucose	plasma	NR	8	day	NA	-37.787610619469	-60.7079646017699	22.9203539823009	7.6401179941003	mg/dl	NA

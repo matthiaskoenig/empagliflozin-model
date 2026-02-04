@@ -1,0 +1,6 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Macha2013d	emp25_single	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25.0	mg	NA
+Macha2013d	ver120_single	0	NA	hr	oral	single dose	dosing	tablet	verapamil	120.0	mg	NA
+Macha2013d	dig05_single	0	NA	hr	oral	single dose	dosing	tablet	digoxin	0.5	mg	NA
+Macha2013d	emp25_multi	0	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	25.0	mg	25 mg once daily (QD) for 5 days for ramipril study
+Macha2013d	ram5_multi	0	NA	hr	oral	multiple dose	dosing	tablet	ramipril	5.0	mg	2.5 mg on day 1 and  5 mg QD on days 2–5

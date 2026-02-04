@@ -1,0 +1,63 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	se	sd	unit	comments
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	0.0	hr	NA	82.78	NA	NA	NA	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	0.33	hr	NA	197.19	NA	NA	101.58	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	0.67	hr	NA	686.17	NA	NA	317.45	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	1.0	hr	NA	1035.45	NA	NA	355.56	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	1.5	hr	NA	1124.48	NA	NA	349.21	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	2.0	hr	NA	1156.35	NA	NA	215.89	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	2.5	hr	NA	1219.99	NA	NA	273.02	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	3.0	hr	NA	1055.04	NA	NA	177.78	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	4.0	hr	NA	845.79	NA	NA	114.28	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	6.0	hr	NA	554.24	NA	NA	107.94	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	8.0	hr	NA	415.08	NA	NA	76.19	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	10.0	hr	NA	326.72	NA	NA	63.51	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	12.0	hr	NA	251.05	NA	NA	44.45	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	14.0	hr	NA	194.43	NA	NA	50.81	ng/ml	NA
+Macha2015b	NA	all	18.0	emp50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50	24.0	hr	NA	82.82	NA	NA	NA	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.0	hr	NA	95.49	NA	NA	NA	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.33	hr	NA	152.74	NA	NA	69.8	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.67	hr	NA	521.09	NA	NA	292.1	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	1.0	hr	NA	857.69	NA	NA	323.8	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	1.5	hr	NA	1149.88	NA	NA	260.3	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	2.0	hr	NA	1188.09	NA	NA	171.4	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	2.5	hr	NA	1124.75	NA	NA	127.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	3.0	hr	NA	1016.95	NA	NA	146.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	4.0	hr	NA	852.13	NA	NA	139.7	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	6.0	hr	NA	566.94	NA	NA	76.2	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	8.0	hr	NA	421.45	NA	NA	50.8	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	10.0	hr	NA	326.72	NA	NA	44.4	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	12.0	hr	NA	251.05	NA	NA	31.8	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	14.0	hr	NA	194.46	NA	NA	31.8	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	24.0	hr	NA	82.81	NA	NA	NA	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	0.0	hr	NA	120.0	NA	NA	70.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	0.33	hr	NA	460.0	NA	NA	400.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	0.67	hr	NA	950.0	NA	NA	340.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	1.0	hr	NA	1060.0	NA	NA	480.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	1.5	hr	NA	1050.0	NA	NA	460.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	2.0	hr	NA	1070.0	NA	NA	400.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	2.5	hr	NA	1040.0	NA	NA	400.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	3.0	hr	NA	920.0	NA	NA	320.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	4.0	hr	NA	870.0	NA	NA	270.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	6.0	hr	NA	620.0	NA	NA	220.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	8.0	hr	NA	440.0	NA	NA	170.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	10.0	hr	NA	330.0	NA	NA	130.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	12.0	hr	NA	250.0	NA	NA	90.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	14.0	hr	NA	200.0	NA	NA	70.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	24.0	hr	NA	110.0	NA	NA	50.0	ng/ml	NA
+Macha2015b	NA	all	20.0	piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_piog45	36.0	hr	NA	60.0	NA	NA	NA	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.0	hr	NA	130.0	NA	NA	70.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.33	hr	NA	460.0	NA	NA	450.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.67	hr	NA	850.0	NA	NA	410.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	1.0	hr	NA	1420.0	NA	NA	440.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	1.5	hr	NA	1840.0	NA	NA	330.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	2.0	hr	NA	1920.0	NA	NA	340.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	2.5	hr	NA	1830.0	NA	NA	290.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	3.0	hr	NA	1770.0	NA	NA	310.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	4.0	hr	NA	1540.0	NA	NA	290.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	6.0	hr	NA	920.0	NA	NA	180.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	8.0	hr	NA	670.0	NA	NA	170.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	10.0	hr	NA	480.0	NA	NA	110.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	12.0	hr	NA	360.0	NA	NA	130.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	14.0	hr	NA	250.0	NA	NA	80.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	24.0	hr	NA	90.0	NA	NA	30.0	ng/ml	NA
+Macha2015b	NA	all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	36.0	hr	NA	60.0	NA	NA	NA	ng/ml	NA

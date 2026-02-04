@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	0.0	hr		2.62979683972912	3.3295711060948	0.69977426636568	0.164938376349005		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	1.0	hr		5.07900677200902	6.29796839729119	1.21896162528217	0.287312010414399		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	2.0	hr		5.22573363431151	6.56884875846501	1.3431151241535	0.316575270734384		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	3.0	hr		5.19187358916478	6.42212189616252	1.23024830699774	0.289972306807124		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	4.0	hr		5.12415349887133	6.26410835214446	1.13995485327313	0.268689935665315		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	5.0	hr		5.57562076749435	6.76072234762979	1.18510158013544	0.279331121236221		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	6.0	hr		5.19187358916478	6.3882618510158	1.19638826185102	0.281991417628948		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	8.0	hr		4.51467268623024	5.4627539503386	0.94808126410836	0.223464896988979		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	12.0	hr		3.61173814898419	4.43566591422121	0.82392776523702	0.194201636668992		ng/ml	ng/ml
+Kim2023		Group1	18.0	EV5	concentration	evogliptin	plasma	LC MS/MS	evogliptin_EV5	24.0	hr		2.81038374717832	3.56659142212189	0.75620767494357	0.178239858312637		ng/ml	ng/ml

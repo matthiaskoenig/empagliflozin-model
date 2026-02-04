@@ -1,0 +1,201 @@
+study	group	individual	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	unit	comments
+Kim2021	NA	S1_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	2785.4	ng/ml*hr	B
+Kim2021	NA	S2_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3012.1	ng/ml*hr	B
+Kim2021	NA	S3_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3206.5	ng/ml*hr	B
+Kim2021	NA	S4_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3271.3	ng/ml*hr	B
+Kim2021	NA	S5_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3109.3	ng/ml*hr	B
+Kim2021	NA	S6_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3465.6	ng/ml*hr	B
+Kim2021	NA	S7_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3498.0	ng/ml*hr	B
+Kim2021	NA	S8_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3692.3	ng/ml*hr	B
+Kim2021	NA	S9_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3919.0	ng/ml*hr	B
+Kim2021	NA	S10_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3886.6	ng/ml*hr	B
+Kim2021	NA	S11_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3789.5	ng/ml*hr	B
+Kim2021	NA	S12_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3659.9	ng/ml*hr	B
+Kim2021	NA	S13_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3951.4	ng/ml*hr	B
+Kim2021	NA	S14_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3789.5	ng/ml*hr	B
+Kim2021	NA	S15_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3821.9	ng/ml*hr	B
+Kim2021	NA	S16_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3757.1	ng/ml*hr	B
+Kim2021	NA	S17_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3886.6	ng/ml*hr	B
+Kim2021	NA	S18_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4081.0	ng/ml*hr	B
+Kim2021	NA	S19_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4372.5	ng/ml*hr	B
+Kim2021	NA	S20_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4242.9	ng/ml*hr	B
+Kim2021	NA	S21_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4372.5	ng/ml*hr	B
+Kim2021	NA	S22_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4599.2	ng/ml*hr	B
+Kim2021	NA	S23_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4825.9	ng/ml*hr	B
+Kim2021	NA	S24_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	5570.9	ng/ml*hr	B
+Kim2021	NA	S25_B	1.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	6153.8	ng/ml*hr	B
+Kim2021	NA	S1_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3076.9	ng/ml*hr	B
+Kim2021	NA	S2_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3174.1	ng/ml*hr	B
+Kim2021	NA	S3_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3109.3	ng/ml*hr	B
+Kim2021	NA	S4_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3465.6	ng/ml*hr	B
+Kim2021	NA	S5_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3465.6	ng/ml*hr	B
+Kim2021	NA	S6_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3595.1	ng/ml*hr	B
+Kim2021	NA	S7_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3854.3	ng/ml*hr	B
+Kim2021	NA	S8_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3789.5	ng/ml*hr	B
+Kim2021	NA	S9_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3757.1	ng/ml*hr	B
+Kim2021	NA	S10_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3854.3	ng/ml*hr	B
+Kim2021	NA	S11_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3951.4	ng/ml*hr	B
+Kim2021	NA	S12_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4016.2	ng/ml*hr	B
+Kim2021	NA	S13_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4081.0	ng/ml*hr	B
+Kim2021	NA	S14_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3886.6	ng/ml*hr	B
+Kim2021	NA	S15_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3951.4	ng/ml*hr	B
+Kim2021	NA	S16_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4145.7	ng/ml*hr	B
+Kim2021	NA	S17_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4307.7	ng/ml*hr	B
+Kim2021	NA	S18_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4437.2	ng/ml*hr	B
+Kim2021	NA	S19_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4372.5	ng/ml*hr	B
+Kim2021	NA	S20_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4242.9	ng/ml*hr	B
+Kim2021	NA	S21_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4307.7	ng/ml*hr	B
+Kim2021	NA	S22_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4793.5	ng/ml*hr	B
+Kim2021	NA	S23_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4858.3	ng/ml*hr	B
+Kim2021	NA	S24_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	5635.6	ng/ml*hr	B
+Kim2021	NA	S25_B	1.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	6315.8	ng/ml*hr	B
+Kim2021	NA	S1_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	200.0	ng/ml*hr	D
+Kim2021	NA	S2_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	218.6	ng/ml*hr	D
+Kim2021	NA	S3_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	234.9	ng/ml*hr	D
+Kim2021	NA	S4_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	251.2	ng/ml*hr	D
+Kim2021	NA	S5_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	244.2	ng/ml*hr	D
+Kim2021	NA	S6_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	260.5	ng/ml*hr	D
+Kim2021	NA	S7_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	272.1	ng/ml*hr	D
+Kim2021	NA	S8_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	281.4	ng/ml*hr	D
+Kim2021	NA	S9_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	286.0	ng/ml*hr	D
+Kim2021	NA	S10_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	288.4	ng/ml*hr	D
+Kim2021	NA	S11_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	290.7	ng/ml*hr	D
+Kim2021	NA	S12_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	279.1	ng/ml*hr	D
+Kim2021	NA	S13_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	344.2	ng/ml*hr	D
+Kim2021	NA	S14_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	348.8	ng/ml*hr	D
+Kim2021	NA	S15_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	355.8	ng/ml*hr	D
+Kim2021	NA	S16_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	348.8	ng/ml*hr	D
+Kim2021	NA	S17_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	353.5	ng/ml*hr	D
+Kim2021	NA	S18_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	362.8	ng/ml*hr	D
+Kim2021	NA	S19_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	372.1	ng/ml*hr	D
+Kim2021	NA	S20_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	376.7	ng/ml*hr	D
+Kim2021	NA	S21_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	414.0	ng/ml*hr	D
+Kim2021	NA	S22_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	437.2	ng/ml*hr	D
+Kim2021	NA	S23_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	453.5	ng/ml*hr	D
+Kim2021	NA	S24_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	474.4	ng/ml*hr	D
+Kim2021	NA	S25_D	1.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	481.4	ng/ml*hr	D
+Kim2021	NA	S1_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	176.7	ng/ml*hr	D
+Kim2021	NA	S2_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	183.7	ng/ml*hr	D
+Kim2021	NA	S3_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	202.3	ng/ml*hr	D
+Kim2021	NA	S4_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	223.3	ng/ml*hr	D
+Kim2021	NA	S5_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	230.2	ng/ml*hr	D
+Kim2021	NA	S6_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	225.6	ng/ml*hr	D
+Kim2021	NA	S7_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	227.9	ng/ml*hr	D
+Kim2021	NA	S8_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	251.2	ng/ml*hr	D
+Kim2021	NA	S9_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	286.0	ng/ml*hr	D
+Kim2021	NA	S10_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	272.1	ng/ml*hr	D
+Kim2021	NA	S11_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	290.7	ng/ml*hr	D
+Kim2021	NA	S12_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	304.7	ng/ml*hr	D
+Kim2021	NA	S13_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	323.3	ng/ml*hr	D
+Kim2021	NA	S14_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	327.9	ng/ml*hr	D
+Kim2021	NA	S15_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	339.5	ng/ml*hr	D
+Kim2021	NA	S16_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	344.2	ng/ml*hr	D
+Kim2021	NA	S17_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	351.2	ng/ml*hr	D
+Kim2021	NA	S18_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	360.5	ng/ml*hr	D
+Kim2021	NA	S19_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	376.7	ng/ml*hr	D
+Kim2021	NA	S20_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	369.8	ng/ml*hr	D
+Kim2021	NA	S21_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	358.1	ng/ml*hr	D
+Kim2021	NA	S22_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	386.0	ng/ml*hr	D
+Kim2021	NA	S23_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	409.3	ng/ml*hr	D
+Kim2021	NA	S24_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	416.3	ng/ml*hr	D
+Kim2021	NA	S25_D	1.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	462.8	ng/ml*hr	D
+Kim2021	NA	S1_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	340.1	ng/ml	A
+Kim2021	NA	S2_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	375.6	ng/ml	A
+Kim2021	NA	S3_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	405.3	ng/ml	A
+Kim2021	NA	S4_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	406.1	ng/ml	A
+Kim2021	NA	S5_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	417.9	ng/ml	A
+Kim2021	NA	S6_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	424.4	ng/ml	A
+Kim2021	NA	S7_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	471.9	ng/ml	A
+Kim2021	NA	S8_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	489.6	ng/ml	A
+Kim2021	NA	S9_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	502.1	ng/ml	A
+Kim2021	NA	S10_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	585.1	ng/ml	A
+Kim2021	NA	S11_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	573.3	ng/ml	A
+Kim2021	NA	S12_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	561.6	ng/ml	A
+Kim2021	NA	S13_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	574.7	ng/ml	A
+Kim2021	NA	S14_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	580.4	ng/ml	A
+Kim2021	NA	S15_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	580.1	ng/ml	A
+Kim2021	NA	S16_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	579.9	ng/ml	A
+Kim2021	NA	S17_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	615.6	ng/ml	A
+Kim2021	NA	S18_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	669.9	ng/ml	A
+Kim2021	NA	S19_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	700.2	ng/ml	A
+Kim2021	NA	S20_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	735.6	ng/ml	A
+Kim2021	NA	S21_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	777.9	ng/ml	A
+Kim2021	NA	S22_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	850.0	ng/ml	A
+Kim2021	NA	S23_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	873.7	ng/ml	A
+Kim2021	NA	S24_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	927.9	ng/ml	A
+Kim2021	NA	S25_A	1.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	975.9	ng/ml	A
+Kim2021	NA	S1_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	379.6	ng/ml	A
+Kim2021	NA	S2_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	439.6	ng/ml	A
+Kim2021	NA	S3_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	421.3	ng/ml	A
+Kim2021	NA	S4_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	469.3	ng/ml	A
+Kim2021	NA	S5_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	415.0	ng/ml	A
+Kim2021	NA	S6_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	493.0	ng/ml	A
+Kim2021	NA	S7_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	565.0	ng/ml	A
+Kim2021	NA	S8_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	493.9	ng/ml	A
+Kim2021	NA	S9_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	523.6	ng/ml	A
+Kim2021	NA	S10_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	547.3	ng/ml	A
+Kim2021	NA	S11_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	595.6	ng/ml	A
+Kim2021	NA	S12_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	583.9	ng/ml	A
+Kim2021	NA	S13_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	637.9	ng/ml	A
+Kim2021	NA	S14_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	673.6	ng/ml	A
+Kim2021	NA	S15_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	631.3	ng/ml	A
+Kim2021	NA	S16_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	685.3	ng/ml	A
+Kim2021	NA	S17_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	673.0	ng/ml	A
+Kim2021	NA	S18_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	721.0	ng/ml	A
+Kim2021	NA	S19_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	666.7	ng/ml	A
+Kim2021	NA	S20_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	756.7	ng/ml	A
+Kim2021	NA	S21_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	769.0	ng/ml	A
+Kim2021	NA	S22_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	751.3	ng/ml	A
+Kim2021	NA	S23_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	763.6	ng/ml	A
+Kim2021	NA	S24_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	805.9	ng/ml	A
+Kim2021	NA	S25_A	1.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	973.3	ng/ml	A
+Kim2021	NA	S1_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	33.5	ng/ml	C
+Kim2021	NA	S2_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	39.2	ng/ml	C
+Kim2021	NA	S3_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	40.4	ng/ml	C
+Kim2021	NA	S4_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	42.0	ng/ml	C
+Kim2021	NA	S5_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	45.8	ng/ml	C
+Kim2021	NA	S6_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	43.9	ng/ml	C
+Kim2021	NA	S7_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	44.2	ng/ml	C
+Kim2021	NA	S8_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	42.6	ng/ml	C
+Kim2021	NA	S9_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.1	ng/ml	C
+Kim2021	NA	S10_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	50.2	ng/ml	C
+Kim2021	NA	S11_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	52.7	ng/ml	C
+Kim2021	NA	S12_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	54.9	ng/ml	C
+Kim2021	NA	S13_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	49.5	ng/ml	C
+Kim2021	NA	S14_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	48.9	ng/ml	C
+Kim2021	NA	S15_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	52.7	ng/ml	C
+Kim2021	NA	S16_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	52.4	ng/ml	C
+Kim2021	NA	S17_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	49.9	ng/ml	C
+Kim2021	NA	S18_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	52.7	ng/ml	C
+Kim2021	NA	S19_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	50.5	ng/ml	C
+Kim2021	NA	S20_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	53.1	ng/ml	C
+Kim2021	NA	S21_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	59.0	ng/ml	C
+Kim2021	NA	S22_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	62.2	ng/ml	C
+Kim2021	NA	S23_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	58.4	ng/ml	C
+Kim2021	NA	S24_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	60.6	ng/ml	C
+Kim2021	NA	S25_C	1.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	68.1	ng/ml	C
+Kim2021	NA	S1_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	33.9	ng/ml	C
+Kim2021	NA	S2_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	34.9	ng/ml	C
+Kim2021	NA	S3_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	37.1	ng/ml	C
+Kim2021	NA	S4_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	40.6	ng/ml	C
+Kim2021	NA	S5_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	39.9	ng/ml	C
+Kim2021	NA	S6_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	41.2	ng/ml	C
+Kim2021	NA	S7_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	44.9	ng/ml	C
+Kim2021	NA	S8_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	44.9	ng/ml	C
+Kim2021	NA	S9_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	49.7	ng/ml	C
+Kim2021	NA	S10_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	48.1	ng/ml	C
+Kim2021	NA	S11_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	45.9	ng/ml	C
+Kim2021	NA	S12_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.2	ng/ml	C
+Kim2021	NA	S13_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	44.7	ng/ml	C
+Kim2021	NA	S14_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	48.1	ng/ml	C
+Kim2021	NA	S15_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.2	ng/ml	C
+Kim2021	NA	S16_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.2	ng/ml	C
+Kim2021	NA	S17_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	49.7	ng/ml	C
+Kim2021	NA	S18_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.6	ng/ml	C
+Kim2021	NA	S19_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	46.9	ng/ml	C
+Kim2021	NA	S20_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	51.3	ng/ml	C
+Kim2021	NA	S21_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	55.7	ng/ml	C
+Kim2021	NA	S22_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	57.3	ng/ml	C
+Kim2021	NA	S23_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	55.7	ng/ml	C
+Kim2021	NA	S24_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	57.5	ng/ml	C
+Kim2021	NA	S25_C	1.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	65.1	ng/ml	C

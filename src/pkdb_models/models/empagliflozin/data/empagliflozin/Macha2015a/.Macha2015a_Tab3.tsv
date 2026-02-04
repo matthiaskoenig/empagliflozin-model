@@ -1,0 +1,13 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2015a	EMP5	16.0	EMP5_M	auc_end	empagliflozin	blood	HPLC MS/MS	12.0	hr	1010.0	NA	NA	NA	NA	NA	15.1	nmol/l*hr	steady state
+Macha2015a	EMP5	16.0	EMP5_M	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	193.0	NA	NA	NA	NA	NA	16.5	nmol/l	NA
+Macha2015a	EMP5	16.0	EMP5_M	tmax	empagliflozin	blood	HPLC MS/MS	NA	NA	1.0	NA	0.7	2.0	NA	NA	NA	hr	NA
+Macha2015a	EMP5	16.0	EMP5_M	thalf	empagliflozin	blood	HPLC MS/MS	NA	NA	NA	NA	NA	NA	NA	NA	NA	hr	NA
+Macha2015a	EMP5	16.0	EMP5_E	auc_end	empagliflozin	blood	HPLC MS/MS	12.0	hr	867.0	NA	NA	NA	NA	NA	18.6	nmol/l*hr	steady state
+Macha2015a	EMP5	16.0	EMP5_E	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	120.0	NA	NA	NA	NA	NA	21.0	nmol/l	NA
+Macha2015a	EMP5	16.0	EMP5_E	tmax	empagliflozin	blood	HPLC MS/MS	NA	NA	2.0	NA	1.0	4.0	NA	NA	NA	hr	NA
+Macha2015a	EMP5	16.0	EMP5_E	thalf	empagliflozin	blood	HPLC MS/MS	NA	NA	14.0	NA	NA	NA	NA	NA	55.4	hr	NA
+Macha2015a	EMP10	16.0	EMP10	auc_end	empagliflozin	blood	HPLC MS/MS	12.0	hr	1900.0	NA	NA	NA	NA	NA	20.6	nmol/l*hr	steady state
+Macha2015a	EMP10	16.0	EMP10	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	330.0	NA	NA	NA	NA	NA	25.3	nmol/l	NA
+Macha2015a	EMP10	16.0	EMP10	tmax	empagliflozin	blood	HPLC MS/MS	NA	NA	1.0	NA	0.7	2.0	NA	NA	NA	hr	NA
+Macha2015a	EMP10	16.0	EMP10	thalf	empagliflozin	blood	HPLC MS/MS	NA	NA	13.6	NA	NA	NA	NA	NA	43.0	hr	NA

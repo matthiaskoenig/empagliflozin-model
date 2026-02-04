@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+Sarashina2013	EMP10	6.0	EMP10	recovery	empagliflozin	urine	HPLC MS/MS	recovery_EMP10	0.0	hr	0.0								percent	percent
+Sarashina2013	EMP10	6.0	EMP10	recovery	empagliflozin	urine	HPLC MS/MS	recovery_EMP10	72.0	hr	21.3				3.1311		14.7		percent	percent

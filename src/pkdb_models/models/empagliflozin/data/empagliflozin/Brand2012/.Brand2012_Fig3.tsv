@@ -1,0 +1,21 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Brand2012	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	2.0	hr	NA	2.89655	4.0	1.10345	0.2758625	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	4.0	hr	NA	7.31034	8.689	1.37866	0.344665	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	8.0	hr	NA	11.03448	13.7931	2.75862	0.689655	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	12.0	hr	NA	14.06897	16.689966	2.620996	0.655249	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	24.0	hr	NA	17.24138	20.27586	3.03448	0.758620000000001	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	2.0	hr	NA	3.44828	3.86207	0.41379	0.1034475	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	4.0	hr	NA	7.724	8.68966	0.96566	0.241415	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	8.0	hr	NA	12.95655	15.58621	2.62966	0.657415	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	12.0	hr	NA	15.86207	18.89655	3.03448	0.758620000000001	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	24.0	hr	NA	19.4428	22.48276	3.03996	0.75999	percent	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	2.0	hr	NA	1.448275	NA	0.551725	0.13793125	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	4.0	hr	NA	3.65517	NA	0.68933	0.1723325	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	8.0	hr	NA	5.51724	NA	1.37931	0.3448275	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	12.0	hr	NA	7.034485	NA	1.310498	0.3276245	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	24.0	hr	NA	8.62069	NA	1.51724	0.37931	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D10	2.0	hr	NA	1.72414	NA	0.206895	0.05172375	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D10	4.0	hr	NA	3.862	NA	0.48283	0.1207075	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D10	8.0	hr	NA	6.478275	NA	1.31483	0.3287075	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D10	12.0	hr	NA	7.931035	NA	1.51724	0.37931	mg	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D10	24.0	hr	NA	9.7214	NA	1.51998	0.379995	mg	unclear if SD or SE

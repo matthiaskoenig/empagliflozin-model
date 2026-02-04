@@ -1,0 +1,33 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	4.0	hr	NA	3.1742243436754	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	12.0	hr	NA	14.3675417661097	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	24.0	hr	NA	26.0620525059665	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	42.0	hr	NA	42.6	NA	13.4616	NA	g	FDA table
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	60.0	hr	NA	61.4797136038186	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	72.0	hr	NA	70.835322195704	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	80.0	hr	NA	82.1957040572792	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	96.0	hr	NA	87.3747016706444	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	4.0	hr	NA	9.52267303102624	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	8.0	hr	NA	20.2147971360381	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	12.0	hr	NA	29.7374701670644	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	24.0	hr	NA	36.2	NA	11.2944	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	36.0	hr	NA	56.634844868735	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	48.0	hr	NA	63.9856801909307	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	72.0	hr	NA	76.18138424821	NA	NA	NA	g	NA
+Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	96.0	hr	NA	80.5250596658711	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	4.0	hr	NA	5.01193317422433	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	8.0	hr	NA	13.3651551312649	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	12.0	hr	NA	22.8878281622911	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	24.0	hr	NA	38.4	NA	23.3088	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	36.0	hr	NA	53.126491646778	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	48.0	hr	NA	65.4892601431981	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	72.0	hr	NA	75.8472553699284	NA	NA	NA	g	NA
+Macha2014b	NA	moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	96.0	hr	NA	79.0214797136038	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	4.0	hr	NA	5.01193317422433	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	8.0	hr	NA	15.2028639618138	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	12.0	hr	NA	22.5536992840095	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	24.0	hr	NA	40.2	NA	22.0296	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	36.0	hr	NA	56.4677804295942	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	48.0	hr	NA	64.9880668257756	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	72.0	hr	NA	76.3484486873508	NA	NA	NA	g	NA
+Macha2014b	NA	severe	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_severe	96.0	hr	NA	79.0214797136038	NA	NA	NA	g	NA

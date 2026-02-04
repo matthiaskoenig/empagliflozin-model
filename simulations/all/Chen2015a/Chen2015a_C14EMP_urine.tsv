@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	4.0	hr		21014.8975771451					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	8.0	hr		34428.6619880886					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	12.0	hr		42029.7951542901					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	24.0	hr		51866.5557223154					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	35.0	hr		55890.6850455986					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	48.0	hr		57679.1869670577					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	72.0	hr		59020.5634081521					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	96.0	hr		59914.8143688816					nmole	nmole

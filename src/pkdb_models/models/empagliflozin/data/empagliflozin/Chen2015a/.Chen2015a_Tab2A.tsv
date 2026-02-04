@@ -1,0 +1,22 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-empagliflozin	plasma	radiochromatography/MS/MS	12.0	hr	NA	7999.0	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin	feces	radiochromatography/MS/MS	96.0	hr	NA	82.9	NA	NA	NA	percent	from the left side of the categories
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin	urine	radiochromatography/MS/MS	96.0	hr	NA	43.5	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M481/1	plasma	radiochromatography/MS/MS	12.0	hr	NA	192.9	NA	NA	NA	nmol/l*hr	C14-M482/1
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M481/1	feces	radiochromatography/MS/MS	96.0	hr	NA	4.6	NA	NA	NA	percent	C14-M482/1
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M481/1	urine	radiochromatography/MS/MS	96.0	hr	NA	5.2	NA	NA	NA	percent	C14-M482/1
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M626/1	plasma	radiochromatography/MS/MS	12.0	hr	NA	595.9	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/1	feces	radiochromatography/MS/MS	96.0	hr	NA	NA	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/1	urine	radiochromatography/MS/MS	96.0	hr	NA	14.4	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M626/2	plasma	radiochromatography/MS/MS	12.0	hr	NA	472.3	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/2	feces	radiochromatography/MS/MS	96.0	hr	NA	NA	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/2	urine	radiochromatography/MS/MS	96.0	hr	NA	3.9	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M468/1	plasma	radiochromatography/MS/MS	12.0	hr	NA	24.3	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M468/1	feces	radiochromatography/MS/MS	96.0	hr	NA	1.4	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M468/1	urine	radiochromatography/MS/MS	96.0	hr	NA	NA	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M626/3	plasma	radiochromatography/MS/MS	12.0	hr	NA	708.3	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/3	feces	radiochromatography/MS/MS	96.0	hr	NA	NA	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M626/3	urine	radiochromatography/MS/MS	96.0	hr	NA	24.1	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	auc_end	C14-M464/1	plasma	radiochromatography/MS/MS	12.0	hr	NA	53.3	NA	NA	NA	nmol/l*hr	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M464/1	feces	radiochromatography/MS/MS	96.0	hr	NA	2.6	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-M464/1	urine	radiochromatography/MS/MS	96.0	hr	NA	1.5	NA	NA	NA	percent	NA

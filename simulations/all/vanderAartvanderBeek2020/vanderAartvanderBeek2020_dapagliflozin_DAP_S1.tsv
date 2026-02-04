@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	0.0	min	7.45762711864409						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	30.0	min	19.4915254237288						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	60.0	min	154.067796610169						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	90.0	min	156.271186440677						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	120.0	min	110.847457627118						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	150.0	min	99.1525423728813						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	180.0	min	83.2203389830508						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	200.0	min	68.4745762711864						μg/l	μg/l
+vanderAartvanderBeek2020	DAP_S1		1.0	DAP10	concentration	dapagliflozin	plasma	LC MS/MS	dapagliflozin_DAP_S1	240.0	min	62.7118644067796						μg/l	μg/l

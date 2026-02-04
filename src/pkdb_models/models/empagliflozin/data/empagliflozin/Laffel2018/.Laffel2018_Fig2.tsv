@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Laffel2018	NA	EMP5	8.0	EMP5	cumulative amount	glucose	urine	NR	uge_change_EMP5	24.0	hr	NA	69.4	NA	36.5273869856578	12.9143815182919	g	adjusted for baseline
+Laffel2018	NA	EMP10	8.0	EMP10	cumulative amount	glucose	urine	NR	uge_change_EMP10	24.0	hr	NA	89.4	NA	36.5273869856578	12.9143815182919	g	adjusted for baseline
+Laffel2018	NA	EMP25	10.0	EMP25	cumulative amount	glucose	urine	NR	uge_change_EMP25	24.0	hr	NA	103.8	NA	35.8710189428736	11.3434121850526	g	adjusted for baseline

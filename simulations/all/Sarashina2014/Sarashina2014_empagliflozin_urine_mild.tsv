@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+Sarashina2014	mild	8.0	EMP25	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_mild	0.0	hr	0.0								mole	mg
+Sarashina2014	mild	8.0	EMP25	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_mild	72.0	hr	9.314518006959276e-06				1.834960047370977e-06		19.7		mole	mg

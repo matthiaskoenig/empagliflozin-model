@@ -1,0 +1,113 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	sd	median	min	max	cv	se	unit	comments
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_normal	96.0	hr	16.6	4.399	NA	NA	NA	26.5	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_mild	96.0	hr	15.2	3.1312	NA	NA	NA	20.6	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_moderate	96.0	hr	16.7	5.845	NA	NA	NA	35.0	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin_severe	96.0	hr	20.3	4.7705	NA	NA	NA	23.5	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_normal	96.0	hr	8.47	2.17679	NA	NA	NA	25.7	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_mild	96.0	hr	8.88	2.07792	NA	NA	NA	23.4	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_moderate	96.0	hr	7.15	1.4157	NA	NA	NA	19.8	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-2-O-glucuronide_severe	96.0	hr	6.09	1.54077	NA	NA	NA	25.3	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_normal	96.0	hr	12.1	3.0976	NA	NA	NA	25.6	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_mild	96.0	hr	16.4	2.7552	NA	NA	NA	16.8	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_moderate	96.0	hr	16.8	5.7288	NA	NA	NA	34.1	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	19.5	3.9195	NA	NA	NA	20.1	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	96.0	hr	3.57	0.90321	NA	NA	NA	25.3	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_mild	96.0	hr	3.38	0.70304	NA	NA	NA	20.8	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_moderate	96.0	hr	2.86	0.64922	NA	NA	NA	22.7	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	2.49	0.53784	NA	NA	NA	21.6	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	96.0	hr	3.57	0.90321	NA	NA	NA	25.3	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_mild	96.0	hr	3.38	0.70304	NA	NA	NA	20.8	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_moderate	96.0	hr	2.86	0.64922	NA	NA	NA	22.7	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	2.49	0.53784	NA	NA	NA	21.6	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_normal	96.0	hr	27.71	3.99563725484434	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_mild	96.0	hr	32.04	3.59129629097907	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_moderate	96.0	hr	29.67	5.97212936453992	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	recovery_empagliflozin-metabolites-no-empagliflozin_severe	96.0	hr	30.57	4.27960233831369	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_normal	96.0	hr	44.31	5.94275340833691	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_mild	96.0	hr	47.24	4.76464295510167	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	moderate	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_moderate	96.0	hr	46.37	8.3564558364656	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_severe	96.0	hr	50.87	6.40879601985428	NA	NA	NA	NA	NA	percent	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_normal	96.0	hr	18.4072617756576	4.87792437054927	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_mild	96.0	hr	16.8548421078311	3.4720974742132	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_moderate	96.0	hr	18.5181488947881	6.48135211317583	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin2_urine_severe	96.0	hr	22.5100851834849	5.28987001811896	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_normal	96.0	hr	9.3921389903506	2.4137797205201	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_mild	96.0	hr	9.84677617878552	2.30414562583581	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_moderate	96.0	hr	7.92842901782843	1.56982894553003	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_severe	96.0	hr	6.75302555504548	1.70851546542651	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_normal	96.0	hr	13.4173414147866	3.43483940218536	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_mild	96.0	hr	18.1854875373967	3.05516190628264	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_moderate	96.0	hr	18.6290360139186	6.35250128074623	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	21.6229882304412	4.34622063431868	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_normal	96.0	hr	3.95867015295769	1.0015435486983	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_mild	96.0	hr	3.7479846266098	0.779580802334839	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_moderate	96.0	hr	3.17137160713137	0.719901354818821	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	2.76108926634864	0.596395281531307	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_normal	96.0	hr	3.95867015295769	1.0015435486983	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_mild	96.0	hr	3.7479846266098	0.779580802334839	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	empagliflozin-6-O-glucuronide_urine_moderate	96.0	hr	3.17137160713137	0.719901354818821	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	2.76108926634864	0.596395281531307	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_normal	96.0	hr	30.7268207110526	4.43064704280059	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_mild	96.0	hr	35.5282329694018	3.98228499650602	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_moderate	96.0	hr	32.9002082460097	6.62232220308302	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-metabolites-no-empagliflozin	urine	HPLC MS/MS	eg_urine_severe	96.0	hr	33.8981923181839	4.74552774319618	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	normal	12.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_normal	96.0	hr	49.1340824867102	6.58974805153248	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	mild	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_mild	96.0	hr	52.3830750772329	5.28337530976502	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_moderate	96.0	hr	51.4183571407978	9.26623313846652	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	µmole	NA
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-metabolites	urine	HPLC MS/MS	emptot_urine_severe	96.0	hr	56.4082775016689	7.10652927736447	NA	NA	NA	NA	NA	µmole	NA

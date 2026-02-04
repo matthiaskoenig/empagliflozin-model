@@ -1,0 +1,23 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Macha2013d	all	59.0	NA	species	59.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	all	59.0	NA	healthy	59.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	all	59.0	NA	smoking	59.0	NA	N	NA	NA	NA	NA	NA	NA	NA	less than 10 cigarettes/day
+Macha2013d	all	59.0	NA	alcohol 	59.0	NA	N	NA	NA	NA	NA	NA	NA	NA	no alcohol/drug abuse
+Macha2013d	all	59.0	NA	ethnicity	59.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	all	59.0	NA	sex	27.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	all	59.0	NA	sex	32.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_verapamil	16.0	all	sex	8.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_verapamil	16.0	all	sex	8.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_verapamil	16.0	all	age	16.0	NA	NA	31.0	NA	NA	NA	20.0	50.0	year	NA
+Macha2013d	emp_verapamil	16.0	all	weight	16.0	NA	NA	71.0	NA	NA	NA	55.0	94.0	kg	NA
+Macha2013d	emp_verapamil	16.0	all	bmi	16.0	NA	NA	23.75	NA	NA	NA	21.4	28.4	kg/m^2	NA
+Macha2013d	emp_ramipril	23.0	all	sex	8.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_ramipril	23.0	all	sex	15.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_ramipril	23.0	all	age	23.0	NA	NA	43.0	NA	NA	NA	21.0	52.0	year	NA
+Macha2013d	emp_ramipril	23.0	all	weight	23.0	NA	NA	69.0	NA	NA	NA	57.0	97.0	kg	NA
+Macha2013d	emp_ramipril	23.0	all	bmi	23.0	NA	NA	24.6	NA	NA	NA	19.7	29.7	kg/m^2	NA
+Macha2013d	emp_digoxin	20.0	all	sex	11.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_digoxin	20.0	all	sex	9.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013d	emp_digoxin	20.0	all	age	20.0	NA	NA	35.5	NA	NA	NA	20.0	50.0	year	NA
+Macha2013d	emp_digoxin	20.0	all	weight	20.0	NA	NA	76.0	NA	NA	NA	55.0	99.0	kg	NA
+Macha2013d	emp_digoxin	20.0	all	bmi	20.0	NA	NA	23.9	NA	NA	NA	20.2	29.4	kg/m^2	NA

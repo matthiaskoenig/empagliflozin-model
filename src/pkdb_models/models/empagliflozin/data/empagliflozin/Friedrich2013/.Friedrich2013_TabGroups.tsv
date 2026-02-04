@@ -1,0 +1,8 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Friedrich2013	all	16	NA	species	6	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Friedrich2013	all	16	NA	healthy 	16	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Friedrich2013	all	16	NA	sex	16	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Friedrich2013	all	16	NA	age	16	NA	NA	NA	32.5	NA	NA	22.0	48.0	year	NA
+Friedrich2013	all	16	NA	weight	16	NA	NA	NA	81.5	NA	NA	65.0	100.0	kg	NA
+Friedrich2013	all	16	NA	bmi	16	NA	NA	NA	25.5	NA	NA	22.0	28.9	kg/m^2	NA
+Friedrich2013	all	16	NA	ethnicity	16	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA

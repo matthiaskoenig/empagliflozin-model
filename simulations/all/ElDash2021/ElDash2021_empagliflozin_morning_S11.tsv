@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_sd	comments	mean_unit	value_unit
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	0.0	hr	0.0				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	0.333	hr	1.685484210783107e-06				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	0.667	hr	2.4279843604807178e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	1.0	hr	3.022782867496546e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	1.25	hr	3.335484543444464e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	1.5	hr	6.147360110354861e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	1.75	hr	0.0001244375250882107				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	2.0	hr	0.00016448329929098776				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	2.5	hr	0.00021301637359201082				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	3.0	hr	0.0001906016513309781				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	4.0	hr	0.0001478746265876263				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	6.0	hr	0.00010590385199674435				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	8.0	hr	6.563852129808898e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	10.0	hr	4.603146089343969e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	12.0	hr	3.945585472900297e-05				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	24.0	hr	6.8129045993759275e-06				ng/ml	mole/meter^3
+ElDash2021	morning_S11		1.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_morning_S11	48.0	hr	1.5125003049395776e-06				ng/ml	mole/meter^3

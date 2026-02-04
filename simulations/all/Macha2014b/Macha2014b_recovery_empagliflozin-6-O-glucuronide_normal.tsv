@@ -1,0 +1,5 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	mean_sd	median	min	max	cv	mean_se	comments	mean_unit	median_unit
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	0.0	hr	0.0								percent	percent
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	96.0	hr	3.57	0.90321				25.3			percent	percent
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	0.0	hr	0.0								percent	percent
+Macha2014b	normal	12.0	EMP50	recovery	empagliflozin-6-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-6-O-glucuronide_normal	96.0	hr	3.57	0.90321				25.3			percent	percent

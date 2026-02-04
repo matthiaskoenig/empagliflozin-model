@@ -1,0 +1,43 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Macha2014f	all	40.0	NA	species	40.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	all	40.0	NA	healthy 	40.0	NA	N	NA	NA	NA	NA	NA	NA	NA	subjects with T2DM had normal renal function
+Macha2014f	all	40.0	NA	ethnicity	40.0	NA	NR	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	all	40.0	NA	sex	19.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	all	40.0	NA	sex	21.0	NA	F	NA	NA	NA	NA	45.0	NA	NA	NA
+Macha2014f	all	40.0	NA	age	40.0	NA	NA	NA	56.0	NA	NA	18.0	75.0	yr	NA
+Macha2014f	all	40.0	NA	weight	40.0	NA	NA	NA	78.3	NA	NA	60.5	103.0	kg	NA
+Macha2014f	all	40.0	NA	bmi	40.0	NA	NA	NA	27.65	NA	NA	19.6	34.0	kg/m^2	NA
+Macha2014f	all	40.0	NA	disease	8.0	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	all	40.0	NA	alcohol amount	40.0	NA	NA	NA	NA	NA	NA	NA	60.0	g/day	males, exlcuded if greater than 60
+Macha2014f	all	40.0	NA	alcohol amount	40.0	NA	NA	NA	NA	NA	NA	NA	40.0	g/day	females, excluded if greater than 40
+Macha2014f	normal	8.0	all	sex	1.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	normal	8.0	all	sex	7.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	normal	8.0	all	age	8.0	NA	NA	NA	56.0	NA	NA	38.0	67.0	yr	NA
+Macha2014f	normal	8.0	all	weight	8.0	NA	NA	NA	81.7	NA	NA	67.5	98.3	kg	NA
+Macha2014f	normal	8.0	all	bmi	8.0	NA	NA	NA	28.85	NA	NA	26.0	33.1	kg/m^2	NA
+Macha2014f	normal	8.0	all	disease	8.0	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	normal	8.0	all	clearance	8.0	glucose	NA	NA	NA	NA	NA	90.0	NA	ml/min/(1.73*m^2)	eGFR
+Macha2014f	mild	9.0	all	sex	3.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	mild	9.0	all	sex	6.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	mild	9.0	all	age	9.0	NA	NA	NA	61.0	NA	NA	42.0	69.0	yr	NA
+Macha2014f	mild	9.0	all	weight	9.0	NA	NA	NA	70.2	NA	NA	60.5	90.3	kg	NA
+Macha2014f	mild	9.0	all	bmi	9.0	NA	NA	NA	26.8	NA	NA	21.7	30.1	kg/m^2	NA
+Macha2014f	mild	9.0	all	clearance	9.0	glucose	NA	NA	NA	NA	NA	60.0	89.0	ml/min/(1.73*m^2)	eGFR
+Macha2014f	moderate	7.0	all	sex	4.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	moderate	7.0	all	sex	3.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	moderate	7.0	all	age	7.0	NA	NA	NA	64.0	NA	NA	48.0	74.0	yr	NA
+Macha2014f	moderate	7.0	all	weight	7.0	NA	NA	NA	78.6	NA	NA	73.6	101.8	kg	NA
+Macha2014f	moderate	7.0	all	bmi	7.0	NA	NA	NA	28.1	NA	NA	24.6	34.0	kg/m^2	NA
+Macha2014f	moderate	7.0	all	clearance	7.0	glucose	NA	NA	NA	NA	NA	30.0	59.0	ml/min/(1.73*m^2)	eGFR
+Macha2014f	severe	8.0	all	sex	7.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	severe	8.0	all	sex	1.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	severe	8.0	all	age	8.0	NA	NA	NA	56.0	NA	NA	34.0	74.0	yr	NA
+Macha2014f	severe	8.0	all	weight	8.0	NA	NA	NA	75.1	NA	NA	65.2	103.0	kg	NA
+Macha2014f	severe	8.0	all	bmi	8.0	NA	NA	NA	23.85	NA	NA	19.6	32.5	kg/m^2	NA
+Macha2014f	severe	8.0	all	clearance	8.0	glucose	NA	NA	NA	NA	NA	NA	30.0	ml/min/(1.73*m^2)	eGFR
+Macha2014f	esrd	8.0	all	sex	4.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	esrd	8.0	all	sex	4.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014f	esrd	8.0	all	age	8.0	NA	NA	NA	40.0	NA	NA	36.0	70.0	yr	NA
+Macha2014f	esrd	8.0	all	weight	8.0	NA	NA	NA	77.25	NA	NA	63.0	98.0	kg	NA
+Macha2014f	esrd	8.0	all	bmi	8.0	NA	NA	NA	26.85	NA	NA	22.1	33.8	kg/m^2	NA
+Macha2014f	esrd	8.0	all	clearance	8.0	glucose	NA	NA	NA	NA	NA	NA	30.0	ml/min/(1.73*m^2)	eGFR

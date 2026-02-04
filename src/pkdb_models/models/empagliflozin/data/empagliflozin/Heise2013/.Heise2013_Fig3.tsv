@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013	NA	Placebo	12	Placebo	reabsorption	glucose	urine	LC MS/MS	8	day	NA	5	21.9917012448132	16.9917012448132	6.34845731681537	percent	probably day 8
+Heise2013	NA	EMP2.5	9	EMP2.5	reabsorption	glucose	urine	LC MS/MS	8	day	NA	39	47.3029045643153	8.3029045643153	15.7676348547718	percent	probably day 8
+Heise2013	NA	EMP10	9	EMP10	reabsorption	glucose	urine	LC MS/MS	8	day	NA	46	60.1659751037344	14.1659751037344	20.0553250345781	percent	probably day 8
+Heise2013	NA	EMP25	9	EMP25	reabsorption	glucose	urine	LC MS/MS	8	day	NA	58	65.9751037344398	7.9751037344398	21.9917012448133	percent	probably day 8
+Heise2013	NA	EMP100	9	EMP100	reabsorption	glucose	urine	LC MS/MS	8	day	NA	64	75.5186721991701	11.5186721991701	25.1728907330567	percent	probably day 8

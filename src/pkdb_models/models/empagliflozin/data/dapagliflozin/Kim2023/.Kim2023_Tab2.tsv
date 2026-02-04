@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Kim2023	Group1	18.0	EV5, EP25	cmax	evogliptin	plasma	LC MS/MS	NA	NA	6.09	NA	NA	NA	1.65	NA	NA	ng/ml	NA
+Kim2023	Group1	18.0	EV5, EP25	auc_inf	evogliptin	plasma	LC MS/MS	NA	NA	94.8	NA	NA	NA	21.93	NA	NA	ng/ml*hr	NA
+Kim2023	Group1	18.0	EV5, EP25	 tmax	evogliptin	plasma	LC MS/MS	NA	NA	1.5	NA	0.33	8.0	NA	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5, EP25	thalf	evogliptin	plasma	LC MS/MS	NA	NA	22.22	NA	NA	NA	4.08	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5, EP25	clearance	evogliptin	plasma	LC MS/MS	NA	NA	55.67	NA	NA	NA	13.96	NA	NA	l/hr	NA
+Kim2023	Group1	18.0	EV5	cmax	evogliptin	plasma	LC MS/MS	NA	NA	5.93	NA	NA	NA	1.16	NA	NA	ng/ml	NA
+Kim2023	Group1	18.0	EV5	auc_inf	evogliptin	plasma	LC MS/MS	NA	NA	94.16	NA	NA	NA	20.34	NA	NA	ng/ml*hr	NA
+Kim2023	Group1	18.0	EV5	 tmax	evogliptin	plasma	LC MS/MS	NA	NA	4.0	NA	1.0	5.0	NA	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5	thalf	evogliptin	plasma	LC MS/MS	NA	NA	22.29	NA	NA	NA	6.31	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5	clearance	evogliptin	plasma	LC MS/MS	NA	NA	55.51	NA	NA	NA	12.82	NA	NA	l/hr	NA
+Kim2023	Group1	18.0	EV5, EP25	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	473.45	NA	NA	NA	116.51	NA	NA	ng/ml	NA
+Kim2023	Group1	18.0	EV5, EP25	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3036.54	NA	NA	NA	655.56	NA	NA	ng/ml*hr	NA
+Kim2023	Group1	18.0	EV5, EP25	 tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	0.67	4.0	NA	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5, EP25	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	6.68	NA	NA	NA	0.81	NA	NA	hr	NA
+Kim2023	Group1	18.0	EV5, EP25	clearance	empagliflozin	plasma	LC MS/MS	NA	NA	8.64	NA	NA	NA	2.04	NA	NA	l/hr	NA
+Kim2023	Group1	18.0	EP25	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	475.45	NA	NA	NA	115.85	NA	NA	ng/ml	NA
+Kim2023	Group1	18.0	EP25	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	2912.09	NA	NA	NA	598.97	NA	NA	ng/ml*hr	NA
+Kim2023	Group1	18.0	EP25	 tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	0.67	4.0	NA	NA	NA	hr	NA
+Kim2023	Group1	18.0	EP25	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	7.12	NA	NA	NA	0.69	NA	NA	hr	NA
+Kim2023	Group1	18.0	EP25	clearance	empagliflozin	plasma	LC MS/MS	NA	NA	8.99	NA	NA	NA	2.13	NA	NA	l/hr	NA

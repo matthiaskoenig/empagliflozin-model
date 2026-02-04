@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	15.0	min	0.00021344168017598667						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	30.0	min	0.00034804454154823024						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	45.0	min	0.000381054290884755						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	60.0	min	0.00036342772570505794						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	90.0	min	0.00031759865623784173						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	120.0	min	0.00025670688561706465						μg/l	mole/meter^3
+vanderAartvanderBeek2020	EMP_S6		1.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP_S6	1440.0	min	0.00018844400592114125						μg/l	mole/meter^3

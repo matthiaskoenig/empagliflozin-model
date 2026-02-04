@@ -1,0 +1,35 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	0.33	hr	NA	30.78176	43.97394	13.19218	3.298045	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	0.67	hr	NA	112.86247	156.832	43.96953	10.9923825	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	1.0	hr	NA	191.99166	224.247	32.25534	8.063835	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	1.5	hr	NA	205.191	318.0622	112.8712	28.2178	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	2.0	hr	NA	234.515	351.77	117.255	29.31375	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	2.5	hr	NA	240.347	266.723	26.376	6.594	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	3.0	hr	NA	310.693	405.97	95.2770000000001	23.81925	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	4.0	hr	NA	266.70355	332.65649	65.95294	16.488235	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	6.0	hr	NA	171.39083	190.43823	19.0474	4.76185	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	8.0	hr	NA	133.23626	153.75345	20.51719	5.1292975	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	10.0	hr	NA	99.47909	118.5265	19.04741	4.7618525	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	12.0	hr	NA	77.4432	93.56412	16.12092	4.03023	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	14.0	hr	NA	59.795	77.38458	17.58958	4.397395	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	24.0	hr	NA	28.83002	43.488	14.65798	3.664495	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	36.0	hr	NA	12.459	18.32646	5.86746	1.466865	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	48.0	hr	NA	3.41754	12.20835	8.79081	2.1977025	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SIT100_D5	72.0	hr	NA	0.00398	11.73037	11.72639	2.9315975	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	0.33	hr	NA	0.0	0.0	0.0	0.0	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	0.7	hr	NA	0.0	46.90554	46.90554	11.726385	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	1.0	hr	NA	124.58885	155.37	30.78115	7.6952875	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	1.5	hr	NA	216.89828	265.273	48.37472	12.09368	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	2.0	hr	NA	263.82772	347.38	83.55228	20.88807	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	2.5	hr	NA	278.4618	367.87149	89.40969	22.3524225	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	3.0	hr	NA	301.89863	335.59606	33.69743	8.4243575	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	4.0	hr	NA	279.89573	332.68836	52.79263	13.1981575	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	6.0	hr	NA	175.78822	206.56201	30.77379	7.6934475	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	8.0	hr	NA	136.15989	162.54824	26.38835	6.5970875	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	10.0	hr	NA	106.80012	125.85947	8.83861	2.2096525	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	12.0	hr	NA	81.83375	97.96151	3.32995	0.832487499999999	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	14.0	hr	NA	64.19239	78.5038	22.17019	5.5425475	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	24.0	hr	NA	33.22741	42.0222	16.37073	4.0926825	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	36.0	hr	NA	12.45132	16.85668	1.70479	0.4261975	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	48.0	hr	NA	4.88334	10.74653	2.44167	0.6104175	ng/ml	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	sitagliptin	plasma	HPLC MS/MS	sitagliptin_SEMP100	72.0	hr	NA	2.9316	7.32501	2.9316	0.7329	ng/ml	unclear if SD or SE

@@ -1,0 +1,29 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.33	hr	NA	119.81	170.048	50.238	12.5595	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.67	hr	NA	200.966	297.585	96.619	24.15475	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.0	hr	NA	579.71	838.647	258.937	64.73425	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.5	hr	NA	784.541	1101.449	316.908	79.227	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.0	hr	NA	1016.425	1298.551	282.126	70.5315	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.5	hr	NA	1055.072	1279.227	224.155	56.0387500000001	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	3.0	hr	NA	939.13	1171.014	231.884	57.971	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	4.0	hr	NA	792.271	950.725	158.454	39.6135	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	6.0	hr	NA	564.251	672.464	108.213	27.05325	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	8.0	hr	NA	413.527	498.551	85.024	21.256	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	10.0	hr	NA	340.097	413.527	73.43	18.3575	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	12.0	hr	NA	255.072	336.232	81.16	20.29	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	14.0	hr	NA	208.969	274.396	65.427	16.35675	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	24.0	hr	NA	112.077	154.589	42.512	10.628	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	0.33	hr	NA	146.86	162.319	15.459	3.86474999999999	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	0.67	hr	NA	239.614	344.0	104.386	26.0965	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	1.0	hr	NA	722.705	846.377	123.672	30.918	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	1.5	hr	NA	962.319	1070.531	108.212	27.053	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	2.0	hr	NA	1085.99	1341.063	255.073	63.76825	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	2.5	hr	NA	1082.126	1321.739	239.613	59.90325	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	3.0	hr	NA	1024.155	1244.444	220.289	55.07225	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	4.0	hr	NA	908.213	1101.449	193.236	48.309	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	6.0	hr	NA	599.034	738.164	139.13	34.7825	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	8.0	hr	NA	456.039	537.198	81.159	20.28975	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	10.0	hr	NA	363.285	425.121	61.836	15.459	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	12.0	hr	NA	293.72	351.691	57.971	14.49275	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	14.0	hr	NA	243.478	305.314	61.836	15.459	nmol/l	unclear if SD or SE
+Brand2012	NA	all	16.0	EMP50_D10, SIT100_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D10	24.0	hr	NA	123.671	162.319	38.648	9.662	nmol/l	unclear if SD or SE

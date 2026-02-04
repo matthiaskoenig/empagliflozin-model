@@ -1,0 +1,7 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2013e	all	18.0	EMP25R5	auc_end	empagliflozin	plasma	HPLC MS/MS	168.0	hr	4620   	NA	NA	NA	13.0	NA	NA	nmol/l*hr	NA
+Macha2013e	all	18.0	EMP25R5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	774    	NA	NA	NA	19.2	NA	NA	nmol/l	NA
+Macha2013e	all	18.0	EMP25R5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1.5	NA	1.0	3.0	NA	NA	NA	hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	auc_end	empagliflozin	plasma	HPLC MS/MS	168.0	hr	4670   	NA	NA	NA	15.5	NA	NA	nmol/l*hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	785    	NA	NA	NA	23.0	NA	NA	nmol/l	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1	NA	0.7	6.0	NA	NA	NA	hr	NA

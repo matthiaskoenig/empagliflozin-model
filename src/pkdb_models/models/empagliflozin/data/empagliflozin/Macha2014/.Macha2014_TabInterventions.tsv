@@ -1,0 +1,6 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Macha2014	EMP25	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25	mg	NA
+Macha2014	EMP10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10	mg	NA
+Macha2014	GEM	S-4T1R5	NA	day	oral	multiple dose	dosing	tablet	gemfibrozil	600	mg	time: 5 days, once daily
+Macha2014	RIF	0	NA	hr	oral	single dose	dosing	tablet	rifampicin	600	mg	NA
+Macha2014	PROB	S-3T1R4	NA	day	oral	multiple dose	dosing	tablet	probenecid	500	mg	time: 4 days, once daily

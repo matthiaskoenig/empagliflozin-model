@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	4.0	hr		4.60581946298761					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	8.0	hr		9.07456966679253					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	12.0	hr		12.2377885877913					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	24.0	hr		15.6129082626293					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	36.0	hr		17.03009645632					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	48.0	hr		17.7599143617549					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	72.0	hr		18.3615460855096					µmole	µmole
+Macha2014b		moderate	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	96.0	hr		18.5181488947881		6.48135211317583			µmole	µmole

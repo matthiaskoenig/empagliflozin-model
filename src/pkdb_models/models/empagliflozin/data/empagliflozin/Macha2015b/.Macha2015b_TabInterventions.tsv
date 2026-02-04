@@ -1,0 +1,5 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Macha2015b	emp50	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	50	mg	qd
+Macha2015b	emp25	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25	mg	NA
+Macha2015b	emp10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10	mg	NA
+Macha2015b	piog45	0	NA	hr	oral	single dose	dosing	tablet	pioglitazone 	45	mg	NA

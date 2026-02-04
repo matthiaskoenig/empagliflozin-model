@@ -1,0 +1,95 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	se	sd	unit	comments
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.3	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.6	hr	86.0	NA	177.7	NA	92.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.0	hr	154.7	NA	355.4	NA	201.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.5	hr	384.0	NA	561.7	NA	178.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.0	hr	469.9	NA	573.1	NA	103.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.5	hr	504.3	NA	607.4	NA	103.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	3.0	hr	515.7	NA	613.1	NA	97.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	4.0	hr	458.3	NA	555.7	NA	97.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	6.0	hr	314.8	NA	389.3	NA	74.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	8.0	hr	222.9	NA	280.3	NA	57.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	10.0	hr	159.7	NA	205.6	NA	46.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	12.0	hr	130.9	NA	159.6	NA	29.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	23.0	hr	38.3	NA	44.0	NA	6.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	36.0	hr	8.6	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	47.0	hr	2.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	71.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	0.3	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	0.6	hr	86.0	NA	171.9	NA	86.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	1.0	hr	229.2	NA	492.9	NA	264.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	1.5	hr	458.5	NA	659.1	NA	201.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	2.0	hr	567.4	NA	722.1	NA	155.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	2.5	hr	630.4	NA	790.9	NA	160.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	3.0	hr	647.5	NA	802.3	NA	155.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	4.0	hr	630.2	NA	767.8	NA	138.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	6.0	hr	458.1	NA	555.6	NA	98.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	8.0	hr	349.0	NA	423.6	NA	75.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	10.0	hr	257.2	NA	320.2	NA	63.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	12.0	hr	216.9	NA	262.7	NA	46.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	23.0	hr	84.2	NA	101.3	NA	17.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	36.0	hr	31.5	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	47.0	hr	19.1	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25, GEM	71.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	0.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	0.3	hr	56.7	NA	109.4	NA	53.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	0.6	hr	198.6	NA	279.7	NA	81.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	1.0	hr	283.7	NA	352.6	NA	69.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	1.5	hr	303.9	NA	393.1	NA	89.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	2.0	hr	271.4	NA	372.8	NA	101.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	2.5	hr	255.2	NA	340.3	NA	85.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	3.0	hr	234.9	NA	311.9	NA	77.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	4.0	hr	202.3	NA	255.1	NA	53.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	6.0	hr	133.3	NA	169.8	NA	36.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	8.0	hr	96.6	NA	125.0	NA	28.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	12.0	hr	59.8	NA	72.0	NA	12.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	24.0	hr	22.3	NA	30.4	NA	8.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	36.0	hr	13.2	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_R	48.0	hr	4.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	0.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	0.3	hr	109.4	NA	279.7	NA	170.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	0.6	hr	279.7	NA	604.0	NA	324.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	1.0	hr	352.6	NA	604.0	NA	251.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	1.5	hr	393.1	NA	555.3	NA	162.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	2.0	hr	372.8	NA	490.4	NA	118.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	2.5	hr	340.3	NA	425.5	NA	85.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	3.0	hr	311.9	NA	393.0	NA	81.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	4.0	hr	255.1	NA	324.0	NA	69.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	6.0	hr	169.8	NA	238.7	NA	69.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	8.0	hr	125.0	NA	185.8	NA	61.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	12.0	hr	72.0	NA	108.4	NA	36.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	24.0	hr	22.3	NA	30.4	NA	8.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	36.0	hr	13.2	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, RIF	48.0	hr	4.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	0.3	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	0.6	hr	6.8	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	1.0	hr	51.4	NA	106.2	NA	55.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	1.5	hr	284.3	NA	277.4	NA	7.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	2.0	hr	298.0	NA	376.8	NA	79.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	2.5	hr	274.1	NA	393.9	NA	120.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	3.0	hr	253.5	NA	356.3	NA	103.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	4.0	hr	236.4	NA	328.9	NA	92.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	6.0	hr	202.2	NA	294.7	NA	92.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	8.0	hr	133.9	NA	257.0	NA	123.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	10.0	hr	96.3	NA	168.1	NA	72.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	12.0	hr	58.8	NA	120.3	NA	62.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	24.0	hr	21.7	NA	75.9	NA	54.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	36.0	hr	12.0	NA	25.1	NA	13.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	48.0	hr	9.1	NA	NA	NA	3.0	nmol/l	NA
+Macha2014	NA	all	18.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_P	72.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	0.3	hr	0.0	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	0.6	hr	48.0	NA	109.6	NA	62.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	1.0	hr	191.8	NA	284.3	NA	92.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	1.5	hr	301.4	NA	431.6	NA	130.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	2.0	hr	346.0	NA	469.3	NA	123.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	2.5	hr	318.6	NA	431.6	NA	113.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	3.0	hr	304.9	NA	397.4	NA	92.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	4.0	hr	287.8	NA	380.3	NA	92.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	6.0	hr	253.6	NA	339.2	NA	86.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	8.0	hr	185.2	NA	243.4	NA	58.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	10.0	hr	140.8	NA	195.6	NA	55.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	12.0	hr	89.6	NA	130.7	NA	41.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	24.0	hr	32.0	NA	55.9	NA	24.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	36.0	hr	15.4	NA	25.7	NA	10.0	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	48.0	hr	5.7	NA	NA	NA	NA	nmol/l	NA
+Macha2014	NA	all	16.0	EMP10, PROB	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10, PROB	72.0	hr	0.0	NA	NA	NA	NA	nmol/l	NA

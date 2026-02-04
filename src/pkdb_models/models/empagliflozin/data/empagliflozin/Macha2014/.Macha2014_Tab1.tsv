@@ -1,0 +1,9 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2014	all	18.0	EMP25	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	4770.0	NA	NA	NA	796.59	NA	16.7	nmol/l*hr	NA
+Macha2014	all	18.0	EMP25	cmax	empagliflozin	plasma	LC MS/MS	72.0	hr	610.0	NA	NA	NA	98.82	NA	16.2	nmol/l	NA
+Macha2014	all	18.0	EMP25	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	NA	2.75	1.0	4.02	NA	NA	NA	hr	NA
+Macha2014	all	18.0	EMP25	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.3	NA	NA	NA	6.65	NA	50.0	hr	NA
+Macha2014	all	18.0	EMP25, GEM	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	7630.0	NA	NA	NA	1587.0	NA	20.8	nmol/l*hr	NA
+Macha2014	all	18.0	EMP25, GEM	cmax	empagliflozin	plasma	LC MS/MS	72.0	hr	713.0	NA	NA	NA	157.57	NA	22.1	nmol/l	NA
+Macha2014	all	18.0	EMP25, GEM	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	NA	3.0	1.5	4.05	NA	NA	NA	hr	NA
+Macha2014	all	18.0	EMP25, GEM	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.6	NA	NA	NA	4.1	NA	30.2	hr	NA

@@ -1,0 +1,7 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Sarashina2014	mild	8.0	EMP25	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	128.8	NA	106.0	156.6	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	mild	8.0	EMP25	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	93.5	NA	72.2	121.0	NA	NA	NA	nmol/l	NA
+Sarashina2014	moderate	8.0	EMP25	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	143.8	NA	118.3	174.8	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	moderate	8.0	EMP25	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	92.2	NA	71.2	119.3	NA	NA	NA	nmol/l	NA
+Sarashina2014	severe	8.0	EMP25	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	152.3	NA	125.3	185.2	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	severe	8.0	EMP25	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	94.0	NA	72.6	121.7	NA	NA	NA	nmol/l	NA

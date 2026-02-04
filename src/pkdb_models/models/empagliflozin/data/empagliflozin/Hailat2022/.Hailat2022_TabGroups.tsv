@@ -1,0 +1,21 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Hailat2022	all	26.0	NA	species	26.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	healthy 	26.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	sex	26.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	age	26.0	NA	NA	34.9	NA	1.7	NA	22.7	57.3	year	NA
+Hailat2022	all	26.0	NA	weight	26.0	NA	NA	79.5	NA	9.8	NA	66.7	92.4	kg	NA
+Hailat2022	all	26.0	NA	bmi	26.0	NA	NA	174.8	NA	8.8	NA	161.7	189.1	kg/m^2	NA
+Hailat2022	all	26.0	NA	ethnicity	26.0	NA	jordanian	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	smoking	26.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	medication	26.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Hailat2022	all	26.0	NA	abstinence alcohol	26.0	NA	NA	60.0	NA	NA	NA	NA	NA	day	"Smokers, heavy drinkers, those who used
+CYP enzyme inhibitors within the previous 60 days, those who had taken any medicine
+within the previous four weeks, those who had a history of medication allergies, those who
+had participated in previous clinical studies within the previous six months, and those
+with any significant clinical abnormality were all ruled out."
+Hailat2022	fasting	26.0	all	age	26.0	NA	NA	NA	NA	NA	NA	23.0	49.0	year	NA
+Hailat2022	fasting	26.0	all	weight	26.0	NA	NA	78.45	NA	NA	NA	NA	NA	kg	NA
+Hailat2022	fasting	26.0	all	bmi	26.0	NA	NA	NA	NA	NA	NA	18.15	27.6	kg/m^2	NA
+Hailat2022	fed	26.0	all	age	26.0	NA	NA	NA	NA	NA	NA	19.0	43.0	year	NA
+Hailat2022	fed	26.0	all	weight	26.0	NA	NA	63.26	NA	NA	NA	NA	NA	kg	NA
+Hailat2022	fed	26.0	all	bmi	26.0	NA	NA	NA	NA	NA	NA	18.56	26.71	kg/m^2	NA

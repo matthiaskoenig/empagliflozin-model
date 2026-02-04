@@ -1,0 +1,7 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	mean_sd	median	min	max	cv	mean_se	comments	mean_unit	median_unit
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0								µmole	µmole
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	21.6229882304412	4.34622063431868							µmole	µmole
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0								µmole	µmole
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	2.76108926634864	0.596395281531307							µmole	µmole
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	0.0	hr	0.0								µmole	µmole
+Macha2014b	severe	8.0	EMP50	cumulative amount	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	empagliflozin-3-O-glucuronide_urine_severe	96.0	hr	2.76108926634864	0.596395281531307							µmole	µmole

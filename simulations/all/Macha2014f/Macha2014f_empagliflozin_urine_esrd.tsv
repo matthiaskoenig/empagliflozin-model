@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+Macha2014f	esrd	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_esrd	0.0	hr	0.0								mole	mg
+Macha2014f	esrd	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_esrd	96.0	hr	3.326613573914027e-07				1.8762100556875113e-07				mole	mg

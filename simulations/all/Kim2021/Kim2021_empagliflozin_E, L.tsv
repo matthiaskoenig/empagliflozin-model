@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.0	hr		8.383066206263346e-05			3.038307064174811e-05		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.33	hr		0.00035018152221401663			0.0003122581274713967		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.67	hr		0.0007613509599497903			0.0005861493117236516		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	1.0	hr		0.0009363308339376681			0.0005406855928801598		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	1.5	hr		0.0010274800458629125			0.00038832669119489736		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	2.0	hr		0.0010654034406055325			0.00038078636709402557		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	2.5	hr		0.0010272582716246515			0.0002741129584905158		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	3.0	hr		0.0009356655112228852			0.00024372988784876774		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	4.0	hr		0.0008363106524819865			0.00019028229642788233		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	6.0	hr		0.0005615323712766878			0.0001142137327043816		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	8.0	hr		0.00043157266765577975			7.606856372350074e-05		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	10.0	hr		0.0003470766828783635			6.852823962262895e-05		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	12.0	hr		0.0002475000498992036			6.0987915521757164e-05		mole/meter^3	ng/ml
+Kim2021		all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	24.0	hr		9.137098616350528e-05			3.038307064174811e-05	 	mole/meter^3	ng/ml

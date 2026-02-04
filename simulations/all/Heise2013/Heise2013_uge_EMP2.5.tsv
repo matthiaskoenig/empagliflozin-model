@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2013		EMP2.5	9.0	EMP2.5	cumulative amount	glucose	urine	LC MS/MS	uge_EMP2.5	1.0	day		46.5084745762711	68.8135593220338	22.3050847457627	22.9378531073446		g	g
+Heise2013		EMP2.5	9.0	EMP2.5	cumulative amount	glucose	urine	LC MS/MS	uge_EMP2.5	8.0	day		39.864406779661	65.0169491525423	25.1525423728813	21.6723163841808		g	g
+Heise2013		EMP2.5	9.0	EMP2.5	cumulative amount	glucose	urine	LC MS/MS	uge_EMP2.5	9.0	day		37.9661016949152	63.1186440677965	25.1525423728813	21.0395480225988		g	g

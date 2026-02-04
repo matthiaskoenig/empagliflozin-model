@@ -1,0 +1,5 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Macha2015a	EMP5	0|12	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	5	mg	Two doses, morning, evening
+Macha2015a	EMP10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10	mg	NA
+Macha2015a	EMP5_M	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	5	mg	morning dose
+Macha2015a	EMP5_E	12	NA	hr	oral	single dose	dosing	tablet	empagliflozin	5	mg	evening dose

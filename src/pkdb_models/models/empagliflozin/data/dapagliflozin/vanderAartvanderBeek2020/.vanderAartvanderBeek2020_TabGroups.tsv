@@ -1,0 +1,9 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+vanderAartvanderBeek2020	all	12.0	NA	species	12.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	all	12.0	NA	sex	12.0	NA	NR	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	all	12.0	NA	healthy	12.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	DAP	6.0	all	species	6.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	DAP	6.0	all	disease	6.0	NA	renal disease	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	DAP	6.0	all	disease	6.0	NA	macroalbuminuria	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	EMP	6.0	all	species	6.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+vanderAartvanderBeek2020	EMP	6.0	all	disease	6.0	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA

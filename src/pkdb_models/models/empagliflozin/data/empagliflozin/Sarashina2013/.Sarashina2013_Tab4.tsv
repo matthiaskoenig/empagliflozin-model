@@ -1,0 +1,29 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Sarashina2013	placebo	10.0	placebo	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2480.0	NA	NA	NA	211.544	NA	8.53	mg/dl*hr	NA
+Sarashina2013	placebo	10.0	placebo	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	130.0	NA	NA	NA	18.85	NA	14.5	mg/dl	emax
+Sarashina2013	placebo	9.0	placebo	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	0.0443	NA	NA	NA	0.0151506	NA	34.2	g	NA
+Sarashina2013	placebo	8.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	0.174	NA	NA	NA	0.040542	NA	23.3	g	elimination
+Sarashina2013	EMP1	6.0	EMP1	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2510.0	NA	NA	NA	183.481	NA	7.31	mg/dl*hr	NA
+Sarashina2013	EMP1	6.0	EMP1	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	132.0	NA	NA	NA	17.556	NA	13.3	mg/dl	emax
+Sarashina2013	EMP1	6.0	EMP1	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	19.6	NA	NA	NA	5.2136	NA	26.6	g	NA
+Sarashina2013	EMP1	5.0	EMP1	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	23.5	NA	NA	NA	7.9195	NA	33.7	g	elimination
+Sarashina2013	EMP5	6.0	EMP5	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2480.0	NA	NA	NA	104.904	NA	4.23	mg/dl*hr	NA
+Sarashina2013	EMP5	6.0	EMP5	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	131.0	NA	NA	NA	15.458	NA	11.8	mg/dl	emax
+Sarashina2013	EMP5	6.0	EMP5	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	43.2	NA	NA	NA	5.6592	NA	13.1	g	NA
+Sarashina2013	EMP5	6.0	EMP5	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	53.6	NA	NA	NA	10.5592	NA	19.7	g	elimination
+Sarashina2013	EMP10	6.0	EMP10	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2490.0	NA	NA	NA	178.533	NA	7.17	mg/dl*hr	NA
+Sarashina2013	EMP10	6.0	EMP10	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	126.0	NA	NA	NA	14.994	NA	11.9	mg/dl	emax
+Sarashina2013	EMP10	6.0	EMP10	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	50.6	NA	NA	NA	4.301	NA	8.5	g	NA
+Sarashina2013	EMP10	6.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	75.0	NA	NA	NA	12.15	NA	16.2	g	elimination
+Sarashina2013	EMP25	6.0	EMP25	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2480.0	NA	NA	NA	154.256	NA	6.22	mg/dl*hr	NA
+Sarashina2013	EMP25	6.0	EMP25	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	125.0	NA	NA	NA	12.325	NA	9.86	mg/dl	emax
+Sarashina2013	EMP25	6.0	EMP25	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	62.0	NA	NA	NA	14.322	NA	23.1	g	NA
+Sarashina2013	EMP25	6.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	110.0	NA	NA	NA	45.87	NA	41.7	g	elimination
+Sarashina2013	EMP25	6.0	EMP25	maximum excretion rate	glucose	urine	HPLC MS/MS	72.0	hr	4540.0	NA	NA	NA	685.54	NA	15.1	mg/h	NA
+Sarashina2013	EMP25	6.0	EMP25	tmax	glucose	urine	HPLC MS/MS	12.0	hr	5.0	NA	5.0	5.0	NA	NA	NA	hr	NA
+Sarashina2013	EMP100	6.0	EMP100	auc_end	glucose	plasma	HPLC MS/MS	24.0	hr	2480.0	NA	NA	NA	141.112	NA	5.69	mg/dl*hr	NA
+Sarashina2013	EMP100	6.0	EMP100	concentration	glucose	plasma	HPLC MS/MS	24.0	hr	135.0	NA	NA	NA	18.09	NA	13.4	mg/dl	emax
+Sarashina2013	EMP100	6.0	EMP100	cumulative amount	glucose	plasma	HPLC MS/MS	24.0	hr	74.3	NA	NA	NA	12.7053	NA	17.1	g	NA
+Sarashina2013	EMP100	6.0	EMP100	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	184.0	NA	NA	NA	47.104	NA	25.6	g	elimination
+Sarashina2013	EMP100	6.0	EMP100	maximum excretion rate	glucose	urine	HPLC MS/MS	72.0	hr	5100.0	NA	NA	NA	938.4	NA	18.4	mg/h	NA
+Sarashina2013	EMP100	6.0	EMP100	tmax	glucose	urine	HPLC MS/MS	12.0	hr	6.0	NA	5.0	7.0	NA	NA	NA	hr	NA

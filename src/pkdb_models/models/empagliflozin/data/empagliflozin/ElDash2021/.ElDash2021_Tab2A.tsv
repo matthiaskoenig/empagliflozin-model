@@ -1,0 +1,257 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	unit	comments
+ElDash2021	morning_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S1	4.0	hr	565.5	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S2	4.0	hr	1892.0	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S3	4.0	hr	2877.0	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S4	4.0	hr	1384.5	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S5	4.0	hr	9281.25	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S6	4.0	hr	3348.0	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S7	4.0	hr	1831.5	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S8	4.0	hr	6885.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S9	4.0	hr	4992.8	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S10	4.0	hr	6628.5	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S11	4.0	hr	3098.25	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S12	4.0	hr	7126.75	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S13	4.0	hr	5610.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S14	4.0	hr	3031.0	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S15	4.0	hr	81.2	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S16	4.0	hr	2756.25	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S1	8.0	hr	1809.0	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S2	8.0	hr	874.5	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S3	8.0	hr	2130.3	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S4	8.0	hr	3379.0	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S5	8.0	hr	3330.0	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S6	8.0	hr	2291.0	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S7	8.0	hr	2205.0	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S8	8.0	hr	1960.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S9	8.0	hr	1311.0	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S10	8.0	hr	2600.0	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S11	8.0	hr	880.0	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S12	8.0	hr	1836.0	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S13	8.0	hr	2100.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S14	8.0	hr	621.25	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S15	8.0	hr	893.75	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S16	8.0	hr	10670.0	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S1	12.0	hr	2752.8	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S2	12.0	hr	575.75	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S3	12.0	hr	1762.5	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S4	12.0	hr	484.75	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S5	12.0	hr	1498.5	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S6	12.0	hr	1331.1	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S7	12.0	hr	1065.0	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S8	12.0	hr	848.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S9	12.0	hr	562.5	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S10	12.0	hr	808.5	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S11	12.0	hr	788.9	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S12	12.0	hr	1512.0	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S13	12.0	hr	2349.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S14	12.0	hr	581.4	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S15	12.0	hr	2928.0	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S16	12.0	hr	3910.0	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S1	24.0	hr	16560.0	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S2	24.0	hr	4069.0	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S3	24.0	hr	4018.0	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S4	24.0	hr	1560.0	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S5	24.0	hr	4770.0	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S6	24.0	hr	1905.0	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S7	24.0	hr	2584.0	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S8	24.0	hr	1727.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S9	24.0	hr	3010.0	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S10	24.0	hr	2352.0	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S11	24.0	hr	3480.0	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S12	24.0	hr	1911.8	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S13	24.0	hr	4545.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S14	24.0	hr	2860.0	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S15	24.0	hr	7851.75	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_morning_S16	24.0	hr	11100.0	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S1	4.0	hr	11240.0	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S2	4.0	hr	969.0	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S3	4.0	hr	2574.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S4	4.0	hr	1040.0	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S5	4.0	hr	1738.5	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S6	4.0	hr	41.0	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S7	4.0	hr	841.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S8	4.0	hr	4700.0	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	4.0	hr	4928.0	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S10	4.0	hr	2315.5	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S11	4.0	hr	4690.0	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S12	4.0	hr	35.0	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S13	4.0	hr	22.4	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S14	4.0	hr	585.0	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S15	4.0	hr	1066.8	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S16	4.0	hr	4174.5	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S1	8.0	hr	3450.0	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S2	8.0	hr	1593.75	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S3	8.0	hr	2478.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S4	8.0	hr	351.0	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S5	8.0	hr	1141.25	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S6	8.0	hr	1335.0	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S7	8.0	hr	1575.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S8	8.0	hr	1338.75	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	8.0	hr	2172.0	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S10	8.0	hr	2628.0	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S11	8.0	hr	1198.5	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S12	8.0	hr	2052.0	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S13	8.0	hr	1358.5	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S14	8.0	hr	1009.25	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S15	8.0	hr	764.5	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S16	8.0	hr	1053.0	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S1	12.0	hr	1047.5	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S2	12.0	hr	5852.0	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S3	12.0	hr	1079.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S4	12.0	hr	1322.75	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S5	12.0	hr	4392.5	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S6	12.0	hr	9056.25	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S7	12.0	hr	5301.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S8	12.0	hr	2386.25	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	12.0	hr	2941.25	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S10	12.0	hr	1410.0	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S11	12.0	hr	3233.25	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S12	12.0	hr	3118.75	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S13	12.0	hr	1734.2	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S14	12.0	hr	1707.2	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S15	12.0	hr	891.0	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S16	12.0	hr	2093.0	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S1	24.0	hr	10825.0	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S2	24.0	hr	17490.0	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S3	24.0	hr	5595.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S4	24.0	hr	2409.0	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S5	24.0	hr	4455.0	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S6	24.0	hr	10695.0	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S7	24.0	hr	21412.5	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S8	24.0	hr	18850.0	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	24.0	hr	14562.5	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S10	24.0	hr	3480.0	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S11	24.0	hr	2268.0	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S12	24.0	hr	2990.0	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S13	24.0	hr	2970.0	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S14	24.0	hr	8200.0	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S15	24.0	hr	1926.0	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S16	24.0	hr	4537.0	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S1	4.0	hr	565.5	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S2	4.0	hr	1892.0	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S3	4.0	hr	2877.0	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S4	4.0	hr	1384.5	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S5	4.0	hr	9281.25	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S6	4.0	hr	3348.0	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S7	4.0	hr	1831.5	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	4.0	hr	6885.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S9	4.0	hr	4992.8	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S10	4.0	hr	6628.5	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S11	4.0	hr	3098.25	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S12	4.0	hr	7126.75	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S13	4.0	hr	5610.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S14	4.0	hr	3031.0	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S15	4.0	hr	81.2	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S16	4.0	hr	2756.25	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S1	8.0	hr	2374.5	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S2	8.0	hr	2766.5	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S3	8.0	hr	5007.3	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S4	8.0	hr	4763.5	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S5	8.0	hr	12611.25	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S6	8.0	hr	5639.0	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S7	8.0	hr	4036.5	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	8.0	hr	8845.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S9	8.0	hr	6303.8	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S10	8.0	hr	9228.5	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S11	8.0	hr	3978.25	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S12	8.0	hr	8962.75	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S13	8.0	hr	7710.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S14	8.0	hr	3652.25	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S15	8.0	hr	974.95	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S16	8.0	hr	13426.25	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S1	12.0	hr	5127.3	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S2	12.0	hr	3342.25	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S3	12.0	hr	6769.8	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S4	12.0	hr	5248.25	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S5	12.0	hr	14109.75	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S6	12.0	hr	6970.1	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S7	12.0	hr	5101.5	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	12.0	hr	9693.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S9	12.0	hr	6866.3	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S10	12.0	hr	10037.0	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S11	12.0	hr	4767.15	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S12	12.0	hr	10474.75	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S13	12.0	hr	10059.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S14	12.0	hr	4233.65	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S15	12.0	hr	3902.95	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S16	12.0	hr	17336.25	mg	NA
+ElDash2021	morning_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S1	24.0	hr	21687.3	mg	NA
+ElDash2021	morning_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S2	24.0	hr	7411.25	mg	NA
+ElDash2021	morning_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S3	24.0	hr	10787.8	mg	NA
+ElDash2021	morning_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S4	24.0	hr	6808.25	mg	NA
+ElDash2021	morning_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S5	24.0	hr	18879.75	mg	NA
+ElDash2021	morning_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S6	24.0	hr	8875.1	mg	NA
+ElDash2021	morning_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S7	24.0	hr	7685.5	mg	NA
+ElDash2021	morning_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	24.0	hr	11420.0	mg	NA
+ElDash2021	morning_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S9	24.0	hr	9876.3	mg	NA
+ElDash2021	morning_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S10	24.0	hr	12389.0	mg	NA
+ElDash2021	morning_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S11	24.0	hr	8247.15	mg	NA
+ElDash2021	morning_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S12	24.0	hr	12386.55	mg	NA
+ElDash2021	morning_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S13	24.0	hr	14604.0	mg	NA
+ElDash2021	morning_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S14	24.0	hr	7093.65	mg	NA
+ElDash2021	morning_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S15	24.0	hr	11754.7	mg	NA
+ElDash2021	morning_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S16	24.0	hr	28436.25	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S1	4.0	hr	11240.0	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S2	4.0	hr	969.0	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S3	4.0	hr	2574.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S4	4.0	hr	1040.0	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S5	4.0	hr	1738.5	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S6	4.0	hr	41.0	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S7	4.0	hr	841.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S8	4.0	hr	4700.0	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S9	4.0	hr	4928.0	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S10	4.0	hr	2315.5	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S11	4.0	hr	4690.0	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S12	4.0	hr	35.0	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S13	4.0	hr	22.4	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S14	4.0	hr	585.0	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S15	4.0	hr	1066.8	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S16	4.0	hr	4174.5	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S1	8.0	hr	14690.0	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S2	8.0	hr	2562.75	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S3	8.0	hr	5052.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S4	8.0	hr	1391.0	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S5	8.0	hr	2879.75	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S6	8.0	hr	1376.0	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S7	8.0	hr	2416.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S8	8.0	hr	6038.75	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S9	8.0	hr	7100.0	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S10	8.0	hr	4943.5	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S11	8.0	hr	5888.5	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S12	8.0	hr	2087.0	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S13	8.0	hr	1380.9	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S14	8.0	hr	1594.25	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S15	8.0	hr	1831.3	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S16	8.0	hr	5227.5	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S1	12.0	hr	15737.5	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S2	12.0	hr	8414.75	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S3	12.0	hr	6131.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S4	12.0	hr	2713.75	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S5	12.0	hr	7272.25	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S6	12.0	hr	10432.25	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S7	12.0	hr	7717.0	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S8	12.0	hr	8425.0	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S9	12.0	hr	10041.25	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S10	12.0	hr	6353.5	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S11	12.0	hr	9121.75	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S12	12.0	hr	5205.75	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S13	12.0	hr	3115.1	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S14	12.0	hr	3301.45	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S15	12.0	hr	2722.3	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S16	12.0	hr	7320.5	mg	NA
+ElDash2021	evening_S1	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S1	24.0	hr	26562.5	mg	NA
+ElDash2021	evening_S2	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S2	24.0	hr	25904.75	mg	NA
+ElDash2021	evening_S3	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S3	24.0	hr	11726.0	mg	NA
+ElDash2021	evening_S4	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S4	24.0	hr	5122.75	mg	NA
+ElDash2021	evening_S5	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S5	24.0	hr	11727.25	mg	NA
+ElDash2021	evening_S6	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S6	24.0	hr	21127.25	mg	NA
+ElDash2021	evening_S7	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S7	24.0	hr	29129.5	mg	NA
+ElDash2021	evening_S8	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S8	24.0	hr	27275.0	mg	NA
+ElDash2021	evening_S9	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S9	24.0	hr	24603.75	mg	NA
+ElDash2021	evening_S10	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S10	24.0	hr	9833.5	mg	NA
+ElDash2021	evening_S11	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S11	24.0	hr	11389.75	mg	NA
+ElDash2021	evening_S12	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S12	24.0	hr	8195.75	mg	NA
+ElDash2021	evening_S13	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S13	24.0	hr	6085.1	mg	NA
+ElDash2021	evening_S14	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S14	24.0	hr	11501.45	mg	NA
+ElDash2021	evening_S15	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S15	24.0	hr	4648.3	mg	NA
+ElDash2021	evening_S16	NA	1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening_S16	24.0	hr	11857.5	mg	NA

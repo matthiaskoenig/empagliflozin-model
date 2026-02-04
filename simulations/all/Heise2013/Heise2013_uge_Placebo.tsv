@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2013		Placebo	12.0	Placebo	cumulative amount	glucose	urine	LC MS/MS	uge_Placebo	1.0	day		5.21739130434783	10.4406779661017	5.22328666175387	3.01396411712551		g	g
+Heise2013		Placebo	12.0	Placebo	cumulative amount	glucose	urine	LC MS/MS	uge_Placebo	8.0	day		0.869565217391327	6.64406779661016	5.77450257921883	1.9179771654435		g	g
+Heise2013		Placebo	12.0	Placebo	cumulative amount	glucose	urine	LC MS/MS	uge_Placebo	9.0	day		2.60869565217392	8.54237288135592	5.933677229182	2.4659706412845		g	g

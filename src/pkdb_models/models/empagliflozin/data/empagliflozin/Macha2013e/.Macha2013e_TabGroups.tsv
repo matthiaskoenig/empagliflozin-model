@@ -1,0 +1,10 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Macha2013e	all	18	NA	species	18	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013e	all	18	NA	healthy	18	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013e	all	18	NA	sex	18	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013e	all	18	NA	bmi	18	NA	NA	NA	25.4	NA	NA	21.0	46.0	  kg/m^2	NA
+Macha2013e	all	18	NA	age	18	NA	NA	NA	37.0	NA	NA	19.5	29.4	year	NA
+Macha2013e	all	18	NA	medication	18	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013e	all	18	NA	overnight fast	18	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013e	all	18	NA	smoking	18	NA	Y	NA	NA	NA	NA	NA	NA	NA	less than 30 g/day
+Macha2013e	all	18	NA	alcohol 	18	NA	Y	NA	NA	NA	NA	NA	NA	NA	less than 10 cigarettes, 3 cigars or 3 pipes per day

@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Zhao2015	NA	Placebo	6	placebo	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-4.2	-19.4736842105263	4.2	1.71464281994822	mg/dl	FPG
+Zhao2015	NA	Placebo	6	placebo	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-3.7	-11.0526315789473	3.7	1.51051867471629	mg/dl	FPG
+Zhao2015	NA	EMP10	9	SING10	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-18.7	-35.7894736842105	18.7	6.23333333333333	mg/dl	FPG
+Zhao2015	NA	EMP10	9	MULTI10	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-25.6	-46.3157894736842	25.6	8.53333333333333	mg/dl	FPG
+Zhao2015	NA	EMP25	9	SING25	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-25.8	-45.2631578947368	25.8	8.6	mg/dl	FPG
+Zhao2015	NA	EMP25	9	MULTI25	concentration change absolute	glucose	plasma	HPLC MS/MS	NA	NA	NA	-31.4	-58.1578947368421	31.4	10.4666666666667	mg/dl	FPG

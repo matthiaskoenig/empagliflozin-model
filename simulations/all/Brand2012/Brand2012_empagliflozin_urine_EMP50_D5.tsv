@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Brand2012		all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	2.0	hr		3.211900849173558e-06		1.2235839160451444e-06	3.058959790112861e-07	unclear if SD or SE	mole	mg
+Brand2012		all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	4.0	hr		8.106225424642223e-06		1.5287563566041043e-06	3.8218908915102607e-07	unclear if SD or SE	mole	mg
+Brand2012		all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	8.0	hr		1.2235816983027618e-05		3.0589542457569046e-06	7.647385614392262e-07	unclear if SD or SE	mole	mg
+Brand2012		all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	12.0	hr		1.560067552432974e-05		2.90634695692479e-06	7.265867392311975e-07	unclear if SD or SE	mole	mg
+Brand2012		all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	24.0	hr		1.911846958033661e-05		3.3648474525902123e-06	8.412118631475531e-07	unclear if SD or SE	mole	mg

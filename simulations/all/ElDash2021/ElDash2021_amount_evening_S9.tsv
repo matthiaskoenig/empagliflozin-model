@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+ElDash2021	evening_S9		1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	4.0	hr	4928.0		mg
+ElDash2021	evening_S9		1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	8.0	hr	2172.0		mg
+ElDash2021	evening_S9		1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	12.0	hr	2941.25		mg
+ElDash2021	evening_S9		1.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_evening_S9	24.0	hr	14562.5		mg

@@ -1,0 +1,9 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+ElDash2021	evening	16.0	EMP10	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	2.5	NA	NA	NA	1.25	NA	NA	hr	Includes p-values
+ElDash2021	evening	16.0	EMP10	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	118.0	NA	NA	NA	32.0	NA	NA	ng/ml	NA
+ElDash2021	evening	16.0	EMP10	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	960.0	NA	NA	NA	157.0	NA	NA	ng/ml*hr	NA
+ElDash2021	evening	16.0	EMP10	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	980.0	NA	NA	NA	161.6	NA	NA	ng/ml*hr	NA
+ElDash2021	morning	16.0	EMP10	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1.625	NA	NA	NA	1.3	NA	NA	hr	NA
+ElDash2021	morning	16.0	EMP10	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	125.6	NA	NA	NA	30.7	NA	NA	ng/ml	NA
+ElDash2021	morning	16.0	EMP10	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	888.0	NA	NA	NA	187.0	NA	NA	ng/ml*hr	NA
+ElDash2021	morning	16.0	EMP10	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	899.0	NA	NA	NA	189.0	NA	NA	ng/ml*hr	NA

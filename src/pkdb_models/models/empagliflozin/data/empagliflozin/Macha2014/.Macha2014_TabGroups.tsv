@@ -1,0 +1,16 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Macha2014	all	36.0	NA	species	36.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	all	sex	21.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	all	sex	15.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	NA	healthy	36.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	NA	ethnicity	36.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	NA	alcohol	36.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	all	36.0	NA	overnight fast	36.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	treatment 0.5 hr after breakfast following an overnight fast
+Macha2014	gemfibrozil	18.0	all	bmi	18.0	NA	NA	23.47	NA	NA	NA	NA	NA	kg/m^2	NA
+Macha2014	gemfibrozil	18.0	all	age 	18.0	NA	NA	35.1	NA	NA	NA	NA	NA	year	NA
+Macha2014	gemfibrozil	18.0	all	sex	11.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	gemfibrozil	18.0	all	sex	7.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	rifampicin_probenecid	18.0	all	bmi	18.0	NA	NA	23.03	NA	NA	NA	NA	NA	kg/m^2	NA
+Macha2014	rifampicin_probenecid	18.0	all	age 	18.0	NA	NA	32.7	NA	NA	NA	NA	NA	year	NA
+Macha2014	rifampicin_probenecid	18.0	all	sex	10.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2014	rifampicin_probenecid	18.0	all	sex	8.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA

@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	48.0	hr		10008.009627005				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	72.0	hr		26688.0256720134				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	96.0	hr		34842.7001829065				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	120.0	hr		36696.0352990185				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	144.0	hr		37808.0363686858				calculation assuming 82.9%	nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	167.999999999999	hr		37808.0363686858		7983.87257739367		calculation assuming 82.9%	nmole	nmole

@@ -1,0 +1,17 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2013e	all	18.0	WAR25	auc_inf	r-warfarin	plasma	HPLC MS/MS	168.0	hr	64900.0	NA	NA	NA	21.2	NA	NA	ng/ml*hr	NA
+Macha2013e	all	18.0	WAR25	cmax	r-warfarin	plasma	HPLC MS/MS	NA	NA	1420.0	NA	NA	NA	14.3	NA	NA	ng/ml	NA
+Macha2013e	all	18.0	WAR25	tmax	r-warfarin	plasma	HPLC MS/MS	NA	NA	0.8	NA	0.3	4.0	NA	NA	NA	hr	NA
+Macha2013e	all	18.0	WAR25	thalf	r-warfarin	plasma	HPLC MS/MS	NA	NA	47.5	NA	NA	NA	12.0	NA	NA	hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	auc_inf	r-warfarin	plasma	HPLC MS/MS	NA	NA	64400.0	NA	NA	NA	24.5	NA	NA	ng/ml*hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	cmax	r-warfarin	plasma	HPLC MS/MS	168.0	hr	1390.0	NA	NA	NA	16.9	NA	NA	ng/ml	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	tmax	r-warfarin	plasma	HPLC MS/MS	NA	NA	1.0	NA	0.3	8.0	NA	NA	NA	hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	thalf	r-warfarin	plasma	HPLC MS/MS	NA	NA	46.3	NA	NA	NA	15.1	NA	NA	hr	NA
+Macha2013e	all	18.0	WAR25	auc_inf	s-warfarin	plasma	HPLC MS/MS	168.0	hr	38100.0	NA	NA	NA	18.5	NA	NA	ng/ml*hr	NA
+Macha2013e	all	18.0	WAR25	cmax	s-warfarin	plasma	HPLC MS/MS	NA	NA	1460.0	NA	NA	NA	14.2	NA	NA	ng/ml	NA
+Macha2013e	all	18.0	WAR25	tmax	s-warfarin	plasma	HPLC MS/MS	NA	NA	0.7	NA	0.3	4.0	NA	NA	NA	hr	NA
+Macha2013e	all	18.0	WAR25	thalf	s-warfarin	plasma	HPLC MS/MS	NA	NA	37.3	NA	NA	NA	13.6	NA	NA	hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	auc_inf	s-warfarin	plasma	HPLC MS/MS	NA	NA	36400.0	NA	NA	NA	16.9	NA	NA	ng/ml*hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	cmax	s-warfarin	plasma	HPLC MS/MS	168.0	hr	1440.0	NA	NA	NA	16.3	NA	NA	ng/ml	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	tmax	s-warfarin	plasma	HPLC MS/MS	NA	NA	0.8	NA	0.3	8.0	NA	NA	NA	hr	NA
+Macha2013e	all	18.0	EMP25R7, WAR25	thalf	s-warfarin	plasma	HPLC MS/MS	NA	NA	36.9	NA	NA	NA	12.0	NA	NA	hr	NA

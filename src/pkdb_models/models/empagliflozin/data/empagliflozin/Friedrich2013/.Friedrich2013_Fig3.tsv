@@ -1,0 +1,21 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Friedrich2013	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	2.5	hr	NA	4.28042328042327	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	4.5	hr	NA	9.24074074074073	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	8.5	hr	NA	14.5684891240446	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	12.5	hr	NA	17.7835097001763	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D5	24.0	hr	NA	20.9066725455614	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	2.5	hr	NA	3.91299235743679	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	4.5	hr	NA	8.32216343327454	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	8.5	hr	NA	14.1092004703115	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	12.5	hr	NA	17.14050558495	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	24.0	hr	NA	20.6310993533215	NA	NA	NA	percent	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	2.5	hr	NA	2.14021164021164	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	4.5	hr	NA	4.62037037037037	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	8.5	hr	NA	7.2842445620223	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	12.5	hr	NA	8.89175485008815	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D5	24.0	hr	NA	10.4533362727807	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D7	2.5	hr	NA	1.95649617871839	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D7	4.5	hr	NA	4.16108171663727	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D7	8.5	hr	NA	7.05460023515575	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D7	12.5	hr	NA	8.570252792475	NA	NA	NA	mg	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP50_D7	24.0	hr	NA	10.3155496766608	NA	NA	NA	mg	NA

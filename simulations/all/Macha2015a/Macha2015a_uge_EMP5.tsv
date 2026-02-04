@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2015a		all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	0.0	hr		0.0					g	g
+Macha2015a		all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	4.0	hr		8.03802766703412	11.0695488566005	3.03152118956638	0.757880297391595		g	g
+Macha2015a		all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	8.0	hr		19.1069963281917	25.7218045735977	6.614808245406	1.6537020613515		g	g
+Macha2015a		all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	12.0	hr		29.0747540385747	39.2711087534915	10.1963547149168	2.5490886787292		g	g
+Macha2015a		all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	24.0	hr		52.6382315642898	69.1738016891976	16.5355701249078	4.13389253122695		g	g

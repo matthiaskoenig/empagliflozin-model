@@ -1,0 +1,3 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Jiang2023b	ref	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25	mg	Empagliflozin 
+Jiang2023b	test	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25	mg	Empagliflozin with L-proline

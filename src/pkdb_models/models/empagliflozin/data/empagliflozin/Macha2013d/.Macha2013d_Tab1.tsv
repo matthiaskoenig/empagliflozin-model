@@ -1,0 +1,41 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2013d	emp_verapamil	16.0	emp25_single	auc_inf	empagliflozin	plasma	HPLC MS/MS	24.0	hr	5330.0	NA	NA	NA	NA	NA	22.7	nmol/l*hr	NA
+Macha2013d	emp_verapamil	16.0	emp25_single	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	818.0	NA	NA	NA	NA	NA	27.7	nmol/l	NA
+Macha2013d	emp_verapamil	16.0	emp25_single	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.5	1.0	2.5	NA	NA	NA	hr	NA
+Macha2013d	emp_verapamil	16.0	emp25_single	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	12.5	NA	NA	NA	NA	NA	27.9	hr	NA
+Macha2013d	emp_verapamil	16.0	emp25_single, ver120_single	auc_inf	empagliflozin	plasma	HPLC MS/MS	24.0	hr	5500.0	NA	NA	NA	NA	NA	25.4	nmol/l*hr	NA
+Macha2013d	emp_verapamil	16.0	emp25_single, ver120_single	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	752.0	NA	NA	NA	NA	NA	27.2	nmol/l	NA
+Macha2013d	emp_verapamil	16.0	emp25_single, ver120_single	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.75	0.68	3.0	NA	NA	NA	hr	NA
+Macha2013d	emp_verapamil	16.0	emp25_single, ver120_single	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	13.6	NA	NA	NA	NA	NA	28.1	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single	auc_inf	empagliflozin	plasma	HPLC MS/MS	24.0	hr	5930.0	NA	NA	NA	NA	NA	16.8	nmol/l*hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	899.0	NA	NA	NA	NA	NA	23.1	nmol/l	NA
+Macha2013d	emp_ramipril	23.0	emp25_single	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.02	0.67	3.0	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	13.6	NA	NA	NA	NA	NA	40.2	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	auc_inf	empagliflozin	plasma	HPLC MS/MS	24.0	hr	5750.0	NA	NA	NA	NA	NA	15.5	nmol/l*hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	929.0	NA	NA	NA	NA	NA	20.0	nmol/l	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.5	1.0	4.0	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	15.0	NA	NA	NA	NA	NA	43.2	hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single	auc_inf	digoxin	plasma	HPLC MS/MS	24.0	hr	38.7	NA	NA	NA	NA	NA	23.7	nmol/l*hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single	cmax	digoxin	plasma	HPLC MS/MS	NA	NA	2.14	NA	NA	NA	NA	NA	40.3	nmol/l	NA
+Macha2013d	emp_digoxin	20.0	dig05_single	tmax	digoxin	plasma	HPLC MS/MS	NA	NA	NA	1.0	0.67	1.5	NA	NA	NA	hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single	thalf	digoxin	plasma	HPLC MS/MS	NA	NA	68.7	NA	NA	NA	NA	NA	47.3	hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single, emp25_single	auc_inf	digoxin	plasma	HPLC MS/MS	24.0	hr	41.2	NA	NA	NA	NA	NA	25.9	nmol/l*hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single, emp25_single	cmax	digoxin	plasma	HPLC MS/MS	NA	NA	2.36	NA	NA	NA	NA	NA	31.7	nmol/l	NA
+Macha2013d	emp_digoxin	20.0	dig05_single, emp25_single	tmax	digoxin	plasma	HPLC MS/MS	NA	NA	NA	1.0	0.67	1.5	NA	NA	NA	hr	NA
+Macha2013d	emp_digoxin	20.0	dig05_single, emp25_single	thalf	digoxin	plasma	HPLC MS/MS	NA	NA	55.4	NA	NA	NA	NA	NA	27.3	hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	auc_end	ramipril	plasma	HPLC MS/MS	24.0	hr	6.98	NA	NA	NA	NA	NA	32.8	nmol/l*hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	cmax	ramipril	plasma	HPLC MS/MS	NA	NA	9.18	NA	NA	NA	NA	NA	41.3	nmol/l	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	tmax	ramipril	plasma	HPLC MS/MS	NA	NA	NA	0.33	0.33	1.0	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	thalf	ramipril	plasma	HPLC MS/MS	NA	NA	3.58	NA	NA	NA	NA	NA	72.1	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	auc_end	ramipril	plasma	HPLC MS/MS	24.0	hr	7.73	NA	NA	NA	NA	NA	35.4	nmol/l*hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	cmax	ramipril	plasma	HPLC MS/MS	NA	NA	10.0	NA	NA	NA	NA	NA	46.0	nmol/l	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	tmax	ramipril	plasma	HPLC MS/MS	NA	NA	NA	0.33	0.33	1.0	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	thalf	ramipril	plasma	HPLC MS/MS	NA	NA	3.37	NA	NA	NA	NA	NA	85.1	hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	auc_end	ramipril	plasma	HPLC MS/MS	24.0	hr	88.2	NA	NA	NA	NA	NA	15.4	ng/ml*hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	cmax	ramipril	plasma	HPLC MS/MS	NA	NA	11.9	NA	NA	NA	NA	NA	38.0	ng/ml	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	tmax	ramipril	plasma	HPLC MS/MS	NA	NA	NA	2.0	1.48	4.02	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	ram5_multi	thalf	ramipril	plasma	HPLC MS/MS	NA	NA	75.2	NA	NA	NA	NA	NA	24.6	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	auc_end	ramipril	plasma	HPLC MS/MS	24.0	hr	86.7	NA	NA	NA	NA	NA	20.2	ng/ml*hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	cmax	ramipril	plasma	HPLC MS/MS	NA	NA	11.6	NA	NA	NA	NA	NA	45.7	ng/ml	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	tmax	ramipril	plasma	HPLC MS/MS	NA	NA	NA	2.0	1.5	4.0	NA	NA	NA	hr	NA
+Macha2013d	emp_ramipril	23.0	emp25_single, ram5_multi	thalf	ramipril	plasma	HPLC MS/MS	NA	NA	80.0	NA	NA	NA	NA	NA	34.2	hr	NA

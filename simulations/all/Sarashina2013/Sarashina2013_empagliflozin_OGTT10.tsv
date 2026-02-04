@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	0.5	hr		86.3468674223562				semi-log scale	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	0.75	hr		116.014497669435				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	1.0	hr		126.775083023989				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	1.5	hr		146.972687792388				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	2.0	hr		112.727836701658	186.132075841563	73.404239139905	29.9671551416668	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	3.0	hr		100.209437291923				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	4.0	hr		66.3467941517211				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	6.0	hr		49.4280673707745				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	8.0	hr		36.8253842270263				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	10.0	hr		28.2541086804367				SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	12.0	hr		23.0004836560111	31.7968346462336	8.7963509902225	3.59109525407844	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	14.0	hr		8.71796800587646	25.1303593596826	16.4123913538061	6.70033071261525	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	24.0	hr		3.71874030026419	10.719617237409	7.00087693714481	2.85809604133725	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	34.0	hr		1.68568504433807	4.57298521551975	2.88730017118168	1.17873535894094	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		OGTT10	6.0	OGTT10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT10	48.0	hr		11.2607385751971	2.07252845397068	9.18821012122642	3.75107107441345	SD bars were unclear	nmol/l	nmol/l

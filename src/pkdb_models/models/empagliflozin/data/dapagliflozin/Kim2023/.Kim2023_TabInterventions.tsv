@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Kim2023	DAP10	-4|-3|-2|-1|0	NA	day	oral	multiple dose	dosing	tablet	dapagliflozin	10	mg	NA
+Kim2023	EV5	-4|-3|-2|-1|0	NA	day	oral	multiple dose	dosing	tablet	evogliptin	5	mg	EV5 single administration was for 7 days
+Kim2023	EP25	-4|-3|-2|-1|0	NA	day	oral	multiple dose	dosing	tablet	empagliflozin	25	mg	NA

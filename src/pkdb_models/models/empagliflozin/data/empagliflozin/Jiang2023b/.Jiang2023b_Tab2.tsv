@@ -1,0 +1,15 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Jiang2023b	all	27.0	test	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	4.0	NA	NA	NA	hr	NA
+Jiang2023b	all	27.0	test	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	442.02	NA	NA	NA	103.37	NA	NA	µg/L	NA
+Jiang2023b	all	27.0	test	auc_end	empagliflozin	plasma	LC MS/MS	48.0	hr	3131.08	NA	NA	NA	529.3	NA	NA	µg*hr/L	NA
+Jiang2023b	all	27.0	test	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3194.53	NA	NA	NA	547.43	NA	NA	µg*hr/L	NA
+Jiang2023b	all	27.0	test	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	8.62	NA	NA	NA	1.45	NA	NA	hr	NA
+Jiang2023b	all	27.0	test	oral-clearance	empagliflozin	plasma	LC MS/MS	NA	NA	8.06	NA	NA	NA	1.46	NA	NA	L/hr	NA
+Jiang2023b	all	28.0	test	vd	empagliflozin	plasma	LC MS/MS	NA	NA	99.82	NA	NA	NA	22.51	NA	NA	L	NA
+Jiang2023b	all	27.0	ref	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	0.67	4.0	NA	NA	NA	hr	NA
+Jiang2023b	all	27.0	ref	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	436.29	NA	NA	NA	118.74	NA	NA	µg/L	NA
+Jiang2023b	all	27.0	ref	auc_end	empagliflozin	plasma	LC MS/MS	48.0	hr	3006.88	NA	NA	NA	514.21	NA	NA	µg*hr/L	NA
+Jiang2023b	all	27.0	ref	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3064.17	NA	NA	NA	522.99	NA	NA	µg*hr/L	NA
+Jiang2023b	all	27.0	ref	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	8.59	NA	NA	NA	1.52	NA	NA	hr	NA
+Jiang2023b	all	27.0	ref	oral-clearance	empagliflozin	plasma	LC MS/MS	NA	NA	8.41	NA	NA	NA	1.54	NA	NA	L/hr	NA
+Jiang2023b	all	28.0	ref	vd	empagliflozin	plasma	LC MS/MS	NA	NA	103.49	NA	NA	NA	22.49	NA	NA	L	NA

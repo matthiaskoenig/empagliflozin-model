@@ -1,0 +1,14 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Jiang2023b	all	28	NA	species	28	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	healthy	28	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	ethnicity	28	NA	korean	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	sex	23	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	sex	5	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	weight	28	NA	NA	69.4	NA	7.7	NA	55.0	90.0	kg	NA
+Jiang2023b	all	28	NA	age	28	NA	NA	30.4	NA	7.3	NA	19.0	50.0	year	NA
+Jiang2023b	all	28	NA	height	28	NA	NA	171.0	NA	7.0	NA	NA	NA	cm	NA
+Jiang2023b	all	28	NA	bmi	28	NA	NA	23.7	NA	2.2	NA	NA	NA	kg/m^2	NA
+Jiang2023b	all	28	NA	medication	28	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	overnight fast	28	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Jiang2023b	all	28	NA	smoking	28	NA	N	NA	NA	NA	NA	NA	NA	NA	during study
+Jiang2023b	all	28	NA	alcohol	28	NA	N	NA	NA	NA	NA	NA	NA	NA	during study

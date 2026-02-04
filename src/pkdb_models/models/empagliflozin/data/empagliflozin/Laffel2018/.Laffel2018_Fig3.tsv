@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Laffel2018	NA	EMP5	7	EMP5	concentration change absolute	glucose	plasma	HPLC MS/MS	24	hr	NA	-0.8936	-0.0993	0.7943	0.300217180911229	mmol/l	FPG
+Laffel2018	NA	EMP10	8	EMP10	concentration change absolute	glucose	plasma	HPLC MS/MS	24	hr	NA	-0.8936	-0.1986	0.695	0.245719606462325	mmol/l	FPG
+Laffel2018	NA	EMP25	10	EMP25	concentration change absolute	glucose	plasma	HPLC MS/MS	24	hr	NA	-1.0922	-0.4965	0.5957	0.18837688021623	mmol/l	FPG

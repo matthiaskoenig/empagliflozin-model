@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013a	NA	Placebo	16.0	Placebo	urinary volume	NA	urine	NR	urine_volume_Placebo	-2.0	day	NA	2.98182	4.21818	1.23636	1.054545	l	NA
+Heise2013a	NA	Placebo	16.0	Placebo	urinary volume	NA	urine	NR	urine_volume_Placebo	1.0	day	NA	2.65455	3.85455	1.2	0.9636375	l	NA
+Heise2013a	NA	Placebo	16.0	Placebo	urinary volume	NA	urine	NR	urine_volume_Placebo	27.0	day	NA	3.12727	4.1812	1.05393	1.0453	l	NA
+Heise2013a	NA	EMP10	16.0	EMP10	urinary volume	NA	urine	NR	urine_volume_EMP10	-2.0	day	NA	3.09091	3.89091	0.8	0.9727275	l	NA
+Heise2013a	NA	EMP10	16.0	EMP10	urinary volume	NA	urine	NR	urine_volume_EMP10	1.0	day	NA	3.2	3.96364	0.76364	0.99091	l	NA
+Heise2013a	NA	EMP10	16.0	EMP10	urinary volume	NA	urine	NR	urine_volume_EMP10	27.0	day	NA	3.34545	4.14545	0.8	1.0363625	l	NA
+Heise2013a	NA	EMP25	16.0	EMP25	urinary volume	NA	urine	NR	urine_volume_EMP25	-2.0	day	NA	2.94545	4.07273	1.12728	1.0181825	l	NA
+Heise2013a	NA	EMP25	16.0	EMP25	urinary volume	NA	urine	NR	urine_volume_EMP25	1.0	day	NA	3.42828	4.47273	1.04445	1.1181825	l	NA
+Heise2013a	NA	EMP25	16.0	EMP25	urinary volume	NA	urine	NR	urine_volume_EMP25	27.0	day	NA	3.23636	4.0	0.76364	1.0	l	NA
+Heise2013a	NA	EMP100	30.0	EMP100	urinary volume	NA	urine	NR	urine_volume_EMP100	-2.0	day	NA	3.30909	4.65455	1.34546	0.849800676678557	l	NA
+Heise2013a	NA	EMP100	30.0	EMP100	urinary volume	NA	urine	NR	urine_volume_EMP100	1.0	day	NA	3.85455	5.01818	1.16363	0.916190127873758	l	NA
+Heise2013a	NA	EMP100	30.0	EMP100	urinary volume	NA	urine	NR	urine_volume_EMP100	27.0	day	NA	3.5455	4.4	0.8545	0.803326417674244	l	NA

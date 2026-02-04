@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	0.0	hr		0.0					mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	0.25	hr		5.775001164314751e-05	62.235	4.231674240256903e-05	7.858021790996255e-06		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	0.512	hr		0.00018033793958426202	142.729	9.203187339352286e-05	1.708988985287785e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	1.0	hr		0.00022450427913392723	155.99	9.383933343534949e-05	1.7425526756586365e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	1.536	hr		0.00025210630082788326	157.665	8.100525826718917e-05	1.5042298828045126e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	2.0	hr		0.00026865509448691425	171.769	0.00011965607251130495	2.2219574849924706e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	2.5	hr		0.0002612833188071207	141.048	6.626170690760219e-05	1.2304490072395892e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	3.0	hr		0.0002465464206746816	131.084	6.075283482920057e-05	1.1281518208822978e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	4.0	hr		0.00022995770765276362	129.416	0.0001307226070005256	2.427457871434835e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	6.0	hr		0.0001562887411872462	87.895	7.550082167355276e-05	1.4020150613315657e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	8.0	hr		0.00011942764504589618	67.959	5.336553495272882e-05	9.909731060046261e-06		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	10.0	hr		9.735001962702008e-05	54.658	9.606372904510667e-05	1.7838586651579763e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	12.0	hr		7.147340150673418e-05	39.695	8.80310661352956e-05	1.6346958596080137e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	15.014	hr		5.1150010312502076e-05	28.873	6.40328758130798e-05	1.189060652855902e-05		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	24.0	hr		2.5153634103555262e-05	13.829	3.066694166672211e-05	5.694708103657878e-06		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	36.0	hr		8.283267799045928e-06	6.227	1.3807664074125822e-05	2.564018849679936e-06		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	48.0	hr		4.293549252731704e-06	3.598	7.977219350245837e-06	1.4813324449564235e-06		mole/meter^3	ng/ml
+Chen2020		Fed_T	29.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fed_T_EMP10	72.0	hr		2.2177423826093517e-09	2.492	5.526614017462504e-06	1.0262664589467341e-06		mole/meter^3	ng/ml

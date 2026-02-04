@@ -1,0 +1,9 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2014f	mild	9.0	EMP50	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	118.2	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	mild	9.0	EMP50	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	118.8	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	moderate	8.0	EMP50	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	119.9	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	moderate	8.0	EMP50	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	102.3	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	severe	8.0	EMP50	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	166.3	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	severe	8.0	EMP50	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	120.7	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	renal failure	8.0	EMP50	auc_inf	empagliflozin	blood	HPLC MS/MS	NA	NA	148.3	NA	NA	NA	NA	NA	NA	hr	Includes p-values
+Macha2014f	renal failure	8.0	EMP50	cmax	empagliflozin	blood	HPLC MS/MS	NA	NA	103.8	NA	NA	NA	NA	NA	NA	hr	Includes p-values

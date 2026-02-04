@@ -1,0 +1,23 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	0.0	hr		43.1681283650912					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	0.33	hr		62.5917871897362					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	0.67	hr		144.236109315118					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	1.0	hr		184.082896787424					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	1.5	hr		181.138965757367					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	2.0	hr		166.519886186758					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	3.0	hr		129.516454164834					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	4.0	hr		104.18398003431					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	6.0	hr		72.9552625453667					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	8.0	hr		53.3954076232457					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	10.0	hr		40.6369762766154					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	12.0297876131116	hr		31.7674673440672					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	12.2802208065012	hr		38.558414296675					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	12.6004821880648	hr		58.956399049417					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	12.957956534108	hr		70.6022130458979					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	13.45796084449	hr		90.0174905722368					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	13.9229073813854	hr		103.601479802028					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	14.9997844809006	hr		108.399773082335					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	16.0431842803242	hr		96.6722414273686					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	17.9857297620381	hr		77.1144818298242					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	20.0	hr		63.390105853403					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP5	24.0	hr		44.6767620602094					nmol/l	nmol/l

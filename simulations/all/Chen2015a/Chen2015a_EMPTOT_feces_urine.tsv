@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	4.0	hr		20567.7720967802					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	8.0	hr		34875.7874684535					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	12.0	hr		42476.9206346549					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	24.0	hr		51866.5557223154					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	36.0	hr		56337.8105259633					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	48.0	hr		70645.8258976365					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	72.0	hr		92554.9744355112					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	96.0	hr		101944.609523172					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	120.0	hr		104627.362405361					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	144.0	hr		105521.61336609					nmole	nmole
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	168.0	hr		105968.738846455					nmole	nmole

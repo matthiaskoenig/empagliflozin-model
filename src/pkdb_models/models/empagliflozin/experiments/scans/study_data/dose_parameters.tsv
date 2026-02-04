@@ -1,0 +1,181 @@
+study	condition	parameter	dose	dose_unit	substance	n	mean	sd	median	Q1	Q3	min	max	unit	day	diabetes	hba1c	fpg
+Ayoub2017		cmax	25	mg	empagliflozin	6	576	86						nmol/l		N		
+Ayoub2017		tmax	25	mg	empagliflozin	6	1.5					1	2	hr		N		
+Ayoub2017		thalf	25	mg	empagliflozin	6	6.1	1.2						hr		N		
+Ayoub2017		aucinf	25	mg	empagliflozin	6	4103	427						nmol/l*hr		N		
+#																N		
+Chen2015a		aucinf	50	mg	empagliflozin	8	15600							nmol/l*hr		N		
+Chen2015a		cmax	50	mg	empagliflozin	8	2260							nmol/l		N		
+Chen2015a		tmax	50	mg	empagliflozin	8	0.9					0.8	1	hr		N		
+Chen2015a		thalf	50	mg	empagliflozin	8	15.9							hr		N		
+#																N		
+Chen2020		cmax	10	mg	empagliflozin	30	190.6	40.94						ng/ml		N		
+Chen2020		aucinf	10	mg	empagliflozin	30	1293.22	224.82						ng/ml*hr		N		
+Chen2020		thalf	10	mg	empagliflozin	30	13.87	8.12						hr		N		
+Chen2020		tmax	10	mg	empagliflozin	30	1.38	0				0.5	4	hr		N		
+#																N		
+ElDash2021		UGE_24	10	mg	glucose	16	55							g		N		
+ElDash2021		tmax	10	mg	empagliflozin	16	2	1.3						hr		N		
+ElDash2021		cmax	10	mg	empagliflozin	16	125.6	30.7						ng/ml		N		
+ElDash2021		aucinf	10	mg	empagliflozin	16	899	189						ng/ml*hr		N		
+#																N		
+Hailat2022		cmax	10	mg	empagliflozin	26	77.81	21.23						µg/l		N		
+Hailat2022		tmax	10	mg	empagliflozin	26	4.75	2						hr		N		
+Hailat2022		aucinf	10	mg	empagliflozin	26	527.05	139.52						µg/l*hr		N		
+Hailat2022		thalf	10	mg	empagliflozin	26	4	1.12						hr		N		
+#																N		
+Heise2013		UGE_24	2.5	mg	glucose	9	46.51	22.3						g	1	T2DM		
+Heise2013		UGE_24	10	mg	glucose	9	89.69	18.5						g	1	T2DM		
+Heise2013		UGE_24	25	mg	glucose	9	78.31	25.6						g	1	T2DM		
+Heise2013		UGE_24	100	mg	glucose	9	89.69	30.8						g	1	T2DM		
+Heise2013		cmax	2.5	mg	empagliflozin	9	62.4	12.3						nmol/l		N		
+Heise2013		tmax	2.5	mg	empagliflozin	9	1.5					0.7	1.5	hr		N		
+Heise2013		thalf	2.5	mg	empagliflozin	9	11.4	2.3						hr		N		
+Heise2013		cmax	10	mg	empagliflozin	9	245	51.5						nmol/l		N		
+Heise2013		tmax	10	mg	empagliflozin	9	1.5					1	2	hr		N		
+Heise2013		thalf	10	mg	empagliflozin	9	11.9	1.4						hr		N		
+Heise2013		cmax	25	mg	empagliflozin	9	606	147						nmol/l		N		
+Heise2013		tmax	25	mg	empagliflozin	9	1.5					1	4	hr		N		
+Heise2013		thalf	25	mg	empagliflozin	9	10.8	2						hr		N		
+Heise2013		cmax	100	mg	empagliflozin	9	2750	701						nmol/l		N		
+Heise2013		tmax	100	mg	empagliflozin	9	3					1	4	hr		N		
+Heise2013		thalf	100	mg	empagliflozin	9	13.6	3.7						hr		N		
+Heise2013		cmax	2.5	mg	empagliflozin	9	68.5	16.8						nmol/l		N		
+Heise2013		tmax	2.5	mg	empagliflozin	9	1.5					1	2	hr		N		
+Heise2013		thalf	2.5	mg	empagliflozin	9	10.3	1.9						hr		N		
+Heise2013		cmax	10	mg	empagliflozin	8	283	90.1						nmol/l		N		
+Heise2013		tmax	10	mg	empagliflozin	8	1.5					1	2	hr		N		
+Heise2013		thalf	10	mg	empagliflozin	8	14.3	2.4						hr		N		
+Heise2013		cmax	25	mg	empagliflozin	9	630	106						nmol/l		N		
+Heise2013		tmax	25	mg	empagliflozin	9	2					0.7	4.2	hr		N		
+Heise2013		thalf	25	mg	empagliflozin	9	10.7	2.1						hr		N		
+Heise2013		cmax	100	mg	empagliflozin	8	2750	605						nmol/l		N		
+Heise2013		tmax	100	mg	empagliflozin	8	1.75					1	4	hr		N		
+Heise2013		thalf	100	mg	empagliflozin	8	18.8	10.5						hr		N		
+#																N		
+Heise2013a		UGE_24	10	mg	glucose	16	77.9	26.8						g	1	T2DM		
+Heise2013a		UGE_24	25	mg	glucose	16	96.3	21.3						g	1	T2DM		
+Heise2013a		UGE_24	100	mg	glucose	30	87.3	21.4						g	1	T2DM		
+Heise2013a		cmax	10	mg	empagliflozin	16	309	45.2						nmol/l		N		
+Heise2013a		tmax	10	mg	empagliflozin	16	1.5					1	2.5	hr		N		
+Heise2013a		thalf	10	mg	empagliflozin	16	8.8	13						hr		N		
+Heise2013a		cmax	25	mg	empagliflozin	16	722	20						nmol/l		N		
+Heise2013a		tmax	25	mg	empagliflozin	16	1.5					0.8	3	hr		N		
+Heise2013a		thalf	25	mg	empagliflozin	16	8.2	14.9						hr		N		
+Heise2013a		cmax	100	mg	empagliflozin	30	2630	25.8						nmol/l		N		
+Heise2013a		tmax	100	mg	empagliflozin	30	1.5					0.8	3	hr		N		
+Heise2013a		thalf	100	mg	empagliflozin	30	8.7	18.7						hr		N		
+#																N		
+Jiang2023b		tmax	25	mg	empagliflozin	27	1.5					0.67	4	hr		N		
+Jiang2023b		cmax	25	mg	empagliflozin	27	436.29	118.74						µg/L		N		
+Jiang2023b		aucinf	25	mg	empagliflozin	27	3064.17	522.99						µg*hr/L		N		
+Jiang2023b		thalf	25	mg	empagliflozin	27	8.59	1.52						hr		N		
+#																N		
+Kim2021		cmax	25	mg	empagliflozin	25	589.24	180.23						ng/ml		N		
+Kim2021		tmax	25	mg	empagliflozin	25	2					0.67	4	hr		N		
+Kim2021		thalf	25	mg	empagliflozin	25	8.44	1.17						hr		N		
+Kim2021		aucinf	25	mg	empagliflozin	25	12.53	3.6						ng/ml*hr		N		
+#																N		
+Li2020		cmax	25	mg	empagliflozin	24	323	52.2						ng/ml		N		
+Li2020		aucinf	25	mg	empagliflozin	24	3113.27	508.57						ng/ml*hr		N		
+Li2020		tmax	25	mg	empagliflozin	24	4					2	6	hr		N		
+Li2020		thalf	25	mg	empagliflozin	24	11.26	6.09						hr		N		
+#																N		
+Macha2013d		aucinf	25	mg	empagliflozin	16	5330	22.7						nmol/l*hr		N		
+Macha2013d		cmax	25	mg	empagliflozin	16	818	27.7						nmol/l		N		
+Macha2013d		tmax	25	mg	empagliflozin	16			1.5			1	2.5	hr		N		
+#Macha2013d		thalf	25	mg	empagliflozin	16	12.5	27.9						hr		N		
+Macha2013d		aucinf	25	mg	empagliflozin	23	5930	16.8						nmol/l*hr		N		
+Macha2013d		cmax	25	mg	empagliflozin	23	899	23.1						nmol/l		N		
+Macha2013d		tmax	25	mg	empagliflozin	23			1.02			0.67	3	hr		N		
+#Macha2013d		thalf	25	mg	empagliflozin	23	13.6	40.2						hr		N		
+#																N		
+Macha2014		aucinf	25	mg	empagliflozin	18	4770	796.59						nmol/l*hr		N		
+Macha2014		cmax	25	mg	empagliflozin	18	610	98.82						nmol/l		N		
+Macha2014		tmax	25	mg	empagliflozin	18			2.75			1	4.02	hr		N		
+Macha2014		thalf	25	mg	empagliflozin	18	13.3	6.65						hr		N		
+Macha2014		aucinf	10	mg	empagliflozin	18	2330	731.62						nmol/l*hr		N		
+Macha2014		cmax	10	mg	empagliflozin	18	313	86.7						nmol/l		N		
+Macha2014		tmax	10	mg	empagliflozin	18			1.5			1	3	hr		N		
+Macha2014		thalf	10	mg	empagliflozin	18	11.8	4.04						hr		N		
+#																N		
+Macha2015a		UGE_24	10	mg	glucose	16	44.4	11.1						g		N		
+Macha2015a		cmax	10	mg	empagliflozin	16	330	83.49						nmol/l		N		
+Macha2015a		tmax	10	mg	empagliflozin	16			1			0.7	2	hr		N		
+Macha2015a		thalf	10	mg	empagliflozin	16	13.6	6						hr		N		
+#																N		
+Macha2015b		cmax	50	mg	empagliflozin	18	1370	18.8						ng/ml		N		
+Macha2015b		tmax	50	mg	empagliflozin	18			1.7			1	3	hr		N		
+Macha2015b		thalf	50	mg	empagliflozin	18	8.6	15.5						hr		N		
+#																N		
+Sarashina2013		UGE_24	1	mg	glucose	6	20	5						g		N		
+Sarashina2013		UGE_24	5	mg	glucose	6	43	7						g		N		
+Sarashina2013		UGE_24	10	mg	glucose	6	51	10						g		N		
+Sarashina2013		UGE_24	25	mg	glucose	6	61	11						g		N		
+Sarashina2013		UGE_24	100	mg	glucose	6	74	13						g		N		
+Sarashina2013		aucinf	1	mg	empagliflozin	6	226	52.2						nmol/l*hr		N		
+Sarashina2013		cmax	1	mg	empagliflozin	6	36.6	8.7						nmol/l		N		
+Sarashina2013		tmax	1	mg	empagliflozin	6	1.25					1	2	hr		N		
+Sarashina2013		thalf	1	mg	empagliflozin	6	7.76	1.1						hr		N		
+Sarashina2013		aucinf	5	mg	empagliflozin	6	1140	116.3						nmol/l*hr		N		
+Sarashina2013		cmax	5	mg	empagliflozin	6	166	44.2						nmol/l		N		
+Sarashina2013		tmax	5	mg	empagliflozin	6	2					0.75	2	hr		N		
+Sarashina2013		thalf	5	mg	empagliflozin	6	9.6	1.9						hr		N		
+Sarashina2013		aucinf	10	mg	empagliflozin	6	2670	283						nmol/l*hr		N		
+Sarashina2013		cmax	10	mg	empagliflozin	6	379	73.5						nmol/l		N		
+Sarashina2013		tmax	10	mg	empagliflozin	6	1.5					1	3	hr		N		
+Sarashina2013		thalf	10	mg	empagliflozin	6	9.88	2.9						hr		N		
+Sarashina2013		aucinf	25	mg	empagliflozin	6	6180	828.1						nmol/l*hr		N		
+Sarashina2013		cmax	25	mg	empagliflozin	6	661	68.7						nmol/l		N		
+Sarashina2013		tmax	25	mg	empagliflozin	6	2					1	4	hr		N		
+Sarashina2013		thalf	25	mg	empagliflozin	6	11.7	3.5						hr		N		
+Sarashina2013		aucinf	100	mg	empagliflozin	6	22800	5814						nmol/l*hr		N		
+Sarashina2013		cmax	100	mg	empagliflozin	6	2980	929.8						nmol/l		N		
+Sarashina2013		tmax	100	mg	empagliflozin	6	2.5					0.75	4	hr		N		
+Sarashina2013		thalf	100	mg	empagliflozin	6	11.6	3.7						hr		N		
+#																N		
+Seman2013		UGE_24	0.5	mg	glucose	6	3.2							g		N		
+Seman2013		UGE_24	2.5	mg	glucose	6	30.1							g		N		
+Seman2013		UGE_24	10	mg	glucose	6	47.5							g		N		
+Seman2013		UGE_24	25	mg	glucose	6	56.2							g		N		
+Seman2013		UGE_24	50	mg	glucose	5	63.5							g		N		
+Seman2013		UGE_24	100	mg	glucose	5	78.1							g		N		
+Seman2013		UGE_24	200	mg	glucose	6	68.5							g		N		
+Seman2013		UGE_24	400	mg	glucose	6	90							g		N		
+Seman2013		UGE_24	800	mg	glucose	6	61.2							g		N		
+Seman2013		aucinf	0.5	mg	empagliflozin	6	61.2	17.2						nmol/l*hr		N		
+Seman2013		cmax	0.5	mg	empagliflozin	6	9.33	3.73						nmol/l		N		
+Seman2013		tmax	0.5	mg	empagliflozin	6			1.5			1	3	hr		N		
+Seman2013		thalf	0.5	mg	empagliflozin	6	5.6	0.7						hr		N		
+Seman2013		aucinf	2.5	mg	empagliflozin	6	396	43.4						nmol/l*hr		N		
+Seman2013		cmax	2.5	mg	empagliflozin	6	53.2	6.23						nmol/l		N		
+Seman2013		tmax	2.5	mg	empagliflozin	6			1.8			1	3	hr		N		
+Seman2013		thalf	2.5	mg	empagliflozin	6	8.6	0.6						hr		N		
+Seman2013		aucinf	10	mg	empagliflozin	6	1730	377						nmol/l*hr		N		
+Seman2013		cmax	10	mg	empagliflozin	6	226	46						nmol/l		N		
+Seman2013		tmax	10	mg	empagliflozin	6			1.5			1	2	hr		N		
+Seman2013		thalf	10	mg	empagliflozin	6	13.1	4						hr		N		
+Seman2013		aucinf	25	mg	empagliflozin	6	3830	825						nmol/l*hr		N		
+Seman2013		cmax	25	mg	empagliflozin	6	505	130						nmol/l		N		
+Seman2013		tmax	25	mg	empagliflozin	6			2.1			1	3	hr		N		
+Seman2013		thalf	25	mg	empagliflozin	6	10.2	2.1						hr		N		
+Seman2013		aucinf	50	mg	empagliflozin	5	8580	1680						nmol/l*hr		N		
+Seman2013		cmax	50	mg	empagliflozin	5	1110	274						nmol/l		N		
+Seman2013		tmax	50	mg	empagliflozin	5			1.5			0.8	3	hr		N		
+Seman2013		thalf	50	mg	empagliflozin	5	10.3	1.8						hr		N		
+Seman2013		aucinf	100	mg	empagliflozin	5	16500	2390						nmol/l*hr		N		
+Seman2013		cmax	100	mg	empagliflozin	5	2500	666						nmol/l		N		
+Seman2013		tmax	100	mg	empagliflozin	5			1			0.8	3	hr		N		
+Seman2013		thalf	100	mg	empagliflozin	5	10.6	2.5						hr		N		
+Seman2013		aucinf	200	mg	empagliflozin	6	31200	6260						nmol/l*hr		N		
+Seman2013		cmax	200	mg	empagliflozin	6	3490	816						nmol/l		N		
+Seman2013		tmax	200	mg	empagliflozin	6			1.8			1	3	hr		N		
+Seman2013		thalf	200	mg	empagliflozin	6	11.1	2.6						hr		N		
+Seman2013		aucinf	400	mg	empagliflozin	6	46600	10200						nmol/l*hr		N		
+Seman2013		cmax	400	mg	empagliflozin	6	6060	1720						nmol/l		N		
+Seman2013		tmax	400	mg	empagliflozin	6			2			0.8	4	hr		N		
+Seman2013		thalf	400	mg	empagliflozin	6	11.2	3.6						hr		N		
+Seman2013		aucinf	800	mg	empagliflozin	6	70200	9510						nmol/l*hr		N		
+Seman2013		cmax	800	mg	empagliflozin	6	7950	1820						nmol/l		N		
+Seman2013		tmax	800	mg	empagliflozin	6			1.5			0.7	2	hr		N		
+Seman2013		thalf	800	mg	empagliflozin	6	11.2	1.6						hr		N		

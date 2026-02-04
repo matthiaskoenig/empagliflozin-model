@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Friedrich2013		all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	2.5	hr		3.91299235743679					percent	percent
+Friedrich2013		all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	4.5	hr		8.32216343327454					percent	percent
+Friedrich2013		all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	8.5	hr		14.1092004703115					percent	percent
+Friedrich2013		all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	12.5	hr		17.14050558495					percent	percent
+Friedrich2013		all	16.0	EMP50_D7, LIN5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D7	24.0	hr		20.6310993533215					percent	percent

@@ -1,0 +1,545 @@
+study	name	group	measurement_type	count	substance	choice	value	unit	comments
+ElDash2021	morning_S1	morning	bmi	1.0	NA	NA	28.41	kg/m^2	NA
+ElDash2021	morning_S1	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S1	morning	blood pressure systolic	1.0	NA	NA	130.0	mmHg	phase 1-0hr
+ElDash2021	morning_S1	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S1	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	morning_S1	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S1	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	morning_S1	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S1	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S1	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S1	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S1	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S1	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-0hr
+ElDash2021	morning_S1	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-2hr
+ElDash2021	morning_S1	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-4hr
+ElDash2021	morning_S1	morning	heart rate	1.0	NA	NA	78.0	1/s	phase 1-6hr
+ElDash2021	morning_S1	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-10hr
+ElDash2021	morning_S2	morning	bmi	1.0	NA	NA	23.88	kg/m^2	NA
+ElDash2021	morning_S2	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S2	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S2	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S2	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S2	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S2	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S2	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S2	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S2	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S2	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	morning_S2	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S2	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-0hr
+ElDash2021	morning_S2	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	morning_S2	morning	heart rate	1.0	NA	NA	82.0	1/s	phase 1-4hr
+ElDash2021	morning_S2	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-6hr
+ElDash2021	morning_S2	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-10hr
+ElDash2021	morning_S3	morning	bmi	1.0	NA	NA	26.83	kg/m^2	NA
+ElDash2021	morning_S3	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S3	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S3	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S3	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S3	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S3	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S3	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S3	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S3	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S3	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S3	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S3	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-0hr
+ElDash2021	morning_S3	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	morning_S3	morning	heart rate	1.0	NA	NA	78.0	1/s	phase 1-4hr
+ElDash2021	morning_S3	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	morning_S3	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-10hr
+ElDash2021	morning_S4	morning	bmi	1.0	NA	NA	24.69	kg/m^2	NA
+ElDash2021	morning_S4	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S4	morning	blood pressure systolic	1.0	NA	NA	115.0	mmHg	phase 1-0hr
+ElDash2021	morning_S4	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S4	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S4	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S4	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S4	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S4	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S4	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S4	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S4	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S4	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-0hr
+ElDash2021	morning_S4	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-2hr
+ElDash2021	morning_S4	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-4hr
+ElDash2021	morning_S4	morning	heart rate	1.0	NA	NA	75.0	1/s	phase 1-6hr
+ElDash2021	morning_S4	morning	heart rate	1.0	NA	NA	78.0	1/s	phase 1-10hr
+ElDash2021	morning_S5	morning	bmi	1.0	NA	NA	28.09	kg/m^2	NA
+ElDash2021	morning_S5	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S5	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S5	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S5	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S5	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S5	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S5	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S5	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S5	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S5	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S5	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S5	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-0hr
+ElDash2021	morning_S5	morning	heart rate	1.0	NA	NA	75.0	1/s	phase 1-2hr
+ElDash2021	morning_S5	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-4hr
+ElDash2021	morning_S5	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-6hr
+ElDash2021	morning_S5	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	morning_S6	morning	bmi	1.0	NA	NA	20.62	kg/m^2	NA
+ElDash2021	morning_S6	morning	body temperature	1.0	NA	NA	36.9	C	NA
+ElDash2021	morning_S6	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	morning_S6	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S6	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S6	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S6	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S6	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S6	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S6	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S6	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S6	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S6	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-0hr
+ElDash2021	morning_S6	morning	heart rate	1.0	NA	NA	81.0	1/s	phase 1-2hr
+ElDash2021	morning_S6	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-4hr
+ElDash2021	morning_S6	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	morning_S6	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	morning_S7	morning	bmi	1.0	NA	NA	21.36	kg/m^2	NA
+ElDash2021	morning_S7	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S7	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S7	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S7	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S7	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S7	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S7	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S7	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S7	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S7	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S7	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S7	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	morning_S7	morning	heart rate	1.0	NA	NA	72.0	1/s	phase 1-2hr
+ElDash2021	morning_S7	morning	heart rate	1.0	NA	NA	72.0	1/s	phase 1-4hr
+ElDash2021	morning_S7	morning	heart rate	1.0	NA	NA	78.0	1/s	phase 1-6hr
+ElDash2021	morning_S7	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-10hr
+ElDash2021	morning_S8	morning	bmi	1.0	NA	NA	21.98	kg/m^2	NA
+ElDash2021	morning_S8	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S8	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	morning_S8	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S8	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	morning_S8	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S8	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	morning_S8	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S8	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S8	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S8	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S8	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S8	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-0hr
+ElDash2021	morning_S8	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	morning_S8	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	morning_S8	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-6hr
+ElDash2021	morning_S8	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	morning_S9	morning	bmi	1.0	NA	NA	21.91	kg/m^2	NA
+ElDash2021	morning_S9	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S9	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S9	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S9	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S9	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S9	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S9	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S9	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S9	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S9	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S9	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S9	morning	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	morning_S9	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-2hr
+ElDash2021	morning_S9	morning	heart rate	1.0	NA	NA	75.0	1/s	phase 1-4hr
+ElDash2021	morning_S9	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-6hr
+ElDash2021	morning_S9	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-10hr
+ElDash2021	morning_S10	morning	bmi	1.0	NA	NA	21.88	kg/m^2	NA
+ElDash2021	morning_S10	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S10	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S10	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S10	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S10	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S10	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S10	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S10	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S10	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S10	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S10	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S10	morning	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	morning_S10	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	morning_S10	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-4hr
+ElDash2021	morning_S10	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	morning_S10	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	morning_S11	morning	bmi	1.0	NA	NA	23.53	kg/m^2	NA
+ElDash2021	morning_S11	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S11	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S11	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S11	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S11	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S11	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S11	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S11	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S11	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S11	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S11	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S11	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-0hr
+ElDash2021	morning_S11	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	morning_S11	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-4hr
+ElDash2021	morning_S11	morning	heart rate	1.0	NA	NA	78.0	1/s	phase 1-6hr
+ElDash2021	morning_S11	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	morning_S12	morning	bmi	1.0	NA	NA	29.04	kg/m^2	NA
+ElDash2021	morning_S12	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S12	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	morning_S12	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S12	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	morning_S12	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S12	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S12	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S12	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S12	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S12	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S12	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S12	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-0hr
+ElDash2021	morning_S12	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-2hr
+ElDash2021	morning_S12	morning	heart rate	1.0	NA	NA	70.0	1/s	phase 1-4hr
+ElDash2021	morning_S12	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-6hr
+ElDash2021	morning_S12	morning	heart rate	1.0	NA	NA	75.0	1/s	phase 1-10hr
+ElDash2021	morning_S13	morning	bmi	1.0	NA	NA	28.52	kg/m^2	NA
+ElDash2021	morning_S13	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S13	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S13	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S13	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S13	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S13	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	morning_S13	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S13	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S13	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S13	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	morning_S13	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S13	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	morning_S13	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	morning_S13	morning	heart rate	1.0	NA	NA	73.0	1/s	phase 1-4hr
+ElDash2021	morning_S13	morning	heart rate	1.0	NA	NA	75.0	1/s	phase 1-6hr
+ElDash2021	morning_S13	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-10hr
+ElDash2021	morning_S14	morning	bmi	1.0	NA	NA	29.3	kg/m^2	NA
+ElDash2021	morning_S14	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S14	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S14	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S14	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S14	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S14	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S14	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S14	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S14	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S14	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S14	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S14	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-0hr
+ElDash2021	morning_S14	morning	heart rate	1.0	NA	NA	81.0	1/s	phase 1-2hr
+ElDash2021	morning_S14	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-4hr
+ElDash2021	morning_S14	morning	heart rate	1.0	NA	NA	76.0	1/s	phase 1-6hr
+ElDash2021	morning_S14	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-10hr
+ElDash2021	morning_S15	morning	bmi	1.0	NA	NA	22.04	kg/m^2	NA
+ElDash2021	morning_S15	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S15	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S15	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S15	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	morning_S15	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S15	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	morning_S15	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S15	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	morning_S15	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S15	morning	blood pressure systolic	1.0	NA	NA	115.0	mmHg	phase 1-10hr
+ElDash2021	morning_S15	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S15	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-0hr
+ElDash2021	morning_S15	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	morning_S15	morning	heart rate	1.0	NA	NA	80.0	1/s	phase 1-4hr
+ElDash2021	morning_S15	morning	heart rate	1.0	NA	NA	82.0	1/s	phase 1-6hr
+ElDash2021	morning_S15	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-10hr
+ElDash2021	morning_S16	morning	bmi	1.0	NA	NA	24.77	kg/m^2	NA
+ElDash2021	morning_S16	morning	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	morning_S16	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	morning_S16	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S16	morning	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	morning_S16	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S16	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	morning_S16	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S16	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	morning_S16	morning	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	morning_S16	morning	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	morning_S16	morning	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	morning_S16	morning	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	morning_S16	morning	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	morning_S16	morning	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	morning_S16	morning	heart rate	1.0	NA	NA	71.0	1/s	phase 1-6hr
+ElDash2021	morning_S16	morning	heart rate	1.0	NA	NA	82.0	1/s	phase 1-10hr
+ElDash2021	evening_S1	evening	bmi	1.0	NA	NA	28.41	kg/m^2	NA
+ElDash2021	evening_S1	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S1	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	evening_S1	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S1	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	evening_S1	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S1	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S1	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S1	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S1	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S1	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S1	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S1	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-0hr
+ElDash2021	evening_S1	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	evening_S1	evening	heart rate	1.0	NA	NA	73.0	1/s	phase 1-4hr
+ElDash2021	evening_S1	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-6hr
+ElDash2021	evening_S1	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-10hr
+ElDash2021	evening_S2	evening	bmi	1.0	NA	NA	23.88	kg/m^2	NA
+ElDash2021	evening_S2	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S2	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S2	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S2	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S2	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S2	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	evening_S2	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S2	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S2	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S2	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S2	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S2	evening	heart rate	1.0	NA	NA	73.0	1/s	phase 1-0hr
+ElDash2021	evening_S2	evening	heart rate	1.0	NA	NA	78.0	1/s	phase 1-2hr
+ElDash2021	evening_S2	evening	heart rate	1.0	NA	NA	73.0	1/s	phase 1-4hr
+ElDash2021	evening_S2	evening	heart rate	1.0	NA	NA	75.0	1/s	phase 1-6hr
+ElDash2021	evening_S2	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	evening_S3	evening	bmi	1.0	NA	NA	26.83	kg/m^2	NA
+ElDash2021	evening_S3	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S3	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S3	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S3	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S3	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S3	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S3	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S3	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S3	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S3	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S3	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S3	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-0hr
+ElDash2021	evening_S3	evening	heart rate	1.0	NA	NA	78.0	1/s	phase 1-2hr
+ElDash2021	evening_S3	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-4hr
+ElDash2021	evening_S3	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	evening_S3	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-10hr
+ElDash2021	evening_S4	evening	bmi	1.0	NA	NA	24.69	kg/m^2	NA
+ElDash2021	evening_S4	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S4	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	evening_S4	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S4	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S4	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S4	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S4	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S4	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S4	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S4	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S4	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S4	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S4	evening	heart rate	1.0	NA	NA	78.0	1/s	phase 1-2hr
+ElDash2021	evening_S4	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	evening_S4	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-6hr
+ElDash2021	evening_S4	evening	heart rate	1.0	NA	NA	81.0	1/s	phase 1-10hr
+ElDash2021	evening_S5	evening	bmi	1.0	NA	NA	28.09	kg/m^2	NA
+ElDash2021	evening_S5	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S5	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	evening_S5	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S5	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	evening_S5	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S5	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	evening_S5	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S5	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S5	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S5	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S5	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S5	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	evening_S5	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	evening_S5	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	evening_S5	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	evening_S5	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-10hr
+ElDash2021	evening_S6	evening	bmi	1.0	NA	NA	20.62	kg/m^2	NA
+ElDash2021	evening_S6	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S6	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S6	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S6	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S6	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S6	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S6	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S6	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S6	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S6	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S6	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S6	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-0hr
+ElDash2021	evening_S6	evening	heart rate	1.0	NA	NA	75.0	1/s	phase 1-2hr
+ElDash2021	evening_S6	evening	heart rate	1.0	NA	NA	73.0	1/s	phase 1-4hr
+ElDash2021	evening_S6	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-6hr
+ElDash2021	evening_S6	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-10hr
+ElDash2021	evening_S7	evening	bmi	1.0	NA	NA	21.36	kg/m^2	NA
+ElDash2021	evening_S7	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S7	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S7	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S7	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S7	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S7	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S7	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S7	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S7	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S7	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S7	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S7	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S7	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	evening_S7	evening	heart rate	1.0	NA	NA	73.0	1/s	phase 1-4hr
+ElDash2021	evening_S7	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-6hr
+ElDash2021	evening_S7	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-10hr
+ElDash2021	evening_S8	evening	bmi	1.0	NA	NA	21.98	kg/m^2	NA
+ElDash2021	evening_S8	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S8	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S8	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S8	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-2hr
+ElDash2021	evening_S8	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S8	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S8	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S8	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S8	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S8	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S8	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S8	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S8	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-2hr
+ElDash2021	evening_S8	evening	heart rate	1.0	NA	NA	75.0	1/s	phase 1-4hr
+ElDash2021	evening_S8	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-6hr
+ElDash2021	evening_S8	evening	heart rate	1.0	NA	NA	70.0	1/s	phase 1-10hr
+ElDash2021	evening_S9	evening	bmi	1.0	NA	NA	21.91	kg/m^2	NA
+ElDash2021	evening_S9	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S9	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S9	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S9	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S9	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S9	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S9	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S9	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S9	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S9	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S9	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S9	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S9	evening	heart rate	1.0	NA	NA	76.0	1/s	phase 1-2hr
+ElDash2021	evening_S9	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	evening_S9	evening	heart rate	1.0	NA	NA	82.0	1/s	phase 1-6hr
+ElDash2021	evening_S9	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-10hr
+ElDash2021	evening_S10	evening	bmi	1.0	NA	NA	21.88	kg/m^2	NA
+ElDash2021	evening_S10	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S10	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S10	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S10	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S10	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S10	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S10	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S10	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S10	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S10	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S10	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S10	evening	heart rate	1.0	NA	NA	78.0	1/s	phase 1-0hr
+ElDash2021	evening_S10	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	evening_S10	evening	heart rate	1.0	NA	NA	70.0	1/s	phase 1-4hr
+ElDash2021	evening_S10	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	evening_S10	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr
+ElDash2021	evening_S11	evening	bmi	1.0	NA	NA	23.53	kg/m^2	NA
+ElDash2021	evening_S11	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S11	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	evening_S11	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S11	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S11	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S11	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S11	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S11	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S11	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S11	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S11	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S11	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-0hr
+ElDash2021	evening_S11	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-2hr
+ElDash2021	evening_S11	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-4hr
+ElDash2021	evening_S11	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-6hr
+ElDash2021	evening_S11	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-10hr
+ElDash2021	evening_S12	evening	bmi	1.0	NA	NA	29.04	kg/m^2	NA
+ElDash2021	evening_S12	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S12	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-0hr
+ElDash2021	evening_S12	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S12	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S12	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S12	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S12	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S12	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S12	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S12	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S12	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S12	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S12	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	evening_S12	evening	heart rate	1.0	NA	NA	81.0	1/s	phase 1-4hr
+ElDash2021	evening_S12	evening	heart rate	1.0	NA	NA	70.0	1/s	phase 1-6hr
+ElDash2021	evening_S12	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-10hr
+ElDash2021	evening_S13	evening	bmi	1.0	NA	NA	28.52	kg/m^2	NA
+ElDash2021	evening_S13	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S13	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S13	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S13	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S13	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S13	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-4hr
+ElDash2021	evening_S13	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S13	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S13	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S13	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S13	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S13	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	evening_S13	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-2hr
+ElDash2021	evening_S13	evening	heart rate	1.0	NA	NA	81.0	1/s	phase 1-4hr
+ElDash2021	evening_S13	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-6hr
+ElDash2021	evening_S13	evening	heart rate	1.0	NA	NA	75.0	1/s	phase 1-10hr
+ElDash2021	evening_S14	evening	bmi	1.0	NA	NA	29.3	kg/m^2	NA
+ElDash2021	evening_S14	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S14	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S14	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S14	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S14	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S14	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S14	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S14	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S14	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S14	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S14	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S14	evening	heart rate	1.0	NA	NA	71.0	1/s	phase 1-0hr
+ElDash2021	evening_S14	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	evening_S14	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-4hr
+ElDash2021	evening_S14	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-6hr
+ElDash2021	evening_S14	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-10hr
+ElDash2021	evening_S15	evening	bmi	1.0	NA	NA	22.04	kg/m^2	NA
+ElDash2021	evening_S15	evening	body temperature	1.0	NA	NA	36.9	C	NA
+ElDash2021	evening_S15	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S15	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S15	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S15	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S15	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S15	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S15	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-6hr
+ElDash2021	evening_S15	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S15	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-10hr
+ElDash2021	evening_S15	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S15	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-0hr
+ElDash2021	evening_S15	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-2hr
+ElDash2021	evening_S15	evening	heart rate	1.0	NA	NA	81.0	1/s	phase 1-4hr
+ElDash2021	evening_S15	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-6hr
+ElDash2021	evening_S15	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-10hr
+ElDash2021	evening_S16	evening	bmi	1.0	NA	NA	24.77	kg/m^2	NA
+ElDash2021	evening_S16	evening	body temperature	1.0	NA	NA	37.0	C	NA
+ElDash2021	evening_S16	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-0hr
+ElDash2021	evening_S16	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S16	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-2hr
+ElDash2021	evening_S16	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S16	evening	blood pressure systolic	1.0	NA	NA	110.0	mmHg	phase 1-4hr
+ElDash2021	evening_S16	evening	blood pressure diastolic	1.0	NA	NA	70.0	mmHg	NA
+ElDash2021	evening_S16	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-6hr
+ElDash2021	evening_S16	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S16	evening	blood pressure systolic	1.0	NA	NA	120.0	mmHg	phase 1-10hr
+ElDash2021	evening_S16	evening	blood pressure diastolic	1.0	NA	NA	80.0	mmHg	NA
+ElDash2021	evening_S16	evening	heart rate	1.0	NA	NA	72.0	1/s	phase 1-0hr
+ElDash2021	evening_S16	evening	heart rate	1.0	NA	NA	74.0	1/s	phase 1-2hr
+ElDash2021	evening_S16	evening	heart rate	1.0	NA	NA	79.0	1/s	phase 1-4hr
+ElDash2021	evening_S16	evening	heart rate	1.0	NA	NA	77.0	1/s	phase 1-6hr
+ElDash2021	evening_S16	evening	heart rate	1.0	NA	NA	80.0	1/s	phase 1-10hr

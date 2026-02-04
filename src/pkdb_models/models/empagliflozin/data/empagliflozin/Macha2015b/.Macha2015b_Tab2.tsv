@@ -1,0 +1,17 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2015b	all	18.0	emp50	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	8990.0	NA	NA	NA	NA	NA	12.4	ng/ml*hr	NA
+Macha2015b	all	18.0	emp50	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1370.0	NA	NA	NA	NA	NA	18.8	ng/ml	NA
+Macha2015b	all	18.0	emp50	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.7	1.0	3.0	NA	NA	NA	hr	NA
+Macha2015b	all	18.0	emp50	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	8.6	NA	NA	NA	NA	NA	15.5	hr	NA
+Macha2015b	all	17.0	emp50, piog45	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	8980.0	NA	NA	NA	NA	NA	10.5	ng/ml*hr	NA
+Macha2015b	all	17.0	emp50, piog45	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1280.0	NA	NA	NA	NA	NA	15.3	ng/ml	NA
+Macha2015b	all	17.0	emp50, piog45	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	2.0	1.5	3.0	NA	NA	NA	hr	NA
+Macha2015b	all	17.0	emp50, piog45	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	11.7	NA	NA	NA	NA	NA	36.9	hr	NA
+Macha2015b	all	20.0	piog45	auc_end	pioglitazone 	plasma	HPLC MS/MS	24.0	hr	9330.0	NA	NA	NA	NA	NA	31.6	ng/ml*hr	NA
+Macha2015b	all	20.0	piog45	cmax	pioglitazone 	plasma	HPLC MS/MS	NA	NA	1140.0	NA	NA	NA	NA	NA	39.7	ng/ml	NA
+Macha2015b	all	20.0	piog45	tmax	pioglitazone 	plasma	HPLC MS/MS	NA	NA	NA	1.8	0.7	4.0	NA	NA	NA	hr	NA
+Macha2015b	all	20.0	piog45	thalf	pioglitazone 	plasma	HPLC MS/MS	NA	NA	15.6	NA	NA	NA	NA	NA	57.1	hr	NA
+Macha2015b	all	17.0	emp50, piog45	auc_end	pioglitazone 	plasma	HPLC MS/MS	24.0	hr	14000.0	NA	NA	NA	NA	NA	22.5	ng/ml*hr	NA
+Macha2015b	all	17.0	emp50, piog45	cmax	pioglitazone 	plasma	HPLC MS/MS	NA	NA	1960.0	NA	NA	NA	NA	NA	16.3	ng/ml	NA
+Macha2015b	all	17.0	emp50, piog45	tmax	pioglitazone 	plasma	HPLC MS/MS	NA	NA	NA	2.0	1.0	3.0	NA	NA	NA	hr	NA
+Macha2015b	all	17.0	emp50, piog45	thalf	pioglitazone 	plasma	HPLC MS/MS	NA	NA	7.9	NA	NA	NA	NA	NA	39.0	hr	NA

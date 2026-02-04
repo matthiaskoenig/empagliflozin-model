@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Macha2014b	NA	mild	12.0	EMP50	auc_inf	empagliflozin	plasma	HPLC MS/MS	auc_inf_mild	NA	NA	NA	93.5869565217391	NA	22.6	NA	nmol/l*hr	gmr
+Macha2014b	NA	mild	12.0	EMP50	cmax	empagliflozin	plasma	HPLC MS/MS	cmax_mild	NA	NA	NA	68.4782608695652	NA	33.9	NA	nmol/l	gmr
+Macha2014b	NA	moderate	12.0	EMP50	auc_inf	empagliflozin	plasma	HPLC MS/MS	auc_inf_moderate	NA	NA	NA	124.565217391304	NA	22.6	NA	nmol/l*hr	gmr
+Macha2014b	NA	moderate	12.0	EMP50	cmax	empagliflozin	plasma	HPLC MS/MS	cmax_moderate	NA	NA	NA	94.2391304347826	NA	33.9	NA	nmol/l	gmr
+Macha2014b	NA	severe	12.0	EMP50	auc_inf	empagliflozin	plasma	HPLC MS/MS	auc_inf_severe	NA	NA	NA	160.434782608695	NA	22.6	NA	nmol/l*hr	gmr
+Macha2014b	NA	severe	12.0	EMP50	cmax	empagliflozin	plasma	HPLC MS/MS	cmax_severe	NA	NA	NA	126.521739130434	NA	33.9	NA	nmol/l	gmr

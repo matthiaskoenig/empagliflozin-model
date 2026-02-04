@@ -1,0 +1,57 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	se	sd	unit	comments
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	0.0	hr	NA	34.3	NA	NA	6.8	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	0.33	hr	NA	113.3	NA	NA	85.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	0.67	hr	NA	305.5	NA	NA	236.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	1.0	hr	NA	391.3	NA	NA	236.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	1.5	hr	NA	442.7	NA	NA	223.2	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	2.0	hr	NA	463.2	NA	NA	199.1	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	2.5	hr	NA	452.9	NA	NA	140.8	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	3.0	hr	NA	397.8	NA	NA	102.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	4.0	hr	NA	360.0	NA	NA	89.3	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	6.0	hr	NA	249.8	NA	NA	54.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	8.0	hr	NA	187.7	NA	NA	41.2	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	10.0	hr	NA	146.2	NA	NA	30.9	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	12.0	hr	NA	104.7	NA	NA	24.0	ng/ml	NA
+Kim2021	NA	all	25.0	E	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E	24.0	hr	NA	41.2	NA	NA	10.3	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.0	hr	NA	37.8	NA	NA	13.7	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.33	hr	NA	157.9	NA	NA	140.8	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	0.67	hr	NA	343.3	NA	NA	264.3	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	1.0	hr	NA	422.2	NA	NA	243.8	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	1.5	hr	NA	463.3	NA	NA	175.1	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	2.0	hr	NA	480.4	NA	NA	171.7	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	2.5	hr	NA	463.2	NA	NA	123.6	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	3.0	hr	NA	421.9	NA	NA	109.9	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	4.0	hr	NA	377.1	NA	NA	85.8	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	6.0	hr	NA	253.2	NA	NA	51.5	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	8.0	hr	NA	194.6	NA	NA	34.3	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	10.0	hr	NA	156.5	NA	NA	30.9	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	12.0	hr	NA	111.6	NA	NA	27.5	ng/ml	NA
+Kim2021	NA	all	25.0	E, L	concentration	 empagliflozin	plasma	HPLC	empagliflozin_E, L	24.0	hr	NA	41.2	NA	NA	13.7	ng/ml	 
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.0	hr	NA	3.8	NA	NA	1.7	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.33	hr	NA	22.7	NA	NA	9.9	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.67	hr	NA	46.0	NA	NA	11.0	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	1.0	hr	NA	45.3	NA	NA	5.9	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	1.5	hr	NA	38.8	NA	NA	5.8	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	2.0	hr	NA	35.0	NA	NA	5.5	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	2.5	hr	NA	30.9	NA	NA	5.5	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	3.0	hr	NA	28.2	NA	NA	5.4	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	4.0	hr	NA	24.7	NA	NA	5.2	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	6.0	hr	NA	18.9	NA	NA	4.4	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	8.0	hr	NA	15.5	NA	NA	3.7	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	10.0	hr	NA	12.4	NA	NA	3.7	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	12.0	hr	NA	10.0	NA	NA	3.0	ng/ml	NA
+Kim2021	NA	all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	24.0	hr	NA	3.1	NA	NA	1.4	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	0.0	hr	NA	2.1	NA	NA	1.4	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	0.33	hr	NA	17.5	NA	NA	10.3	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	0.67	hr	NA	39.8	NA	NA	11.6	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	1.0	hr	NA	42.6	NA	NA	8.6	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	1.5	hr	NA	37.4	NA	NA	6.2	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	2.0	hr	NA	34.7	NA	NA	6.5	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	2.5	hr	NA	30.2	NA	NA	5.5	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	3.0	hr	NA	27.1	NA	NA	5.5	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	4.0	hr	NA	23.3	NA	NA	5.1	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	6.0	hr	NA	17.5	NA	NA	4.8	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	8.0	hr	NA	13.7	NA	NA	4.1	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	10.0	hr	NA	11.0	NA	NA	3.1	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	12.0	hr	NA	8.6	NA	NA	3.1	ng/ml	NA
+Kim2021	NA	all	25.0	L, E	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L, E	24.0	hr	NA	2.1	NA	NA	1.1	ng/ml	NA

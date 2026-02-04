@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	0.0	hr		0.0					mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	0.25	hr		3.28225872626184e-05	37.549	0.000311189175642979	5.681511038369893e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	0.512	hr		0.00013147220392584755	199.6	6.574275519007162e-05	1.2002930003380682e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	1.0	hr		0.0003133559099507883	111.651	0.00013368329308130911	2.4407118394069093e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	1.536	hr		0.0003527918049983478	219.356	0.00012273651668074934	2.240851960521857e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	2.0	hr		0.00031330490187598826	196.615	0.00014246555291644214	2.601053233326037e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	2.5	hr		0.00029357586564029547	161.032	8.328953292127679e-05	1.5206518661684153e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	3.0	hr		0.0002738379584350723	149.17	9.864739892084657e-05	1.8010468542719484e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	4.0	hr		0.00023217323229299036	134.331	0.00013811877784652778	2.521692341386266e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	6.0	hr		0.000159792774151769	91.811	8.331836357225073e-05	1.521178239431282e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	8.0	hr		0.00012029478231749643	68.072	5.7035898595947304e-05	1.041328274952587e-05		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	10.0	hr		9.393026087303646e-05	51.245	4.827359844225775e-05	8.813512932923605e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	12.0	hr		6.537460995455846e-05	34.416	2.857117511515627e-05	5.216359035000454e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	15.014	hr		4.775464672472717e-05	27.462	3.753085434089805e-05	6.8521651749835114e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	24.0	hr		2.3372786970319954e-05	14.49	2.2206254477067437e-05	4.054288831596641e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	36.0	hr		9.928832646942066e-06	6.243	6.537904543932368e-06	1.1936525991757606e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	48.0	hr		7.307461150697813e-06	7.271	1.3929639905169334e-05	2.543192664661783e-06		mole/meter^3	ng/ml
+Chen2020		Fasting_R	30.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	Fasting_R_EMP10	72.0	hr		2.1955649587832577e-06	3.946	8.751211441776502e-06	1.5977453040527665e-06		mole/meter^3	ng/ml

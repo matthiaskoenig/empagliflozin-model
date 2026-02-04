@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Kim2023	Group2	18.0	EV5, DAP10	cmax	evogliptin	plasma	LC MS/MS	NA	NA	5.8	NA	NA	NA	0.78	NA	NA	ng/ml	NA
+Kim2023	Group2	18.0	EV5, DAP10	auc_inf	evogliptin	plasma	LC MS/MS	NA	NA	91.77	NA	NA	NA	9.54	NA	NA	ng/ml*hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	 tmax	evogliptin	plasma	LC MS/MS	NA	NA	2.0	NA	0.5	6.0	NA	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	thalf	evogliptin	plasma	LC MS/MS	NA	NA	25.46	NA	NA	NA	3.77	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	clearance	evogliptin	plasma	LC MS/MS	NA	NA	55.03	NA	NA	NA	5.59	NA	NA	l/hr	NA
+Kim2023	Group2	18.0	EV5	cmax	evogliptin	plasma	LC MS/MS	NA	NA	5.61	NA	NA	NA	0.7	NA	NA	ng/ml	NA
+Kim2023	Group2	18.0	EV5	auc_inf	evogliptin	plasma	LC MS/MS	NA	NA	91.37	NA	NA	NA	9.62	NA	NA	ng/ml*hr	NA
+Kim2023	Group2	18.0	EV5	 tmax	evogliptin	plasma	LC MS/MS	NA	NA	2.0	NA	1.0	6.0	NA	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5	thalf	evogliptin	plasma	LC MS/MS	NA	NA	24.68	NA	NA	NA	4.36	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5	clearance	evogliptin	plasma	LC MS/MS	NA	NA	55.13	NA	NA	NA	5.46	NA	NA	l/hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	cmax	dapagliflozin	plasma	LC MS/MS	NA	NA	189.24	NA	NA	NA	58.55	NA	NA	ng/ml	NA
+Kim2023	Group2	18.0	EV5, DAP10	auc_inf	dapagliflozin	plasma	LC MS/MS	NA	NA	500.49	NA	NA	NA	100.4	NA	NA	ng/ml*hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	 tmax	dapagliflozin	plasma	LC MS/MS	NA	NA	0.52	NA	0.5	2.0	NA	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	thalf	dapagliflozin	plasma	LC MS/MS	NA	NA	10.87	NA	NA	NA	4.42	NA	NA	hr	NA
+Kim2023	Group2	18.0	EV5, DAP10	clearance	dapagliflozin	plasma	LC MS/MS	NA	NA	20.67	NA	NA	NA	3.71	NA	NA	l/hr	NA
+Kim2023	Group2	18.0	DAP10	cmax	dapagliflozin	plasma	LC MS/MS	NA	NA	170.56	NA	NA	NA	37.54	NA	NA	ng/ml	NA
+Kim2023	Group2	18.0	DAP10	auc_inf	dapagliflozin	plasma	LC MS/MS	NA	NA	493.47	NA	NA	NA	108.21	NA	NA	ng/ml*hr	NA
+Kim2023	Group2	18.0	DAP10	 tmax	dapagliflozin	plasma	LC MS/MS	NA	NA	0.77	NA	0.5	1.5	NA	NA	NA	hr	NA
+Kim2023	Group2	18.0	DAP10	thalf	dapagliflozin	plasma	LC MS/MS	NA	NA	10.34	NA	NA	NA	3.17	NA	NA	hr	NA
+Kim2023	Group2	18.0	DAP10	clearance	dapagliflozin	plasma	LC MS/MS	NA	NA	21.11	NA	NA	NA	4.21	NA	NA	l/hr	NA

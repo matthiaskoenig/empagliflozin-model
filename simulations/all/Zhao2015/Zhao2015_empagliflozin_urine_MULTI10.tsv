@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+Zhao2015	EMP10	9.0	MULTI10	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_MULTI10	24.0	hr	4.1028234078273				0.722096919777605				µmole	µmole
+Zhao2015	EMP10	9.0	MULTI10	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_MULTI10	216.0	hr	6.23185609513228				0.959705838650371				µmole	µmole

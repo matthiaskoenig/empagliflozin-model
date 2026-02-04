@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	raw	mean_unit	value_unit
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	0.2	hr		25.7456521748989						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	0.3	hr		167.931006153629						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	0.45	hr		387.89516726794						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	1.0	hr		619.899258590156						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	0.5	hr		783.654245910784						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	1.5	hr		895.979034700564						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	2.0	hr		810.341031933153						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	3.0	hr		685.411101543504						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	4.0	hr		619.899258590156						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	6.0	hr		474.214035396797						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	8.0	hr		339.266526363961						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	10.0	hr		268.372269090494						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	12.0	hr		198.5398026289						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	14.0	hr		157.052267747558						nmol/l	nmol/l
+Seman2013		OGTT50	5.0	OGTT50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_OGTT50	24.0	hr		77.7381300307328						nmol/l	nmol/l

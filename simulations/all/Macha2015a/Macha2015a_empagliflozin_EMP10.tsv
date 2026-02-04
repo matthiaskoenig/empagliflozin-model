@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	0.0	hr		13.9949242857457					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	0.33	hr		80.0898427285292					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	0.67	hr		223.963209452955					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	1.0	hr		302.697125741505					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	1.5	hr		300.721234665816					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	2.0	hr		263.745041863387					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	3.0	hr		206.322671842956					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	4.0	hr		166.404643335047					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	6.0	hr		109.895834829993					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	8.0	hr		80.615769197244					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	10.0	hr		59.1093577435054					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	12.0297876131116	hr		44.4106558389871					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	14.0	hr		33.5966856993978					nmol/l	nmol/l
+Macha2015a		all	16.0	EMP10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP10	24.0	hr		13.5737640458586					nmol/l	nmol/l

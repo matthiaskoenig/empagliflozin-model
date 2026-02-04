@@ -1,0 +1,12 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	4.0	hr		18.5483870967741					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	8.0	hr		31.4516129032258					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	12.0	hr		38.3064516129032					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	24.0	hr		46.774193548387					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	36.0	hr		50.8064516129032					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	48.0	hr		63.7096774193548					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	72.0	hr		83.4677419354838					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	96.0	hr		91.9354838709677					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	120.0	hr		94.3548387096774					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	144.0	hr		95.1612903225806					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	168.0	hr		95.5645161290322					percent	percent

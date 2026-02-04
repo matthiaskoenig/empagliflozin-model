@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2013a		Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	1.0	day		4.84507		21.6941592052423	5.42353980131058	corrected with baseline	g	g
+Heise2013a		Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	27.0	day		4.0		31.3818374724999	7.84545936812498	corrected with baseline	g	g
+Heise2013a		Placebo	16.0	Placebo	cumulative amount	glucose	urine	NR	uge_Placebo	28.0	day		5.69014		28.1171254614977	7.02928136537441	corrected with baseline	g	g

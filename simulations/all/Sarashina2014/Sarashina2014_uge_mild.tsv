@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	4.0	hr		9.86571857559704					g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	8.0	hr		24.1437434488229					g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	12.0	hr		37.3098388056318	49.4277458284937	12.1179070228619	4.284327114826868		g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	24.0	hr		65.8021473696138	85.6291962945126	19.82704892489879	7.00992037285669		g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	36.0	hr		91.0011615059916	118.533811156123	27.53264965013139	9.734261635820666		g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	48.0	hr		106.27779823791	137.117907022861	30.840108784951	10.903625027184834		g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	72.0	hr		137.943001218164	185.299158616391	47.356157398227	16.7429300136119		g	g
+Sarashina2014		mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	uge_mild	96.0	hr		149.78115527352	209.251678517805	59.470523244285005	21.02600513337306		g	g

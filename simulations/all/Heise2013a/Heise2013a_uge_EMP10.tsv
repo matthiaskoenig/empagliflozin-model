@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2013a		EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	1.0	day		77.94085		26.7607614062381	6.69019035155951	corrected with baseline	g	g
+Heise2013a		EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	27.0	day		70.33521		32.8904569283189	7.60564	corrected with baseline	g	g
+Heise2013a		EMP10	16.0	EMP10	cumulative amount	glucose	urine	NR	uge_EMP10	28.0	day		68.6407		29.8073555767431	6.76493000000001	corrected with baseline	g	g

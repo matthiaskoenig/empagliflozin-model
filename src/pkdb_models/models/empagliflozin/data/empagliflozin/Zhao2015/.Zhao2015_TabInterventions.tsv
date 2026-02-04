@@ -1,0 +1,6 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Zhao2015	SING10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10.0	mg	NA
+Zhao2015	SING25	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25.0	mg	NA
+Zhao2015	MULTI10	0|2|3|4|5|6|7|8	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	10.0	mg	on day 1 and once daily on days 3 to 9
+Zhao2015	MULTI25	0|2|3|4|5|6|7|8	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	25.0	mg	on day 1 and once daily on days 3 to 9
+Zhao2015	placebo	0	NA	hr	oral	single dose	dosing	tablet	placebo	0.0	mg	NA

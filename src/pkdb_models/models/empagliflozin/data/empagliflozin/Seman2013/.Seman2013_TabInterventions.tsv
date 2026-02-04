@@ -1,0 +1,12 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Seman2013	placebo	0	NA	hr	oral	single dose	dosing	tablet	placebo	0.0	mg	Morning dose
+Seman2013	EMP0.5	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	0.5	mg	Morning dose
+Seman2013	EMP2.5	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	2.5	mg	Morning dose
+Seman2013	EMP10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10.0	mg	Morning dose
+Seman2013	EMP25	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25.0	mg	Morning dose
+Seman2013	EMP50	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	50.0	mg	Morning dose
+Seman2013	OGTT50	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	50.0	mg	Morning dose
+Seman2013	EMP100	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	100.0	mg	Morning dose
+Seman2013	EMP200	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	200.0	mg	Morning dose
+Seman2013	EMP400	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	400.0	mg	Morning dose
+Seman2013	EMP800	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	800.0	mg	Morning dose

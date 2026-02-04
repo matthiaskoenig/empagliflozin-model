@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Kim2021	all	25.0	E	cmax	 empagliflozin	plasma	HPLC	NA	NA	589.24	NA	NA	NA	180.23	NA	NA	ng/ml	NA
+Kim2021	all	25.0	E	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	3956.89	NA	NA	NA	753.93	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	E	tmax	 empagliflozin	plasma	HPLC	NA	NA	2.0	NA	0.67	4.0	NA	NA	NA	hr	NA
+Kim2021	all	25.0	E	thalf	 empagliflozin	plasma	HPLC	NA	NA	8.44	NA	NA	NA	1.17	NA	NA	hr	NA
+Kim2021	all	25.0	E	auc_inf	 empagliflozin	plasma	HPLC	NA	NA	12.53	NA	NA	NA	3.6	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	E, L	cmax	 empagliflozin	plasma	HPLC	NA	NA	609.4	NA	NA	NA	148.83	NA	NA	ng/ml	NA
+Kim2021	all	25.0	E, L	auc_end	 empagliflozin	plasma	HPLC	24.0	hr	4097.87	NA	NA	NA	746.66	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	E, L	tmax	 empagliflozin	plasma	HPLC	NA	NA	2.0	NA	0.67	4.0	NA	NA	NA	hr	NA
+Kim2021	all	25.0	E, L	thalf	 empagliflozin	plasma	HPLC	NA	NA	8.03	NA	NA	NA	0.94	NA	NA	hr	NA
+Kim2021	all	25.0	E, L	auc_inf	 empagliflozin	plasma	HPLC	NA	NA	11.3	NA	NA	NA	2.45	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	L	cmax	lobeglitazone	plasma	HPLC	NA	NA	50.36	NA	NA	NA	7.7	NA	NA	ng/ml	NA
+Kim2021	all	25.0	L	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	332.8	NA	NA	NA	80.77	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	L	tmax	lobeglitazone	plasma	HPLC	NA	NA	0.67	NA	0.67	1.5	NA	NA	NA	hr	NA
+Kim2021	all	25.0	L	thalf	lobeglitazone	plasma	HPLC	NA	NA	7.06	NA	NA	NA	1.38	NA	NA	hr	NA
+Kim2021	all	25.0	L	auc_inf	lobeglitazone	plasma	HPLC	NA	NA	9.67	NA	NA	NA	3.76	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	L, E	cmax	lobeglitazone	plasma	HPLC	NA	NA	47.26	NA	NA	NA	7.17	NA	NA	ng/ml	NA
+Kim2021	all	25.0	L, E	auc_end	lobeglitazone	plasma	HPLC	24.0	hr	311.7	NA	NA	NA	79.21	NA	NA	ng/ml*hr	NA
+Kim2021	all	25.0	L, E	tmax	lobeglitazone	plasma	HPLC	NA	NA	1.0	NA	0.67	2.5	NA	NA	NA	hr	NA
+Kim2021	all	25.0	L, E	thalf	lobeglitazone	plasma	HPLC	NA	NA	6.59	NA	NA	NA	1.2	NA	NA	hr	NA
+Kim2021	all	25.0	L, E	auc_inf	lobeglitazone	plasma	HPLC	NA	NA	8.38	NA	NA	NA	3.44	NA	NA	ng/ml*hr	NA

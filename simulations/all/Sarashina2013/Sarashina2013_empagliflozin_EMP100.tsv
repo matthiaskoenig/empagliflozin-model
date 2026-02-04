@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	0.5	hr		661.951922667338	1305.32809230615	643.376169638812	262.657221380233	semi-log scale	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	0.75	hr		1469.00056128405	2983.56686497536	1514.56630369131	618.31910427615	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	1.0	hr		2032.58308370231	3778.33437877336	1745.75129507105	712.699981787831	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	1.5	hr		1806.53291366739	2984.2528962759	1177.71998260851	480.802169545055	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	2.0	hr		2157.39216621673	3563.02602249004	1405.63385627331	573.847618841706	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	3.0	hr		2501.33448015712	3360.75959535658	859.42511519946	350.858834061888	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	4.0	hr		2035.38888794947	2654.68270765614	619.29381970667	252.825643190084	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	6.0	hr		1429.48598714952	1757.53495166301	328.04896451349	133.925428951073	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	8.0	hr		974.702004342815	1234.40150765655	259.699503313735	106.021878262147	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	10.0	hr		705.025734156745	947.088946516055	242.06321235931	98.8218926298794	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	12.0	hr		540.927790259144	726.683103390968	185.755313131824	75.8342890306467	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	14.0	hr		467.106418553072	591.589407262999	124.482988709927	50.8199673326601	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	24.0	hr		177.049268754005	224.222257988267	47.172989234262	19.2582922109577	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	34.0	hr		82.5308515690578	101.461307541337	18.9304559722792	7.72832628838441	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	48.0	hr		30.4223643046775	44.6519563638816	14.2295920592041	5.80920663216824	SD bars were unclear	nmol/l	nmol/l
+Sarashina2013		EMP100	6.0	EMP100	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP100	72.0	hr		11.2607385751971	20.9314343334343	9.6706957582372	3.94804501089647		nmol/l	nmol/l

@@ -1,0 +1,8 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Sarashina2013	placebo	0	NA	hr	oral	single dose	dosing	tablet	placebo	0	mg	dose escalation study
+Sarashina2013	EMP1	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	1	mg	dose escalation study
+Sarashina2013	EMP5	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	5	mg	dose escalation study
+Sarashina2013	EMP10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10	mg	dose escalation study
+Sarashina2013	EMP25	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25	mg	dose escalation study
+Sarashina2013	EMP100	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	100	mg	dose escalation study
+Sarashina2013	OGTT10	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10	mg	empagliflozin administered with an oral glucose test

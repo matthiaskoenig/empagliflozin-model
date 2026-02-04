@@ -1,0 +1,8 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Heise2013a	EMP10_single	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	10.0	mg	NA
+Heise2013a	EMP25_single	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	25.0	mg	NA
+Heise2013a	EMP100_single	0	NA	hr	oral	single dose	dosing	tablet	empagliflozin	100.0	mg	NA
+Heise2013a	Placebo	S0T1R28	NA	day	oral	multiple dose	dosing	tablet	placebo	0.0	mg	NA
+Heise2013a	EMP10	S0T1R28	NA	day	oral	multiple dose	dosing	tablet	empagliflozin	10.0	mg	NA
+Heise2013a	EMP25	S0T1R28	NA	day	oral	multiple dose	dosing	tablet	empagliflozin	25.0	mg	NA
+Heise2013a	EMP100	S0T1R28	NA	day	oral	multiple dose	dosing	tablet	empagliflozin	100.0	mg	NA

@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Brand2012		all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	2.0	hr		3.44828	3.86207	0.41379	0.1034475	unclear if SD or SE	percent	percent
+Brand2012		all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	4.0	hr		7.724	8.68966	0.96566	0.241415	unclear if SD or SE	percent	percent
+Brand2012		all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	8.0	hr		12.95655	15.58621	2.62966	0.657415	unclear if SD or SE	percent	percent
+Brand2012		all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	12.0	hr		15.86207	18.89655	3.03448	0.758620000000001	unclear if SD or SE	percent	percent
+Brand2012		all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	empagliflozin_recovery_EMP50_D10	24.0	hr		19.4428	22.48276	3.03996	0.75999	unclear if SD or SE	percent	percent

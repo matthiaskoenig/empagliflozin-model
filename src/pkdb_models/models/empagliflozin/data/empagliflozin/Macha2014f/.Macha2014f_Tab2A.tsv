@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2014f	normal	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	26.7	percent	NA
+Macha2014f	normal	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	96.0	hr	16.1	NA	NA	NA	4.2987	NA	26.7	percent	NA
+Macha2014f	mild	9.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	36.4	percent	NA
+Macha2014f	mild	9.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_mild	96.0	hr	11.7	NA	NA	NA	4.2588	NA	36.4	percent	NA
+Macha2014f	moderate	7.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	70.1	percent	NA
+Macha2014f	moderate	7.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_moderate	96.0	hr	7.7	NA	NA	NA	5.3976999999999995	NA	70.1	percent	NA
+Macha2014f	severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	36.1	percent	NA
+Macha2014f	severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	96.0	hr	3.6	NA	NA	NA	1.2996	NA	36.1	percent	NA
+Macha2014f	esrd	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_esrd	0.0	hr	0.0	NA	NA	NA	NA	NA	56.4	percent	NA
+Macha2014f	esrd	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_esrd	96.0	hr	0.3	NA	NA	NA	0.1692	NA	56.4	percent	NA
+Macha2014f	normal	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_normal	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	mg	NA
+Macha2014f	normal	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_normal	96.0	hr	8.05	NA	NA	NA	2.14935	NA	NA	mg	NA
+Macha2014f	mild	9.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_mild	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	mg	NA
+Macha2014f	mild	9.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_mild	96.0	hr	5.85	NA	NA	NA	2.1294	NA	NA	mg	NA
+Macha2014f	moderate	7.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	mg	NA
+Macha2014f	moderate	7.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_moderate	96.0	hr	3.85	NA	NA	NA	2.6988499999999997	NA	NA	mg	NA
+Macha2014f	severe	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_severe	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	mg	NA
+Macha2014f	severe	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_severe	96.0	hr	1.8000000000000003	NA	NA	NA	0.6498	NA	NA	mg	NA
+Macha2014f	esrd	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_esrd	0.0	hr	0.0	NA	NA	NA	NA	NA	NA	mg	NA
+Macha2014f	esrd	8.0	EMP50	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_esrd	96.0	hr	0.15	NA	NA	NA	0.0846	NA	NA	mg	NA

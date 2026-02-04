@@ -1,0 +1,33 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Sarashina2014	normal	8.0	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	7560.0	NA	NA	NA	1126.44	NA	14.9	nmol/l*hr	NA
+Sarashina2014	normal	8.0	EMP25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1070.0	NA	NA	NA	193.67	NA	18.1	nmol/l	NA
+Sarashina2014	normal	8.0	EMP25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	2.5	1.0	2.5	NA	NA	NA	hr	NA
+Sarashina2014	normal	8.0	EMP25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	19.1	NA	NA	NA	10.8297	NA	56.7	hr	NA
+Sarashina2014	normal	8.0	EMP25	recovery	empagliflozin	urine	HPLC MS/MS	72.0	hr	19.1	NA	NA	NA	3.1515000000000004	NA	16.5	percent	NA
+Sarashina2014	normal	8.0	EMP25	clearance_renal	empagliflozin	urine	HPLC MS/MS	96.0	hr	24.1	NA	NA	NA	6.097300000000001	NA	25.3	ml/min	NA
+Sarashina2014	normal	8.0	EMP25	cumulative amount (change)	glucose	urine	HPLC MS/MS	24.0	hr	2.79	NA	NA	NA	NA	2.11	NA	g	UGE
+Sarashina2014	normal	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	78.0	NA	NA	NA	NA	7.63	NA	g	UGE
+Sarashina2014	mild	8.0	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	9730.0	NA	NA	NA	1430.31	NA	14.7	nmol/l*hr	NA
+Sarashina2014	mild	8.0	EMP25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1030.0	NA	NA	NA	354.32	NA	34.4	nmol/l	NA
+Sarashina2014	mild	8.0	EMP25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	2.5	1.0	4.0	NA	NA	NA	hr	NA
+Sarashina2014	mild	8.0	EMP25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	18.4	NA	NA	NA	6.2008	NA	33.7	hr	NA
+Sarashina2014	mild	8.0	EMP25	recovery	empagliflozin	urine	HPLC MS/MS	72.0	hr	16.8	NA	NA	NA	3.3095999999999997	NA	19.7	percent	NA
+Sarashina2014	mild	8.0	EMP25	clearance_renal	empagliflozin	urine	HPLC MS/MS	96.0	hr	16.4	NA	NA	NA	3.9032	NA	23.8	ml/min	NA
+Sarashina2014	mild	8.0	EMP25	cumulative amount (change)	glucose	urine	HPLC MS/MS	24.0	hr	4.77	NA	NA	NA	NA	3.02	NA	g	UGE
+Sarashina2014	mild	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	66.5	NA	NA	NA	NA	7.08	NA	g	UGE
+Sarashina2014	moderate	8.0	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	10800.0	NA	NA	NA	991.44	NA	9.18	nmol/l*hr	NA
+Sarashina2014	moderate	8.0	EMP25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1000.0	NA	NA	NA	264.0	NA	26.4	nmol/l	NA
+Sarashina2014	moderate	8.0	EMP25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	2.5	0.667	6.0	NA	NA	NA	hr	NA
+Sarashina2014	moderate	8.0	EMP25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	24.3	NA	NA	NA	9.5256	NA	39.2	hr	NA
+Sarashina2014	moderate	8.0	EMP25	recovery	empagliflozin	urine	HPLC MS/MS	72.0	hr	14.6	NA	NA	NA	4.0442	NA	27.7	percent	NA
+Sarashina2014	moderate	8.0	EMP25	clearance_renal	empagliflozin	urine	HPLC MS/MS	96.0	hr	13.2	NA	NA	NA	4.395599999999999	NA	33.3	ml/min	NA
+Sarashina2014	moderate	8.0	EMP25	cumulative amount (change)	glucose	urine	HPLC MS/MS	24.0	hr	1.59	NA	NA	NA	NA	0.774	NA	g	UGE
+Sarashina2014	moderate	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	58.7	NA	NA	NA	NA	4.61	NA	g	UGE
+Sarashina2014	severe	8.0	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	12200.0	NA	NA	NA	4892.2	NA	40.1	nmol/l*hr	NA
+Sarashina2014	severe	8.0	EMP25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1070.0	NA	NA	NA	452.61	NA	42.3	nmol/l	NA
+Sarashina2014	severe	8.0	EMP25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	3.25	1.0	6.0	NA	NA	NA	hr	NA
+Sarashina2014	severe	8.0	EMP25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	19.4	NA	NA	NA	8.6718	NA	44.7	hr	NA
+Sarashina2014	severe	8.0	EMP25	recovery	empagliflozin	urine	HPLC MS/MS	72.0	hr	5.41	NA	NA	NA	2.4507299999999996	NA	45.3	percent	NA
+Sarashina2014	severe	8.0	EMP25	clearance_renal	empagliflozin	urine	HPLC MS/MS	96.0	hr	4.45	NA	NA	NA	2.1093	NA	47.4	ml/min	NA
+Sarashina2014	severe	8.0	EMP25	cumulative amount (change)	glucose	urine	HPLC MS/MS	24.0	hr	0.953	NA	NA	NA	NA	0.569	NA	g	UGE
+Sarashina2014	severe	8.0	EMP25	cumulative amount	glucose	urine	HPLC MS/MS	24.0	hr	21.7	NA	NA	NA	NA	4.09	NA	g	UGE

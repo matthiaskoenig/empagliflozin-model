@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	sd	min	max	unit	comments
+Li2020	fasting	24.0	test	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	326.0	56.1	NA	NA	ng/ml	NA
+Li2020	fasting	24.0	ref	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	323.0	52.2	NA	NA	ng/ml	NA
+Li2020	fed	24.0	test	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	315.0	59.4	NA	NA	ng/ml	NA
+Li2020	fed	24.0	ref	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	317.0	64.1	NA	NA	ng/ml	 
+Li2020	fasting	24.0	test	auc_end	empagliflozin	plasma	LC MS/MS	72.0	hr	3193.7	479.68	NA	NA	ng/ml*hr	NA
+Li2020	fasting	24.0	ref	auc_end	empagliflozin	plasma	LC MS/MS	72.0	hr	3081.79	501.77	NA	NA	ng/ml*hr	NA
+Li2020	fed	24.0	test	auc_end	empagliflozin	plasma	LC MS/MS	72.0	hr	3098.32	504.45	NA	NA	ng/ml*hr	NA
+Li2020	fed	24.0	ref	auc_end	empagliflozin	plasma	LC MS/MS	72.0	hr	3117.82	555.4	NA	NA	ng/ml*hr	NA
+Li2020	fasting	24.0	test	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3224.47	484.8	NA	NA	ng/ml*hr	NA
+Li2020	fasting	24.0	ref	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3113.27	508.57	NA	NA	ng/ml*hr	NA
+Li2020	fasting	24.0	test	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3147.09	549.73	NA	NA	ng/ml*hr	NA
+Li2020	fasting	24.0	ref	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	3163.95	584.98	NA	NA	ng/ml*hr	NA
+Li2020	fed	24.0	test	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	4.0	NA	2.0	6.0	hr	NA
+Li2020	fed	24.0	ref	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	4.0	NA	2.0	6.0	hr	NA
+Li2020	fasting	24.0	test	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	4.0	NA	2.0	6.0	hr	NA
+Li2020	fasting	24.0	ref	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	4.0	NA	2.0	6.0	hr	NA
+Li2020	fed	24.0	test	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	8.88	3.82	NA	NA	hr	NA
+Li2020	fed	24.0	ref	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	8.93	3.66	NA	NA	hr	NA
+Li2020	fasting	24.0	test	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	10.86	6.24	NA	NA	hr	NA
+Li2020	fasting	24.0	ref	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	11.26	6.09	NA	NA	hr	NA

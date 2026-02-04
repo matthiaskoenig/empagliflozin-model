@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.0	hr		0.0				SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.5	hr		348.268757555854	384.870562869463	36.6018053136099	157.122749341323	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.0	hr		480.818959362595	580.680455207471	99.8614958448753	237.061803144228	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.5	hr		576.038959648171	598.096995744924	22.058036096753	244.172076044438	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.0	hr		395.430433789302	518.559794766352	123.129360977049	211.701149716655	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	3.0	hr		296.469333942561	346.884013479167	50.414679536606	141.614805492114	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	4.0	hr		248.892442718299	268.283857364518	19.3914146462195	109.526426128115	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	8.0	hr		179.779345270392	204.988767360615	25.2094220902229	83.6863138392658	SD are not symmetrical in figure	nmol/l	nmol/l
+Ayoub2017		all	6	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	12.0	hr		128.116938439425	148.477882171517	20.360943732092	60.6158415682166	SD are not symmetrical in figure	nmol/l	nmol/l

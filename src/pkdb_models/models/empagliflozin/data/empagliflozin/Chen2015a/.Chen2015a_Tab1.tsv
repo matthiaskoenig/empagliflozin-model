@@ -1,0 +1,19 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Chen2015a	all	8.0	EMP50, C14EMP	auc_inf	C14-empagliflozin	blood	LC MS/MS	NA	NA	11000.0	NA	NA	NA	NA	NA	19.5	nmol/l*hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	cmax	C14-empagliflozin	blood	LC MS/MS	NA	NA	1470.0	NA	NA	NA	NA	NA	21.4	nmol/l	NA
+Chen2015a	all	8.0	EMP50, C14EMP	tmax	C14-empagliflozin	blood	LC MS/MS	NA	NA	1.0	NA	0.8	1.5	NA	NA	NA	hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	thalf	C14-empagliflozin	blood	LC MS/MS	NA	NA	8.7	NA	NA	NA	NA	NA	12.8	hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	auc_inf	C14-empagliflozin	plasma	LC MS/MS	NA	NA	16100.0	NA	NA	NA	NA	NA	20.9	nmol/l*hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	cmax	C14-empagliflozin	plasma	LC MS/MS	NA	NA	2200.0	NA	NA	NA	NA	NA	21.4	nmol/l	NA
+Chen2015a	all	8.0	EMP50, C14EMP	tmax	C14-empagliflozin	plasma	LC MS/MS	NA	NA	1.0	NA	0.8	1.0	NA	NA	NA	hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	thalf	C14-empagliflozin	plasma	LC MS/MS	NA	NA	9.2	NA	NA	NA	NA	NA	6.9	hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	clearance_renal	C14-empagliflozin	urine	LC MS/MS	NA	NA	63.7	NA	NA	NA	NA	NA	21.2	l/hr	NA
+Chen2015a	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin	urine	LC MS/MS	96.0	hr	54.4	NA	NA	NA	NA	NA	6.4	percent	NA
+Chen2015a	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin	feces	LC MS/MS	96.0	hr	41.2	NA	NA	NA	NA	NA	7.2	percent	NA
+Chen2015a	all	8.0	EMP50	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	15600.0	NA	NA	NA	NA	NA	19.5	nmol/l*hr	NA
+Chen2015a	all	8.0	EMP50	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	2260.0	NA	NA	NA	NA	NA	20.9	nmol/l	NA
+Chen2015a	all	8.0	EMP50	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	0.9	NA	0.8	1.0	NA	NA	NA	hr	NA
+Chen2015a	all	8.0	EMP50	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	15.9	NA	NA	NA	NA	NA	46.3	hr	NA
+Chen2015a	all	8.0	EMP50	clearance_renal	empagliflozin	urine	LC MS/MS	NA	NA	34.3	NA	NA	NA	NA	NA	27.9	l/hr	NA
+Chen2015a	all	8.0	EMP50	recovery	empagliflozin	urine	LC MS/MS	96.0	hr	28.6	NA	NA	NA	NA	NA	13.6	percent	NA
+Chen2015a	all	8.0	EMP50	recovery	empagliflozin	feces	LC MS/MS	96.0	hr	NA	NA	NA	NA	NA	NA	NA	percent	NA

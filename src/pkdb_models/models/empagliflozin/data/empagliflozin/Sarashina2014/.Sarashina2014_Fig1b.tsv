@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Sarashina2014	NA	normal	8	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	NA	759.493670886075	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	NA	mild	8	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	NA	970.464135021096	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	NA	moderate	8	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	NA	1086.49789029535	NA	NA	NA	nmol/l*hr	NA
+Sarashina2014	NA	severe	8	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	NA	1213.08016877637	NA	NA	NA	nmol/l*hr	NA

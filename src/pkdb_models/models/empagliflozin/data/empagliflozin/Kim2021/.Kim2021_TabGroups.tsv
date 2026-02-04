@@ -1,0 +1,11 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Kim2021	all	30	NA	species	30	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	only 25 completed the study
+Kim2021	all	30	NA	healthy	30	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Kim2021	all	30	NA	sex	30	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Kim2021	all	30	NA	weight	30	NA	NA	73.1	NA	9.2	NA	NA	NA	kg	NA
+Kim2021	all	30	NA	age	30	NA	NA	26.5	NA	4.8	NA	19.0	45.0	year	NA
+Kim2021	all	30	NA	height	30	NA	NA	176.0	NA	6.1	NA	NA	NA	cm	NA
+Kim2021	all	30	NA	medication	30	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Kim2021	all	30	NA	overnight fast	30	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Kim2021	all	30	NA	smoking	30	NA	N	NA	NA	NA	NA	NA	NA	NA	during study
+Kim2021	all	30	NA	alcohol	30	NA	N	NA	NA	NA	NA	NA	NA	NA	during study

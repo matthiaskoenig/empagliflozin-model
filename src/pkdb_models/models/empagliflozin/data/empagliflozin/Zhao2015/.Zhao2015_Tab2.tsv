@@ -1,0 +1,25 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Zhao2015	EMP10	9.0	SING10	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	2580.0	NA	NA	NA	319.92	NA	12.4	nmol/l*hr	NA
+Zhao2015	EMP10	9.0	SING10	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	439.0	NA	NA	NA	61.46	NA	14.0	nmol/l	NA
+Zhao2015	EMP10	9.0	SING10	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.0	0.7	2.0	NA	NA	NA	hr	NA
+Zhao2015	EMP10	9.0	SING10	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	9.62	NA	NA	NA	2.85714	NA	29.7	hr	NA
+Zhao2015	EMP10	9.0	SING10	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	18.5	NA	NA	NA	3.256	NA	17.6	percent	NA
+Zhao2015	EMP10	9.0	SING10	clearance_renal	empagliflozin	urine	HPLC MS/MS	48.0	hr	29.5	NA	NA	NA	6.372	NA	21.6	ml/min	NA
+Zhao2015	EMP25	9.0	SING25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	7450.0	NA	NA	NA	1959.35	NA	26.3	nmol/l*hr	NA
+Zhao2015	EMP25	9.0	SING25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1130.0	NA	NA	NA	318.66	NA	28.2	nmol/l	NA
+Zhao2015	EMP25	9.0	SING25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.5	1.0	3.0	NA	NA	NA	hr	NA
+Zhao2015	EMP25	9.0	SING25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	10.7	NA	NA	NA	2.3112	NA	21.6	hr	NA
+Zhao2015	EMP25	9.0	SING25	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	18.4	NA	NA	NA	4.3792	NA	23.8	percent	NA
+Zhao2015	EMP25	9.0	SING25	clearance_renal	empagliflozin	urine	HPLC MS/MS	48.0	hr	26.7	NA	NA	NA	8.4105	NA	31.5	ml/min	NA
+Zhao2015	EMP10	9.0	MULTI10	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	2680.0	NA	NA	NA	431.48	NA	16.1	nmol/l*hr	steady state
+Zhao2015	EMP10	9.0	MULTI10	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	505.0	NA	NA	NA	126.25	NA	25.0	nmol/l	steady state
+Zhao2015	EMP10	9.0	MULTI10	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.0	0.7	2.0	NA	NA	NA	hr	steady state
+Zhao2015	EMP10	9.0	MULTI10	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	13.9	NA	NA	NA	7.3531	NA	52.9	hr	steady state
+Zhao2015	EMP10	9.0	MULTI10	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	20.1	NA	NA	NA	2.9748	NA	14.8	percent	steady state
+Zhao2015	EMP10	9.0	MULTI10	clearance_renal	empagliflozin	urine	HPLC MS/MS	48.0	hr	28.1	NA	NA	NA	4.3274	NA	15.4	ml/min	steady state
+Zhao2015	EMP25	9.0	NA	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	7670.0	NA	NA	NA	1664.39	NA	21.7	nmol/l*hr	steady state
+Zhao2015	EMP25	9.0	MULTI25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1310.0	NA	NA	NA	472.91	NA	36.1	nmol/l	steady state
+Zhao2015	EMP25	9.0	MULTI25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	NA	1.5	1.0	2.5	NA	NA	NA	hr	steady state
+Zhao2015	EMP25	9.0	MULTI25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	12.1	NA	NA	NA	2.9161	NA	24.1	hr	steady state
+Zhao2015	EMP25	9.0	MULTI25	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	21.4	NA	NA	NA	5.136	NA	24.0	percent	steady state
+Zhao2015	EMP25	9.0	MULTI25	clearance_renal	empagliflozin	urine	HPLC MS/MS	48.0	hr	27.2	NA	NA	NA	9.2752	NA	34.1	ml/min	steady state

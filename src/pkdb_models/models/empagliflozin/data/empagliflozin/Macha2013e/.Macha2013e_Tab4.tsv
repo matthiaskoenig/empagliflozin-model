@@ -1,0 +1,5 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Macha2013e	all	16.0	WAR25	prothrombin time	warfarin	plasma	coagulation assay	168.0	hr	20.2	NA	NA	NA	NA	NA	NA	s	maximum PT, geometric mean
+Macha2013e	all	16.0	WAR25	inr	warfarin	plasma	coagulation assay	NA	NA	1.76	NA	NA	NA	NA	NA	NA	NA	maximum INR, geometric mean
+Macha2013e	all	16.0	EMP25R7, WAR25	prothrombin time	warfarin	plasma	coagulation assay	168.0	hr	18.1	NA	NA	NA	NA	NA	NA	s	maximum PT, geometric mean
+Macha2013e	all	16.0	EMP25R7, WAR25	inr	warfarin	plasma	coagulation assay	NA	NA	1.53	NA	NA	NA	NA	NA	NA	NA	maximum INR, geometric mean

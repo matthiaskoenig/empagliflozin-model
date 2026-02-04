@@ -1,0 +1,17 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Friedrich2013	all	16.0	EMP50_D5	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	9300.0	NA	NA	NA	12.5	NA	NA	nmol/l*hr	NA
+Friedrich2013	all	16.0	EMP50_D5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1450.0	NA	NA	NA	17.1	NA	NA	nmol/l	cmax in steady state
+Friedrich2013	all	16.0	EMP50_D5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1.0	NA	1.0	3.0	NA	NA	NA	hr	tmax in steady state
+Friedrich2013	all	16.0	EMP50_D5	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	8.3	NA	NA	NA	11.4	NA	NA	hr	thalf in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	9520.0	NA	NA	NA	17.1	NA	NA	nmol/l*hr	NA
+Friedrich2013	all	16.0	EMP50_D7, LIN5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1310.0	NA	NA	NA	26.9	NA	NA	nmol/l	cmax in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1.5	NA	1.0	4.02	NA	NA	NA	hr	tmax in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	8.44	NA	NA	NA	10.7	NA	NA	hr	thalf in steady state
+Friedrich2013	all	16.0	LIN5	auc_inf	linagliptin	plasma	HPLC MS/MS	NA	NA	155.0	NA	NA	NA	16.8	NA	NA	ng/ml*hr	NA
+Friedrich2013	all	16.0	LIN5	cmax	linagliptin	plasma	HPLC MS/MS	NA	NA	11.5	NA	NA	NA	28.8	NA	NA	ng/ml	cmax in steady state
+Friedrich2013	all	16.0	LIN5	tmax	linagliptin	plasma	HPLC MS/MS	NA	NA	1.5	NA	0.5	4.0	NA	NA	NA	hr	tmax in steady state
+Friedrich2013	all	16.0	LIN5	thalf	linagliptin	plasma	HPLC MS/MS	NA	NA	NA	NA	NA	NA	NA	NA	NA	hr	thalf in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	auc_inf	linagliptin	plasma	HPLC MS/MS	NA	NA	159.0	NA	NA	NA	14.8	NA	NA	ng/ml*hr	NA
+Friedrich2013	all	16.0	EMP50_D7, LIN5	cmax	linagliptin	plasma	HPLC MS/MS	NA	NA	11.6	NA	NA	NA	31.0	NA	NA	ng/ml	cmax in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	tmax	linagliptin	plasma	HPLC MS/MS	NA	NA	1.5	NA	0.5	4.0	NA	NA	NA	hr	tmax in steady state
+Friedrich2013	all	16.0	EMP50_D7, LIN5	thalf	linagliptin	plasma	HPLC MS/MS	NA	NA	NA	NA	NA	NA	NA	NA	NA	hr	thalf in steady state

@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	mean_sd	mean_se	min	max	cv	comments	mean_unit	median_unit
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	0.0	hr	0.0								mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	1.0	hr	3.082661911826998e-05		4.3689524937404215e-05	8.91808693343679e-06					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	1.5	hr	0.000136834705006997		0.00012397179918786273	2.5305637542087203e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	2.0	hr	0.0002514919861879005		0.0002366331122244178	4.830253176638102e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	2.5	hr	0.00037524201113750224		0.00022487907759658824	4.5903249494948875e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	3.0	hr	0.00047437509564014025		0.00024860892109050827	5.074708351463266e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	3.5	hr	0.0005582057577027737		0.0002058064931061478	4.201007448847373e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	4.0	hr	0.0006134275430297467		0.00018407261775657617	3.757366576016513e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	6.0	hr	0.0005098589737618899		0.00010866937674785822	2.2182043641543194e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	8.0	hr	0.0003530645873114087		7.141130472002112e-05	1.4576771535871316e-05					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	12.0	hr	0.0002007056856261463		3.7258072027837106e-05	7.6052721056719874e-06					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	24.0	hr	5.74395277095822e-05		1.131048615130769e-05	2.3087433177932793e-06					mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	36.0	hr	1.9959681443484163e-05								mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	48.0	hr	1.4858873963482654e-05								mole/meter^3	ng/ml
+Li2020		fasting	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fasting	72.0	hr	4.435484765218703e-06								mole/meter^3	ng/ml

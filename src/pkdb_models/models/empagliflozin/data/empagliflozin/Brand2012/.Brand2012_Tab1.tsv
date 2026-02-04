@@ -1,0 +1,21 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Brand2012	all	16.0	EMP50_D5	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	8430.0	NA	NA	NA	1761.87	NA	20.9	nmol/l*hr	auc_end in steady state
+Brand2012	all	16.0	EMP50_D5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1180.0	NA	NA	NA	280.84	NA	23.8	nmol/l	cmax in steady state
+Brand2012	all	16.0	EMP50_D5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	2.5	NA	1.0	4.0	0.0	NA	NA	hr	NA
+Brand2012	all	16.0	EMP50_D5	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	8.5	NA	NA	NA	1.615	NA	19.0	hr	NA
+Brand2012	all	16.0	EMP50_D5	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	17.1	NA	NA	NA	3.078	NA	18.0	percent	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	9280.0	NA	NA	NA	1791.04	NA	19.3	nmol/l*hr	auc_end in steady state
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1260.0	NA	NA	NA	252.0	NA	20.0	nmol/l	cmax in steady state
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	2.2	NA	0.7	4.0	0.0	NA	NA	hr	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	10.7	NA	NA	NA	2.8676	NA	26.8	hr	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	recovery	empagliflozin	urine	HPLC MS/MS	24.0	hr	19.3	NA	NA	NA	3.2424	NA	16.8	percent	NA
+Brand2012	all	16.0	SIT100_D5	auc_end	sitagliptin	plasma	HPLC MS/MS	24.0	hr	2600.0	NA	NA	NA	486.2	NA	18.7	ng/ml*hr	auc_end in steady state
+Brand2012	all	16.0	SIT100_D5	cmax	sitagliptin	plasma	HPLC MS/MS	NA	NA	341.0	NA	NA	NA	90.365	NA	26.5	ng/ml	cmax in steady state
+Brand2012	all	16.0	SIT100_D5	tmax	sitagliptin	plasma	HPLC MS/MS	NA	NA	3.0	NA	0.7	6.0	0.0	NA	NA	hr	NA
+Brand2012	all	16.0	SIT100_D5	thalf	sitagliptin	plasma	HPLC MS/MS	NA	NA	12.7	NA	NA	NA	1.905	NA	15.0	hr	NA
+Brand2012	all	16.0	SIT100_D5	recovery	sitagliptin	urine	HPLC MS/MS	24.0	hr	60.3	NA	NA	NA	NA	NA	17.3	percent	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	auc_end	sitagliptin	plasma	HPLC MS/MS	24.0	hr	2680.0	NA	NA	NA	570.84	NA	21.3	ng/ml*hr	auc_end in steady state
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	cmax	sitagliptin	plasma	HPLC MS/MS	NA	NA	370.0	NA	NA	NA	100.27	NA	27.1	ng/ml	cmax in steady state
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	tmax	sitagliptin	plasma	HPLC MS/MS	NA	NA	3.0	NA	0.7	4.0	0.0	NA	NA	hr	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	thalf	sitagliptin	plasma	HPLC MS/MS	NA	NA	13.2	NA	NA	NA	2.5212	NA	19.1	hr	NA
+Brand2012	all	16.0	EMP50_D10, SIT100_D5	recovery	sitagliptin	urine	HPLC MS/MS	24.0	hr	62.8	NA	NA	NA	8.792	NA	14.0	percent	NA

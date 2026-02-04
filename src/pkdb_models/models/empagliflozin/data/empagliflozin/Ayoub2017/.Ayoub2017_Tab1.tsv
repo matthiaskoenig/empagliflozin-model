@@ -1,0 +1,7 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Ayoub2017	all	6	EMP25	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	576.0	NA	NA	NA	86.0	NA	NA	nmol/l	NA
+Ayoub2017	all	6	EMP25	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	2.0	NA	NA	NA	hr	NA
+Ayoub2017	all	6	EMP25	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	6.1	NA	NA	NA	1.2	NA	NA	hr	NA
+Ayoub2017	all	6	EMP25	kel	empagliflozin	plasma	LC MS/MS	NA	NA	0.10012	NA	NA	NA	0.02156	NA	NA	1/hr	NA
+Ayoub2017	all	6	EMP25	auc_end	empagliflozin	plasma	LC MS/MS	12.0	hr	2806.0	NA	NA	NA	234.0	NA	NA	nmol/l*hr	NA
+Ayoub2017	all	6	EMP25	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	4103.0	NA	NA	NA	427.0	NA	NA	nmol/l*hr	NA

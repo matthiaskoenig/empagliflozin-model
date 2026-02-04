@@ -1,0 +1,49 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Heise2013	EMP2.5	9.0	EMP2.5_single	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	402.0	68.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5_single	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	62.4	12.3	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP2.5	9.0	EMP2.5_single	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	0.7	1.5	NA	NA	NA	hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5_single	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	11.4	2.3	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5_single	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	11.4	3.5	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP2.5	9.0	EMP2.5_single	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	29.1	15.1	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP10	9.0	EMP10_single	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	1630.0	231.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP10	9.0	EMP10_single	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	245.0	51.5	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP10	9.0	EMP10_single	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	2.0	NA	NA	NA	hr	NA
+Heise2013	EMP10	9.0	EMP10_single	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	11.9	1.4	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP10	9.0	EMP10_single	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	109.0	4.0	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP10	9.0	EMP10_single	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	24.5	6.6	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP25	9.0	EMP25_single	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	4310.0	1040.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP25	9.0	EMP25_single	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	606.0	147.0	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP25	9.0	EMP25_single	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	4.0	NA	NA	NA	hr	NA
+Heise2013	EMP25	9.0	EMP25_single	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	10.8	2.0	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP25	9.0	EMP25_single	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	9.0	6.5	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP25	9.0	EMP25_single	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	21.1	11.1	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP100	9.0	EMP100_single	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	20000.0	3640.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP100	9.0	EMP100_single	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	2750.0	701.0	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP100	9.0	EMP100_single	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	3.0	NA	1.0	4.0	NA	NA	NA	hr	NA
+Heise2013	EMP100	9.0	EMP100_single	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.6	3.7	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP100	9.0	EMP100_single	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	7.88	3.0	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP100	9.0	EMP100_single	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	15.0	5.9	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP2.5	9.0	EMP2.5	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	471.0	108.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	68.5	16.8	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP2.5	9.0	EMP2.5	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	2.0	NA	NA	NA	hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	10.3	1.9	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP2.5	9.0	EMP2.5	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	15.5	5.1	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP2.5	9.0	EMP2.5	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	33.3	18.4	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP10	8.0	EMP10	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	2030.0	362.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP10	8.0	EMP10	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	283.0	90.1	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP10	8.0	EMP10	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	2.0	NA	NA	NA	hr	NA
+Heise2013	EMP10	8.0	EMP10	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	14.3	2.4	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP10	8.0	EMP10	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	18.7	4.5	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP10	8.0	EMP10	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	34.4	7.9	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP25	9.0	EMP25	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	4990.0	1080.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP25	9.0	EMP25	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	630.0	106.0	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP25	9.0	EMP25	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	2.0	NA	0.7	4.2	NA	NA	NA	hr	NA
+Heise2013	EMP25	9.0	EMP25	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	10.7	2.1	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP25	9.0	EMP25	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	12.7	6.4	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP25	9.0	EMP25	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	23.5	8.7	NA	NA	NA	NA	NA	ml/min	NA
+Heise2013	EMP100	8.0	EMP100	auc_inf	empagliflozin	plasma	LC MS/MS	NA	NA	22800.0	5700.0	NA	NA	NA	NA	NA	nmol/l*hr	NA
+Heise2013	EMP100	8.0	EMP100	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	2750.0	605.0	NA	NA	NA	NA	NA	nmol/l	NA
+Heise2013	EMP100	8.0	EMP100	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.75	NA	1.0	4.0	NA	NA	NA	hr	NA
+Heise2013	EMP100	8.0	EMP100	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	18.8	10.5	NA	NA	NA	NA	NA	hr	NA
+Heise2013	EMP100	8.0	EMP100	recovery	empagliflozin	urine	LC MS/MS	24.0	hr	12.2	7.8	NA	NA	NA	NA	NA	percent	probably 48 hours
+Heise2013	EMP100	8.0	EMP100	clearance_renal	empagliflozin	urine	LC MS/MS	48.0	hr	27.4	16.9	NA	NA	NA	NA	NA	ml/min	NA

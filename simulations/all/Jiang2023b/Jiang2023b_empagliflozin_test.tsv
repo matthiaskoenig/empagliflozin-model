@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	0.0	hr		0.0					mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	0.33	hr		0.00011820566899307839			0.00013572583381569228		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	0.67	hr		0.00044849404203508897			0.00031352224062948395		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	1.0	hr		0.0007023590125723815			0.00035306458731140865		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	1.5	hr		0.0008375082333685952			0.0003210403873065296		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	2.0	hr		0.0007825747545513617			0.0002617601334193817		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	2.5	hr		0.0007196574031567344			0.00032445571057574806		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	3.0	hr		0.0006551210998228022			0.00028631054159486717		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	4.0	hr		0.0005619759197532095			0.00028631054159486717		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	6.0	hr		0.0003898791108627239			0.00034131055268357913		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	8.0	hr		0.00028941538093052026			0.0002173387534957164		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	10.0	hr		0.00022221778673745698			0.00015058470777917492		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	12.0	hr		0.00016211696816874354			0.0001244153476643846		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	24.0	hr		5.721775347132125e-05			5.2116945991319743e-05		mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	34.0	hr		1.951613296696229e-05					mole/meter^3	µg/l
+Jiang2023b		all	27.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test	48.0	hr		0.0					mole/meter^3	µg/l

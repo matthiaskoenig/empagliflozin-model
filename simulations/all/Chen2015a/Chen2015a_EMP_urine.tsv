@@ -1,0 +1,11 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	4.0	hr		10980.3921568627	12627.4509803921	1647.0588235294	582.323231565388		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	8.0	hr		17294.1176470588	20039.2156862745	2745.0980392157	970.538719275658		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	12.0	hr		21137.2549019607	24156.862745098	3019.6078431373	1067.59259120323		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	24.0	hr		26078.431372549	30196.0784313725	4117.6470588235	1455.80807891347		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	36.0	hr		28549.0196078431	32666.6666666666	4117.6470588235	1455.80807891347		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	48.0	hr		29372.5490196078	33764.7058823529	4392.1568627451	1552.86195084105		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	72.0	hr		30470.5882352941	34862.7450980392	4392.1568627451	1552.86195084105		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	96.0	hr		30745.0980392156	34588.2352941176	3843.137254902	1358.75420698593		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	120.0	hr		30745.0980392156	34588.2352941176	3843.137254902	1358.75420698593		nmol	nmol
+Chen2015a		all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	144.0	hr		31568.6274509803	35960.7843137255	4392.1568627452	1552.86195084108		nmol	nmol

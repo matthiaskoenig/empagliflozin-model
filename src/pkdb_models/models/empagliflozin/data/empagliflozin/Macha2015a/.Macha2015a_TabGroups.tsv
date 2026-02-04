@@ -1,0 +1,14 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Macha2015a	all	16	NA	species	16	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	"Sixteen subjects participated in the study (n¼ 7
+[43.8%] men and n¼ 9 [56.3%] women). Median age
+was 38.0 years (range, 23 47 years) and median body
+mass index was 23.3 kg/m2 (range, 19.8 27.8 kg/m2).
+All subjects completed the study and were included in
+the pharmacokinetic, pharmacodynamic, and safety
+analyses."
+Macha2015a	all	16	NA	healthy 	16	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2015a	all	16	NA	ethnicity	16	NA	NR	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2015a	all	16	NA	sex	7	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2015a	all	16	NA	sex	9	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2015a	all	16	NA	age	16	NA	NA	NA	38.0	NA	NA	23.0	47.0	yr	NA
+Macha2015a	all	16	NA	bmi	16	NA	NA	NA	23.3	NA	NA	19.8	27.8	kg/m^2	NA

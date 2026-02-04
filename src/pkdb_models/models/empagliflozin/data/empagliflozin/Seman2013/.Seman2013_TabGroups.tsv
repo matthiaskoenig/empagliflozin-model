@@ -1,0 +1,32 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Seman2013	all	72.0	NA	species	72.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Seman2013	all	72.0	NA	healthy 	72.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Seman2013	all	72.0	NA	ethnicity	72.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Seman2013	all	72.0	NA	sex	72.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Seman2013	all	72.0	NA	age	72.0	NA	NA	NA	36.5	NA	NA	23.0	49.0	yr	NA
+Seman2013	all	72.0	NA	height	72.0	NA	NA	NA	180.0	NA	NA	168.0	193.0	cm	NA
+Seman2013	all	72.0	NA	weight	72.0	NA	NA	NA	79.0	NA	NA	64.0	107.0	kg	NA
+Seman2013	all	72.0	NA	bmi	72.0	NA	NA	NA	24.8	NA	NA	20.2	30.0	kg/m^2	NA
+Seman2013	all	72.0	NA	body surface area	72.0	NA	NA	NA	2.0	NA	NA	1.8	2.3	m^2	NA
+Seman2013	placebo	16.0	all	age	16.0	NA	NA	NA	34.0	NA	NA	23.0	45.0	yr	NA
+Seman2013	placebo	16.0	all	concentration	16.0	glucose	NA	0.058	NA	NA	NA	NA	NA	g	UGE
+Seman2013	EMP0.5	6.0	all	age	6.0	NA	NA	NA	41.0	NA	NA	24.0	45.0	yr	NA
+Seman2013	EMP0.5	6.0	all	concentration	6.0	glucose	NA	3.12	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP2.5	6.0	all	age	6.0	NA	NA	NA	36.5	NA	NA	36.0	45.0	yr	NA
+Seman2013	EMP2.5	6.0	all	concentration	6.0	glucose	NA	30.6	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP10	6.0	all	age	6.0	NA	NA	NA	35.0	NA	NA	23.0	46.0	yr	NA
+Seman2013	EMP10	6.0	all	concentration	6.0	glucose	NA	47.6	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP25	6.0	all	age	6.0	NA	NA	NA	41.0	NA	NA	26.0	49.0	yr	NA
+Seman2013	EMP25	6.0	all	concentration	6.0	glucose	NA	56.5	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP50	5.0	all	age	6.0	NA	NA	NA	40.0	NA	NA	40.0	44.0	yr	NA
+Seman2013	EMP50	5.0	all	concentration	6.0	glucose	NA	63.6	NA	NA	NA	NA	NA	g	NA
+Seman2013	OGTT50	5.0	all	age	5.0	NA	NA	NA	40.0	NA	NA	40.0	44.0	yr	NA
+Seman2013	OGTT50	5.0	all	concentration	5.0	glucose	NA	66.1	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP100	5.0	all	age	6.0	NA	NA	NA	39.0	NA	NA	32.0	46.0	yr	NA
+Seman2013	EMP100	5.0	all	concentration	6.0	glucose	NA	78.6	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP200	6.0	all	age	6.0	NA	NA	NA	35.5	NA	NA	28.0	47.0	yr	NA
+Seman2013	EMP200	6.0	all	concentration	6.0	glucose	NA	69.1	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP400	6.0	all	age	6.0	NA	NA	NA	36.0	NA	NA	26.0	48.0	yr	NA
+Seman2013	EMP400	6.0	all	concentration	6.0	glucose	NA	90.8	NA	NA	NA	NA	NA	g	NA
+Seman2013	EMP800	6.0	all	age	6.0	NA	NA	NA	36.0	NA	NA	24.0	40.0	yr	NA
+Seman2013	EMP800	6.0	all	concentration	6.0	glucose	NA	61.6	NA	NA	NA	NA	NA	g	NA

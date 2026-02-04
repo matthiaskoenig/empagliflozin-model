@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	mean_sd	mean_se	min	max	cv	comments	mean_unit	median_unit
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	0.0	hr	0.0								mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	1.0	hr	4.302420222262141e-05		2.4838714685224733e-05	5.070181403781317e-06					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	1.5	hr	0.00011088711913046756		6.165323823653997e-05	1.2584914555814365e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	2.0	hr	0.00024018150003659276		0.00011709679780177375	2.390228376068342e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	2.5	hr	0.000345080714734015		0.0001969355235757104	4.019929541569474e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	3.0	hr	0.00048058477431144644		0.00022177423826093512	4.526947681947621e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	3.5	hr	0.0005728428574279954		0.00019715729781397134	4.024456489251423e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	4.0	hr	0.000622298512560184		0.0001477016426817828	3.0149471561771e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	6.0	hr	0.0004619557382975279		9.868953602611613e-05	2.0144917184666864e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	8.0	hr	0.0003572782978383665		6.165323823653997e-05	1.2584914555814365e-05					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	12.0	hr	0.00021556455958962896		4.324597646088235e-05	8.827547979797832e-06					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	24.0	hr	6.165323823653997e-05		1.8407261775657617e-05	3.757366576016513e-06					mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	36.0	hr	1.8407261775657617e-05								mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	48.0	hr	6.209678671306183e-06								mole/meter^3	ng/ml
+Li2020		fed	24.0	test	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_test_fed	72.0	hr	4.435484765218703e-06								mole/meter^3	ng/ml

@@ -1,0 +1,13 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Hailat2022	all	26.0	EMP10_test	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	75.06	NA	NA	NA	26.31	NA	NA	µg/l	NA
+Hailat2022	all	26.0	EMP10_test	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	4.77	NA	NA	NA	1.61	NA	NA	hr	NA
+Hailat2022	all	26.0	EMP10_test	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	516.8	NA	NA	NA	149.78	NA	NA	µg/l*hr	NA
+Hailat2022	all	26.0	EMP10_test	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	539.19	NA	NA	NA	141.16	NA	NA	µg/l*hr	NA
+Hailat2022	all	26.0	EMP10_test	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	4.49	NA	NA	NA	1.36	NA	NA	hr	NA
+Hailat2022	all	26.0	EMP10_test	vd	empagliflozin	plasma	HPLC MS/MS	NA	NA	22.87	NA	NA	NA	8.99	NA	NA	l	NA
+Hailat2022	all	26.0	EMP10_reference	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	77.81	NA	NA	NA	21.23	NA	NA	µg/l	NA
+Hailat2022	all	26.0	EMP10_reference	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	4.75	NA	NA	NA	1.619	NA	NA	hr	NA
+Hailat2022	all	26.0	EMP10_reference	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	595.55	NA	NA	NA	154.29	NA	NA	µg/l*hr	NA
+Hailat2022	all	26.0	EMP10_reference	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	NA	527.05	NA	NA	NA	139.52	NA	NA	µg/l*hr	NA
+Hailat2022	all	26.0	EMP10_reference	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	4.0	NA	NA	NA	1.12	NA	NA	hr	NA
+Hailat2022	all	26.0	EMP10_reference	vd	empagliflozin	plasma	HPLC MS/MS	NA	NA	19.07	NA	NA	NA	5.17	NA	NA	l	NA

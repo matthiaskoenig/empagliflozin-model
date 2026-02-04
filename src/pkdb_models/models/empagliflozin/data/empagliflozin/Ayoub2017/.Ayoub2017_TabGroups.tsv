@@ -1,0 +1,8 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Ayoub2017	all	6	NA	species	6	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Ayoub2017	all	6	NA	healthy 	6	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Ayoub2017	all	6	NA	sex	6	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Ayoub2017	all	6	NA	age	6	NA	NA	NA	NA	NA	NA	22.0	33.0	year	NA
+Ayoub2017	all	6	NA	weight	6	NA	NA	77.8	NA	NA	NA	NA	NA	kg	NA
+Ayoub2017	all	6	NA	bmi	6	NA	NA	29.2	NA	NA	NA	NA	NA	kg/m^2	NA
+Ayoub2017	all	6	NA	ethnicity	6	NA	egyptian	NA	NA	NA	NA	NA	NA	NA	NA

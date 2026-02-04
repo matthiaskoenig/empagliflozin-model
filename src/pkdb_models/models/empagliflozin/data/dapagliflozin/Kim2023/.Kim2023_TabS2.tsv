@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	cilow	ciup	unit	comments
+Kim2023	NA	Group1	18.0	EV5, EP25	cumulative amount	glucose	urine	LC MS/MS	uge_EV5, EP25	0.0	day	NA	0.0	NA	NA	NA	NA	NA	mg	NA
+Kim2023	NA	Group1	18.0	EV5, EP25	cumulative amount	glucose	urine	LC MS/MS	uge_EV5, EP25	1.0	day	NA	56351.22	NA	11599.2635785045	2733.9726443769	51853.84	60848.61	mg	day5, 24 hr urinary glucose
+Kim2023	NA	Group1	18.0	EP25	cumulative amount	glucose	urine	LC MS/MS	uge_EP25	0.0	day	NA	0.0	NA	NA	NA	NA	NA	mg	NA
+Kim2023	NA	Group1	18.0	EP25	cumulative amount	glucose	urine	LC MS/MS	uge_EP25	1.0	day	NA	57738.29	NA	11599.2506829401	2733.96960486322	53240.91	62235.67	mg	day5, 24 hr urinary glucose
+Kim2023	NA	Group2	18.0	EV5, DAP10	cumulative amount	glucose	urine	LC MS/MS	uge_EV5, DAP10	0.0	day	NA	0.0	NA	NA	NA	NA	NA	mg	NA
+Kim2023	NA	Group2	18.0	EV5, DAP10	cumulative amount	glucose	urine	LC MS/MS	uge_EV5, DAP10	1.0	day	NA	49485.41	NA	13053.3029422618	3076.69300911854	44424.25	54546.57	mg	day5, 24 hr urinary glucose
+Kim2023	NA	Group2	18.0	DAP10	cumulative amount	glucose	urine	LC MS/MS	uge_DAP10	0.0	day	NA	0.0	NA	NA	NA	NA	NA	mg	NA
+Kim2023	NA	Group2	18.0	DAP10	cumulative amount	glucose	urine	LC MS/MS	uge_DAP10	1.0	day	NA	47444.86	NA	13053.3029422618	3076.69300911854	42383.7	52506.02	mg	day5, 24 hr urinary glucose

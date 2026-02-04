@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	mean_sd	median	min	max	cv	mean_se	comments	mean_unit	median_unit
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_mild	0.0	hr	0.0								percent	percent
+Macha2014b	mild	8.0	EMP50	recovery	empagliflozin-metabolites	urine	HPLC MS/MS	recovery_empagliflozin-metabolites_mild	96.0	hr	47.24	4.76464295510167							percent	percent

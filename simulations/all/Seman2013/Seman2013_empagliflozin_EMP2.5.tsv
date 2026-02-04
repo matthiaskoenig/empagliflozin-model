@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	raw	mean_unit	value_unit
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	0.3	hr		11.5256057014279						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	0.45	hr		18.4191890799774						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	1.0	hr		32.5467232957941						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	1.5	hr		50.3003122022392						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	2.0	hr		47.0418077084874						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	3.0	hr		42.5455345785365						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	4.0	hr		35.9863077051213						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	6.0	hr		23.2848733543994						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	8.0	hr		15.5795105756003						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	10.0	hr		13.1776240919906						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	12.0	hr		9.11717695195269						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	14.0	hr		7.21202145262691						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	24.0	hr		3.22861953577774						nmol/l	nmol/l
+Seman2013		EMP2.5	6.0	EMP2.5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP2.5	34.0	hr		1.545480070147						nmol/l	nmol/l

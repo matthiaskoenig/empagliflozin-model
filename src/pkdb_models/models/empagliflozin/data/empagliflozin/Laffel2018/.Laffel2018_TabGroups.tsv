@@ -1,0 +1,58 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Laffel2018	all	27.0	NA	species	27.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	healthy 	27.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	disease	27.0	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	sex	9.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	sex	18.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	ethnicity	3.0	NA	american indian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	ethnicity	1.0	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	ethnicity	11.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	ethnicity	12.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	age	27.0	NA	NA	14.1	NA	2.0	NA	NA	NA	yr	NA
+Laffel2018	all	27.0	NA	weight	27.0	NA	NA	96.7	NA	23.5	NA	NA	NA	kg	NA
+Laffel2018	all	27.0	NA	bmi	27.0	NA	NA	35.5	NA	6.7	NA	NA	NA	kg/m^2	NA
+Laffel2018	all	27.0	NA	smoking	26.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	smoking	1.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	all	27.0	NA	clearance	27.0	glucose	NA	165.8	NA	25.8	NA	NA	NA	ml/min/(1.73*m^2)	eGFR
+Laffel2018	all	27.0	NA	cumulative amount	27.0	glucose	NA	8.8	NA	22.1	NA	NA	NA	g	UGE
+Laffel2018	all	27.0	NA	hba1c	27.0	glucose	NA	7.0	NA	1.2	NA	NA	NA	percent	NA
+Laffel2018	all	27.0	NA	concentration	27.0	glucose	NA	7.7	NA	3.1	NA	NA	NA	mM	FPG
+Laffel2018	EMP5	9.0	all	sex	3.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	sex	6.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	ethnicity	1.0	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	ethnicity	3.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	ethnicity	5.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	age	9.0	NA	NA	13.7	NA	2.0	NA	NA	NA	yr	NA
+Laffel2018	EMP5	9.0	all	weight	9.0	NA	NA	90.0	NA	19.0	NA	NA	NA	kg	NA
+Laffel2018	EMP5	9.0	all	bmi	9.0	NA	NA	33.9	NA	5.8	NA	NA	NA	kg/m^2	NA
+Laffel2018	EMP5	9.0	all	smoking	9.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP5	9.0	all	clearance	9.0	glucose	NA	178.3	NA	17.4	NA	NA	NA	ml/min/(1.73*m^2)	eGFR
+Laffel2018	EMP5	9.0	all	cumulative amount	9.0	glucose	NA	16.2	NA	30.3	NA	NA	NA	g	UGE
+Laffel2018	EMP5	9.0	all	hba1c	9.0	glucose	NA	7.4	NA	1.4	NA	NA	NA	percent	NA
+Laffel2018	EMP5	9.0	all	concentration	9.0	glucose	NA	8.5	NA	4.2	NA	NA	NA	mM	FPG
+Laffel2018	EMP10	8.0	all	sex	3.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	sex	5.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	ethnicity	3.0	NA	american indian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	ethnicity	4.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	ethnicity	1.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	age	8.0	NA	NA	14.5	NA	1.9	NA	NA	NA	yr	NA
+Laffel2018	EMP10	8.0	all	weight	8.0	NA	NA	111.0	NA	21.3	NA	NA	NA	kg	NA
+Laffel2018	EMP10	8.0	all	bmi	8.0	NA	NA	39.6	NA	6.2	NA	NA	NA	kg/m^2	NA
+Laffel2018	EMP10	8.0	all	smoking	8.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP10	8.0	all	clearance	8.0	glucose	NA	162.3	NA	38.8	NA	NA	NA	ml/min/(1.73*m^2)	eGFR
+Laffel2018	EMP10	8.0	all	cumulative amount	8.0	glucose	NA	12.3	NA	25.4	NA	NA	NA	g	UGE
+Laffel2018	EMP10	8.0	all	hba1c	8.0	glucose	NA	7.4	NA	1.1	NA	NA	NA	percent	NA
+Laffel2018	EMP10	8.0	all	concentration	8.0	glucose	NA	8.6	NA	3.1	NA	NA	NA	mM	FPG
+Laffel2018	EMP25	10.0	all	sex	3.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	sex	7.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	ethnicity	4.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	ethnicity	6.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	age	10.0	NA	NA	14.2	NA	2.1	NA	NA	NA	yr	NA
+Laffel2018	EMP25	10.0	all	weight	10.0	NA	NA	91.1	NA	25.7	NA	NA	NA	kg	possibly meant to be pounds
+Laffel2018	EMP25	10.0	all	bmi	10.0	NA	NA	33.7	NA	7.0	NA	NA	NA	kg/m^2	NA
+Laffel2018	EMP25	10.0	all	smoking	9.0	NA	N	2.8	NA	0.9	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	smoking	1.0	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Laffel2018	EMP25	10.0	all	clearance	10.0	glucose	NA	157.3	NA	15.2	NA	NA	NA	ml/min/(1.73*m^2)	eGFR
+Laffel2018	EMP25	10.0	all	cumulative amount	10.0	glucose	NA	0.08	NA	0.05	NA	NA	NA	g	UGE
+Laffel2018	EMP25	10.0	all	hba1c	10.0	glucose	NA	6.3	NA	1.0	NA	NA	NA	percent	NA
+Laffel2018	EMP25	10.0	all	concentration	10.0	glucose	NA	6.4	NA	1.4	NA	NA	NA	mM	FPG

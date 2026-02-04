@@ -1,0 +1,4 @@
+study	name	time	time_end	time_unit	route	application	measurement_type	form	substance	value	unit	comments
+Macha2013e	EMP25R5	S-4T1R5	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	25	mg	qd
+Macha2013e	EMP25R7	S-6T1R7	NA	hr	oral	multiple dose	dosing	tablet	empagliflozin	25	mg	qd
+Macha2013e	WAR25	0	NA	hr	oral	single dose	dosing	tablet	 warfarin	25	mg	mixture s-warfarin, r-warfarin

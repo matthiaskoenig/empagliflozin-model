@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	4.0	hr		18.9516129032258					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	8.0	hr		31.0483870967741					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	12.0	hr		37.9032258064516					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	24.0	hr		46.774193548387					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	35.0	hr		50.4032258064516					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	48.0	hr		52.016129032258					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	72.0	hr		53.2258064516129					percent	percent
+Chen2015a		all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	96.0	hr		54.0322580645161					percent	percent

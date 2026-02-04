@@ -1,0 +1,9 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Chen2015a	all	8	NA	species	8	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Chen2015a	all	8	NA	healthy 	8	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Chen2015a	all	8	NA	sex	8	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Chen2015a	all	8	NA	smoking	8	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Chen2015a	all	8	NA	age	8	NA	NA	NA	NA	NA	NA	21.0	53.0	yr	NA
+Chen2015a	all	8	NA	bmi	8	NA	NA	25.0	NA	NA	NA	21.0	28.9	kg/m^2	NA
+Chen2015a	all	8	NA	weight	8	NA	NA	79.0	NA	NA	NA	NA	NA	kg	NA
+Chen2015a	all	8	NA	medication	8	NA	N	NA	NA	NA	NA	NA	NA	NA	NA

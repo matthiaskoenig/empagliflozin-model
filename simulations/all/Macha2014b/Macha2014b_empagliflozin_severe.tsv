@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	0.0	hr		715.448179736502					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	1.0	hr		1439.89645903162					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	1.5	hr		1651.29924003584					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	2.0	hr		1700.79978760827					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	2.5	hr		1736.70062721932					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	3.0	hr		1466.5781701125					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	4.0	hr		1173.91564065974					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	6.0	hr		890.133740417482					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	8.0	hr		727.813360767265					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	10.0	hr		579.052865629044					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	12.0	hr		479.733182889191					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	16.0	hr		380.25420635184					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	24.0	hr		226.11754554807					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	36.0	hr		75.9433179570578					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	48.0	hr		42.7703846281492					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	72.0	hr		12.3850927554512					nmol/l	nmol/l
+Macha2014b		severe	8.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	96.0	hr		4.51996150399918					nmol/l	nmol/l

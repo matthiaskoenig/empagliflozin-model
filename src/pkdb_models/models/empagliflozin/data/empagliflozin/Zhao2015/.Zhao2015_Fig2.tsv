@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Zhao2015	NA	Placebo	6	placebo	cumulative amount (change)	glucose	urine	NR	24	hr	NA	-1.0	NA	2.8	1.14309521329882	g	NA
+Zhao2015	NA	Placebo	6	placebo	cumulative amount (change)	glucose	urine	NR	24	hr	NA	-4.1	NA	4.1	1.67381799090184	g	NA
+Zhao2015	NA	EMP10	9	SING10	cumulative amount (change)	glucose	urine	NR	24	hr	NA	87.7	NA	22.9	7.63333333333333	g	NA
+Zhao2015	NA	EMP10	9	MULTI10	cumulative amount (change)	glucose	urine	NR	24	hr	NA	95.8	NA	24.1	8.03333333333333	g	NA
+Zhao2015	NA	EMP25	9	SING25	cumulative amount (change)	glucose	urine	NR	24	hr	NA	82.8	NA	18.8	6.26666666666667	g	NA
+Zhao2015	NA	EMP25	9	MULTI25	cumulative amount (change)	glucose	urine	NR	24	hr	NA	82.6	NA	34.8	11.6	g	NA

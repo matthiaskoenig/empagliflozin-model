@@ -1,0 +1,7 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	2.0	hr		4.52845188710975					g	g
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	4.0	hr		9.05690377421952					g	g
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	6.0	hr		14.955204712933					g	g
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	8.0	hr		24.0488008724633					g	g
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	12.0	hr		36.756596985109					g	g
+Seman2013		EMP50	5.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_EMP50	24.0	hr		63.4686534913823					g	g

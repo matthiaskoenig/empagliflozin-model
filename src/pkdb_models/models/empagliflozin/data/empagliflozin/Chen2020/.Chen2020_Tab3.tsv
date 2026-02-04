@@ -1,0 +1,25 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Chen2020	Fasting_T	29.0	EMP10	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	186.9	NA	NA	NA	47.21	NA	NA	ng/ml	NA
+Chen2020	Fasting_T	29.0	EMP10	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	1303.04	NA	NA	NA	234.28	NA	NA	ng/ml*hr	NA
+Chen2020	Fasting_T	29.0	EMP10	auc_inf	empagliflozin	plasma	LC MS/MS	NA	hr	1328.08	NA	NA	NA	243.84	NA	NA	ng/ml*hr	NA
+Chen2020	Fasting_T	29.0	EMP10	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	12.49	NA	NA	NA	6.47	NA	NA	hr	NA
+Chen2020	Fasting_T	29.0	EMP10	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	4.0	NA	NA	NA	hr	NA
+Chen2020	Fasting_T	29.0	EMP10	clearance	empagliflozin	urine	LC MS/MS	NA	NA	7.77	NA	NA	NA	1.42	NA	NA	l/hr	NA
+Chen2020	Fasting_R	30.0	EMP10	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	190.6	NA	NA	NA	40.94	NA	NA	ng/ml	NA
+Chen2020	Fasting_R	30.0	EMP10	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	1267.78	NA	NA	NA	217.07	NA	NA	ng/ml*hr	NA
+Chen2020	Fasting_R	30.0	EMP10	auc_inf	empagliflozin	plasma	LC MS/MS	NA	hr	1293.22	NA	NA	NA	224.82	NA	NA	ng/ml*hr	NA
+Chen2020	Fasting_R	30.0	EMP10	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.87	NA	NA	NA	8.12	NA	NA	hr	NA
+Chen2020	Fasting_R	30.0	EMP10	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.38	NA	0.5	4.0	0.0	NA	NA	hr	NA
+Chen2020	Fasting_R	30.0	EMP10	clearance	empagliflozin	urine	LC MS/MS	NA	NA	7.96	NA	NA	NA	1.4	NA	NA	l/hr	NA
+Chen2020	Fed_T	29.0	EMP10	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	151.55	NA	NA	NA	23.86	NA	NA	ng/ml	NA
+Chen2020	Fed_T	29.0	EMP10	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	1215.65	NA	NA	NA	197.62	NA	NA	ng/ml*hr	NA
+Chen2020	Fed_T	29.0	EMP10	auc_inf	empagliflozin	plasma	LC MS/MS	NA	hr	1241.76	NA	NA	NA	202.47	NA	NA	ng/ml*hr	NA
+Chen2020	Fed_T	29.0	EMP10	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.74	NA	NA	NA	6.73	NA	NA	hr	NA
+Chen2020	Fed_T	29.0	EMP10	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	2.0	NA	1.0	4.0	0.0	NA	NA	hr	NA
+Chen2020	Fed_T	29.0	EMP10	clearance	empagliflozin	urine	LC MS/MS	NA	NA	8.28	NA	NA	NA	1.49	NA	NA	l/hr	NA
+Chen2020	Fed_R	29.0	EMP10	cmax	empagliflozin	plasma	LC MS/MS	NA	NA	154.08	NA	NA	NA	30.4	NA	NA	ng/ml	NA
+Chen2020	Fed_R	29.0	EMP10	auc_end	empagliflozin	plasma	LC MS/MS	24.0	hr	1199.26	NA	NA	NA	186.23	NA	NA	ng/ml*hr	NA
+Chen2020	Fed_R	29.0	EMP10	auc_inf	empagliflozin	plasma	LC MS/MS	NA	hr	1225.54	NA	NA	NA	192.1	NA	NA	ng/ml*hr	NA
+Chen2020	Fed_R	29.0	EMP10	thalf	empagliflozin	plasma	LC MS/MS	NA	NA	13.82	NA	NA	NA	6.95	NA	NA	hr	NA
+Chen2020	Fed_R	29.0	EMP10	tmax	empagliflozin	plasma	LC MS/MS	NA	NA	1.5	NA	1.0	6.0	0.0	NA	NA	hr	NA
+Chen2020	Fed_R	29.0	EMP10	clearance	empagliflozin	urine	LC MS/MS	NA	NA	8.36	NA	NA	NA	1.34	NA	NA	l/hr	NA

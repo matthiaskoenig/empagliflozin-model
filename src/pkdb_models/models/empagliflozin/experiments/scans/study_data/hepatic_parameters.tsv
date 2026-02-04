@@ -1,0 +1,37 @@
+study	condition	class	parameter	dose	dose_unit	substance	n	mean	sd	median	Q1	Q3	min	max	unit	day	diabetes	hba1c	fpg
+Macha2014b	normal	hepatic_impairment	UGE_24	50	mg	glucose	12	26.1							g		T2DM		
+Macha2014b	mild	hepatic_impairment	UGE_24	50	mg	glucose	8	36.2	11.3						g		T2DM		
+Macha2014b	moderate	hepatic_impairment	UGE_24	50	mg	glucose	8	38.4	23.3						g		T2DM		
+Macha2014b	severe	hepatic_impairment	UGE_24	50	mg	glucose	8	40.2	22						g		T2DM		
+Macha2014b	normal	hepatic_impairment	aucinf	50	mg	empagliflozin	12	10800	2440.8						nmol/l*hr		T2DM		
+Macha2014b	normal	hepatic_impairment	cmax	50	mg	empagliflozin	12	1370	464.4						nmol/l		T2DM		
+Macha2014b	normal	hepatic_impairment	tmax	50	mg	empagliflozin	12			2			1	4	hr		T2DM		
+Macha2014b	normal	hepatic_impairment	thalf	50	mg	empagliflozin	12	19.9	8.6						hr		T2DM		
+Macha2014b	mild	hepatic_impairment	aucinf	50	mg	empagliflozin	8	13800	5326.8						nmol/l*hr		T2DM		
+Macha2014b	mild	hepatic_impairment	cmax	50	mg	empagliflozin	8	1430	526.2						nmol/l		T2DM		
+Macha2014b	mild	hepatic_impairment	tmax	50	mg	empagliflozin	8			1.5			0.7	4	hr		T2DM		
+Macha2014b	mild	hepatic_impairment	thalf	50	mg	empagliflozin	8	18.1	4.7						hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	aucinf	50	mg	empagliflozin	8	16100	4218.2						nmol/l*hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	cmax	50	mg	empagliflozin	8	1660	438.2						nmol/l		T2DM		
+Macha2014b	moderate	hepatic_impairment	tmax	50	mg	empagliflozin	8			2			0.7	2.5	hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	thalf	50	mg	empagliflozin	8	17.1	7.8						hr		T2DM		
+Macha2014b	severe	hepatic_impairment	aucinf	50	mg	empagliflozin	8	19000	5149						nmol/l*hr		T2DM		
+Macha2014b	severe	hepatic_impairment	cmax	50	mg	empagliflozin	8	1970	435.4						nmol/l		T2DM		
+Macha2014b	severe	hepatic_impairment	tmax	50	mg	empagliflozin	8			1.5			0.7	2.5	hr		T2DM		
+Macha2014b	severe	hepatic_impairment	thalf	50	mg	empagliflozin	8	17.7	11.9						hr		T2DM		
+Macha2014b	normal	hepatic_impairment	aucinf	50	mg	empagliflozin-glucuronide	12	3360	745.87						nmol/l*hr		T2DM		
+Macha2014b	normal	hepatic_impairment	cmax	50	mg	empagliflozin-glucuronide	12	409.6	145.4792						nmol/l		T2DM		
+Macha2014b	normal	hepatic_impairment	tmax	50	mg	empagliflozin-glucuronide	12			3			2	4.666666667	hr		T2DM		
+Macha2014b	normal	hepatic_impairment	thalf	50	mg	empagliflozin-glucuronide	12	9.276666667	30.8						hr		T2DM		
+Macha2014b	mild	hepatic_impairment	aucinf	50	mg	empagliflozin-glucuronide	8	5100	2100.19						nmol/l*hr		T2DM		
+Macha2014b	mild	hepatic_impairment	cmax	50	mg	empagliflozin-glucuronide	8	437.3	163.9166						nmol/l		T2DM		
+Macha2014b	mild	hepatic_impairment	tmax	50	mg	empagliflozin-glucuronide	8			2.916666667			2	5.333333333	hr		T2DM		
+Macha2014b	mild	hepatic_impairment	thalf	50	mg	empagliflozin-glucuronide	8	11.33333333	46.7						hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	aucinf	50	mg	empagliflozin-glucuronide	8	5480	2097.52						nmol/l*hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	cmax	50	mg	empagliflozin-glucuronide	8	428.9	138.293						nmol/l		T2DM		
+Macha2014b	moderate	hepatic_impairment	tmax	50	mg	empagliflozin-glucuronide	8			3.083333333			2	5.5	hr		T2DM		
+Macha2014b	moderate	hepatic_impairment	thalf	50	mg	empagliflozin-glucuronide	8	14.23333333	64.56666667						hr		T2DM		
+Macha2014b	severe	hepatic_impairment	aucinf	50	mg	empagliflozin-glucuronide	8	4920	2914.578						nmol/l*hr		T2DM		
+Macha2014b	severe	hepatic_impairment	cmax	50	mg	empagliflozin-glucuronide	8	348.1	115.6043						nmol/l		T2DM		
+Macha2014b	severe	hepatic_impairment	tmax	50	mg	empagliflozin-glucuronide	8			3.333333333			1.833333333	6.333333333	hr		T2DM		
+Macha2014b	severe	hepatic_impairment	thalf	50	mg	empagliflozin-glucuronide	8	11.93333333	52.53333333						hr		T2DM		

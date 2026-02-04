@@ -1,0 +1,7 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	mean_sd	median	min	max	cv	mean_se	comments	mean_unit	median_unit
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0								percent	percent
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	19.5	3.9195				20.1			percent	percent
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0								percent	percent
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	2.49	0.53784				21.6			percent	percent
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	0.0	hr	0.0								percent	percent
+Macha2014b	severe	8.0	EMP50	recovery	empagliflozin-3-O-glucuronide	urine	HPLC MS/MS	recovery_empagliflozin-3-O-glucuronide_severe	96.0	hr	2.49	0.53784				21.6			percent	percent

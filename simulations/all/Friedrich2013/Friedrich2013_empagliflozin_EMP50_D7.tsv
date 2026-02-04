@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	0.0	hr		100.0				manually added	nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	0.5	hr		561.261261261261					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	1.0	hr		1065.76576576576					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	1.5	hr		1154.05405405405					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	2.0	hr		1103.6036036036					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	2.5	hr		1065.76576576576					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	3.0	hr		1027.92792792792					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	4.0	hr		876.576576576576					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	6.0	hr		599.099099099099					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	8.0	hr		441.441441441441					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	10.0	hr		346.846846846847					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	12.0	hr		264.864864864865					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	14.0	hr		208.108108108108					nmol/l	nmol/l
+Friedrich2013		all	16.0	EMP50_D7, LIN5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D7	24.0	hr		94.5945945945948					nmol/l	nmol/l

@@ -1,0 +1,26 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.30769	hr		246.11399	152.84974	93.26425	38.212435		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.61538	hr		121.56238	308.29016	186.72778	77.07254		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.61538	hr		277.00279	254.12515	22.87764	63.5312875		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.23077	hr		245.51614	276.00638	30.49024	69.001595		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.84615	hr		214.02949	260.26305	46.23356	65.0657625		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	2.4616154	hr		182.54285	228.7764	46.23355	57.1941		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	3.07692	hr		151.0562	181.945	30.8888	45.48625		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	4.30769	hr		103.62694	134.51574	30.8888	33.628935		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	6.15385	hr		71.34316	102.43125	31.08809	25.6078125		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	8.61538	hr		54.20486					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	10.46154	hr		37.46513					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	12.30769	hr		5.18135					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	16.30769	hr		2.59067					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	24.30769	hr		0.1				negative value set to small value	nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.0	hr		44.2207	167.29762	123.07692	41.824405		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.25131	hr		167.37817	321.22433	153.84616	80.3060825		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.00524	hr		198.38905	352.31575	153.9267	88.0789375		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.00524	hr		290.69674	321.70761	31.01087	80.4269025		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.75916	hr		260.16915	260.41079	0.241640000000018	65.1026975		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	650.7644	hr		214.33749	245.34837	31.01088	61.3370925		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	652.27225	hr		199.43617	214.82078	15.38461	53.705195		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	654.28272	hr		138.54209	184.53484	45.99275	46.13371		nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	656.29319	hr		108.41724					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	658.05236	hr		93.59646					nmol/l	nmol/l
+Heise2013a		EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	660.06283	hr		94.24084					nmol/l	nmol/l

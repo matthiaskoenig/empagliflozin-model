@@ -1,0 +1,19 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	mean	median	min	max	sd	se	cv	unit	comments
+Laffel2018	EMP5	9.0	EMP5	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	1270.0	NA	NA	NA	NA	NA	51.9	nmol/l*hr	NA
+Laffel2018	EMP5	9.0	EMP5	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	1240.0	NA	NA	NA	NA	NA	54.2	nmol/l*hr	NA
+Laffel2018	EMP5	9.0	EMP5	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	1110.0	NA	NA	NA	NA	NA	42.7	nmol/l*hr	NA
+Laffel2018	EMP5	9.0	EMP5	cmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	175.0	NA	NA	NA	NA	NA	54.2	nmol/l	NA
+Laffel2018	EMP5	9.0	EMP5	tmax	empagliflozin	plasma	HPLC MS/MS	NA	NA	1.5	NA	0.95	7.92	NA	NA	NA	hr	for CV
+Laffel2018	EMP5	9.0	EMP5	thalf	empagliflozin	plasma	HPLC MS/MS	NA	NA	7.03	NA	NA	NA	NA	NA	18.9	hr	NA
+Laffel2018	EMP10	8.0	EMP10	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	1450.0	NA	NA	NA	NA	NA	17.2	nmol/l*hr	NA
+Laffel2018	EMP10	8.0	EMP10	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	1420.0	NA	NA	NA	NA	NA	16.9	nmol/l*hr	NA
+Laffel2018	EMP10	8.0	EMP10	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	1310.0	NA	NA	NA	NA	NA	18.9	nmol/l*hr	NA
+Laffel2018	EMP10	8.0	EMP10	cmax	empagliflozin	plasma	HPLC MS/MS	NA	hr	211.0	NA	NA	NA	NA	NA	59.1	nmol/l	NA
+Laffel2018	EMP10	8.0	EMP10	tmax	empagliflozin	plasma	HPLC MS/MS	NA	hr	1.25	NA	0.97	4.17	NA	NA	NA	hr	for CV
+Laffel2018	EMP10	8.0	EMP10	thalf	empagliflozin	plasma	HPLC MS/MS	NA	hr	7.61	NA	NA	NA	NA	NA	27.0	hr	NA
+Laffel2018	EMP25	10.0	EMP25	auc_inf	empagliflozin	plasma	HPLC MS/MS	NA	hr	5250.0	NA	NA	NA	NA	NA	27.6	nmol/l*hr	NA
+Laffel2018	EMP25	10.0	EMP25	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	5150.0	NA	NA	NA	NA	NA	27.6	nmol/l*hr	NA
+Laffel2018	EMP25	10.0	EMP25	auc_end	empagliflozin	plasma	HPLC MS/MS	24.0	hr	4720.0	NA	NA	NA	NA	NA	27.4	nmol/l*hr	NA
+Laffel2018	EMP25	10.0	EMP25	cmax	empagliflozin	plasma	HPLC MS/MS	NA	hr	692.0	NA	NA	NA	NA	NA	57.3	nmol/l	NA
+Laffel2018	EMP25	10.0	EMP25	tmax	empagliflozin	plasma	HPLC MS/MS	NA	hr	1.78	NA	0.5	4.0	NA	NA	NA	hr	for CV
+Laffel2018	EMP25	10.0	EMP25	thalf	empagliflozin	plasma	HPLC MS/MS	NA	hr	8.09	NA	NA	NA	NA	NA	26.8	hr	NA

@@ -1,0 +1,6 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Seman2013		placebo	17.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	uge_placebo	2.0	hr		0.419923965223773					g	g
+Seman2013		placebo	17.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	uge_placebo	6.0	hr		0.342462262900951					g	g
+Seman2013		placebo	17.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	uge_placebo	8.0	hr		0.304750644664835					g	g
+Seman2013		placebo	17.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	uge_placebo	12.0	hr		0.228308175267301					g	g
+Seman2013		placebo	17.0	placebo	cumulative amount	glucose	urine	HPLC MS/MS	uge_placebo	24.0	hr		0.457635583459889					g	g

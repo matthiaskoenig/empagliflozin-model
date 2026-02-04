@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	4.0	hr		5.01193317422433					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	8.0	hr		13.3651551312649					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	12.0	hr		22.8878281622911					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	24.0	hr		38.4		23.3088			g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	36.0	hr		53.126491646778					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	48.0	hr		65.4892601431981					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	72.0	hr		75.8472553699284					g	g
+Macha2014b		moderate	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_moderate	96.0	hr		79.0214797136038					g	g

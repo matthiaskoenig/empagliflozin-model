@@ -1,0 +1,29 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	0.0	hr	NA	NA	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	0.5	hr	NA	8.30702389572773	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	1.0	hr	NA	9.75524981897175	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	1.5	hr	NA	9.82766111513396	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	2.0	hr	NA	9.24837074583635	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	2.5	hr	NA	9.61042722664735	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	3.0	hr	NA	9.53801593048515	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	4.0	hr	NA	8.74149167270094	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	6.0	hr	NA	7.07603186097031	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	8.0	hr	NA	6.5691527878349	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	10.0	hr	NA	6.13468501086169	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	12.0	hr	NA	5.91745112237509	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	14.0	hr	NA	5.62780593772628	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_LIN5	24.0	hr	NA	4.97610427226647	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	0.0	hr	NA	NA	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	0.5	hr	NA	9.10354815351194	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	1.0	hr	NA	9.39319333816075	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	1.5	hr	NA	9.03113685734974	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	2.0	hr	NA	8.37943519188993	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	2.5	hr	NA	8.81390296886314	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	3.0	hr	NA	9.68283852280955	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	4.0	hr	NA	9.24837074583635	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	6.0	hr	NA	7.43808834178131	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	8.0	hr	NA	6.7863866763215	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	10.0	hr	NA	6.4967414916727	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	12.0	hr	NA	6.20709630702389	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	14.0	hr	NA	5.84503982621289	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D7, LIN5	concentration	linagliptin	plasma	HPLC MS/MS	linagliptin_EMP50	24.0	hr	NA	5.41057204923968	NA	NA	NA	nmol/l	NA

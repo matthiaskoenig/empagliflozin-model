@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013a	NA	Placebo	16.0	Placebo	reabsorption	glucose	urine	LC MS/MS	NA	1.0	day	NA	0.0	7.2	7.2	1.8	percent	NA
+Heise2013a	NA	Placebo	16.0	Placebo	reabsorption	glucose	urine	LC MS/MS	NA	27.0	day	NA	-3.2	12.8	16.0	3.2	percent	NA
+Heise2013a	NA	EMP10	16.0	EMP10	reabsorption	glucose	urine	LC MS/MS	NA	1.0	day	NA	35.2	48.8	13.6	12.2	percent	NA
+Heise2013a	NA	EMP10	16.0	EMP10	reabsorption	glucose	urine	LC MS/MS	NA	27.0	day	NA	35.2	60.8	25.6	15.2	percent	NA
+Heise2013a	NA	EMP25	16.0	EMP25	reabsorption	glucose	urine	LC MS/MS	NA	1.0	day	NA	41.6	54.4	12.8	13.6	percent	NA
+Heise2013a	NA	EMP25	16.0	EMP25	reabsorption	glucose	urine	LC MS/MS	NA	27.0	day	NA	47.2	53.6	6.4	13.4	percent	NA
+Heise2013a	NA	EMP100	30.0	EMP100	reabsorption	glucose	urine	LC MS/MS	NA	1.0	day	NA	44.8	56.0	11.2	10.2241544067631	percent	NA
+Heise2013a	NA	EMP100	30.0	EMP100	reabsorption	glucose	urine	LC MS/MS	NA	27.0	day	NA	48.0	66.4	18.4	12.1229259394477	percent	NA

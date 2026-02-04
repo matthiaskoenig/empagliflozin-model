@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.0	hr		3.8			1.7		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.33	hr		22.7			9.9		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	0.67	hr		46.0			11.0		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	1.0	hr		45.3			5.9		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	1.5	hr		38.8			5.8		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	2.0	hr		35.0			5.5		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	2.5	hr		30.9			5.5		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	3.0	hr		28.2			5.4		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	4.0	hr		24.7			5.2		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	6.0	hr		18.9			4.4		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	8.0	hr		15.5			3.7		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	10.0	hr		12.4			3.7		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	12.0	hr		10.0			3.0		ng/ml	ng/ml
+Kim2021		all	25.0	L	concentration	 lobeglitazone	plasma	HPLC	lobeglitazone_L	24.0	hr		3.1			1.4		ng/ml	ng/ml

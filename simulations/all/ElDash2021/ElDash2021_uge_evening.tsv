@@ -1,0 +1,5 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	4.0	hr	2560.04375				2903.96379361469			intervals of four hours starting from 0	mg	mg
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	8.0	hr	4153.7				3008.33808304796			units: g/dl	mg	mg
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	12.0	hr	7126.56875				3738.28786129091				mg	mg
+ElDash2021	evening	16.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_evening	24.0	hr	15418.13125				7556.33515864062				mg	mg

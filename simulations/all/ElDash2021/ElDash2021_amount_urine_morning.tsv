@@ -1,0 +1,5 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	4.0	hr	3836.84375				2635.36434090083			intervals of four hours starting from 0	mg	mg
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	8.0	hr	2430.675				2346.21707826308				mg	mg
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	12.0	hr	1484.91875				1014.47525809734				mg	mg
+ElDash2021	morning	16.0	EMP10	amount	glucose	urine	HPLC MS/MS	amount_urine_morning	24.0	hr	4643.971875				4036.50166100832				mg	mg

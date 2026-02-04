@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	4.0	hr		4.74215994662091					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	8.0	hr		9.05066551471677					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	12.0	hr		12.4610861995185					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	24.0	hr		16.9299622574161					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	36.0	hr		18.9204728673209					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	48.0	hr		19.6718261042392					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	72.0	hr		20.3997550078385					percent	percent
+Macha2014b		severe	8.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_severe	96.0	hr		20.3		4.7705			percent	percent

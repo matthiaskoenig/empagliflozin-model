@@ -1,0 +1,5 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	comments	value_unit
+ElDash2021	morning_S8		1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	4.0	hr	6885.0		mg
+ElDash2021	morning_S8		1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	8.0	hr	8845.0		mg
+ElDash2021	morning_S8		1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	12.0	hr	9693.0		mg
+ElDash2021	morning_S8		1.0	EMP10	cumulative amount	glucose	urine	HPLC MS/MS	uge_morning_S8	24.0	hr	11420.0		mg

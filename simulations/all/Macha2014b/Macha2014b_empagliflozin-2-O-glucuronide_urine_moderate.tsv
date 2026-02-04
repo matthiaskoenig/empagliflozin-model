@@ -1,0 +1,3 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	mean_sd	median	min	max	cv	mean_se	comments	mean_unit	median_unit
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_moderate	0.0	hr	0.0								µmole	µmole
+Macha2014b	moderate	8.0	EMP50	cumulative amount	empagliflozin-2-O-glucuronide	urine	HPLC MS/MS	empagliflozin-2-O-glucuronide_urine_moderate	96.0	hr	7.92842901782843	1.56982894553003							µmole	µmole

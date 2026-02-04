@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	4.0	hr		3.1742243436754					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	12.0	hr		14.3675417661097					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	24.0	hr		26.0620525059665					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	42.0	hr		42.6		13.4616		FDA table	g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	60.0	hr		61.4797136038186					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	72.0	hr		70.835322195704					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	80.0	hr		82.1957040572792					g	g
+Macha2014b		normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	96.0	hr		87.3747016706444					g	g

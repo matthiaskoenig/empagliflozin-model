@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	raw	mean_unit	value_unit
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	0.2	hr		18.4191890799774						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	0.3	hr		192.001334229933						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	0.45	hr		428.888485018012						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	1.0	hr		662.83860591088						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	1.5	hr		1059.28919729299						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	2.0	hr		1059.28919729299						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	3.0	hr		895.979034700564						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	4.0	hr		708.752287404099						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	6.0	hr		507.062019787963						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	8.0	hr		387.89516726794						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	10.0	hr		286.961951065491						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	12.0	hr		219.521773795303						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	14.0	hr		179.563295915596						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	24.0	hr		77.7381300307328						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	34.0	hr		33.6550787278695						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	48.0	hr		13.6263786751008						nmol/l	nmol/l
+Seman2013		EMP50	5.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50	72.0	hr		4.22049687927021						nmol/l	nmol/l

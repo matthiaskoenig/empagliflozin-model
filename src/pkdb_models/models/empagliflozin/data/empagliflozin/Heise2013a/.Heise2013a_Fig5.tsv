@@ -1,0 +1,13 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Heise2013a	NA	Placebo	16.0	Placebo	concentration change absolute	glucose	plasma	LC MS/MS	28.0	day	NA	-8.57143	-15.0	6.42857	1.6071425	mg/dl	FPG
+Heise2013a	NA	EMP10	16.0	EMP10	concentration change absolute	glucose	plasma	LC MS/MS	28.0	day	NA	-26.02041	-31.53061	5.5102	1.37755	mg/dl	FPG
+Heise2013a	NA	EMP25	16.0	EMP25	concentration change absolute	glucose	plasma	LC MS/MS	28.0	day	NA	-30.61224	-35.81633	5.20409	1.3010225	mg/dl	FPG
+Heise2013a	NA	EMP100	30.0	EMP100	concentration change absolute	glucose	plasma	LC MS/MS	28.0	day	NA	-30.61224	-42.2449	11.63266	2.12382342859602	mg/dl	FPG
+Heise2013a	NA	Placebo	16.0	Placebo	concentration change absolute	glucose	plasma	LC MS/MS	1.0	day	NA	1.21622	1.21622	0.0	0.0	mg/dl	MPG
+Heise2013a	NA	EMP10	16.0	EMP10	concentration change absolute	glucose	plasma	LC MS/MS	1.0	day	NA	-12.2973	-15.81081	3.51351	0.8783775	mg/dl	MPG
+Heise2013a	NA	EMP25	16.0	EMP25	concentration change absolute	glucose	plasma	LC MS/MS	1.0	day	NA	-20.67568	-24.18919	3.51351	0.8783775	mg/dl	MPG
+Heise2013a	NA	EMP100	30.0	EMP100	concentration change absolute	glucose	plasma	LC MS/MS	1.0	day	NA	-24.72973	-27.43243	2.7027	0.493443252056404	mg/dl	MPG
+Heise2013a	NA	Placebo	16.0	Placebo	concentration change absolute	glucose	plasma	LC MS/MS	27.0	day	NA	-6.35135	-11.21622	4.86487	1.2162175	mg/dl	MPG
+Heise2013a	NA	EMP10	16.0	EMP10	concentration change absolute	glucose	plasma	LC MS/MS	27.0	day	NA	-16.08108	-20.94595	4.86487	1.2162175	mg/dl	MPG
+Heise2013a	NA	EMP25	16.0	EMP25	concentration change absolute	glucose	plasma	LC MS/MS	27.0	day	NA	-22.2973	-27.16216	4.86486	1.216215	mg/dl	MPG
+Heise2013a	NA	EMP100	30.0	EMP100	concentration change absolute	glucose	plasma	LC MS/MS	27.0	day	NA	-26.62162	-29.86486	3.24324	0.592131902467685	mg/dl	MPG

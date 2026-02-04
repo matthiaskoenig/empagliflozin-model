@@ -1,0 +1,8 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	4.0	hr		2.82161812455255					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	12.0	hr		12.1515503663727					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	24.0	hr		14.3277824761649					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	36.0	hr		15.7296933339011					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	48.0	hr		16.0162611519093					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	72.0	hr		16.6206292323511					percent	percent
+Macha2014b		normal	12.0	EMP50	recovery	empagliflozin	urine	HPLC MS/MS	recovery_normal	96.0	hr		16.6		4.399		SD from Tab2	percent	percent

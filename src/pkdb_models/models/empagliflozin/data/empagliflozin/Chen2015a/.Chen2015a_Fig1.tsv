@@ -1,0 +1,89 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	4.0	hr	NA	18.9516129032258	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	8.0	hr	NA	31.0483870967741	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	12.0	hr	NA	37.9032258064516	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	24.0	hr	NA	46.774193548387	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	35.0	hr	NA	50.4032258064516	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	48.0	hr	NA	52.016129032258	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	72.0	hr	NA	53.2258064516129	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_recovery_urine	96.0	hr	NA	54.0322580645161	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	48.0	hr	NA	10.8870967741935	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	72.0	hr	NA	29.0322580645161	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	96.0	hr	NA	37.9032258064516	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	120.0	hr	NA	39.9193548387096	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	144.0	hr	NA	41.1290322580645	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	C14EMP_recovery_feces	167.999999999999	hr	NA	41.1290322580645	NA	7.2	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	4.0	hr	NA	18.5483870967741	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	8.0	hr	NA	31.4516129032258	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	12.0	hr	NA	38.3064516129032	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	24.0	hr	NA	46.774193548387	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	36.0	hr	NA	50.8064516129032	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	48.0	hr	NA	63.7096774193548	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	72.0	hr	NA	83.4677419354838	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	96.0	hr	NA	91.9354838709677	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	120.0	hr	NA	94.3548387096774	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	144.0	hr	NA	95.1612903225806	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	recovery	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	C14EMP_recovery_feces_urine	168.0	hr	NA	95.5645161290322	NA	NA	NA	percent	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	4.0	hr	NA	21014.8975771451	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	8.0	hr	NA	34428.6619880886	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	12.0	hr	NA	42029.7951542901	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	24.0	hr	NA	51866.5557223154	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	35.0	hr	NA	55890.6850455986	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	48.0	hr	NA	57679.1869670577	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	72.0	hr	NA	59020.5634081521	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	C14EMP_urine	96.0	hr	NA	59914.8143688816	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	48.0	hr	NA	12072.3879698492	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	72.0	hr	NA	32193.0345862647	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	96.0	hr	NA	42029.7951542901	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	120.0	hr	NA	44265.422556114	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	144.0	hr	NA	45606.7989972084	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces	radiochromatography/MS/MS	EMPTOT_feces	167.999999999999	hr	NA	45606.7989972084	NA	7983.87257739367	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	48.0	hr	NA	10008.009627005	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	72.0	hr	NA	26688.0256720134	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	96.0	hr	NA	34842.7001829065	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	120.0	hr	NA	36696.0352990185	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	144.0	hr	NA	37808.0363686858	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	feces	radiochromatography/MS/MS	EMP_feces	167.999999999999	hr	NA	37808.0363686858	NA	7983.87257739367	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	48.0	hr	NA	1711.36964621785	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	72.0	hr	NA	4563.6523899143	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	96.0	hr	NA	5958.10173127701	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	120.0	hr	NA	6275.02203613216	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	144.0	hr	NA	6465.17421904526	NA	NA	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	feces	radiochromatography/MS/MS	EG_feces	167.999999999999	hr	NA	6465.17421904526	NA	7983.87257739367	NA	nmole	calculation assuming 82.9%
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	4.0	hr	NA	20567.7720967802	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	8.0	hr	NA	34875.7874684535	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	12.0	hr	NA	42476.9206346549	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	24.0	hr	NA	51866.5557223154	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	36.0	hr	NA	56337.8105259633	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	48.0	hr	NA	70645.8258976365	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	72.0	hr	NA	92554.9744355112	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	96.0	hr	NA	101944.609523172	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	120.0	hr	NA	104627.362405361	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	144.0	hr	NA	105521.61336609	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	feces_urine	radiochromatography/MS/MS	EMPTOT_feces_urine	168.0	hr	NA	105968.738846455	NA	NA	NA	nmole	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	4.0	hr	NA	20313.725490196	23058.8235294117	2745.0980392157	970.538719275658	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	8.0	hr	NA	33764.7058823529	36509.8039215686	2745.0980392157	970.538719275658	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	12.0	hr	NA	42000.0	44745.0980392156	2745.0980392156	970.538719275622	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	24.0	hr	NA	51333.3333333333	55176.4705882353	3843.137254902	1358.75420698593	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	36.0	hr	NA	56274.5098039215	59843.1372549019	3568.6274509804	1261.70033505835	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	48.0	hr	NA	57921.5686274509	62039.2156862745	4117.6470588236	1455.80807891351	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	72.0	hr	NA	59568.6274509804	63411.7647058823	3843.1372549019	1358.75420698589	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites	urine	radiochromatography/MS/MS	EMPTOT_urine	96.0	hr	NA	60117.6470588235	63960.7843137255	3843.13725490199	1358.75420698593	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	4.0	hr	NA	10980.3921568627	12627.4509803921	1647.0588235294	582.323231565388	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	8.0	hr	NA	17294.1176470588	20039.2156862745	2745.0980392157	970.538719275658	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	12.0	hr	NA	21137.2549019607	24156.862745098	3019.6078431373	1067.59259120323	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	24.0	hr	NA	26078.431372549	30196.0784313725	4117.6470588235	1455.80807891347	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	36.0	hr	NA	28549.0196078431	32666.6666666666	4117.6470588235	1455.80807891347	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	48.0	hr	NA	29372.5490196078	33764.7058823529	4392.1568627451	1552.86195084105	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	72.0	hr	NA	30470.5882352941	34862.7450980392	4392.1568627451	1552.86195084105	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	96.0	hr	NA	30745.0980392156	34588.2352941176	3843.137254902	1358.75420698593	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	120.0	hr	NA	30745.0980392156	34588.2352941176	3843.137254902	1358.75420698593	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin	urine	radiochromatography/MS/MS	EMP_urine	144.0	hr	NA	31568.6274509803	35960.7843137255	4392.1568627452	1552.86195084108	nmol	NA
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	4.0	hr	NA	9333.3333333333	NA	3201.30692266017	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	8.0	hr	NA	16470.5882352941	NA	3882.15487710263	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	12.0	hr	NA	20862.7450980393	NA	4080.88161691094	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	24.0	hr	NA	25254.9019607843	NA	5632.47026277579	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	36.0	hr	NA	27725.4901960784	NA	5448.8640270178	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	48.0	hr	NA	28549.0196078431	NA	6020.47001553845	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	72.0	hr	NA	29098.0392156863	NA	5836.15848542291	NA	nmol	error propagation assuming independence
+Chen2015a	NA	all	8.0	EMP50, C14EMP	cumulative amount	C14-empagliflozin-metabolites-no-empagliflozin	urine	radiochromatography/MS/MS	EG_urine	96.0	hr	NA	29372.5490196079	NA	5435.01682794371	NA	nmol	error propagation assuming independence

@@ -1,0 +1,15 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	0.25	hr		288.702928870292	690.376569037656	401.673640167364	142.013077393114		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	0.5	hr		979.07949790795	1393.30543933054	414.22594142259	146.450986061647		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	0.75	hr		1355.64853556485	1694.56066945606	338.91213389121	119.823534050439		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	1.0	hr		1468.61924686192	1757.32217573221	288.70292887029	102.0718993763		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	1.5	hr		1305.43933054393	1581.58995815899	276.15062761506	97.633990707765		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	2.0	hr		1142.25941422594	916.317991631799	225.941422594141	79.8823560336262		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	3.0	hr		891.213389121338	728.033472803347	163.179916317991	57.6928126909524		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	4.0	hr		765.690376569037	627.615062761506	138.075313807531	48.8169953538828		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	6.0	hr		577.405857740585	464.435146443514	112.970711297071	39.9411780168133		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	8.0	hr		439.330543933054	351.464435146443	87.866108786611	31.0653606797438		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	10.0	hr		338.912133891213	276.150627615062	62.761506276151	22.1895433426742		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	12.0	hr		263.598326359832	200.836820083682	62.76150627615	22.1895433426739		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	16.0	hr		175.732217573222	125.523012552301	50.209205020921	17.7516346741394		nmol/l	nmol/l
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	C14-empagliflozin-metabolites	blood	radiochromatography/MS/MS	C14EMP_blood	24.0	hr		100.418410041841	87.8661087866107	12.5523012552303	4.43790866853488		nmol/l	nmol/l

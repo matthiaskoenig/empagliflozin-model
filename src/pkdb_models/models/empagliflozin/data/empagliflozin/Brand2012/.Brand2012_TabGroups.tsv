@@ -1,0 +1,7 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Brand2012	all	16	NA	species	16	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Brand2012	all	16	NA	healthy 	16	NA	Y	NA	NA	NA	NA	NA	NA	NA	NA
+Brand2012	all	16	NA	sex	16	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Brand2012	all	16	NA	age	16	NA	NA	NA	38.5	NA	NA	20.0	49.0	year	NA
+Brand2012	all	16	NA	weight	16	NA	NA	NA	78.0	NA	NA	60.0	98.0	kg	NA
+Brand2012	all	16	NA	bmi	16	NA	NA	NA	24.2	NA	NA	20.8	28.1	kg/m^2	NA

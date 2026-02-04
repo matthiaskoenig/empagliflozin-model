@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	raw	mean_unit	value_unit
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	0.3	hr		59.4685536967993						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	0.45	hr		328.09353519501						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	1.0	hr		1431.87331575994						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	1.5	hr		2616.28288634167						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	2.0	hr		5465.60399006648						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	3.0	hr		5285.60643543452						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	4.0	hr		4323.49327381216						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	6.0	hr		2705.37853270117						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	8.0	hr		2001.41885649831						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	10.0	hr		1480.63473954884						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	12.0	hr		1095.36253485413						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	14.0	hr		837.936617406199						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	24.0	hr		428.888485018012						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	34.0	hr		173.649776709813						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	48.0	hr		67.9924566405819						nmol/l	nmol/l
+Seman2013		EMP400	6.0	EMP400	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP400	72.0	hr		19.0464414176607						nmol/l	nmol/l

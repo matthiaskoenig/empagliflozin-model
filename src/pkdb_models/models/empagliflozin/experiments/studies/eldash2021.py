@@ -1,0 +1,201 @@
+from typing import Dict
+
+from sbmlsim.data import DataSet, load_pkdb_dataframe
+from sbmlsim.fit import FitMapping, FitData
+from sbmlutils.console import console
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
+
+from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
+from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
+    Fasting, EmpagliflozinMappingMetaData, Coadministration
+from pkdb_models.models.empagliflozin.helpers import run_experiments
+
+
+class ElDash2021(EmpagliflozinSimulationExperiment):
+    """Simulation experiment of ElDash2021."""
+
+    interventions = ["morning", "evening"]
+    colors = {
+        "morning": "black",
+        "evening": "tab:blue",
+    }
+    subjects = [f"S{k+1}" for k in range(16)]
+    info = {
+        "[Cve_emp]": "empagliflozin",
+        "KI__UGE": "uge",
+    }
+
+    fpg = 84.4/18  # [mM] (healthy subjects)
+    bodyweight = 74.5   # [kg]
+    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (healthy subjects, assuming 100 ml/min)
+
+    def datasets(self) -> Dict[str, DataSet]:
+        dsets = {}
+        for fig_id in ["Fig4", "Fig4A", "Tab2", "Tab2A"]:
+            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            for label, df_label in df.groupby("label"):
+                dset = DataSet.from_df(df_label, self.ureg)
+
+                # unit conversion
+                if label.startswith("empagliflozin_"):
+                    if fig_id in ["Fig4", "Tab2"]:
+                        dset.unit_conversion("mean", 1 / self.Mr.emp)
+                    elif fig_id in ["Fig4A", "Tab2A"]:
+                        dset.unit_conversion("value", 1 / self.Mr.emp)
+
+                dsets[f"{label}"] = dset
+
+        # console.print(dsets)
+        # console.print(dsets.keys())
+        return dsets
+
+    def simulations(self) -> Dict[str, TimecourseSim]:
+        Q_ = self.Q_
+        tcsims = {}
+
+        tcsims[f"po_EMP10"] = TimecourseSim(
+            Timecourse(
+                start=0,
+                end=51 * 60,  # [min]
+                steps=1000,
+                changes={
+                    **self.default_changes(),
+                    "BW": Q_(self.bodyweight, "kg"),
+                    "[KI__fpg]": Q_(self.fpg, "mM"),
+                    # "KI__f_renal_function": Q_(self.gfr, "dimensionless")
+                    "PODOSE_emp": Q_(10, "mg"),
+                },
+            )
+        )
+
+        return tcsims
+
+    def fit_mappings(self) -> Dict[str, FitMapping]:
+
+        mappings = {}
+        for intervention in self.interventions:
+            for k, sid in enumerate(self.info.keys()):
+                name = self.info[sid]
+
+                # mean
+                mappings[f"po_EMP10_{name}_{intervention}"] = FitMapping(
+                    self,
+                    reference=FitData(
+                        self,
+                        dataset=f"{name}_{intervention}",
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                    ),
+                    observable=FitData(
+                        self, task=f"task_po_EMP10", xid="time", yid=sid,
+                    ),
+                    metadata=EmpagliflozinMappingMetaData(
+                        tissue=Tissue.URINE if "uge" in name else Tissue.PLASMA,
+                        route=Route.PO,
+                        application_form=ApplicationForm.TABLET,
+                        dosing=Dosing.SINGLE,
+                        health=Health.HEALTHY,
+                        fasting=Fasting.NR,
+                        coadministration=Coadministration.NONE
+                    ),
+                )
+
+                # subjects
+                for subject in self.subjects:
+                    mappings[f"po_EMP10_{name}_{intervention}_{subject}"] = FitMapping(
+                        self,
+                        reference=FitData(
+                            self,
+                            dataset=f"{name}_{intervention}_{subject}",
+                            xid="time",
+                            yid="value",
+                            yid_sd=None,
+                            count="count",
+                        ),
+                        observable=FitData(
+                            self, task=f"task_po_EMP10", xid="time", yid=sid,
+                        ),
+                        metadata=EmpagliflozinMappingMetaData(
+                            tissue=Tissue.URINE if "uge" in name else Tissue.PLASMA,
+                            route=Route.PO,
+                            application_form=ApplicationForm.TABLET,
+                            dosing=Dosing.SINGLE,
+                            health=Health.HEALTHY,
+                            fasting=Fasting.NR,
+                            coadministration=Coadministration.NONE,
+                            outlier=True,  # excluding individual data for performance
+                        ),
+                    )
+
+        # console.print(mappings)
+        return mappings
+
+    def figures(self) -> Dict[str, Figure]:
+
+        return {
+            **self.fig4_tab2(),
+        }
+
+    def fig4_tab2(self) -> Dict[str, Figure]:
+
+        fig = Figure(
+            experiment=self,
+            sid="Fig2_Tab2",
+            num_rows=1,
+            num_cols=2,
+            name=f"{self.__class__.__name__} (Healthy)",
+        )
+        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots[1].set_yaxis(self.label_uge, unit=self.unit_uge)
+
+        # simulation
+        for k, sid in enumerate(self.info.keys()):
+            plots[k].add_data(
+                task="task_po_EMP10",
+                xid="time",
+                yid=sid,
+                label="10 mg Emp",
+                color="black",
+                alpha=0.7,
+            )
+
+        # individual data (morning vs evening)
+        for intervention in self.interventions:
+            for k, sid in enumerate(self.info.keys()):
+                name = self.info[sid]
+                for subject in self.subjects:
+                    plots[k].add_data(
+                        dataset=f"{name}_{intervention}_{subject}",
+                        xid="time",
+                        yid="value",
+                        yid_sd=None,
+                        count="count",
+                        label=None,
+                        color=self.colors[intervention],
+                        alpha=0.5,
+                        marker="",
+                    )
+
+        # mean data (morning vs evening)
+        for intervention in self.interventions:
+            for k, sid in enumerate(self.info.keys()):
+                name = self.info[sid]
+                plots[k].add_data(
+                    dataset=f"{name}_{intervention}",
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=f"10 mg Emp ({intervention})",
+                    color=self.colors[intervention],
+                )
+
+        return {fig.sid: fig}
+
+
+if __name__ == "__main__":
+    run_experiments(ElDash2021, output_dir=ElDash2021.__name__)

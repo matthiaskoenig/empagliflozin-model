@@ -1,0 +1,59 @@
+study	name	group_count	parent	measurement_type	count	substance	choice	mean	median	sd	se	min	max	unit	comments
+Heise2013a	all	78.0	NA	species	78.0	NA	homo sapiens	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	healthy	78.0	NA	N	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	disease	78.0	NA	t2dm	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	ethnicity	76.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	ethnicity	1.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	ethnicity	1.0	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	sex	67.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	all	78.0	NA	sex	11.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	Placebo	16.0	all	sex	15.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	Placebo	16.0	all	sex	1.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	Placebo	16.0	all	ethnicity	16.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	Placebo	16.0	all	age	16.0	NA	NA	60.5	NA	NA	NA	37.0	68.0	year	NA
+Heise2013a	Placebo	16.0	all	bmi	16.0	NA	NA	30.6	NA	NA	NA	23.5	36.2	kg/m^2	NA
+Heise2013a	Placebo	16.0	all	weight	16.0	NA	NA	89.3	NA	NA	NA	67.9	129.0	kg	NA
+Heise2013a	Placebo	16.0	all	clearance	16.0	creatinine	NA	103.8	NA	25.6	NA	NA	NA	ml/min	NA
+Heise2013a	Placebo	16.0	all	hba1c	16.0	glucose	NA	6.9	NA	0.9	NA	NA	NA	percent	FPG
+Heise2013a	Placebo	16.0	all	concentration	16.0	insulin	NA	10.0	NA	4.4	NA	NA	NA	μu/ml	Fasting insulin
+Heise2013a	Placebo	16.0	all	concentration	16.0	glucose	NA	152.1	NA	41.5	NA	NA	NA	mg/dl	MDG
+Heise2013a	Placebo	16.0	all	concentration	16.0	glucose	NA	153.9	NA	40.5	NA	NA	NA	mg/dl	FPG
+Heise2013a	Placebo	16.0	all	cumulative amount	16.0	glucose	NA	4.0	NA	7.7	NA	NA	NA	g	UGE
+Heise2013a	EMP10	16.0	all	sex	13.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP10	16.0	all	sex	3.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP10	16.0	all	ethnicity	16.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP10	16.0	all	age	16.0	NA	NA	57.0	NA	NA	NA	41.0	69.0	year	NA
+Heise2013a	EMP10	16.0	all	bmi	16.0	NA	NA	29.5	NA	NA	NA	24.0	38.5	kg/m^2	NA
+Heise2013a	EMP10	16.0	all	weight	16.0	NA	NA	89.6	NA	NA	NA	74.5	118.3	kg	NA
+Heise2013a	EMP10	16.0	all	clearance	16.0	creatinine	NA	114.0	NA	24.3	NA	NA	NA	ml/min	NA
+Heise2013a	EMP10	16.0	all	hba1c	16.0	glucose	NA	7.2	NA	0.7	NA	NA	NA	percent	FPG
+Heise2013a	EMP10	16.0	all	concentration	16.0	insulin	NA	11.4	NA	6.2	NA	NA	NA	μu/ml	Fasting insulin
+Heise2013a	EMP10	16.0	all	concentration	16.0	glucose	NA	164.8	NA	43.2	NA	NA	NA	mg/dl	MDG
+Heise2013a	EMP10	16.0	all	concentration	16.0	glucose	NA	186.2	NA	93.0	NA	NA	NA	mg/dl	FPG
+Heise2013a	EMP10	16.0	all	cumulative amount	16.0	glucose	NA	7.8	NA	12.5	NA	NA	NA	g	UGE
+Heise2013a	EMP25	16.0	all	sex	12.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP25	16.0	all	sex	4.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP25	16.0	all	ethnicity	15.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP25	16.0	all	ethnicity	1.0	NA	asian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP25	16.0	all	age	16.0	NA	NA	57.5	NA	NA	NA	34.0	65.0	year	NA
+Heise2013a	EMP25	16.0	all	bmi	16.0	NA	NA	29.5	NA	NA	NA	25.1	39.6	kg/m^2	NA
+Heise2013a	EMP25	16.0	all	weight	16.0	NA	NA	89.6	NA	NA	NA	69.7	124.0	kg	NA
+Heise2013a	EMP25	16.0	all	clearance	16.0	creatinine	NA	130.2	NA	37.9	NA	NA	NA	ml/min	NA
+Heise2013a	EMP25	16.0	all	hba1c	16.0	glucose	NA	7.5	NA	0.8	NA	NA	NA	percent	FPG
+Heise2013a	EMP25	16.0	all	concentration	16.0	insulin	NA	8.7	NA	4.1	NA	NA	NA	μu/ml	Fasting insulin
+Heise2013a	EMP25	16.0	all	concentration	16.0	glucose	NA	166.3	NA	35.9	NA	NA	NA	mg/dl	MDG
+Heise2013a	EMP25	16.0	all	concentration	16.0	glucose	NA	167.5	NA	39.6	NA	NA	NA	mg/dl	FPG
+Heise2013a	EMP25	16.0	all	cumulative amount	16.0	glucose	NA	5.0	NA	6.5	NA	NA	NA	g	UGE
+Heise2013a	EMP100	30.0	all	sex	27.0	NA	M	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP100	30.0	all	sex	3.0	NA	F	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP100	30.0	all	ethnicity	29.0	NA	caucasian	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP100	30.0	all	ethnicity	1.0	NA	black	NA	NA	NA	NA	NA	NA	NA	NA
+Heise2013a	EMP100	30.0	all	age	30.0	NA	NA	58.0	NA	NA	NA	40.0	68.0	year	NA
+Heise2013a	EMP100	30.0	all	bmi	30.0	NA	NA	29.5	NA	NA	NA	23.2	39.5	kg/m^2	NA
+Heise2013a	EMP100	30.0	all	weight	30.0	NA	NA	92.4	NA	NA	NA	71.0	121.2	kg	NA
+Heise2013a	EMP100	30.0	all	clearance	30.0	creatinine	NA	122.6	NA	31.9	NA	NA	NA	ml/min	NA
+Heise2013a	EMP100	30.0	all	hba1c	30.0	glucose	NA	7.1	NA	0.9	NA	NA	NA	percent	FPG
+Heise2013a	EMP100	30.0	all	concentration	30.0	insulin	NA	9.3	NA	5.1	NA	NA	NA	μu/ml	Fasting insulin
+Heise2013a	EMP100	30.0	all	concentration	30.0	glucose	NA	149.4	NA	34.9	NA	NA	NA	mg/dl	MDG
+Heise2013a	EMP100	30.0	all	concentration	30.0	glucose	NA	150.0	NA	31.7	NA	NA	NA	mg/dl	FPG
+Heise2013a	EMP100	30.0	all	cumulative amount	30.0	glucose	NA	5.3	NA	10.8	NA	NA	NA	g	UGE
