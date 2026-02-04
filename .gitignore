@@ -2,6 +2,6 @@
 .idea
 *.pyc
 __pycache__
-results/
+/results/
 src/pkdb_models/models/empagliflozin/results/
 src/pkdb_models/models/empagliflozin/models/results/empagliflozin_model.omex
