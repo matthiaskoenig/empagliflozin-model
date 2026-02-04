@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13759839.svg)](https://doi.org/10.5281/zenodo.13759839)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18480677.svg)](https://doi.org/10.5281/zenodo.18480677)
 [![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml/badge.svg)](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml)
 [![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/docker.yml/badge.svg)](https://github.com/matthiaskoenig/sorafenib-model/actions/workflows/docker.yml)
 
@@ -19,11 +19,11 @@ The COMBINE archive is available from [`empagliflozin_model.omex`](./empaglifloz
 * **whole-body** submodel [`empagliflozin_body.xml`](./models/empagliflozin_body.xml) with [SBML4humans report](https://sbml4humans.de/model_url?url=https://raw.githubusercontent.com/matthiaskoenig/empagliflozin-model/main/models/empagliflozin_body.xml) and [equations](./models/empagliflozin_body.md).
 
 ## How to cite
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13758627.svg)](https://doi.org/10.5281/zenodo.13758627)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18480677.svg)](https://doi.org/10.5281/zenodo.18480677)
 
 > Alejandro, J., Elias, M. & König, M. (2026).
 > *Physiologically based pharmacokinetic/pharmacodynamic (PBPK) model of empagliflozin.*   
-> Zenodo. [https://doi.org/10.5281/zenodo.13759839](https://doi.org/10.5281/zenodo.13759839)
+> Zenodo. [https://doi.org/10.5281/zenodo.18480677](https://doi.org/10.5281/zenodo.18480677)
 
 ## License
 

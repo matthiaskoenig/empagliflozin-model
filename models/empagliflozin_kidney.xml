@@ -70,10 +70,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-04T11:18:01Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-04T11:30:17Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-04T11:18:01Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-02-04T11:30:17Z</dcterms:W3CDTF>
           </dcterms:modified>
           <bqbiol:hasTaxon>
             <rdf:Bag>
@@ -84,7 +84,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
           <bqbiol:hasProperty>
             <rdf:Bag>
               <rdf:li rdf:resource="https://identifiers.org/mamo/MAMO_0000046"/>
-              <rdf:li rdf:resource="https://identifiers.org/ncit/C91018"/>
+              <rdf:li rdf:resource="https://identifiers.org/ncit/C158136"/>
               <rdf:li rdf:resource="https://identifiers.org/ncit/C98083"/>
               <rdf:li rdf:resource="https://identifiers.org/ncit/C15299"/>
               <rdf:li rdf:resource="https://identifiers.org/ncit/C2985"/>
@@ -95,7 +95,7 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
           </bqbiol:hasProperty>
           <bqbiol:isDescribedBy>
             <rdf:Bag>
-              <rdf:li rdf:resource="https://identifiers.org/doi/10.5281/zenodo.13759839"/>
+              <rdf:li rdf:resource="https://identifiers.org/doi/10.5281/zenodo.18480677"/>
             </rdf:Bag>
           </bqbiol:isDescribedBy>
           <bqbiol:occursIn>
