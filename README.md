@@ -2,7 +2,7 @@
 [![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml/badge.svg)](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml)
 [![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/docker.yml/badge.svg)](https://github.com/matthiaskoenig/sorafenib-model/actions/workflows/docker.yml)
 
-# empagliflozin model
+# Empagliflozin Model
 This repository provides the empagliflozin physiologically based pharmacokinetics/ pharmacodynamics (PBPK/PD) model.
 
 The model is distributed as [SBML](http://sbml.org) format available from [`empagliflozin_body_flat.xml`](./models/empagliflozin_body_flat.xml) with 
@@ -81,6 +81,6 @@ sudo chmod 775 "${PWD}/results"
 
 ## Funding
 Matthias König was supported by the Federal Ministry of Research, Technology and Space (BMFTR, Germany) within ATLAS by grant number 031L0304B and by the German Research Foundation (DFG) within the Research Unit Program FOR 5151 QuaLiPerF (Quantifying Liver Perfusion-Function Relationship in Complex Resection - A Systems Medicine Approach) by grant number 436883643 and by grant number 465194077 (Priority Programme SPP 2311, Subproject SimLivA). This work was supported by the BMBF-funded de.NBI Cloud within the German Network for Bioinformatics Infrastructure (de.NBI) (031A537B, 031A533A, 031A538A, 031A533B, 031A535A, 031A537C, 031A534A, 031A532B).
-
+Michelle Elias was supported by the DFG under grant number 465194077.
 
 © 2024-2026 Jennesse Alejandro, Michelle Elias, and Matthias König, [Systems Medicine of the Liver](https://livermetabolism.com)
