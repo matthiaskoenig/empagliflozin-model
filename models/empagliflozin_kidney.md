@@ -12,7 +12,11 @@ length: [m]
 ## Parameters `p`
 ```
 EGEX_k = 0.01  # [1/min] rate urinary excretion of empagliflozin-glucuronide  
+EGIM_k = 100.0  # [1/min] rate empagliflozin-glucuronide import  
+EMP2EG_Km_emp = 0.02  # [mmol/l] Km empagliflozin UGT  
+EMP2EG_Vmax = 0.04  # [mmol/min/l] Vmax empagliflozin conversion  
 EMPEX_k = 0.003  # [1/min] rate urinary excretion of empagliflozin  
+EMPIM_k = 100.0  # [1/min] rate empagliflozin import  
 GFR_healthy = 100.0  # [ml/min] Glomerular filtration rate (healthy)  
 Mr_glc = 180.0  # [g/mol] Molecular weight glc [g/mole]  
 RTG_E50 = 7.19e-06  # [mmol/l] EC50 reduction in RTG  
@@ -27,13 +31,16 @@ Vurine = 1.0  # [l] urine
 cf_mg_per_g = 1000.0  # [mg/g] Conversion factor mg per g  
 cf_ml_per_l = 1000.0  # [ml/l] Conversion factor ml per l  
 f_renal_function = 1.0  # [-] parameter for renal function  
+f_ugt = 1.0  # [-] scaling factor UGT activity  
 fpg_healthy = 5.0  # [mmol/l] fasting plasma glucose (healthy)  
 ```
 
 ## Initial conditions `x0`
 ```
+eg = 0.0  # [mmol/l] empagliflozin-glucuronide (kidney) in Vki  
 eg_ext = 0.0  # [mmol/l] empagliflozin-glucuronide (plasma) in Vext  
 eg_urine = 0.0  # [mmol] empagliflozin-glucuronide (urine) in Vurine  
+emp = 0.0  # [mmol/l] empagliflozin (kidney) in Vki  
 emp_ext = 0.0  # [mmol/l] empagliflozin (plasma) in Vext  
 emp_urine = 0.0  # [mmol] empagliflozin (urine) in Vurine  
 fpg = 5.0  # [mmol/l] fasting plasma glucose (FPG) in Vext  
@@ -44,7 +51,10 @@ glc_urine = 0.0  # [mmol] glucose (urine) in Vurine
 ```
 # y
 EGEX = f_renal_function * EGEX_k * Vki * eg_ext  # [mmol/min] empagliflozin-glucuronide excretion (EGEX)  
+EGIM = EGIM_k * Vki * (eg_ext - eg)  # [mmol/min] empagliflozin-glucuronide import (EGIM)  
+EMP2EG = f_ugt * EMP2EG_Vmax * Vki * emp / (emp + EMP2EG_Km_emp)  # [mmol/min] empagliflozin glucuronidation (EMP2EG) UGT  
 EMPEX = f_renal_function * EMPEX_k * Vki * emp_ext  # [mmol/min] empagliflozin excretion (EMPEX)  
+EMPIM = EMPIM_k * Vki * (emp_ext - emp)  # [mmol/min] empagliflozin import (EMPIM)  
 GFR = f_renal_function * GFR_healthy  # [ml/min] glomerular filtration rate  
 RTG_fpg = RTG_base + RTG_m_fpg * (fpg - fpg_healthy)  # [mmol/l] RTG value (FPG)  
 UGE = glc_urine * Mr_glc / cf_mg_per_g  # [gram] urinary glucose excretion (UGE)  
@@ -53,9 +63,11 @@ RTG = RTG_fpg - RTG_delta * emp_ext**RTG_gamma / (RTG_E50**RTG_gamma + emp_ext**
 GLCEX = piecewise((GFR / cf_ml_per_l) * (fpg - RTG), fpg > RTG, 0)  # [mmol/min] glucose excretion (GLCEX)  
 
 # odes
-d eg_ext/dt = -EGEX / Vext  # [mmol/l/min] empagliflozin-glucuronide (plasma)  
+d eg/dt = EGIM / Vki + EMP2EG / Vki  # [mmol/l/min] empagliflozin-glucuronide (kidney)  
+d eg_ext/dt = -EGIM / Vext - EGEX / Vext  # [mmol/l/min] empagliflozin-glucuronide (plasma)  
 d eg_urine/dt = EGEX  # [mmol/min] empagliflozin-glucuronide (urine)  
-d emp_ext/dt = -EMPEX / Vext  # [mmol/l/min] empagliflozin (plasma)  
+d emp/dt = EMPIM / Vki - EMP2EG / Vki  # [mmol/l/min] empagliflozin (kidney)  
+d emp_ext/dt = -EMPIM / Vext - EMPEX / Vext  # [mmol/l/min] empagliflozin (plasma)  
 d emp_urine/dt = EMPEX  # [mmol/min] empagliflozin (urine)  
 d fpg/dt = 0  # [mmol/l/min] fasting plasma glucose (FPG)  
 d glc_urine/dt = GLCEX  # [mmol/min] glucose (urine)  

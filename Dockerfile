@@ -1,15 +1,16 @@
-# -----------------------
+# --------------------------------------------------------
 # Dockerfile
-# -----------------------
+# --------------------------------------------------------
 # Build and push image
-#   docker build -f Dockerfile -t matthiaskoenig/empagliflozin:0.5.2 -t matthiaskoenig/empagliflozin:latest .
+#   docker build -f Dockerfile -t matthiaskoenig/empagliflozin:0.5.3 -t matthiaskoenig/empagliflozin:latest .
 #   docker login
 #   docker push --all-tags matthiaskoenig/empagliflozin
+# --------------------------------------------------------
 
 FROM python:3.14-slim
 
 # install uv
-COPY --from=ghcr.io/astral-sh/uv:0.9.26 /uv /bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.10.10 /uv /bin/uv
 ENV UV_SYSTEM_PYTHON=1
 
 # install git
