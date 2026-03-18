@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18480677.svg)](https://doi.org/10.5281/zenodo.18480677)
 [![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml/badge.svg)](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/python.yml)
-[![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/docker.yml/badge.svg)](https://github.com/matthiaskoenig/sorafenib-model/actions/workflows/docker.yml)
+[![GitHub Action](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/docker.yml/badge.svg)](https://github.com/matthiaskoenig/empagliflozin-model/actions/workflows/docker.yml)
 
 # Empagliflozin Model
 This repository provides the empagliflozin physiologically based pharmacokinetics/ pharmacodynamics (PBPK/PD) model.
@@ -9,6 +9,7 @@ The model is distributed as [SBML](http://sbml.org) format available from [`empa
 corresponding [SBML4humans model report](https://sbml4humans.de/model_url?url=https://raw.githubusercontent.com/matthiaskoenig/empagliflozin-model/main/models/empagliflozin_body_flat.xml) and [model equations](./models/empagliflozin_body_flat.md).
 
 The COMBINE archive is available from [`empagliflozin_model.omex`](./empagliflozin_model.omex).
+The FAIR assessment is available from [`empagliflozin_model_fair.xlsx`](./losartan_model_fair.xlsx).
 
 ![model overview](./figures/empagliflozin_model.png)
 
@@ -19,7 +20,7 @@ The COMBINE archive is available from [`empagliflozin_model.omex`](./empaglifloz
 * **whole-body** submodel [`empagliflozin_body.xml`](./models/empagliflozin_body.xml) with [SBML4humans report](https://sbml4humans.de/model_url?url=https://raw.githubusercontent.com/matthiaskoenig/empagliflozin-model/main/models/empagliflozin_body.xml) and [equations](./models/empagliflozin_body.md).
 
 ## How to cite
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18480677.svg)](https://doi.org/10.5281/zenodo.18480677)
+To cite the model repository
 
 > Alejandro, J., Elias, M. & König, M. (2026).
 > *Physiologically based pharmacokinetic/pharmacodynamic (PBPK) model of empagliflozin.*   
@@ -57,7 +58,7 @@ pip install -e .
 ```
 Run the complete analysis in the environment via:
 ```bash
-run run_empagliflozin -a all -r results
+run_empagliflozin -a all -r results
 ```
 
 ### docker
