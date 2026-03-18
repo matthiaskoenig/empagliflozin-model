@@ -1,6 +1,7 @@
 """Liver model for SGLT2 inhibitors."""
-
+import pandas as pd
 import numpy as np
+
 from sbmlutils.cytoscape import visualize_sbml
 from sbmlutils.factory import *
 from sbmlutils.metadata import *
@@ -279,11 +280,90 @@ _m.reactions = [
 
 model_liver = _m
 
+def empagliflozin_layout(dx=200, dy=200) -> pd.DataFrame:
+    """Layout definition."""
+
+    delta_y = 0.5 * dy
+    delta_x = 0.7 * dx
+
+    positions = [
+        # sid, x, y
+
+        ["eg_ext",  0 * delta_x, 0 * delta_y],
+        ["emp_ext", 1.5 * delta_x, 0 * delta_y],
+
+        ["EGEX",   0 * delta_x, 1 * delta_y],
+        ["EMPIM",  1.5 * delta_x, 1 * delta_y],
+
+        ["eg",  0 * delta_x, 2 * delta_y],
+        ["emp", 1.5 * delta_x, 2 * delta_y],
+
+        ["EMP2EG", 0.9 * delta_x, 2.8 * delta_y],
+
+        ["EGBIEX",  0 * delta_x, 3.0 * delta_y],
+
+        ["eg_bi", 0.7 * delta_x, 3.5 * delta_y],
+
+        ["EGEHC", 0.7 * delta_x, 4.5 * delta_y],
+
+        ["eg_lumen", 0.7 * delta_x, 5.2 * delta_y],
+    ]
+
+    df = pd.DataFrame(positions, columns=["id", "x", "y"])
+    df.set_index("id", inplace=True)
+
+    return df
+
+
+def empagliflozin_annotations(dx=200, dy=200) -> list:
+    COLOR_PLASMA = "#FF796C"
+    COLOR_LIVER = "#FFFFFF"
+    COLOR_BILE = "#F5F5C6"
+    COLOR_LUMEN = "#CFEFFF"
+
+    kwargs = {
+        "type": cyviz.AnnotationShapeType.ROUND_RECTANGLE,
+        "opacity": 20,
+        "border_color": "#000000",
+        "border_thickness": 2,
+    }
+
+    xpos = -0.5 * dx
+    width = 2.0 * dx
+    delta_y = 0.5 * dy
+
+    annotations = [
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=-0.5 * delta_y, width=width, height=1.5 * delta_y,
+            fill_color=COLOR_PLASMA, **kwargs
+        ),
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=1.0 * delta_y, width=width, height=2.0 * delta_y,
+            fill_color=COLOR_LIVER, **kwargs
+        ),
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=3.0 * delta_y, width=width, height=1.5 * delta_y,
+            fill_color=COLOR_BILE, **kwargs
+        ),
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=4.5 * delta_y, width=width, height=1.3 * delta_y,
+            fill_color=COLOR_LUMEN, **kwargs
+        ),
+    ]
+
+    return annotations
+
+
 if __name__ == "__main__":
     from pkdb_models.models.empagliflozin import MODEL_BASE_PATH
+    from sbmlutils import cytoscape as cyviz
+
     results: FactoryResult = create_model(
         model=model_liver,
         filepath=MODEL_BASE_PATH / f"{model_liver.sid}.xml",
         sbml_level=3, sbml_version=2,
     )
-    visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
+
+    cyviz.visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
+    cyviz.apply_layout(layout=empagliflozin_layout())
+    cyviz.add_annotations(annotations=empagliflozin_annotations())

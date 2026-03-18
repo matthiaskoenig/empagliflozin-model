@@ -1,0 +1,7 @@
+study	group	count	measurement	substance	tissue	intervention	geometric_mean_ratio	lower_limit	upper_limit	method	comments
+Macha2013	dig	20	auc_inf	digoxin	plasma	EMPM8, DIG5	106.11	96.71	116.41	HPLC MS/MS	not uploaded
+Macha2013	dig	20	cmax	digoxin	plasma	EMPM8, DIG5	113.94	99.33	130.7	HPLC MS/MS	not uploaded
+Macha2013	rami	23	auc_inf	ramipril	plasma	EMPM5, RAM, RAM5	108.14	100.51	116.35	HPLC MS/MS	not uploaded
+Macha2013	rami	23	cmax	ramipril	plasma	EMPM5, RAM, RAM5	103.61	89.73	119.64	HPLC MS/MS	not uploaded
+Macha2013	rami	23	auc_inf	ramiprilat	plasma	EMPM5, RAM, RAM5	98.67	96.0	101.42	HPLC MS/MS	not uploaded
+Macha2013	rami	23	cmax	ramiprilat	plasma	EMPM5, RAM, RAM5	98.29	92.67	104.25	HPLC MS/MS	not uploaded

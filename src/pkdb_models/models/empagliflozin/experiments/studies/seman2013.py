@@ -15,9 +15,9 @@ from pkdb_models.models.empagliflozin.helpers import run_experiments
 class Seman2013(EmpagliflozinSimulationExperiment):
     """Simulation experiment of Seman2013."""
 
-    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects, assuming 5 mM)
+    fpg = EmpagliflozinSimulationExperiment.fpg_healthy
     bodyweight = 79  # [kg]
-    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (healthy subjects, assuming 100 ml/min)
+    gfr = EmpagliflozinSimulationExperiment.gfr_healthy
 
     doses = {
         "placebo": 0,
@@ -26,7 +26,6 @@ class Seman2013(EmpagliflozinSimulationExperiment):
         "EMP10": 10,
         "EMP25": 25,
         "EMP50": 50,
-        # "OGTT50": 50,  not using this subset
         "EMP100": 100,
         "EMP200": 200,
         "EMP400": 400,
@@ -34,21 +33,7 @@ class Seman2013(EmpagliflozinSimulationExperiment):
     }
     interventions = list(doses.keys())
 
-    # colors = {
-    #     "placebo": "black",
-    #     "EMP0.5": "#1f77b4",
-    #     "EMP2.5": "#ff7f0e",
-    #     "EMP10": "#2ca02c",
-    #     "EMP25": "#d62728",
-    #     "EMP50": "#9467bd",
-    #     # "OGTT50": "tab:green",  not using this subset
-    #     "EMP100": "#8c564b",
-    #     "EMP200": "#e377c2",
-    #     "EMP400": "#7f7f7f",
-    #     "EMP800": "#bcbd22"
-    # }
-
-    # [u'#1f77b4', u'#ff7f0e', u'#2ca02c', u'#d62728', u'#9467bd', u'#8c564b', u'#e377c2', u'#7f7f7f', u'#bcbd22', u'#17becf']
+    fig4_conditions = ["fasted", "fed"]
 
     info = {
         "[Cve_emp]": "empagliflozin",
@@ -58,14 +43,11 @@ class Seman2013(EmpagliflozinSimulationExperiment):
 
     def datasets(self) -> Dict[str, DataSet]:
         dsets = {}
-        for fig_id in ["Fig1", "Fig2"]:
+        for fig_id in ["Fig1", "Fig2", "FigS2", "Fig4"]:
             df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
             for label, df_label in df.groupby("label"):
                 dset = DataSet.from_df(df_label, self.ureg)
                 dsets[f"{label}"] = dset
-
-        # console.print(dsets)
-        # console.print(dsets.keys())
         return dsets
 
     def simulations(self) -> Dict[str, TimecourseSim]:
@@ -82,13 +64,29 @@ class Seman2013(EmpagliflozinSimulationExperiment):
                         **self.default_changes(),
                         "BW": Q_(self.bodyweight, "kg"),
                         "[KI__fpg]": Q_(self.fpg, "mM"),
-                        # "KI__f_renal_function": Q_(self.gfr / 100, "dimensionless"),  # [0, 1]  <=> [0, 100] gfr
+                        "GU__f_absorption": Q_(self.fasting_map["NR"], "dimensionless"),
                         "PODOSE_emp": Q_(dose, "mg"),
                     },
                 )]
             )
 
-        # console.print(tcsims.keys())
+        # Fig4: fasted/fed
+        for condition in self.fig4_conditions:
+            tcsims[f"EMP50_{condition}"] = TimecourseSim(
+                [Timecourse(
+                    start=0,
+                    end=75 * 60,  # [min]
+                    steps=500,
+                    changes={
+                        **self.default_changes(),
+                        "BW": Q_(self.bodyweight, "kg"),
+                        "[KI__fpg]": Q_(self.fpg, "mM"),
+                        "GU__f_absorption": Q_(self.fasting_map[condition], "dimensionless"),
+                        "PODOSE_emp": Q_(50, "mg"),
+                    },
+                )]
+            )
+
         return tcsims
 
     def fit_mappings(self) -> Dict[str, FitMapping]:
@@ -99,9 +97,7 @@ class Seman2013(EmpagliflozinSimulationExperiment):
 
                 if name == "empagliflozin" and intervention == "placebo":
                     continue
-
-                if name == "empagliflozin_urine":
-                    # FIXME: add missing urinary emp data
+                if name == "empagliflozin_urine" and intervention == "placebo":
                     continue
 
                 mappings[f"fm_{name}_{intervention}"] = FitMapping(
@@ -127,9 +123,37 @@ class Seman2013(EmpagliflozinSimulationExperiment):
                         coadministration=Coadministration.NONE,
                     ),
                 )
+
+        # Fig4: fed and fasted fit mappings
+        for condition, fasting in [("fed", Fasting.FED), ("fasted", Fasting.FASTED)]:
+            mappings[f"fm_empagliflozin_{condition}_EMP50"] = FitMapping(
+                self,
+                reference=FitData(
+                    self,
+                    dataset=f"{condition}_EMP50",
+                    xid="time",
+                    yid="mean",
+                    yid_sd=None,
+                    count="count",
+                ),
+                observable=FitData(
+                    self, task=f"task_EMP50_{condition}", xid="time", yid="[Cve_emp]",
+                ),
+                metadata=EmpagliflozinMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    application_form=ApplicationForm.TABLET,
+                    dosing=Dosing.SINGLE,
+                    health=Health.HEALTHY,
+                    fasting=fasting,
+                    coadministration=Coadministration.NONE,
+                ),
+            )
+
         return mappings
 
     def figures(self) -> Dict[str, Figure]:
+        # Fig1_2
         fig = Figure(
             experiment=self,
             sid="Fig1_2",
@@ -142,18 +166,16 @@ class Seman2013(EmpagliflozinSimulationExperiment):
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
         plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
         plots[2].set_yaxis(self.label_uge, unit=self.unit_uge)
-        for k in range(3):
-            plots[k].xaxis.max = 30
+        for kp in [1, 2]:
+            plots[kp].xaxis.max = 25
 
         for kp, sid in enumerate(self.info):
             name = self.info[sid]
-
             for intervention in self.interventions:
                 dose = self.doses[intervention]
                 color = self.dose_colors[dose]
                 dose_label = "Placebo" if dose == 0 else f"{dose} mg Emp"
 
-                # simulation
                 plots[kp].add_data(
                     task=f"task_{intervention}",
                     xid="time",
@@ -164,12 +186,9 @@ class Seman2013(EmpagliflozinSimulationExperiment):
 
                 if name == "empagliflozin" and intervention == "placebo":
                     continue
-
-                if name == "empagliflozin_urine":
-                    # FIXME: add missing urinary emp data
+                if name == "empagliflozin_urine" and intervention == "placebo":
                     continue
 
-                # data
                 plots[kp].add_data(
                     dataset=f"{name}_{intervention}",
                     xid="time",
@@ -180,10 +199,43 @@ class Seman2013(EmpagliflozinSimulationExperiment):
                     color=color,
                 )
 
+        # Fig4: fed vs fasted
+        fig4 = Figure(
+            experiment=self,
+            sid="Fig4",
+            num_rows=1,
+            num_cols=1,
+            name=f"{self.__class__.__name__} (Healthy)",
+        )
+        plots4 = fig4.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots4[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots4[0].xaxis.max = 30
+
+        for condition in self.fig4_conditions:
+            color = self.fasting_colors[condition]
+            plots4[0].add_data(
+                task=f"task_EMP50_{condition}",
+                xid="time",
+                yid="[Cve_emp]",
+                label=f"50 mg Emp ({condition})",
+                color=color,
+            )
+            plots4[0].add_data(
+                dataset=f"{condition}_EMP50",
+                xid="time",
+                yid="mean",
+                yid_sd=None,
+                count="count",
+                label=f"50 mg Emp ({condition})",
+                color=color,
+            )
+
         return {
             fig.sid: fig,
+            fig4.sid: fig4,
         }
 
 
 if __name__ == "__main__":
-    run_experiments(Seman2013, output_dir=Seman2013.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Seman2013, output_dir=RESULTS_PATH_SIMULATION)

@@ -12,9 +12,14 @@ from .li2020 import Li2020
 from .jiang2023b import Jiang2023b
 from .kim2021 import Kim2021
 from .kim2023 import Kim2023
+from .laffel2018 import Laffel2018
+from .macha2013d import Macha2013d
+from .macha2013e import Macha2013e
+from .macha2014 import Macha2014
 from .macha2014b import Macha2014b
 from .macha2014f import Macha2014f
 from .macha2015a import Macha2015a
+from .macha2015b import Macha2015b
 from .sarashina2013 import Sarashina2013
 from .sarashina2014 import Sarashina2014
 from .seman2013 import Seman2013

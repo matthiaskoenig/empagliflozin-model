@@ -23,7 +23,7 @@ class DoseDependencyExperiment(EmpagliflozinSimulationExperiment):
             tcsims[f"emp_dose_{dose}"] = TimecourseSim(
                 Timecourse(
                     start=0,
-                    end=25 * 60,  # [min]
+                    end=25 * 60 * 7,  # [min]
                     steps=1000,
                     changes={
                         **self.default_changes(),
@@ -36,7 +36,7 @@ class DoseDependencyExperiment(EmpagliflozinSimulationExperiment):
             tcsims[f"emp_glucose_{glc}"] = TimecourseSim(
                 Timecourse(
                     start=0,
-                    end=25 * 60,  # [min]
+                    end=25 * 60 * 7,  # [min]
                     steps=5000,
                     changes={
                         **self.default_changes(),
@@ -62,7 +62,7 @@ class DoseDependencyExperiment(EmpagliflozinSimulationExperiment):
             fig = Figure(
                 experiment=self,
                 sid=f"Fig_{key}_dependency_pk",
-                name="Dose dependency of empagliflozin (PK)" if key == "dose" else "Glucose dependency (PK)",
+                name="Dose dependency of empagliflozin (PK)" if key == "dose" else "Glucose dependency (PK) - 25 mg EMP PO",
                 num_rows=3,
                 num_cols=3,
             )
@@ -115,7 +115,7 @@ class DoseDependencyExperiment(EmpagliflozinSimulationExperiment):
             fig = Figure(
                 experiment=self,
                 sid=f"Fig_{key}_dependency_pd",
-                name="Dose dependency of empagliflozin (PD)" if key == "dose" else "Glucose dependency (PD)",
+                name="Dose dependency of empagliflozin (PD)" if key == "dose" else "Glucose dependency (PD) - 25 mg EMP PO",
                 num_rows=2,
                 num_cols=3,
             )

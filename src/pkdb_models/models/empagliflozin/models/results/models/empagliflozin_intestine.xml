@@ -64,10 +64,10 @@ implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p></bo
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-04T11:48:37Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-03-17T18:38:22Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2026-02-04T11:48:37Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2026-03-17T18:38:22Z</dcterms:W3CDTF>
           </dcterms:modified>
           <bqbiol:hasTaxon>
             <rdf:Bag>
@@ -695,6 +695,25 @@ is absorbed. This parameter determines how much of the empagliflozin is excreted
           </rdf:RDF>
         </annotation>
       </parameter>
+      <parameter metaid="meta_f_absorption" sboTerm="SBO:0000009" id="f_absorption" name="scaling factor absorption rate dap" value="1" units="dimensionless" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>1.0: normal absorption corresponding to tablet under fasting conditions.
+food decreases the absorption rate, i.e. &lt; 1.0.</p>
+          </body>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_f_absorption">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/SBO:0000009"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
       <parameter metaid="meta_PODOSE_emp" sboTerm="SBO:0000002" id="PODOSE_emp" name="oral dose empagliflozin [mg]" value="0" units="mg" constant="false">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -741,6 +760,7 @@ is absorbed. This parameter determines how much of the empagliflozin is excreted
         <math xmlns="http://www.w3.org/1998/Math/MathML">
           <apply>
             <times/>
+            <ci> f_absorption </ci>
             <ci> EMPABS_k </ci>
             <ci> Vgu </ci>
             <ci> emp_lumen </ci>

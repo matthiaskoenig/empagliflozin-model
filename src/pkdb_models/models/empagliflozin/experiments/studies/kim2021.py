@@ -157,4 +157,5 @@ class Kim2021(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Kim2021, output_dir=Kim2021.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Kim2021, output_dir=RESULTS_PATH_SIMULATION)

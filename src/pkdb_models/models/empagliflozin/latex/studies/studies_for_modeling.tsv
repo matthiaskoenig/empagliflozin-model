@@ -1,0 +1,29 @@
+Study identifier	PubMed	PK-DB identifier	dose route	substance	dosing	dose [mg]	combination	species	fasting	healthy	renal impairment	hepatic impairment	diabetes mellitus 2	plasma/serum empagliflozin	urine data	bile data	feces data	urinary glucose Exkretion	Fasting plasma Glucose	Glucose timecourses	Renal threshold RTG 
+study	pmid	pkdb	route	substance	dosing	dose	combination	species	fasting	healthy	renal impairment	hepatic impairment	t2dm	empagliflozin plasma	empagliflozin urine	empagliflozin bile	empagliflozin feces	UGE	FPG	glucose plasma	RTG
+Ayoub2017	28566743	PKDB00900	oral	empagliflozin	single	25	-	human	NR	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Brand2012	23054692	PKDB00902	oral	empagliflozin	multiple	50	empagliflozin, empagliflozin + sitgliptin	human	NR	TRUE	-	-	-	TRUE	TRUE	-	-	-	-	TRUE	-
+Chen2015a	25547626	PKDB00930	oral	empagliflozin, C14 empagliflozin	single	50	-	human	NR	TRUE	-	-	-	TRUE	TRUE	-	TRUE	TRUE	-	TRUE	-
+Chen2020	32498113	PKDB00901	oral	empagliflozin	single	10	-	human	fasting, fed	TRUE	-	-	-	TRUE	-	-	-	-	TRUE	TRUE	-
+ElDash2021	34123370	PKDB00944	oral	empagliflozin	multiple	10	-	human	NR	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	-	TRUE	-
+Friedrich2013	23328275	PKDB00916	oral	empagliflozin	multiple	50	empagliflozin, empagliflozin + linagliptin	human	NR	TRUE	-	-	-	TRUE	TRUE	-	-	-	-	-	-
+Hailat2022	35215305	PKDB00931	oral	empagliflozin	single	10, 25	-	human	fasted, fed	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Heise2013	23838841	PKDB00914	oral	empagliflozin	single, multiple	2.5, 10, 25, 100	-	human	NR	-	-	-	TRUE	TRUE	-	-	-	TRUE	TRUE	-	-
+Heise2013a	23356556	PKDB00915	oral	empagliflozin	single, multiple	10.0, 25, 100	-	human	NR	-	-	-	TRUE	-	-	-	-	TRUE	-	-	-
+Heise2015	25636696	PKDB00852	oral	empagliflozin	single	25	empagliflozin, empagliflozin + HCTZ, empaglifozin + TOR	human	NR	TRUE	-	-	-	-	-	-	-	TRUE	-	-	-
+Jiang2023b	37521035	PKDB01000	oral	empagliflozin	single	25	-	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	TRUE	-
+Kim2021	33953542	PKDB00996	oral	empagliflozin	multiple	25	empagliflozin, empagliflozin + lobeglitazone	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Kim2023	37282359	PKDB00927	oral	empagliflozin	multiple	25	empagliflozin, evogliptin + dapagliflozin,	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Laffel2018	29655290	PKDB01155	oral	empagliflozin	single	5, 10, 25	-	human		-	-	-	TRUE	TRUE	-	-	-	TRUE	TRUE	-	-
+Li2020	32799565	PKDB00995	oral	empagliflozin	single	25	-	human	fasted, fed	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Macha2013d	23497760	PKDB01157	oral	empagliflozin	single, multiple	25	empagliflozin, empagliflozin + verapamil, empagliflozin + ramipril,   empagliflozin + digoxin	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Macha2013e	23094794	PKDB01001	oral	empagliflozin	single	25	empagliflozin, empagliflozin + warfarin, warfarin	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Macha2014	37521035	PKDB01002	oral	empagliflozin	single	10, 25	empagliflozin, empagliflozin + gemfibrozil, rifampicin, or probenecid 	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Macha2014b	23859534	PKDB00938	oral	empagliflozin	single	50	-	human	fasted	TRUE	-	TRUE	-	TRUE	TRUE	-	-	-	-	TRUE	-
+Macha2014f	23859488	PKDB00939	oral	empagliflozin	single	50	-	human	NR	TRUE	TRUE	-	TRUE	TRUE	TRUE	-	-	TRUE	-	TRUE	-
+Macha2015a	26138865	PKDB00940	oral	empagliflozin	multiple	5, 10	-	human	fed	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	-	-	-
+Macha2015b	26051874	PKDB01156	oral	empagliflozin	multiple	50	empagliflozin, empagliflozin + pioglitazone, pioglitazone 	human	fasted	TRUE	-	-	-	TRUE	-	-	-	-	-	-	-
+Sarashina2013	23149871	PKDB00941	oral	empagliflozin	single	1, 5, 10, 25, 100	-	human	NR	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	-	-	-
+Sarashina2014	25199997	PKDB00942	oral	empagliflozin	single	25	-	human	NR	-	TRUE	-	TRUE	TRUE	TRUE	-	-	TRUE	-	-	-
+Seman2013/FDA	27121669	PKDB00943	oral	empagliflozin	single	0.5, 2.5, 10, 25, 50, 100, 200, 400, 800	-	human	NR, fasting, fed	TRUE	-	-	-	TRUE	TRUE	-	-	TRUE	-	TRUE	-
+vanderAartvanderBeek2020	32663790	PKDB00929	oral	empagliflozin	multiple	10	-	human	NR	-	-	-	TRUE	TRUE	-	-	-	-	-	-	-
+Zhao2015	26101175	PKDB00932	oral	empagliflozin	multiple	10, 25	-	human	fasted	-	-	-	TRUE	TRUE	TRUE	-	-	TRUE	TRUE	-	-

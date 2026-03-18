@@ -25,10 +25,22 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
         "renal_scan": str(Path(__file__).parent / "study_data" / "renal_parameters.tsv"),
         "hepatic_scan": str(Path(__file__).parent / "study_data" / "hepatic_parameters.tsv"),
         "dose_scan": str(Path(__file__).parent / "study_data" / "dose_parameters.tsv"),
+        "food_scan": str(Path(__file__).parent / "study_data" / "food_parameters.tsv"),
     }
 
-    num_points = 15
+    SARASHINA2014_FILE = str(
+        Path(__file__).parent / "study_data" / "Sarashina2014_Fig2.tsv"
+    )
+
+    MACHA2014F_FILE = str(
+        Path(__file__).parent / "study_data" / "Macha2014f_Fig2.tsv"
+    )
+
+    num_points = 20
     glucoses = [5, 6, 7, 8, 9, 10, 11]  # [mM]
+    GLUCOSE_MW_G_PER_MOL = 180.156
+
+    scan_end = 24 * 60 * 7
 
     # Substance colors
     substance_colors = {
@@ -36,12 +48,20 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
         "empagliflozin-glucuronide": "#4A6FA5",
     }
 
+    # Maps condition labels (lower-cased) in the food TSV to f_absorption x-axis values.
+    # fasted/fasting → default (1.0); fed → literature-informed reduced absorption.
+    food_map = {
+        "fasted": 1.0,
+        "fasting": 1.0,
+        "fed": 0.75,
+    }
+
     scan_map = {
         "renal_scan": {
             "parameter": "KI__f_renal_function",
             "default": 1.0,
             "range": np.sort(
-                np.append(np.logspace(-1, np.log10(2.0), num=num_points), [1.0])
+                np.append(np.logspace(-1.5, np.log10(2.0), num=num_points), [1.0])
             ),
             "scale": "log",
             "colormap": "renal_cmap",
@@ -67,7 +87,28 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             "units": "mg",
             "label": "Oral Dose [mg]",
         },
+        "food_scan": {
+            "parameter": "GU__f_absorption",
+            "default": 1.0,
+            "range": np.sort(np.append(np.linspace(0.1, 1.5, num=num_points), [1.0])),
+            "scale": "linear",
+            "colormap": "food_cmap",
+            "units": "dimensionless",
+            "label": "Absorption Factor [-]",
+        },
     }
+
+    @property
+    def food_cmap(self):
+        """Colormap ranging from dark deep red (low absorption) to light pastel red (high absorption)."""
+        return matplotlib.colors.LinearSegmentedColormap.from_list(
+            "food_cmap",
+            ["#800100", "#c22223", "#e78789", "#fbe8e6"],
+        )
+
+    @staticmethod
+    def _gfr_bsa_to_f_renal(gfr_bsa, gfr_healthy: float = 100.0) -> np.ndarray:
+        return np.asarray(gfr_bsa, dtype=float) / gfr_healthy
 
     def simulations(self) -> Dict[str, ScanSim]:
         Q_ = self.Q_
@@ -79,7 +120,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             simulation=TimecourseSim(
                 Timecourse(
                     start=0,
-                    end=24 * 60,  # 24 hours
+                    end = self.scan_end,
                     steps=5000,
                     changes={
                         **self.default_changes(),
@@ -105,7 +146,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             simulation=TimecourseSim(
                 Timecourse(
                     start=0,
-                    end=24 * 60,  # 24 hours
+                    end = self.scan_end,
                     steps=5000,
                     changes={
                         **self.default_changes(),
@@ -131,10 +172,36 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             simulation=TimecourseSim(
                 Timecourse(
                     start=0,
-                    end=24 * 60,  # 24 hours
+                    end = self.scan_end,
                     steps=5000,
                     changes={
                         **self.default_changes(),
+                    },
+                )
+            ),
+            dimensions=[
+                Dimension(
+                    "dim_scan",
+                    changes={
+                        scan_data["parameter"]: Q_(
+                            scan_data["range"], scan_data["units"]
+                        )
+                    },
+                ),
+            ],
+        )
+
+        # Food simulation
+        scan_data = self.scan_map["food_scan"]
+        tcscans["scan_po_food"] = ScanSim(
+            simulation=TimecourseSim(
+                Timecourse(
+                    start=0,
+                    end=self.scan_end,
+                    steps=5000,
+                    changes={
+                        **self.default_changes(),
+                        "PODOSE_emp": Q_(10, "mg"),
                     },
                 )
             ),
@@ -158,7 +225,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 simulation=TimecourseSim(
                     Timecourse(
                         start=0,
-                        end=24 * 60,
+                        end = self.scan_end,
                         steps=5000,
                         changes={
                             **self.default_changes(),
@@ -185,7 +252,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 simulation=TimecourseSim(
                     Timecourse(
                         start=0,
-                        end=24 * 60,
+                        end=self.scan_end,
                         steps=5000,
                         changes={
                             **self.default_changes(),
@@ -212,10 +279,37 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 simulation=TimecourseSim(
                     Timecourse(
                         start=0,
-                        end=24 * 60,
+                        end=self.scan_end,
                         steps=5000,
                         changes={
                             **self.default_changes(),
+                            "[KI__fpg]": Q_(glc, "mM"),
+                        },
+                    )
+                ),
+                dimensions=[
+                    Dimension(
+                        "dim_scan",
+                        changes={
+                            scan_data["parameter"]: Q_(
+                                scan_data["range"], scan_data["units"]
+                            )
+                        },
+                    ),
+                ],
+            )
+
+            # Food scan with glucose
+            scan_data = self.scan_map["food_scan"]
+            tcscans[f"scan_po_food_glc{glc}"] = ScanSim(
+                simulation=TimecourseSim(
+                    Timecourse(
+                        start=0,
+                        end=self.scan_end,
+                        steps=5000,
+                        changes={
+                            **self.default_changes(),
+                            "PODOSE_emp": Q_(10, "mg"),
                             "[KI__fpg]": Q_(glc, "mM"),
                         },
                     )
@@ -273,7 +367,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             ncols=ncols,
             figsize=figsize,
             sharey=False,
-            sharex=True,
+            sharex=False,
             dpi=150,
             squeeze=False,
         )
@@ -339,7 +433,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                     linewidth=linewidth,
                 )
 
-            if scan_key != "dose_scan":
+            if scan_key != "dose_scan" and t_vec_default is not None:
                 ax.plot(
                     t_vec_default.magnitude,
                     c_vec_default.magnitude,
@@ -362,10 +456,14 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             )
 
             ax.set_ylim(bottom=0.0, top=1.05 * ymax)
-            ax.set_xlim(right=24)
 
-            # Add dose annotation for renal and hepatic scans
-            if scan_key in ["renal_scan", "hepatic_scan"]:
+            if k_sid in [0, 1]:
+                ax.set_xlim(left=-1, right=50)
+            elif k_sid in [2, 3]:
+                ax.set_xlim(left=-1, right=70)
+
+            # Add dose annotation for renal, hepatic, and food scans
+            if scan_key in ["renal_scan", "hepatic_scan", "food_scan"]:
                 dose_value = Q_(xres["PODOSE_emp"].values[0][0], xres.uinfo["PODOSE_emp"])
                 dose_mg = dose_value.to("mg").magnitude
 
@@ -438,27 +536,40 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             "dose_scan", "scan_po_dose", "fig_emp_po__dose__timecourse"
         )
 
+        # Food scan
+        figures["fig_emp_po__food__timecourse"] = self._plot_timecourse_scan(
+            "food_scan", "scan_po_food", "fig_emp_po__food__timecourse"
+        )
+
         return figures
 
-    def _plot_scan_combined(self, scan_key: str, sim_key: str, pk_parameters: list) -> FigureMPL:
-        """Create combined figure with all PK parameters and UGE for a single scan type."""
-        scan_data = self.scan_map[scan_key]
-        scan_name = scan_key.replace("_scan", "").capitalize()
+    def _plot_scan_combined(self, scan_key: str, sim_key: str, pk_parameters: list) -> "FigureMPL":
+        """Create combined figure with all PK parameters, UGE, and (renal only) cl_renal."""
+        from sbmlsim.plot.serialization_matplotlib import plt
 
-        ncols = 5
+        scan_data = self.scan_map[scan_key]
+
+        is_renal = scan_key == "renal_scan"
+        ncols = 6 if is_renal else 5
+        figsize = (6 * ncols, 6)
+
         f, axes = plt.subplots(
-            nrows=1, ncols=ncols, figsize=(6 * ncols, 6), dpi=150,
+            nrows=1, ncols=ncols, figsize=figsize, dpi=150,
             layout="constrained",
             squeeze=False,
         )
         axes = axes.flatten()
 
-        # Plot PK parameters
+        # Columns 0-3: PK parameters (aucinf, cmax, tmax, thalf)
         for k, pk_key in enumerate(pk_parameters):
             self._plot_pk_subplot(axes[k], scan_key, sim_key, pk_key, scan_data)
 
-        # Plot UGE
+        # Column 4: UGE
         self._plot_uge_subplot(axes[4], scan_key, sim_key, scan_data)
+
+        # Column 5 (renal only): cl_renal
+        if is_renal:
+            self._plot_cl_renal_subplot(axes[5], scan_key, sim_key, scan_data)
 
         return f
 
@@ -482,6 +593,20 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             if molar_mass is None:
                 raise
             return (y * molar_mass).to(target_unit)
+
+    def _convert_study_value_to_target_unit(self, value: float, unit_str: str, pk_key: str, substance: str) -> float:
+        """Convert a study data value from its TSV unit to the target pk_unit.
+        """
+        Q_ = self.Q_
+        target_unit = self.pk_units[pk_key]
+        y = Q_(value, unit_str)
+        try:
+            return y.to(target_unit).magnitude
+        except DimensionalityError:
+            molar_mass = self._molar_mass_for_substance(substance)
+            if molar_mass is None:
+                raise
+            return (y * molar_mass).to(target_unit).magnitude
 
     def _add_study_data_to_plot(self, ax, scan_key: str, substance: str, parameter: str, study_data_file: str,
                                 studies_in_legend: set):
@@ -509,17 +634,18 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             sim_key = "scan_po_hepatic"
         elif scan_key == "dose_scan":
             sim_key = "scan_po_dose"
+        elif scan_key == "food_scan":
+            sim_key = "scan_po_food"
 
         xres = self.results[f"task_{sim_key}"]
 
-        # Get simulation dose (for renal/hepatic scans for scaling)
-        if scan_key in ["renal_scan", "hepatic_scan"]:
+        # Get simulation dose (for renal/hepatic/food scans for scaling)
+        if scan_key in ["renal_scan", "hepatic_scan", "food_scan"]:
             sim_dose_value = Q_(xres["PODOSE_emp"].values[0][0], xres.uinfo["PODOSE_emp"]).to("mg").magnitude
 
         # Get condition to x-axis mapping
         condition_map = None
         if scan_key == "renal_scan":
-            # renal_map from base experiment
             condition_map = {
                 "normal": self.renal_map["Normal renal function"],
                 "mild": self.renal_map["Mild renal impairment"],
@@ -527,13 +653,15 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 "severe": self.renal_map["Severe renal impairment"],
             }
         elif scan_key == "hepatic_scan":
-            # cirrhosis_map from base experiment
             condition_map = {
                 "normal": self.cirrhosis_map["Control"],
                 "mild": self.cirrhosis_map["Mild cirrhosis"],
                 "moderate": self.cirrhosis_map["Moderate cirrhosis"],
                 "severe": self.cirrhosis_map["Severe cirrhosis"],
             }
+        elif scan_key == "food_scan":
+            # Map fed/fasted condition labels to their f_absorption x-axis positions.
+            condition_map = {k: v for k, v in self.food_map.items()}
         elif scan_key == "dose_scan":
             # For dose scan x-position comes directly from the dose value
             pass
@@ -562,6 +690,23 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             if scan_key == "dose_scan":
                 x_pos = row["dose"]
                 dose_ratio = 1.0  # No scaling for dose scan
+
+            elif scan_key == "food_scan":
+                # Map condition label (fasted/fasting/fed) to f_absorption x-axis value.
+                if condition not in condition_map:
+                    continue
+                x_pos = condition_map[condition]
+
+                # Scale PK values if study dose differs from simulation dose
+                study_dose = row.get("dose", np.nan)
+                dose_ratio = (
+                    sim_dose_value / study_dose
+                    if pd.notna(study_dose) and study_dose > 0
+                    else 1.0
+                )
+                if pd.notna(study_dose) and study_dose != sim_dose_value:
+                    if parameter not in scalable_params:
+                        continue
 
             else:
                 # For renal/hepatic scans, map condition to x-position
@@ -594,16 +739,16 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             has_min = pd.notna(row['min'])
             has_max = pd.notna(row['max'])
 
-            if has_mean:
-                # Get value and unit
-                y_value = row['mean']
-                value_unit = row.get('unit', None)
+            # Read the unit string from the TSV row and use it for conversion
+            value_unit = row.get('unit', None)
 
-                # Convert to target units using the same method as simulation data
+            def conv(val):
                 if pd.notna(value_unit):
-                    y_quantity = Q_(y_value, value_unit)
-                    y_quantity = self._convert_pk_quantity(y_quantity, parameter, substance)
-                    y_value = y_quantity.magnitude
+                    return self._convert_study_value_to_target_unit(val, value_unit, parameter, substance)
+                return float(val)
+
+            if has_mean:
+                y_value = conv(row['mean'])
 
                 # Apply dose scaling if needed
                 if parameter in scalable_params and dose_ratio != 1.0:
@@ -611,11 +756,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
 
                 # Plot mean with optional SD error bars
                 if has_sd:
-                    y_err = row['sd']
-                    if pd.notna(value_unit):
-                        y_err_quantity = Q_(y_err, value_unit)
-                        y_err_quantity = self._convert_pk_quantity(y_err_quantity, parameter, substance)
-                        y_err = y_err_quantity.magnitude
+                    y_err = conv(row['sd'])
 
                     if parameter in scalable_params and dose_ratio != 1.0:
                         y_err = y_err * dose_ratio
@@ -632,14 +773,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                     max_y = max(max_y, y_value)
 
             elif has_median:
-                y_value = row['median']
-                value_unit = row.get('unit', None)
-
-                # Convert to target units
-                if pd.notna(value_unit):
-                    y_quantity = Q_(y_value, value_unit)
-                    y_quantity = self._convert_pk_quantity(y_quantity, parameter, substance)
-                    y_value = y_quantity.magnitude
+                y_value = conv(row['median'])
 
                 # Apply dose scaling if needed
                 if parameter in scalable_params and dose_ratio != 1.0:
@@ -647,16 +781,8 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
 
                 # Plot median with optional min/max range
                 if has_min and has_max:
-                    y_min = row['min']
-                    y_max = row['max']
-
-                    if pd.notna(value_unit):
-                        y_min_quantity = Q_(y_min, value_unit)
-                        y_max_quantity = Q_(y_max, value_unit)
-                        y_min_quantity = self._convert_pk_quantity(y_min_quantity, parameter, substance)
-                        y_max_quantity = self._convert_pk_quantity(y_max_quantity, parameter, substance)
-                        y_min = y_min_quantity.magnitude
-                        y_max = y_max_quantity.magnitude
+                    y_min = conv(row['min'])
+                    y_max = conv(row['max'])
 
                     if parameter in scalable_params and dose_ratio != 1.0:
                         y_min = y_min * dose_ratio
@@ -676,17 +802,8 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
 
             elif has_min and has_max:
                 # Only have range, plot as a bar
-                y_min = row['min']
-                y_max = row['max']
-                value_unit = row.get('unit', None)
-
-                if pd.notna(value_unit):
-                    y_min_quantity = Q_(y_min, value_unit)
-                    y_max_quantity = Q_(y_max, value_unit)
-                    y_min_quantity = self._convert_pk_quantity(y_min_quantity, parameter, substance)
-                    y_max_quantity = self._convert_pk_quantity(y_max_quantity, parameter, substance)
-                    y_min = y_min_quantity.magnitude
-                    y_max = y_max_quantity.magnitude
+                y_min = conv(row['min'])
+                y_max = conv(row['max'])
 
                 if parameter in scalable_params and dose_ratio != 1.0:
                     y_min = y_min * dose_ratio
@@ -724,10 +841,12 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             sim_key = "scan_po_hepatic"
         elif scan_key == "dose_scan":
             sim_key = "scan_po_dose"
+        elif scan_key == "food_scan":
+            sim_key = "scan_po_food"
 
         # Get simulation dose
         sim_dose_value = None
-        if scan_key in ["renal_scan", "hepatic_scan"]:
+        if scan_key in ["renal_scan", "hepatic_scan", "food_scan"]:
             glc_first = self.glucoses[0]
             sim_key_glc = f"{sim_key}_glc{glc_first}"
             xres_glc = self.results[f"task_{sim_key_glc}"]
@@ -749,6 +868,8 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 "moderate": self.cirrhosis_map["Moderate cirrhosis"],
                 "severe": self.cirrhosis_map["Severe cirrhosis"],
             }
+        elif scan_key == "food_scan":
+            condition_map = {k: v for k, v in self.food_map.items()}
 
         # Map diabetes status to glucose levels and colors
         diabetes_map = {
@@ -768,6 +889,16 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             # Get x-position based on scan type
             if scan_key == "dose_scan":
                 x_pos = row['dose']
+            elif scan_key == "food_scan":
+                condition_raw = row.get("condition", None)
+                condition = condition_raw.lower() if pd.notna(condition_raw) else None
+                if condition not in condition_map:
+                    continue
+                x_pos = condition_map[condition]
+                # Check dose match
+                study_dose = row.get('dose', np.nan)
+                if pd.notna(study_dose) and sim_dose_value is not None and study_dose != sim_dose_value:
+                    continue
             else:
                 # For renal/hepatic scans, check dose match
                 study_dose = row['dose']
@@ -888,15 +1019,25 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 "empagliflozin-glucuronide": "Eg",
             }
 
+            line_styles = {
+                "empagliflozin": "-",
+                "empagliflozin-glucuronide": "--",
+            }
+            line_widths = {
+                "empagliflozin": 3.0,
+                "empagliflozin-glucuronide": 1.5,
+            }
+
             # Plot simulation line
+            is_thalf = pk_key == "thalf"
             ax.plot(
                 x_vec,
                 y,
                 marker="o",
-                linestyle="-",
                 color=color,
                 markeredgecolor=color,
-                linewidth=2.5,
+                linestyle=line_styles.get(substance, "-") if is_thalf else "-",
+                linewidth=line_widths.get(substance, 2.5) if is_thalf else 2.5,
                 markersize=7,
                 label=substance_label_map.get(substance, substance),
             )
@@ -920,6 +1061,14 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 if study_info is not None:
                     study_markers.update(study_info)
 
+        # Sarashina2014 individual scatter
+        self._add_sarashina2014_aucinf_scatter(ax, scan_key, pk_key, study_markers)
+        if "Sarashina2014" in study_markers:
+            study_max_y = max(study_max_y, ax.get_ylim()[1])
+
+        # Macha2014f individual scatter (renal scan / aucinf only)
+        self._add_macha2014f_aucinf_scatter(ax, scan_key, pk_key, study_markers)
+
         ymax = max(ymax, study_max_y)
 
         # Formatting
@@ -941,8 +1090,8 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 ax.set_xticks([0.1, 1, 10, 100, 800])
                 ax.set_xticklabels([0.1, 1, 10, 100, 800])
 
-        # Add dose annotation for renal and hepatic scans
-        if scan_key in ["renal_scan", "hepatic_scan"]:
+        # Add dose annotation for renal, hepatic, and food scans
+        if scan_key in ["renal_scan", "hepatic_scan", "food_scan"]:
             dose_value = Q_(xres["PODOSE_emp"].values[0][0], xres.uinfo["PODOSE_emp"])
             dose_mg = dose_value.to("mg").magnitude
             ax.text(
@@ -1080,6 +1229,11 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             if study_info is not None:
                 study_markers.update(study_info)
 
+        # Macha2014f individual UGE scatter (renal scan only)
+        self._add_macha2014f_uge_scatter(ax, scan_key, study_markers)
+        if "Macha2014f" in study_markers:
+            ymax = max(ymax, ax.get_ylim()[1])
+
         ax.set_ylim(bottom=0.0, top=1.05 * ymax)
 
         # Set x-scale
@@ -1092,8 +1246,8 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
                 ax.set_xticks([0.1, 1, 10, 100, 800])
                 ax.set_xticklabels([0.1, 1, 10, 100, 800])
 
-        # Add dose annotation for renal and hepatic scans
-        if scan_key in ["renal_scan", "hepatic_scan"]:
+        # Add dose annotation for renal, hepatic, and food scans
+        if scan_key in ["renal_scan", "hepatic_scan", "food_scan"]:
             xres_glc = self.results[f"task_{sim_key}_glc{self.glucoses[0]}"]
             dose_value = Q_(xres_glc["PODOSE_emp"].values[0][0], xres_glc.uinfo["PODOSE_emp"])
             dose_mg = dose_value.to("mg").magnitude
@@ -1195,6 +1349,7 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
             "renal": "renal_scan",
             "hepatic": "hepatic_scan",
             "dose": "dose_scan",
+            "food": "food_scan",
         }
 
         # Create one figure per scan type
@@ -1208,6 +1363,273 @@ class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
 
         return figures
 
+    def _add_sarashina2014_aucinf_scatter(self, ax, scan_key: str, pk_key: str, study_markers: dict):
+        # for renal scan, aucinf parameter, empagliflozin
+        if scan_key != "renal_scan" or pk_key != "aucinf":
+            return
+
+        Q_ = self.Q_
+        KI_GFR_HEALTHY = 100.0  # ml/min
+        STUDY_DOSE_MG = 25.0
+        SIM_DOSE_MG = 50.0
+        dose_scale = SIM_DOSE_MG / STUDY_DOSE_MG
+
+        df = pd.read_csv(self.SARASHINA2014_FILE, sep="\t", comment="#")
+
+        df_auc = df[
+            (df["x_measurement_type"] == "gfr") &
+            (df["x_substance"] == "empagliflozin") &
+            (df["y_measurement_type"] == "auc_inf")
+            ].copy()
+
+        if df_auc.empty:
+            return
+
+        x_vals = df_auc["x_value"].astype(float).values / KI_GFR_HEALTHY
+        raw_y = df_auc["y_value"].astype(float).values  # nmol/l·hr
+        y_qty = Q_(raw_y, "nmol/l*hr")
+
+        target_unit = self.pk_units[pk_key]
+        try:
+            y_converted = y_qty.to(target_unit).magnitude
+        except Exception:
+            Mr_emp = self._molar_mass_for_substance("empagliflozin")
+            y_converted = (y_qty * Mr_emp).to(target_unit).magnitude
+
+        y_vals = y_converted * dose_scale  # scale 25 mg → 50 mg
+
+        study_name = "Sarashina2014"
+        marker = "^"
+        study_markers[study_name] = marker
+
+        substance_color = self.substance_colors["empagliflozin"]
+
+        ax.scatter(
+            x_vals,
+            y_vals,
+            marker=marker,
+            facecolors=substance_color,
+            edgecolors="black",
+            linewidths=0.8,
+            s=50,
+            alpha=0.7,
+            zorder=5,
+            label=study_name,
+        )
+
+    def _plot_cl_renal_subplot(self, ax, scan_key: str, sim_key: str, scan_data: dict):
+        """Plot renal clearance vs renal function (simulation + Macha2014f scatter)."""
+        Q_ = self.Q_
+
+        # Reference line at default renal function
+        ax.axvline(x=scan_data["default"], color="grey", linestyle="--", linewidth=1.5)
+
+        xres = self.results[f"task_{sim_key}"]
+        parameter_id = scan_data["parameter"]
+        x_vec = Q_(xres[parameter_id].values[0], xres.uinfo[parameter_id])
+
+        df = self.pk_dfs.get(sim_key)
+        df_sub = df[df.substance == "empagliflozin"].copy()
+
+        cl_units = df_sub["cl_renal_unit"].values[0]
+        cl_renal_arr = Q_(df_sub["cl_renal"].to_numpy(), cl_units).to("ml/min").magnitude
+
+        n = min(len(x_vec), len(cl_renal_arr))
+        x_vec = x_vec[:n]
+        cl_renal_arr = cl_renal_arr[:n]
+
+        ax.plot(
+            x_vec.magnitude,
+            cl_renal_arr,
+            marker="o",
+            linestyle="-",
+            color=self.substance_colors["empagliflozin"],
+            linewidth=2.5,
+            markersize=6,
+            label="Emp",
+            zorder=3,
+        )
+
+        ymax = float(np.nanmax(cl_renal_arr)) if len(cl_renal_arr) > 0 else 1.0
+
+        df = pd.read_csv(self.MACHA2014F_FILE, sep="\t", comment="#")
+        df_cl = df[df["y_measurement_type"] == "clearance_renal"].copy()
+
+        study_markers = {}
+        if not df_cl.empty:
+            x_scatter = self._gfr_bsa_to_f_renal(df_cl["x_value"].astype(float).values)
+            y_scatter = df_cl["y_value"].astype(float).values
+
+            mask = y_scatter > 0
+            x_scatter = x_scatter[mask]
+            y_scatter = y_scatter[mask]
+
+            if len(x_scatter) > 0:
+                ax.scatter(
+                    x_scatter,
+                    y_scatter,
+                    marker="s",
+                    facecolors=self.substance_colors["empagliflozin"],
+                    edgecolors="black",
+                    linewidths=0.8,
+                    s=50,
+                    alpha=0.7,
+                    zorder=5,
+                    label="Macha2014f",
+                )
+                study_markers["Macha2014f"] = "s"
+                ymax = max(ymax, float(np.nanmax(y_scatter)))
+
+        dose_value = Q_(xres["PODOSE_emp"].values[0][0], xres.uinfo["PODOSE_emp"])
+        dose_mg = dose_value.to("mg").magnitude
+        ax.text(
+            0.98, 0.02,
+            f"Dose: {dose_mg:.0f} mg",
+            transform=ax.transAxes,
+            fontsize=12,
+            verticalalignment="bottom",
+            horizontalalignment="right",
+            bbox=dict(boxstyle="round", facecolor="white", alpha=0.8, edgecolor="gray"),
+        )
+
+        ax.set_xlabel(scan_data["label"], fontdict=self.scan_font)
+        ax.set_ylabel("Renal Clearance Empagliflozin [ml/min]", fontdict=self.scan_font)
+        ax.tick_params(axis="x", labelsize=self.tick_font_size)
+        ax.tick_params(axis="y", labelsize=self.tick_font_size)
+        ax.set_ylim(bottom=0.0, top=1.05 * ymax)
+
+        if scan_data["scale"] == "log":
+            from matplotlib.ticker import ScalarFormatter
+            ax.set_xscale("log")
+            ax.xaxis.set_major_formatter(ScalarFormatter())
+            ax.xaxis.get_major_formatter().set_scientific(False)
+
+        import matplotlib.lines as mlines
+
+        handles, labels = ax.get_legend_handles_labels()
+        sim_handles = [h for h, l in zip(handles, labels) if "Simulation" in l]
+        sim_labels = [l for l in labels if "Simulation" in l]
+        if sim_handles:
+            leg1 = ax.legend(
+                sim_handles, sim_labels,
+                loc="upper left",
+                bbox_to_anchor=(0, 0.97),
+                fontsize=10,
+                framealpha=0.9,
+            )
+            ax.add_artist(leg1)
+
+        if study_markers:
+            study_legend_handles = [
+                mlines.Line2D(
+                    [], [],
+                    marker=m, color="white",
+                    markerfacecolor="white", markeredgecolor="black",
+                    markeredgewidth=0.8, markersize=8, linestyle="",
+                    label=s,
+                )
+                for s, m in sorted(study_markers.items())
+            ]
+            ax.legend(
+                study_legend_handles, sorted(study_markers.keys()),
+                title="Studies",
+                loc="upper left",
+                bbox_to_anchor=(0.0, 0.97),
+                fontsize=9,
+                title_fontsize=10,
+                framealpha=0.9,
+            )
+
+        self._add_colorbar_strip(ax, scan_data)
+
+    def _add_macha2014f_aucinf_scatter(self, ax, scan_key: str, pk_key: str, study_markers: dict):
+        """Plot individual AUC-inf scatter (Macha2014f) on renal-scan AUC subplot."""
+        if scan_key != "renal_scan" or pk_key != "aucinf":
+            return
+
+        Q_ = self.Q_
+
+        df = pd.read_csv(self.MACHA2014F_FILE, sep="\t", comment="#")
+        df_auc = df[
+            (df["y_measurement_type"] == "auc_inf") &
+            (df["x_measurement_type"] == "gfr") &
+            (df["x_substance"] == "empagliflozin")
+            ].copy()
+
+        if df_auc.empty:
+            return
+
+        x_vals = self._gfr_bsa_to_f_renal(df_auc["x_value"].astype(float).values)
+
+        raw_y = df_auc["y_value"].astype(float).values
+        y_qty = Q_(raw_y, "nmol/l*hr")
+        target_unit = self.pk_units[pk_key]
+        try:
+            y_vals = y_qty.to(target_unit).magnitude
+        except Exception:
+            Mr_emp = self._molar_mass_for_substance("empagliflozin")
+            y_vals = (y_qty * Mr_emp).to(target_unit).magnitude
+
+        study_name = "Macha2014f"
+        used_markers = set(study_markers.values())
+        candidate_markers = ["s", "^", "D", "v", "<", ">", "p", "*", "h", "X"]
+        marker = next((m for m in candidate_markers if m not in used_markers), "X")
+        study_markers[study_name] = marker
+
+        ax.scatter(
+            x_vals, y_vals,
+            marker=marker,
+            facecolors=self.substance_colors["empagliflozin"],
+            edgecolors="black",
+            linewidths=0.8,
+            s=50, alpha=0.7, zorder=5,
+            label=study_name,
+        )
+
+    def _add_macha2014f_uge_scatter(self, ax, scan_key: str, study_markers: dict):
+        """Plot individual UGE scatter (Macha2014f) on renal-scan UGE subplot."""
+        if scan_key != "renal_scan":
+            return
+
+        df = pd.read_csv(self.MACHA2014F_FILE, sep="\t", comment="#")
+        df_uge = df[
+            (df["y_measurement_type"] == "cumulative amount") &
+            (df["x_measurement_type"] == "gfr")
+            ].copy()
+
+        if df_uge.empty:
+            return
+
+        x_vals = self._gfr_bsa_to_f_renal(df_uge["x_value"].astype(float).values)
+        y_nmol = df_uge["y_value"].astype(float).values
+        y_vals = y_nmol /1000 # * 1e-9 * self.GLUCOSE_MW_G_PER_MOL  # nmol → g
+
+        mask = y_vals > 0
+        x_vals = x_vals[mask]
+        y_vals = y_vals[mask]
+
+        if len(x_vals) == 0:
+            return
+
+        study_name = "Macha2014f"
+        # Reuse marker already assigned to this study if present
+        if study_name not in study_markers:
+            used_markers = set(study_markers.values())
+            candidate_markers = ["s", "^", "D", "v", "<", ">", "p", "*", "h", "X"]
+            marker = next((m for m in candidate_markers if m not in used_markers), "X")
+            study_markers[study_name] = marker
+        marker = study_markers[study_name]
+
+        ax.scatter(
+            x_vals, y_vals,
+            marker=marker,
+            facecolors="black",
+            edgecolors="black",
+            linewidths=0.8,
+            s=50, alpha=0.7, zorder=5,
+            label=study_name,
+        )
 
 if __name__ == "__main__":
-    run_experiments(EmpagliflozinParameterScan, output_dir=EmpagliflozinParameterScan.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(EmpagliflozinParameterScan, output_dir=RESULTS_PATH_SIMULATION)

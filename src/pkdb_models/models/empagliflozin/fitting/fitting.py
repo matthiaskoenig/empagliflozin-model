@@ -309,11 +309,11 @@ def main() -> None:
         _parser_message("Required argument '--subset' missing.")
 
     output_dir: Path
-    if not options.output_path:
+    if not options.output_dir:
         from pkdb_models.models.empagliflozin import RESULTS_PATH_FIT
         output_dir = RESULTS_PATH_FIT
     else:
-        output_dir = Path(options.output_path)
+        output_dir = Path(options.output_dir)
 
     if not output_dir.exists():
         console.log(f"Create output directory: {output_dir}")
@@ -400,7 +400,8 @@ if __name__ == "__main__":
     fit_empagliflozin
     fit_empagliflozin --cores=10 --runs=30 --seed=1234 --method=LSQ --strategy=ALL --subset=ALL --name=EMPAGLIFLOZIN_LSQ_ALL
     fit_empagliflozin --cores=10 --runs=10 --seed=1234 --method=LSQ --strategy=ALL --subset=CONTROL --name=EMPAGLIFLOZIN_LSQ_CONTROL
-    fit_empagliflozin --cores=10 --runs=10 --seed=1234 --method=LSQ --strategy=ALL --subset=PK --name=EMPAGLIFLOZIN_LSQ_PK
-    fit_empagliflozin --cores=10 --runs=10 --seed=1234 --method=LSQ --strategy=ALL --subset=PD --name=EMPAGLIFLOZIN_LSQ_PD
+    
+    fit_empagliflozin --cores=10 --runs=100 --seed=1234 --method=LSQ --strategy=ALL --subset=PK --name=EMPAGLIFLOZIN_LSQ_PK
+    fit_empagliflozin --cores=10 --runs=100 --seed=1234 --method=LSQ --strategy=ALL --subset=PD --name=EMPAGLIFLOZIN_LSQ_PD
     """
     main()

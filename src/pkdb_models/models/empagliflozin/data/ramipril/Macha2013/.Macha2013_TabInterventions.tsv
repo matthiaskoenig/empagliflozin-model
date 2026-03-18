@@ -1,0 +1,10 @@
+study	name	time	time_end	time_unit	route	application	measurement	form	substance	value	unit	comments
+Macha2013	EMP	0	NA	hr	oral	single dose	dosing	NR	empagliflozin	25.0	mg	no information about form
+Macha2013	EMP1	1	NA	hr	oral	single dose	dosing	NR	empagliflozin	25.0	mg	no information about form
+Macha2013	EMPM5	S0T1R5	NA	day	oral	multiple dose	dosing	NR	empagliflozin	25.0	mg	empagliflozin 25 mg once daily (QD) for 5 days, no information about form
+Macha2013	EMPM8	S0T1R8	NA	day	oral	single dose	dosing	NR	empagliflozin	25.0	mg	no information about form
+Macha2013	VER	0	NA	hr	oral	single dose	dosing	NR	verapamil	120.0	mg	no information about form
+Macha2013	RAM	0	NA	hr	oral	single dose	dosing	NR	ramipril	2.5	mg	ramipril (2.5 mg on day 1 and 5 mg QD on days 2–5) for 5 days, no information about form
+Macha2013	RAM5	S2T1R4	NA	day	oral	multiple dose	dosing	NR	ramipril	5.0	mg	ramipril (2.5 mg on day 1 and 5 mg QD on days 2–5) for 5 days, no information about form
+Macha2013	DIG	0	NA	hr	oral	single dose	dosing	NR	digoxin	0.5	mg	no information about form
+Macha2013	DIG5	5	NA	day	oral	single dose	dosing	NR	digoxin	0.5	mg	no information about form

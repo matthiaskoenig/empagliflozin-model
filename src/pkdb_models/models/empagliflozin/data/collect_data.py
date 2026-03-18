@@ -34,6 +34,15 @@ def collect_empagliflozin_data():
         filter_study=is_vanderAartvanderBeek2020,
     )
 
+    # Collect Macha2013 (ramipril) for Macha2013d
+    def is_Macha2013(study_name) -> bool:
+        return study_name == "Macha2013"
+    collect_tsv_files(
+        source_dir=common_parent / "pkdb_data" / "studies" / "ramipril",
+        target_dir=Path(__file__).parent / "ramipril",
+        filter_study=is_Macha2013,
+    )
+
 if __name__ == "__main__":
     collect_empagliflozin_data()
 

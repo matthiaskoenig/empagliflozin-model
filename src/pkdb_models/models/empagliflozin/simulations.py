@@ -22,24 +22,25 @@ EXPERIMENTS = {
         Chen2020,
         ElDash2021,
         Friedrich2013,
-        # Hailat2022,  # Outlier
+        Hailat2022,  # outlier (probably units)
         Heise2013,
         Heise2013a,
         Heise2015,
         Jiang2023b,
         Kim2021,
         Kim2023,
+        Laffel2018, # pediatric cohort
         Li2020,
-        # Macha2013d, # wip
-        # Macha2013e, # wip
-        # Macha2014 # wip
+        Macha2013d, #TODO: ramipril duplicate
+        Macha2013e,
+        Macha2014,
         Macha2014b,
         Macha2014f,
         Macha2015a,
-        # Macha2015b, # wip
+        Macha2015b,
         Sarashina2013,
         Sarashina2014,
-        Seman2013, # wip urine data
+        Seman2013,
         vanderAartvanderBeek2020,
         Zhao2015,
     ],
@@ -67,6 +68,12 @@ EXPERIMENTS = {
         Macha2014f,
         Sarashina2014,
     ],
+    "food": [
+        Chen2020,
+        Hailat2022,
+        Li2020,
+        Seman2013,  # Figure 4
+    ],
     "misc": [
         DoseDependencyExperiment,
     ],
@@ -75,18 +82,15 @@ EXPERIMENTS = {
     ]
 }
 
-EXPERIMENTS["all"] = EXPERIMENTS["studies"] + EXPERIMENTS["misc"] # + EXPERIMENTS["scan"]
+EXPERIMENTS["all"] = EXPERIMENTS["studies"] + EXPERIMENTS["misc"] + EXPERIMENTS["scan"]
 
 
-def run_simulation_experiments(
-        selected: str = None,
-        experiment_classes: List = None,
-        output_dir: Path = None
-) -> None:
+def run_simulation_experiments(selected: str = None,experiment_classes: List = None, output_dir: Path = None) -> None:
     """Run empagliflozin simulation experiments."""
 
-    Figure.fig_dpi = 300
+    # Figure.fig_dpi = 300
     Figure.legend_fontsize = 10
+    Figure.axes_labelsize = 16
 
     # Determine which experiments to run
     if experiment_classes is not None:
@@ -128,15 +132,16 @@ def run_simulation_experiments(
 
 if __name__ == "__main__":
     """
-    # Run experiments
+    # Run experiments:
 
     # selected = "all"
-    # selected = "misc"
     # selected = "studies"
     # selected = "pharmacodynamics"
     # selected = "dose_dependency"
     # selected = "hepatic_impairment"
     # selected = "renal_impairment"
+    # selected = "food"
+    # selected = "misc"
     # selected = "scan"
     """
 

@@ -1,0 +1,50 @@
+study	group	count	measurement	substance	tissue	intervention	time	time_unit	mean	sd	unit	method	label	comments
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	0.333333333333333	hr	8.474576	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	0.666666666666667	hr	6.101695	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	1.0	hr	2.5847456	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	1.5	hr	0.8262712	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	2.0	hr	0.3601695	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	2.5	hr	0.21186441	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	3.5	hr	0.12711865	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	4.0	hr	0.084745765	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	RAM, RAM5	6.0	hr	0.084745765	NA	ng/ml	HPLC MS/MS	Fig2A_ramipril	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	0.333333333333333	hr	8.898305	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	0.666666666666667	hr	6.5254235	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	1.0	hr	3.029661	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	1.5	hr	0.9322034	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	2.5	hr	0.42372882	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	2.5	hr	0.2542373	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	3.5	hr	0.19067797	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramipril	plasma	EMPM5, RAM, RAM5	4.0	hr	0.105932206	NA	ng/ml	HPLC MS/MS	Fig2A_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	0.333333333333333	hr	1.9104477	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	0.666666666666667	hr	5.552239	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	1.0	hr	9.104478	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	1.5	hr	11.552238	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	2.5	hr	11.432836	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	2.5	hr	10.537313	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	3.5	hr	9.4925375	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	4.0	hr	7.641791	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	6.0	hr	4.8656716	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	8.0	hr	3.522388	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	10.0	hr	2.7761195	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	12.0	hr	2.3283582	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	24.0	hr	1.4328358	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	36.0	hr	1.1940298	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	48.0	hr	0.98507464	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	RAM, RAM5	72.0	hr	0.80597013	NA	ng/ml	HPLC MS/MS	Fig2B_ramiprilat	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	0.333333333333333	hr	1.7910448	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	0.666666666666667	hr	4.8358207	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	1.0	hr	8.38806	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	1.5	hr	10.776119	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	2.5	hr	10.895522	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	2.5	hr	10.38806	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	3.5	hr	9.402985	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	4.0	hr	7.6119404	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	6.0	hr	4.80597	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	8.0	hr	3.4626865	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	10.0	hr	2.686567	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	12.0	hr	2.2985075	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	24.0	hr	1.3731344	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	36.0	hr	1.1044776	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	48.0	hr	0.95522386	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA
+Macha2013	rami	23	concentration	ramiprilat	plasma	EMPM5, RAM, RAM5	72.0	hr	0.80597013	NA	ng/ml	HPLC MS/MS	Fig2B_EMPM5_RAM	NA

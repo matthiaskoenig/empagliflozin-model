@@ -133,6 +133,8 @@ class Zhao2015(EmpagliflozinSimulationExperiment):
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
         plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
 
+        plots[1].xaxis.max = 225
+
         for intervention in self.interventions:
             dose = self.doses[intervention]
             color = self.dose_colors[dose]
@@ -168,4 +170,5 @@ class Zhao2015(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Zhao2015, output_dir=Zhao2015.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Zhao2015, output_dir=RESULTS_PATH_SIMULATION)

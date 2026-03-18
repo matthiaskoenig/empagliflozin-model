@@ -1,0 +1,69 @@
+\begin{landscape}
+\begin{table}[H]
+\centering
+\tabcolsep=3pt
+\renewcommand{\arraystretch}{1.3}
+\tiny
+\begin{threeparttable} 
+
+\caption{\scriptsize{\textbf{Summary of published computational models for empagliflozin.} 
+Overview of published computational models including model type, software/platform, 
+reproducibility criteria (open software, open model, open code, open data, open license,
+reproducibility, FAIR, long-term storage), resources, clinical data sources, and model scope.}}
+
+\begin{tabularx}{\linewidth}{
+    >{\centering\arraybackslash}m{1.5cm}  % Study
+    >{\centering\arraybackslash}m{0.8cm}  % PubMed ID
+    >{\centering\arraybackslash}m{1.5cm}  % Model Type
+    >{\centering\arraybackslash}m{1.3cm}  % Platform/Software
+    >{\centering\arraybackslash}m{0.7cm}  % Open Software
+    >{\centering\arraybackslash}m{0.7cm}  % Open Model
+    >{\centering\arraybackslash}m{0.7cm}  % Open Code
+    >{\centering\arraybackslash}m{0.7cm}  % Open Data
+    >{\centering\arraybackslash}m{0.7cm}  % Open License
+    >{\centering\arraybackslash}m{0.7cm}  % Reproducibility
+    >{\centering\arraybackslash}m{0.7cm}  % FAIR
+    >{\centering\arraybackslash}m{0.7cm}  % Longterm Storage
+    >{\centering\arraybackslash}m{2.3cm}  % Resources
+    >{\centering\arraybackslash}m{1.8cm}  % Studies
+    >{\centering\arraybackslash}m{2.3cm}  % Clinical Data Used
+    >{\centering\arraybackslash}m{4.4cm}  % Scope
+}
+\toprule
+\textbf{Study} & \textbf{PubMed ID} & \textbf{Model Type} & \textbf{Platform/Software} & \textbf{Open Software} & \textbf{Open Model} & \textbf{Open Code} & \textbf{Open Data} & \textbf{Open License} & \textbf{Reprodu\-cibility} & \textbf{FAIR} & \textbf{Longterm Storage} & \textbf{Resources} & \textbf{Studies} & \textbf{Clinical Data Used} & \textbf{Scope} \\
+\midrule
+Baron2016 \cite{Baron2016} & \href{https://pubmed.ncbi.nlm.nih.gov/27312794/}{27312794} & Population PK/PD, exposure-response, NLME & NONMEM, R & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 10 (2 Phase I, 4 Phase II, 4 Phase III) & Industry clinical trials, closed datasets & Empagliflozin PK, efficacy exposure-response, safety modeling in T2DM \\
+\addlinespace[1pt]
+Fayette2023 \cite{Fayette2023} & \href{https://pubmed.ncbi.nlm.nih.gov/37644910/}{37644910} & Population PK/PD, Bayesian borrowing & NONMEM, R & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 5 phase II trials + 1 phase III target trial & Industry clinical trials, closed datasets & Bayesian borrowing using PK/PD simulations to improve clinical trial efficiency \\
+\addlinespace[1pt]
+Guo2023 \cite{Guo2023} & \href{https://pubmed.ncbi.nlm.nih.gov/40230691/}{40230691} & PBPK/PD & PK-Sim, MoBi & \cellcolor{green!20}Yes & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & Many (aggregated literature data across multiple drugs) & Literature-derived clinical PK/PD data, digitized & PBPK/PD of SGLT2 inhibitors to optimize dosing in renal insufficiency \\
+\addlinespace[1pt]
+Hosny2023 \cite{Hosny2023} & \href{https://pubmed.ncbi.nlm.nih.gov/37222106/}{37222106} & Molecular docking, spectroscopic binding study & MOE & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 1 in vitro study & None (in vitro protein binding) & Empagliflozin binding to serum albumin, fluorescence quenching, docking, quantification method \\
+\addlinespace[1pt]
+Jiang2024 \cite{Jiang2024} & \href{https://pubmed.ncbi.nlm.nih.gov/38675482/}{38675482} & Population PK, NLME & Monolix Suite & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper only; no executable model files & 2 Phase I crossover studies & Industry clinical trial data, closed & Population PK comparison of empagliflozin L-proline cocrystal vs conventional formulation \\
+\addlinespace[1pt]
+Mondick2018 \cite{Mondick2018} & \href{https://pubmed.ncbi.nlm.nih.gov/29251772/}{29251772} & Mechanistic Population PK/PD, NLME & NONMEM & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 1 Phase II randomized clinical trial & Industry clinical trial data, closed & Mechanistic PK/PD modeling of empagliflozin effect on renal glucose threshold and urinary glucose excretion in T1DM \\
+\addlinespace[1pt]
+Perkins2020 \cite{Perkins2020} & \href{https://pubmed.ncbi.nlm.nih.gov/31858718/}{31858718} & Exposure-response PK/PD, NLME & NONMEM & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 3 trials & Industry clinical trial data, closed & Low-dose empagliflozin efficacy simulation in T1DM using exposure-response modeling \\
+\addlinespace[1pt]
+Ping2024 \cite{Ping2024} & \href{https://pubmed.ncbi.nlm.nih.gov/38363006/}{38363006} & PBPK/UGE mechanistic model & PK-Sim, MoBi & \cellcolor{green!20}Yes & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & Multiple literature clinical PK/UGE studies (\$\textbackslash\{\}approx\$8 PK + 3 UGE) & Literature-derived clinical data, not publicly provided & Mechanistic PBPK-UGE modeling of empagliflozin PK, urinary glucose excretion, and SGLT1 compensation \\
+\addlinespace[1pt]
+Riggs2013 \cite{Riggs2013} & \href{https://pubmed.ncbi.nlm.nih.gov/23940010/}{23940010} & Population PK, NLME & NONMEM & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 5 Phase I/II studies & Industry clinical trial data, closed & Population PK of empagliflozin in T2DM, covariate effects on exposure \\
+\addlinespace[1pt]
+Riggs2014 \cite{Riggs2014} & \href{https://pubmed.ncbi.nlm.nih.gov/24964723/}{24964723} & Exposure-response PK/PD, NLME & NONMEM & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & 5 Phase I/II studies & Industry clinical trial data, closed & Exposure-response modeling for efficacy (HbA1c, FPG, UGE) and tolerability in T2DM \\
+\addlinespace[1pt]
+Yakovleva2019 \cite{Yakovleva2019} & \href{https://pubmed.ncbi.nlm.nih.gov/31423699/}{31423699} & QSP, mechanistic renal glucose model, ODE & R, IQRtools & \cellcolor{green!20}Yes & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & Many (pooled literature studies + internal datasets across multiple trials) & Literature PK/PD data + AstraZeneca internal data, not publicly available & Renal glucose filtration, reabsorption, and urinary glucose excretion; SGLT1 vs SGLT2 contributions under SGLT2 inhibition \\
+\addlinespace[1pt]
+Yao2023 \cite{Yao2023} & \href{https://pubmed.ncbi.nlm.nih.gov/36890732/}{36890732} & Model-based meta-analysis, PK/PD/end-point modeling, NLME & NONMEM, PsN, R & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper + supplementary material only; no executable model files & Many (meta-analysis of \textasciitilde{}80 published clinical studies across three SGLT2 inhibitors + external validation studies) & Literature-derived summary-level clinical PK/PD and endpoint data, digitized from publications; not provided as dataset & Translational PK/PD/end-point modeling linking exposure \$\textbackslash\{\}rightarrow\$ UGE biomarker \$\textbackslash\{\}rightarrow\$ FPG \$\textbackslash\{\}rightarrow\$ HbA1c for SGLT2 inhibitors \\
+\addlinespace[1pt]
+Zhang2023 \cite{Zhang2023} & \href{https://pubmed.ncbi.nlm.nih.gov/37342592/}{37342592} & PBPK, mechanistic tissue distribution model & GastroPlus, ADMET Predictor, Origin & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & \cellcolor{red!20}No & Paper only; no executable model files & Few (data aggregated from several clinical PK studies per drug) & Literature clinical PK data (digitized) + internal data; not publicly provided & PBPK simulation of tissue concentrations and comparative SGLT1 vs SGLT2 inhibition for four gliflozins \\
+\addlinespace[1pt]
+\midrule
+Alejandro2026 & - & PBPK/PD & SBML, Python & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \cellcolor{green!20}Yes & \href{https://github.com/matthiaskoenig/empagliflozin-model}{GitHub}, \href{https://zenodo.org/records/18481047}{Zenodo}   & 27 published clinical studies & 27 clinical studies; digitized literature data, provided in model files and in \href{https://pk-db.com/}{PK-DB}  & Whole-body mechanistic PBPK/PD model of empagliflozin linking ADME to SGLT2-mediated urinary glucose excretion and renal threshold for glucose, capturing dose dependency, renal and hepatic impairment, implemented in SBML with full FAIR compliance \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabularx}
+
+\end{threeparttable} 
+\end{table}
+\end{landscape}

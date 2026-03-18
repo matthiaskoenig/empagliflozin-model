@@ -174,4 +174,5 @@ class Friedrich2013(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Friedrich2013, output_dir=Friedrich2013.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Friedrich2013, output_dir=RESULTS_PATH_SIMULATION)

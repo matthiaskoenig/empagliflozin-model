@@ -1,0 +1,37 @@
+study	group	count	measurement	substance	tissue	intervention	time	time_unit	mean	sd	unit	method	label	comments
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	0.0	hr	NA	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	0.333333333333333	hr	0.9188475	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	0.666666666666667	hr	1.9017829	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	1.0	hr	1.9605876	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	1.5	hr	1.5813876	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	2.0	hr	1.244908	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	2.5	hr	1.0152365	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	3.0	hr	0.85502416	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	4.0	hr	0.68955815	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	6.0	hr	0.4386955	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	8.0	hr	0.3908684	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	10.0	hr	0.36435005	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	12.0	hr	0.327192	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	24.0	hr	0.33921307	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	36.0	hr	NA	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	48.0	hr	0.20835538	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	72.0	hr	0.17362213	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	DIG	96.0	hr	0.13890359	NA	ng/ml	HPLC MS/MS	Fig3_DIG	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	0.0	hr	NA	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	0.333333333333333	hr	0.8921528	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	0.666666666666667	hr	2.110131	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	1.0	hr	2.163579	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	1.5	hr	1.7523278	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	2.5	hr	1.3357052	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	2.5	hr	1.0740119	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	3.5	hr	0.94588023	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	4.0	hr	0.769701	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	6.0	hr	0.47076148	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	8.0	hr	0.42826155	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	10.0	hr	0.39644542	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	12.0	hr	0.36459985	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	24.0	hr	0.3873194	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	36.0	hr	NA	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	48.0	hr	0.2564176	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	72.0	hr	0.17363682	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA
+Macha2013	dig	20	concentration	digoxin	plasma	EMPM8, DIG5	96.0	hr	0.18166801	NA	ng/ml	HPLC MS/MS	Fig3_EMPM8_DIG5	NA

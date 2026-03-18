@@ -29,6 +29,7 @@ Vintestine_3 = 0.23085  # [l] intestinal lumen
 Vintestine_4 = 0.23085  # [l] intestinal lumen  
 Vlumen = 1.15425  # [l] intestinal lumen (inner part of intestine)  
 Vstomach = 1.0  # [l] stomach  
+f_absorption = 1.0  # [-] scaling factor absorption rate dap  
 ```
 
 ## Initial conditions `x0`
@@ -66,7 +67,7 @@ EMPEXC_1 = METEXC_k * Vintestine_1 * emp_intestine_1  # [mmol/min] excretion emp
 EMPEXC_2 = METEXC_k * Vintestine_2 * emp_intestine_2  # [mmol/min] excretion empagliflozin 2  
 EMPEXC_3 = METEXC_k * Vintestine_3 * emp_intestine_3  # [mmol/min] excretion empagliflozin 3  
 EMPEXC_4 = METEXC_k * Vintestine_4 * emp_intestine_4  # [mmol/min] excretion empagliflozin 4  
-absorption = EMPABS_k * Vgu * emp_lumen  # [mmol/min] absorption empagliflozin  
+absorption = f_absorption * EMPABS_k * Vgu * emp_lumen  # [mmol/min] absorption empagliflozin  
 dissolution_emp = (Ka_dis_emp / 60) * PODOSE_emp / Mr_emp  # [mmol/min] dissolution empagliflozin  
 EMPABS = F_emp_abs * absorption  # [mmol/min] absorption empagliflozin  
 EMPEXC = (1 - F_emp_abs) * absorption  # [mmol/min] excretion empagliflozin (feces)  

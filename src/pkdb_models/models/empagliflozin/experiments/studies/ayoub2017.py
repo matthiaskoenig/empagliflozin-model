@@ -117,4 +117,5 @@ class Ayoub2017(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Ayoub2017, output_dir=Ayoub2017.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Ayoub2017, output_dir=RESULTS_PATH_SIMULATION)

@@ -1,0 +1,33 @@
+study	condition	class	parameter	dose	dose_unit	substance	n	mean	sd	median	Q1	Q3	min	max	unit	day	diabetes
+Chen2020	fasted	food	cmax	10	mg	empagliflozin	29	186.90	47.21						ng/ml		
+Chen2020	fasted	food	aucinf	10	mg	empagliflozin	29	1328.08	243.84						ng*hr/ml		
+Chen2020	fasted	food	thalf	10	mg	empagliflozin	29	12.49	6.47						hr		
+Chen2020	fasted	food	tmax	10	mg	empagliflozin	29			1.50			1.00	4.00	hr		
+Chen2020	fasted	food	cmax	10	mg	empagliflozin	30	190.60	40.94						ng/ml		
+Chen2020	fasted	food	aucinf	10	mg	empagliflozin	30	1293.22	224.82						ng*hr/ml		
+Chen2020	fasted	food	thalf	10	mg	empagliflozin	30	13.87	8.12						hr		
+Chen2020	fasted	food	tmax	10	mg	empagliflozin	30			1.38			0.50	4.00	hr		
+Chen2020	fed	food	cmax	10	mg	empagliflozin	29	151.55	23.86						ng/ml		
+Chen2020	fed	food	aucinf	10	mg	empagliflozin	29	1241.76	202.47						ng*hr/ml		
+Chen2020	fed	food	thalf	10	mg	empagliflozin	29	13.74	6.73						hr		
+Chen2020	fed	food	tmax	10	mg	empagliflozin	29			2.00			1.00	4.00	hr		
+Chen2020	fed	food	cmax	10	mg	empagliflozin	29	154.08	30.40						ng/ml		
+Chen2020	fed	food	aucinf	10	mg	empagliflozin	29	1225.54	192.10						ng*hr/ml		
+Chen2020	fed	food	thalf	10	mg	empagliflozin	29	13.82	6.95						hr		
+Chen2020	fed	food	tmax	10	mg	empagliflozin	29	1.50	0.00				1.00	6.00	hr		
+Li2020	fasting	food	cmax	25	mg	empagliflozin	24	326.00	56.10						ng/ml		
+Li2020	fasting	food	cmax	25	mg	empagliflozin	24	323.00	52.20						ng/ml		
+Li2020	fed	food	cmax	25	mg	empagliflozin	24	315.00	59.40						ng/ml		
+Li2020	fed	food	cmax	25	mg	empagliflozin	24	317.00	64.10						ng/ml		
+Li2020	fasting	food	aucinf	25	mg	empagliflozin	24	3224.47	484.80						ng*hr/ml		
+Li2020	fasting	food	aucinf	25	mg	empagliflozin	24	3113.27	508.57						ng*hr/ml		
+Li2020	fasting	food	aucinf	25	mg	empagliflozin	24	3147.09	549.73						ng*hr/ml		
+Li2020	fasting	food	aucinf	25	mg	empagliflozin	24	3163.95	584.98						ng*hr/ml		
+Li2020	fed	food	tmax	25	mg	empagliflozin	24			4.00			2.00	6.00	hr		
+Li2020	fed	food	tmax	25	mg	empagliflozin	24			4.00			2.00	6.00	hr		
+Li2020	fasting	food	tmax	25	mg	empagliflozin	24			4.00			2.00	6.00	hr		
+Li2020	fasting	food	tmax	25	mg	empagliflozin	24			4.00			2.00	6.00	hr		
+Li2020	fed	food	thalf	25	mg	empagliflozin	24	8.88	3.82						hr		
+Li2020	fed	food	thalf	25	mg	empagliflozin	24	8.93	3.66						hr		
+Li2020	fasting	food	thalf	25	mg	empagliflozin	24	10.86	6.24						hr		
+Li2020	fasting	food	thalf	25	mg	empagliflozin	24	11.26	6.09						hr		

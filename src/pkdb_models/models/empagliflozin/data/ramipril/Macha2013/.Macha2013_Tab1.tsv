@@ -1,0 +1,45 @@
+study	group	count	measurement	substance	tissue	intervention	mean	median	unit	time	time_unit	method	comments
+Macha2013	vera	16	auc_inf	empagliflozin	plasma	EMP	5330.0	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	cmax	empagliflozin	plasma	EMP	818.0	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	tmax	empagliflozin	plasma	EMP	NA	1.5	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	thalf	empagliflozin	plasma	EMP	12.5	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	auc_inf	empagliflozin	plasma	VER, EMP1	5500.0	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	cmax	empagliflozin	plasma	VER, EMP1	752.0	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	tmax	empagliflozin	plasma	VER, EMP1	NA	1.75	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	vera	16	thalf	empagliflozin	plasma	VER, EMP1	13.6	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	auc_inf	empagliflozin	plasma	EMPM5	5930.0	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	cmax	empagliflozin	plasma	EMPM5	899.0	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	tmax	empagliflozin	plasma	EMPM5	NA	44958.0	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	thalf	empagliflozin	plasma	EMPM5	13.6	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	auc_inf	empagliflozin	plasma	EMPM5, RAM, RAM5	5750.0	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	cmax	empagliflozin	plasma	EMPM5, RAM, RAM5	929.0	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	tmax	empagliflozin	plasma	EMPM5, RAM, RAM5	NA	1.5	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	rami	23	thalf	empagliflozin	plasma	EMPM5, RAM, RAM5	15.0	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	auc_inf	digoxin	plasma	DIG	38.7	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	cmax	digoxin	plasma	DIG	2.14	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	tmax	digoxin	plasma	DIG	NA	1.0	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	thalf	digoxin	plasma	DIG	68.7	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	recovery	digoxin	urine	DIG	40.6	NA	percent	96.0	hr	HPLC MS/MS	NA
+Macha2013	dig	20	clearance_renal	digoxin	urine	DIG	153.0	NA	ml/min	24.0	hr	HPLC MS/MS	NA
+Macha2013	dig	20	auc_inf	digoxin	plasma	EMPM8, DIG5	41.2	NA	nmol*hr/l	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	cmax	digoxin	plasma	EMPM8, DIG5	2.36	NA	nmol/l	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	tmax	digoxin	plasma	EMPM8, DIG5	NA	1.0	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	thalf	digoxin	plasma	EMPM8, DIG5	55.4	NA	hr	NA	NA	HPLC MS/MS	NA
+Macha2013	dig	20	recovery	digoxin	urine	EMPM8, DIG5	40.1	NA	percent	96.0	hr	HPLC MS/MS	NA
+Macha2013	dig	20	clearance_renal	digoxin	urine	EMPM8, DIG5	139.0	NA	ml/min	24.0	hr	HPLC MS/MS	NA
+Macha2013	rami	23	auc_inf	ramipril	plasma	EMPM5	6.98	NA	nmol*hr/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	cmax	ramipril	plasma	EMPM5	9.18	NA	nmol/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	tmax	ramipril	plasma	EMPM5	NA	0.33	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	thalf	ramipril	plasma	EMPM5	3.58	NA	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	auc_inf	ramipril	plasma	EMPM5, RAM, RAM5	7.73	NA	nmol*hr/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	cmax	ramipril	plasma	EMPM5, RAM, RAM5	10.0	NA	nmol/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	tmax	ramipril	plasma	EMPM5, RAM, RAM5	NA	0.33	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	thalf	ramipril	plasma	EMPM5, RAM, RAM5	3.37	NA	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	auc_inf	ramiprilat	plasma	EMPM5	88.2	NA	nmol*hr/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	cmax	ramiprilat	plasma	EMPM5	11.9	NA	nmol/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	tmax	ramiprilat	plasma	EMPM5	NA	2.0	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	thalf	ramiprilat	plasma	EMPM5	75.2	NA	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	auc_inf	ramiprilat	plasma	EMPM5, RAM, RAM5	86.7	NA	nmol*hr/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	cmax	ramiprilat	plasma	EMPM5, RAM, RAM5	11.6	NA	nmol/l	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	tmax	ramiprilat	plasma	EMPM5, RAM, RAM5	NA	2.0	hr	NA	NA	HPLC MS/MS	values at steady state
+Macha2013	rami	23	thalf	ramiprilat	plasma	EMPM5, RAM, RAM5	80.0	NA	hr	NA	NA	HPLC MS/MS	values at steady state

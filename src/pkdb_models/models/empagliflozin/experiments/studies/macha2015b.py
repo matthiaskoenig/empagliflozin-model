@@ -2,17 +2,14 @@ from typing import Dict
 
 from sbmlsim.data import DataSet, load_pkdb_dataframe
 from sbmlsim.fit import FitMapping, FitData
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Timecourse, TimecourseSim
 from sbmlutils.console import console
 
-from pkdb_models.models.empagliflozin.experiments.base_experiment import (
-    EmpagliflozinSimulationExperiment,
-)
+from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
 from pkdb_models.models.empagliflozin.experiments.metadata import (
     Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration, EmpagliflozinMappingMetaData
 )
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
 from pkdb_models.models.empagliflozin.helpers import run_experiments
 
 
@@ -34,10 +31,6 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
             df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
             for label, df_label in df.groupby("label"):
                 dset = DataSet.from_df(df_label, self.ureg)
-
-                # unit conversion to mole/l
-                if label.startswith("empagliflozin"):
-                   dset.unit_conversion("mean", 1 / self.Mr.emp)
                 dsets[label] = dset
 
         # console.print(dsets)
@@ -47,6 +40,7 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
     def simulations(self) -> Dict[str, TimecourseSim]:
         Q_ = self.Q_
         tcsims = {}
+        dose = 50  # [mg]
 
         # Single dosing
         for intervention in self.interventions:
@@ -56,12 +50,9 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                 steps=500,
                 changes={
                     **self.default_changes(),
-                    #"BW": Q_(self.bodyweight, "kg"),
                     "[KI__fpg]": Q_(self.fpg_healthy, "mM"),  # healthy reference value
                     "KI__f_renal_function": Q_(1.0, "dimensionless"), # healthy
-                    # healthy reference value
-                    # FIXME: fasting
-                    "PODOSE_emp": Q_(50, "mg"),
+                    "PODOSE_emp": Q_(dose, "mg"),
                 },
             )
             tc1 = Timecourse(
@@ -69,7 +60,7 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                 end=24 * 60,  # [min]
                 steps=500,
                 changes={
-                    "PODOSE_emp": Q_(50, "mg"),
+                    "PODOSE_emp": Q_(dose, "mg"),
                 },
             )
             tc2 = Timecourse(
@@ -77,7 +68,7 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                 end=30 * 60,  # [min]
                 steps=500,
                 changes={
-                    "PODOSE_emp": Q_(50, "mg"),
+                    "PODOSE_emp": Q_(dose, "mg"),
                 },
             )
 
@@ -108,11 +99,10 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                         tissue=Tissue.PLASMA,
                         route=Route.PO,
                         application_form=ApplicationForm.TABLET,
-                        dosing=Dosing.SINGLE,
+                        dosing=Dosing.MULTIPLE,
                         health=Health.HEALTHY,
                         fasting=Fasting.FASTED,  # overnight fast
-                        #coadministration=Coadministration.NONE if intervention == "emp50" else Coadministration.PIOGLITAZONE,
-                        coadministration=Coadministration.NONE
+                        coadministration=Coadministration.NONE if intervention == "emp50" else Coadministration.PIOGLITAZONE,
                     ),
                 )
             # console.print(mappings)
@@ -123,21 +113,25 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                 experiment=self,
                 sid="Fig1",
                 name=f"{self.__class__.__name__}",
-                num_rows=1,
-                num_cols=5,
             )
             plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time, min=-24), legend=True)
             plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
 
+            # simulation
+            plots[0].add_data(
+                task=f"task_po_emp50_emp50",
+                xid="time",
+                yid=f"[Cve_emp]",
+                label=f"50mg Emp",
+                color="black",
+            )
+
+            label_map = {
+                "emp50": "50 mg Emp",
+                "emp50, piog45": "50 mg Emp + Piog 45 mg",
+            }
+
             for intervention in self.interventions:
-                # simulation
-                plots[0].add_data(
-                    task=f"task_po_emp50_{intervention}",
-                    xid="time",
-                    yid=f"[Cve_emp]",
-                    label=f"Sim {intervention}",
-                    color=self.colors[f"{intervention}"],
-                )
                 # data
                 plots[0].add_data(
                     dataset=f"empagliflozin_{intervention}",
@@ -145,7 +139,7 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
-                    label=f"{intervention}",
+                    label=label_map[intervention],
                     color=self.colors[f"{intervention}"],
                 )
 
@@ -154,4 +148,5 @@ class Macha2015b(EmpagliflozinSimulationExperiment):
             }
 
 if __name__ == "__main__":
-    run_experiments(Macha2015b, output_dir=Macha2015b.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Macha2015b, output_dir=RESULTS_PATH_SIMULATION)

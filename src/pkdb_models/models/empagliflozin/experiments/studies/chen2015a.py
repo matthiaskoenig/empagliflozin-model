@@ -58,8 +58,6 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
 
                 dsets[f"{label}"] = dset
 
-        # console.print(dsets)
-        # console.print(dsets.keys())
         return dsets
 
     def simulations(self) -> Dict[str, TimecourseSim]:
@@ -70,7 +68,7 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
             [Timecourse(
                 start=0,
                 end=180 * 60,  # [min]
-                steps=500,
+                steps=2000,
                 changes={
                     **self.default_changes(),
                     "BW": Q_(self.bodyweight, "kg"),
@@ -116,7 +114,6 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
                     fasting=Fasting.NR,
                 ),
             )
-            # console.print(mappings)
         return mappings
 
     def figures(self) -> Dict[str, Figure]:
@@ -124,26 +121,26 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
             experiment=self,
             sid="Fig1_2",
             num_rows=1,
-            num_cols=4,
+            num_cols=3,  # plasma | urine | feces
             name=f"{self.__class__.__name__} (Healthy)",
         )
         plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
         plots[0].set_yaxis(label="Plasma", unit=self.unit_emp)
-        plots[1].set_yaxis(self.label_eg, unit=self.unit_eg)
-        plots[2].set_yaxis(label="Urine", unit=self.unit_emp_urine)
-        plots[3].set_yaxis(label="Feces", unit=self.unit_emp_feces)
-        plots[1].yaxis.min = -0.05
-        plots[1].yaxis.max = 0.3
+        plots[1].set_yaxis(label="Urine", unit=self.unit_emp_urine)
+        plots[2].set_yaxis(label="Feces", unit=self.unit_emp_feces)
+        plots[0].xaxis.min = -0.05
+        plots[0].xaxis.max = 25
+        plots[0].yaxis.min = -0.05
+        plots[1].xaxis.min = -0.05
+        plots[1].xaxis.max = 150
 
         for sid, name in self.info.items():
-            if name.endswith("_plasma") and "EG" not in name:
+            if name.endswith("_plasma"):
                 kp = 0
-            if name.endswith("_plasma") and "EG" in name:
-                kp = 1
             elif name.endswith("_urine"):
-                kp = 2
+                kp = 1
             elif name.endswith("_feces"):
-                kp = 3
+                kp = 2
 
             label_map = {
                 "emptot": "EMPTOT",
@@ -185,4 +182,5 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Chen2015a, output_dir=Chen2015a.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Chen2015a, output_dir=RESULTS_PATH_SIMULATION)

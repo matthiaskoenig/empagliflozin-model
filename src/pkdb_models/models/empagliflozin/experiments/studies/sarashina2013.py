@@ -185,4 +185,5 @@ class Sarashina2013(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Sarashina2013, output_dir=Sarashina2013.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Sarashina2013, output_dir=RESULTS_PATH_SIMULATION)

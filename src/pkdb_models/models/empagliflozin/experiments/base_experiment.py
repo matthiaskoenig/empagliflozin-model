@@ -118,12 +118,15 @@ class EmpagliflozinSimulationExperiment(SimulationExperiment):
 
     # ----------- Fasting/food -----
     fasting_map = {
+        "NR": 1.0,
         "fasted": 1.0,
-        "fed": 0.9,
+        "fed": 0.8,
     }
+
     fasting_colors = {
+        "NR": "black",
         "fasted": "black",
-        "fed": "tab:blue",
+        "fed": "tab:red",
     }
 
     # ----------- Renal map --------------
@@ -215,24 +218,26 @@ class EmpagliflozinSimulationExperiment(SimulationExperiment):
         "tmax": "Tmax",
         "cl": "Total Clearance",
         "cl_hepatic": "Hepatic Clearance",
+        "cl_renal": "Renal Clearance",
         "cmax": "Cmax",
         "thalf": "Half-life",
         "kel": "kel",
         "vd": "vd",
-        "Aurine_can": "Canagliflozin Urine",
+        "Aurine_emp": "Empagliflozin Urine",
     }
 
     pk_units = {
-        "auc": "µmole/l*hr",
-        "aucinf": "ng/ml*hr",
+        "auc": "µg/l*hr",
+        "aucinf": "µg/ml*hr",
         "tmax": "hr",
         "cl": "ml/min",
         "cl_hepatic": "ml/min",
-        "cmax": "ng/ml",
+        "cl_renal": "ml/min",
+        "cmax": "µg/ml",
         "thalf": "hr",
         "kel": "1/hr",
         "vd": "l",
-        "Aurine_can": "µmole",
+        "Aurine_emp": "µmole",
     }
 
     def models(self) -> Dict[str, AbstractModel]:
@@ -250,24 +255,27 @@ class EmpagliflozinSimulationExperiment(SimulationExperiment):
         """Default changes to simulations."""
 
         changes = {
-            # PK
-            'ftissue_emp': Q_(0.3832934310804301, 'l/min'),  # [0.01 - 10]
-            'Kp_emp': Q_(0.573747586082099, 'dimensionless'),  # [0.1 - 10]
-            'GU__EMPABS_k': Q_(0.007439770316739214, '1/min'),  # [0.0001 - 1]
-            'GU__METEXC_k': Q_(0.0008998014627372138, '1/min'),  # [1e-06 - 0.1]
-            'LI__EMP2EG_Vmax': Q_(0.012490394598835162, 'mmol/min/l'),  # [0.001 - 100]
-            'LI__EMP2EG_Km_emp': Q_(0.24667266695912698, 'mM'),  # [0.001 - 1]
-            'LI__EGEX_k': Q_(0.014033858848302178, '1/min'),  # [0.001 - 100]
-            'LI__EGBIEX_k': Q_(0.00735528424770721, '1/min'),  # [1e-05 - 1]
-            'KI__EMPEX_k': Q_(0.11795401426241267, '1/min'),  # [0.0001 - 10]
-            'KI__EGEX_k': Q_(1.4994487519741735, '1/min'),  # [0.0001 - 10]
-
-            # PD
-            'KI__RTG_E50': Q_(1.7063026384665662e-06, 'mM'),  # [1e-08 - 44]
-            'KI__RTG_base': Q_(12.397702595815295, 'mM'),  # [9 - 14]
-            'KI__RTG_max_inhibition': Q_(0.6842787312726607, 'dimensionless'),  # [0.2 - 1.0]
-            'KI__RTG_m_fpg': Q_(0.8981650940449492, 'dimensionless'),  # [0.2 - 3]
-        }
+            # Pharmacokinetics
+            # >>> !Optimal parameter 'LI__EGBIEX_k' within 5% of upper bound! <<<
+            # >>> !Optimal parameter 'KI__EMP2EG_Km_emp' within 5% of upper bound! <<<
+            'ftissue_emp': Q_(0.26959875969955227, 'l/min'),  # [0.01 - 10]
+            'Kp_emp': Q_(0.6461164525353964, 'dimensionless'),  # [0.1 - 10]
+            'GU__EMPABS_k': Q_(0.006331565789888865, '1/min'),  # [0.0001 - 1]
+            'GU__METEXC_k': Q_(0.0008913744862726766, '1/min'),  # [1e-06 - 0.1]
+            'LI__EMP2EG_Vmax': Q_(0.0018277959250608598, 'mmol/min/l'),  # [0.001 - 100]
+            'LI__EMP2EG_Km_emp': Q_(0.4873972534072442, 'mM'),  # [0.001 - 1]
+            'LI__EGEX_k': Q_(0.14945733406983516, '1/min'),  # [0.001 - 100]
+            'LI__EGBIEX_k': Q_(0.9999905032590832, '1/min'),  # [1e-05 - 1]
+            'KI__EMP2EG_Vmax': Q_(0.2282896702826233, 'mmol/min/l'),  # [0.001 - 100]
+            'KI__EMP2EG_Km_emp': Q_(0.9947797955499835, 'mM'),  # [0.001 - 1]
+            'KI__EMPEX_k': Q_(0.10831636215274026, '1/min'),  # [0.0001 - 10]
+            'KI__EGEX_k': Q_(1.0530714888705126, '1/min'),  # [0.0001 - 10]
+            # Pharmacodynamics
+            'KI__RTG_E50': Q_(1.4896150584267063e-06, 'mM'),  # [1e-08 - 44]
+            'KI__RTG_base': Q_(12.517317734022036, 'mM'),  # [9 - 14]
+            'KI__RTG_max_inhibition': Q_(0.6818395659395174, 'dimensionless'),  # [0.2 - 1.0]
+            'KI__RTG_m_fpg': Q_(1.0393582970262198, 'dimensionless'),  # [0.2 - 3]
+            }
 
         return changes
 
@@ -317,6 +325,7 @@ class EmpagliflozinSimulationExperiment(SimulationExperiment):
                 # cases
                 'KI__f_renal_function',
                 'f_cirrhosis',
+                "GU__f_absorption",
             ]
         )
         return {}

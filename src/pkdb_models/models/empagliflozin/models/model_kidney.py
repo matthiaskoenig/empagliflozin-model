@@ -110,6 +110,17 @@ _m.species = [
         port=True
     ),
     Species(
+        "emp",
+        name="empagliflozin (kidney)",
+        initialConcentration=0.0,
+        compartment="Vki",
+        substanceUnit=U.mmole,
+        hasOnlySubstanceUnits=False,
+        sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["emp"],
+        port=True
+    ),
+    Species(
         "emp_urine",
         name="empagliflozin (urine)",
         initialConcentration=0.0,
@@ -127,6 +138,17 @@ _m.species = [
         compartment="Vext",
         substanceUnit=U.mmole,
         hasOnlySubstanceUnits=False,  # this is a concentration
+        sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["eg"],
+        port=True
+    ),
+    Species(
+        "eg",
+        name="empagliflozin-glucuronide (kidney)",
+        initialConcentration=0.0,
+        compartment="Vki",
+        substanceUnit=U.mmole,
+        hasOnlySubstanceUnits=False,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["eg"],
         port=True
@@ -158,6 +180,82 @@ _m.parameters.extend([
 ])
 
 _m.reactions = [
+    Reaction(
+        sid="EMPIM",
+        name="empagliflozin import (EMPIM)",
+        equation="emp_ext <-> emp",
+        compartment="Vmem",
+        sboTerm=SBO.TRANSPORT_REACTION,
+        pars=[
+            Parameter(
+                "EMPIM_k",
+                100.0,  # fast
+                U.per_min,
+                name="rate empagliflozin import",
+                sboTerm=SBO.FORWARD_RATE_CONSTANT,
+            ),
+        ],
+        formula=(
+            "EMPIM_k * Vki * (emp_ext - emp)",
+            U.mmole_per_min
+        ),
+    ),
+    Reaction(
+        sid="EGIM",
+        name="empagliflozin-glucuronide import (EGIM)",
+        equation="eg_ext <-> eg",
+        compartment="Vmem",
+        sboTerm=SBO.TRANSPORT_REACTION,
+        pars=[
+            Parameter(
+                "EGIM_k",
+                100.0,  # fast
+                U.per_min,
+                name="rate empagliflozin-glucuronide import",
+                sboTerm=SBO.FORWARD_RATE_CONSTANT,
+            ),
+        ],
+        formula=(
+            "EGIM_k * Vki * (eg_ext - eg)",
+            U.mmole_per_min
+        ),
+    ),
+    Reaction(
+        sid="EMP2EG",
+        name="empagliflozin glucuronidation (EMP2EG) UGT",
+        equation="emp -> eg",
+        compartment="Vki",
+        sboTerm=SBO.BIOCHEMICAL_REACTION,
+        pars=[
+            Parameter(
+                "EMP2EG_Vmax",
+                0.04,
+                U.mmole_per_min_l,
+                name="Vmax empagliflozin conversion",
+                sboTerm=SBO.MAXIMAL_VELOCITY,
+            ),
+            Parameter(
+                "EMP2EG_Km_emp",
+                0.02,
+                U.mM,
+                name="Km empagliflozin UGT",
+                sboTerm=SBO.MICHAELIS_CONSTANT,
+            ),
+            Parameter(
+                "f_ugt",
+                1,
+                U.dimensionless,
+                name="scaling factor UGT activity",
+                sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+                notes="""Scaling factor to vary UGT activity.
+                1.0: unchanged activity; < 1.0 decreased activity; >1.0 increased activity.
+                """
+            )
+        ],
+        formula=(
+            "f_ugt * EMP2EG_Vmax * Vki * emp/(emp + EMP2EG_Km_emp)"
+        ),
+    ),
     Reaction(
         sid="EMPEX",
         name="empagliflozin excretion (EMPEX)",
@@ -265,9 +363,6 @@ _m.parameters.extend([
         U.mM,
         name="EC50 reduction in RTG",
         sboTerm=SBO.KINETIC_CONSTANT,
-        notes="""
-        estimated EC50 value for dapagliflozin was 32 ng/mL (95% CI = 19–45 ng/mL). [Devineni2013]
-        """
     ),
     Parameter(
         "RTG_gamma",
@@ -380,19 +475,92 @@ _m.rules.extend([
 
 model_kidney = _m
 
+import pandas as pd
+
+
+def empagliflozin_layout(dx=200, dy=200) -> pd.DataFrame:
+    """Layout definition for empagliflozin kidney model."""
+
+    delta_y = 0.5 * dy
+    delta_x = 0.7 * dx
+
+    positions = [
+        # sid, x, y
+        ["fpg",       -0.3 * delta_x, 0],
+        ["emp_ext",    1 * delta_x,   0],
+        ["eg_ext",     3 * delta_x,   0],
+
+        ["EMPIM",      1 * delta_x,   1 * delta_y],
+        ["EGIM",       3 * delta_x,   1 * delta_y],
+
+        ["emp",        1 * delta_x,   2 * delta_y],
+        ["eg",         3 * delta_x,   2 * delta_y],
+
+        ["EMP2EG",     2 * delta_x,   1.7 * delta_y],
+
+        ["GLCEX",     -0.3 * delta_x, 3 * delta_y],
+        ["EMPEX",      1 * delta_x,   3 * delta_y],
+        ["EGEX",       3 * delta_x,   3 * delta_y],
+
+        ["glc_urine", -0.3 * delta_x, 4 * delta_y],
+        ["emp_urine",  1 * delta_x,   4 * delta_y],
+        ["eg_urine",   3 * delta_x,   4 * delta_y],
+    ]
+
+    df = pd.DataFrame(positions, columns=["id", "x", "y"])
+    df.set_index("id", inplace=True)
+    return df
+
+
+def empagliflozin_annotations(dx=200, dy=200) -> list:
+    COLOR_BLOOD = "#FF796C"
+    COLOR_CELL = "#FFFFFF"
+    COLOR_URINE = "#FF7F0E"
+    delta_y = 0.5 * dy
+
+    kwargs = {
+        "type": cyviz.AnnotationShapeType.ROUND_RECTANGLE,
+        "opacity": 20,
+        "border_color": "#000000",
+        "border_thickness": 2,
+    }
+    xpos = -0.8 * dx
+    width = 3.7 * dx
+
+    annotations = [
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=-0.5 * delta_y, width=width, height=1.5 * delta_y,
+            fill_color=COLOR_BLOOD, **kwargs
+        ),
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=delta_y, width=width, height=2 * delta_y,
+            fill_color=COLOR_CELL, **kwargs
+        ),
+        cyviz.AnnotationShape(
+            x_pos=xpos, y_pos=3 * delta_y, width=width, height=1.5 * delta_y,
+            fill_color=COLOR_URINE, **kwargs
+        ),
+    ]
+    return annotations
+
 
 if __name__ == "__main__":
     from pkdb_models.models.empagliflozin import MODEL_BASE_PATH
+    from sbmlutils import cytoscape as cyviz
+    from sbmlutils.converters import odefac
+    from sbmlutils.factory import create_model
 
-    results: FactoryResult = create_model(
+    # create SBML
+    results = create_model(
         model=model_kidney,
         filepath=MODEL_BASE_PATH / f"{model_kidney.sid}.xml",
         sbml_level=3, sbml_version=2,
     )
 
-    # ODE equations
     ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
     ode_factory.to_markdown(md_file=results.sbml_path.parent / f"{results.sbml_path.stem}.md")
 
-    # visualization
-    visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
+    # visualization in Cytoscape
+    cyviz.visualize_sbml(sbml_path=results.sbml_path, delete_session=True)
+    cyviz.apply_layout(layout=empagliflozin_layout())
+    cyviz.add_annotations(annotations=empagliflozin_annotations())

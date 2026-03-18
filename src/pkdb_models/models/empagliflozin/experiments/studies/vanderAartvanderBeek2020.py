@@ -131,4 +131,5 @@ class vanderAartvanderBeek2020(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(vanderAartvanderBeek2020, output_dir=vanderAartvanderBeek2020.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(vanderAartvanderBeek2020, output_dir=RESULTS_PATH_SIMULATION)

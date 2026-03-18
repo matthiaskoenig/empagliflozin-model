@@ -56,10 +56,13 @@ class Coadministration(str, Enum):
     LINAGLIPTIN = "linagliptin"
     LOBEGLITAZONE = "lobeglitazone"
     METFORMIN = "metformin"
+    PIOGLITAZONE = "pioglitazone"
     PROBENECID = "probenecid"
+    RAMIPRIL = "ramipril"
     RIFAMPICIN = "rifampicin"
     SITAGLIPTIN = "sitagliptin"
     TORASEMIDE = "torasemide"
+    VERAPAMIL = "verapamil"
     WARFARIN = "warfarin"
 
 @dataclass

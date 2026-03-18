@@ -25,20 +25,26 @@ experiment_classes = [
     Chen2020,
     ElDash2021,
     Friedrich2013,
-    Hailat2022,
+    # Hailat2022,  # outlier
     Heise2013,
     Heise2013a,
     Heise2015,
     Jiang2023b,
     Kim2021,
     Kim2023,
+    # Laffel2018, # pediatric cohort
     Li2020,
+    Macha2013d,  # TODO: ramipril duplicate
+    Macha2013e,
+    Macha2014,
     Macha2014b,
     Macha2014f,
     Macha2015a,
+    Macha2015b,
     Sarashina2013,
     Sarashina2014,
     Seman2013,
+    vanderAartvanderBeek2020,
     Zhao2015,
 ]
 

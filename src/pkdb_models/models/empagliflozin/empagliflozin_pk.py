@@ -53,6 +53,20 @@ def calculate_empagliflozin_pk(
 
             pk_dict = tcpk.pk.to_dict()
             pk_dict["substance"] = substance
+
+            # Renal clearance parent compound
+            if sid == "emp":
+                aurine_vec = Q_(
+                    xres["Aurine_emp"].sel({scandim: k_dose}).values,
+                    xres.uinfo["Aurine_emp"]
+                )
+                pk_dict["Aurine_emp"] = aurine_vec.magnitude[-1]
+                pk_dict["Aurine_emp_unit"] = aurine_vec.units
+                cl_renal = aurine_vec[-1] / tcpk.pk.auc
+                pk_dict["cl_renal"] = cl_renal.magnitude
+                pk_dict["cl_renal_unit"] = cl_renal.units
+
             pk_dicts.append(pk_dict)
+
 
     return pd.DataFrame(pk_dicts)

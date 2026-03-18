@@ -74,21 +74,20 @@ class Macha2013e(EmpagliflozinSimulationExperiment):
             )
             tc2 = Timecourse(
                 start=0,
-                end=170 * 60,  # [min]
+                end=24 * 60 * 2,  # [min]
                 steps=2000,
                 changes={
                     "PODOSE_emp": Q_(25, "mg"),
                 },
             )
 
-            if intervention == "emp":
-                n_repeats = 3
-            elif intervention == "emp, war":
-                n_repeats = 5
+
+            n_repeats_before = 4
+            n_repeats_after = 9
 
             tcsims[f"po_emp25_{intervention}"] = TimecourseSim(
-               [tc0] + [tc1 for _ in range(n_repeats)] + [tc2],
-               time_offset=-(n_repeats+1)*24*60
+                [tc0] + [tc1 for _ in range(n_repeats_after)] + [tc2],
+                time_offset=-n_repeats_before * 24 * 60
             )
             # console.print(tcsims.keys())
         return tcsims
@@ -161,4 +160,5 @@ class Macha2013e(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Macha2013e, output_dir=Macha2013e.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Macha2013e, output_dir=RESULTS_PATH_SIMULATION)

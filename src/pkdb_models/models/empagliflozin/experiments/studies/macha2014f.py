@@ -128,6 +128,9 @@ class Macha2014f(EmpagliflozinSimulationExperiment):
         plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
         plots[2].set_yaxis(self.label_uge, unit=self.unit_uge)
 
+        plots[0].yaxis.min = -0.25
+        plots[0].yaxis.max = 1.75
+
         for kp, sid in enumerate(self.info):
             name = self.info[sid]
             for group in self.groups:
@@ -157,4 +160,5 @@ class Macha2014f(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Macha2014f, output_dir=Macha2014f.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Macha2014f, output_dir=RESULTS_PATH_SIMULATION)

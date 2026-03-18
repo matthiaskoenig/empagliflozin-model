@@ -21,11 +21,14 @@ class Li2020(EmpagliflozinSimulationExperiment):
     conditions = ["fasting", "fed"]
     interventions = ["test", "ref"]
 
-    colors = {
-        "fasting_test": "tab:blue",
-        "fasting_ref": "tab:green",
-        "fed_test": "tab:purple",
-        "fed_ref": "tab:orange",
+    fasting_key = {
+        "fasting": "fasted",
+        "fed": "fed",
+    }
+
+    symbols = {
+        "test": "s",  # square
+        "ref": "D",   # diamond
     }
 
     def datasets(self) -> Dict[str, DataSet]:
@@ -34,21 +37,15 @@ class Li2020(EmpagliflozinSimulationExperiment):
             df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
             for label, df_label in df.groupby("label"):
                 dset = DataSet.from_df(df_label, self.ureg)
-
-                # unit conversion to mole/l
                 if label.startswith("empagliflozin"):
-                   dset.unit_conversion("mean", 1 / self.Mr.emp)
+                    dset.unit_conversion("mean", 1 / self.Mr.emp)
                 dsets[label] = dset
-
-        # console.print(dsets)
-        # console.print(dsets.keys())
         return dsets
 
     def simulations(self) -> Dict[str, TimecourseSim]:
         Q_ = self.Q_
         tcsims = {}
 
-        # Single dosing
         for intervention in self.interventions:
             for condition in self.conditions:
                 tcsims[f"po_emp25_{intervention}_{condition}"] = TimecourseSim(
@@ -59,16 +56,14 @@ class Li2020(EmpagliflozinSimulationExperiment):
                         changes={
                             **self.default_changes(),
                             "BW": Q_(self.bodyweights[condition], "kg"),
-                            "[KI__fpg]": Q_(self.fpg_healthy, "mM"),  # healthy reference value
-                            "KI__f_renal_function": Q_(1.0, "dimensionless"),  # healthy
-                            # FIXME: fasting
+                            "[KI__fpg]": Q_(self.fpg_healthy, "mM"),
+                            "KI__f_renal_function": Q_(1.0, "dimensionless"),
+                            "GU__f_absorption": Q_(self.fasting_map[self.fasting_key[condition]], "dimensionless"),
                             "PODOSE_emp": Q_(25, "mg"),
                         },
                     )
                 )
 
-
-        # console.print(tcsims.keys())
         return tcsims
 
     def fit_mappings(self) -> Dict[str, FitMapping]:
@@ -98,7 +93,6 @@ class Li2020(EmpagliflozinSimulationExperiment):
                         coadministration=Coadministration.NONE,
                     ),
                 )
-        # console.print(mappings)
         return mappings
 
     def figures(self) -> Dict[str, Figure]:
@@ -112,16 +106,16 @@ class Li2020(EmpagliflozinSimulationExperiment):
 
         for intervention in self.interventions:
             for condition in self.conditions:
+                color = self.fasting_colors[self.fasting_key[condition]]
+                symbol = self.symbols[intervention]
 
-                # simulation
                 plots[0].add_data(
                     task=f"task_po_emp25_{intervention}_{condition}",
                     xid="time",
                     yid=f"[Cve_emp]",
                     label=f"25 mg Emp ({condition}, {intervention})",
-                    color=self.colors[f"{condition}_{intervention}"],
+                    color=color,
                 )
-                # data
                 plots[0].add_data(
                     dataset=f"empagliflozin_{intervention}_{condition}",
                     xid="time",
@@ -129,13 +123,13 @@ class Li2020(EmpagliflozinSimulationExperiment):
                     yid_sd="mean_sd",
                     count="count",
                     label=f"25 mg Emp ({condition}, {intervention})",
-                    color=self.colors[f"{condition}_{intervention}"],
+                    color=color,
+                    marker=symbol,
                 )
 
-        return {
-            fig.sid: fig,
-        }
+        return {fig.sid: fig}
 
 
 if __name__ == "__main__":
-    run_experiments(Li2020, output_dir=Li2020.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Li2020, output_dir=RESULTS_PATH_SIMULATION)

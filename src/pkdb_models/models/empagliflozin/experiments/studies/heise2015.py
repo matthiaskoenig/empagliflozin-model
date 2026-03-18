@@ -164,4 +164,5 @@ class Heise2015(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Heise2015, output_dir=Heise2015.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Heise2015, output_dir=RESULTS_PATH_SIMULATION)

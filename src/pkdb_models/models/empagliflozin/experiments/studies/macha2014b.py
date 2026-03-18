@@ -165,4 +165,5 @@ class Macha2014b(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Macha2014b, output_dir=Macha2014b.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Macha2014b, output_dir=RESULTS_PATH_SIMULATION)

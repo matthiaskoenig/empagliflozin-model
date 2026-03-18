@@ -150,6 +150,9 @@ class Heise2013(EmpagliflozinSimulationExperiment):
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
         plots[1].set_yaxis(self.label_uge, unit=self.unit_uge)
 
+        plots[1].xaxis.min = -0.05
+        plots[1].xaxis.max = 225
+
         for intervention, dose in self.doses.items():
             for k, sid in enumerate(self.info):
                 name = self.info[sid]
@@ -187,4 +190,5 @@ class Heise2013(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Heise2013, output_dir=Heise2013.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Heise2013, output_dir=RESULTS_PATH_SIMULATION)

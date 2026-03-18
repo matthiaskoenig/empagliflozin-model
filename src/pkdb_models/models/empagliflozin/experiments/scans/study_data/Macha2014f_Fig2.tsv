@@ -1,0 +1,111 @@
+study	individual	group	count	intervention	time	time_unit	x_measurement_type	x_substance	x_tissue	x_method	x_label	x_value	x	x_unit	y_measurement_type	y_substance	y_tissue	y_method	y_label	y_value	y	y_unit	comments
+Macha2014f	IS001	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	5.4237	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	0.6818	NA	ml/min	time: 0-96hr
+Macha2014f	IS002	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	6.7797	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	-0.4545	NA	ml/min	Scatter plot A
+Macha2014f	IS003	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	9.4915	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	0.6818	NA	ml/min	NA
+Macha2014f	IS004	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	12.2034	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	0.4545	NA	ml/min	NA
+Macha2014f	IS005	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	10.8475	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	2.5	NA	ml/min	NA
+Macha2014f	IS006	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	16.9492	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	2.0455	NA	ml/min	NA
+Macha2014f	IS007	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	20.339	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	2.9545	NA	ml/min	NA
+Macha2014f	IS008	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	20.339	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	4.7727	NA	ml/min	NA
+Macha2014f	IS009	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	25.0847	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	4.0909	NA	ml/min	NA
+Macha2014f	IS010	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	28.4746	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	5.0	NA	ml/min	NA
+Macha2014f	IS011	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	29.1525	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	3.8636	NA	ml/min	NA
+Macha2014f	IS012	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	32.5424	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	3.1818	NA	ml/min	NA
+Macha2014f	IS013	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	43.3898	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	6.3636	NA	ml/min	NA
+Macha2014f	IS014	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	47.4576	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	4.3182	NA	ml/min	NA
+Macha2014f	IS015	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	54.2373	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	9.7727	NA	ml/min	NA
+Macha2014f	IS016	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	50.1695	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	13.6364	NA	ml/min	NA
+Macha2014f	IS017	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	59.661	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	12.0455	NA	ml/min	NA
+Macha2014f	IS018	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	68.4746	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	7.7273	NA	ml/min	NA
+Macha2014f	IS019	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	50.8475	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	20.2273	NA	ml/min	NA
+Macha2014f	IS020	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	71.1864	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	12.5	NA	ml/min	NA
+Macha2014f	IS021	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	78.6441	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	9.0909	NA	ml/min	NA
+Macha2014f	IS022	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	78.6441	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	9.0909	NA	ml/min	NA
+Macha2014f	IS023	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	86.1017	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	17.5	NA	ml/min	NA
+Macha2014f	IS024	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	58.9831	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	24.3182	NA	ml/min	NA
+Macha2014f	IS025	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	74.5763	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	23.6364	NA	ml/min	NA
+Macha2014f	IS026	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	78.6441	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	25.0	NA	ml/min	NA
+Macha2014f	IS027	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	73.2203	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	26.8182	NA	ml/min	NA
+Macha2014f	IS028	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	93.5593	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	23.8636	NA	ml/min	NA
+Macha2014f	IS029	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	98.3051	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	22.5	NA	ml/min	NA
+Macha2014f	IS030	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	107.7966	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	23.8636	NA	ml/min	NA
+Macha2014f	IS031	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	111.8644	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	26.3636	NA	ml/min	NA
+Macha2014f	IS032	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	94.9153	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	28.1818	NA	ml/min	NA
+Macha2014f	IS033	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	empagliflozin_gfr	79.322	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	32.7273	NA	ml/min	NA
+Macha2014f	IS034	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	103.0508	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	34.3182	NA	ml/min	NA
+Macha2014f	IS035	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	99.661	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	39.5455	NA	ml/min	NA
+Macha2014f	IS036	NA	1.0	EMP50	96.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	155.0847	NA	ml/min/(1.73*m^2)	clearance_renal	NA	urine	HPLC MS/MS	cl_empagliflozin	28.6932	NA	ml/min	NA
+Macha2014f	IS037	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	6.9204	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	28226.601	NA	nmol/l*hr	Scatter plot B
+Macha2014f	IS038	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	4.1522	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	21871.9212	NA	nmol/l*hr	NA
+Macha2014f	IS039	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	11.0727	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	22463.0542	NA	nmol/l*hr	NA
+Macha2014f	IS040	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	10.8997	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	20837.4384	NA	nmol/l*hr	NA
+Macha2014f	IS041	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	5.5363	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	14926.1084	NA	nmol/l*hr	NA
+Macha2014f	IS042	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	8.9965	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	14630.5419	NA	nmol/l*hr	NA
+Macha2014f	IS043	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	20.7612	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	19359.6059	NA	nmol/l*hr	NA
+Macha2014f	IS044	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	28.3737	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	18620.6897	NA	nmol/l*hr	NA
+Macha2014f	IS045	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	30.4498	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	19507.3892	NA	nmol/l*hr	NA
+Macha2014f	IS046	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	21.4533	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	15960.5911	NA	nmol/l*hr	NA
+Macha2014f	IS047	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	17.6471	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	12524.6305	NA	nmol/l*hr	NA
+Macha2014f	IS048	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	7.6125	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11379.3103	NA	nmol/l*hr	NA
+Macha2014f	IS049	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	11.0727	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11083.7438	NA	nmol/l*hr	NA
+Macha2014f	IS050	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	6.2284	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	10049.2611	NA	nmol/l*hr	NA
+Macha2014f	IS051	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	24.9135	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	14630.5419	NA	nmol/l*hr	NA
+Macha2014f	IS052	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	32.526	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	13743.8424	NA	nmol/l*hr	NA
+Macha2014f	IS053	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	42.9066	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	14778.3251	NA	nmol/l*hr	NA
+Macha2014f	IS054	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	51.2111	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	16256.1576	NA	nmol/l*hr	NA
+Macha2014f	IS055	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	54.6713	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	16699.5074	NA	nmol/l*hr	NA
+Macha2014f	IS056	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	50.519	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	10788.1773	NA	nmol/l*hr	NA
+Macha2014f	IS057	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	47.7509	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	10197.0443	NA	nmol/l*hr	NA
+Macha2014f	IS058	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	60.2076	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11083.7438	NA	nmol/l*hr	NA
+Macha2014f	IS059	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	58.8235	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	8275.8621	NA	nmol/l*hr	NA
+Macha2014f	IS060	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	70.5882	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	15960.5911	NA	nmol/l*hr	NA
+Macha2014f	IS061	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	67.8201	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	13891.6256	NA	nmol/l*hr	NA
+Macha2014f	IS062	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	74.7405	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	13004.9261	NA	nmol/l*hr	NA
+Macha2014f	IS063	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	78.8927	NA	NA	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	15960.5911	NA	nmol/l*hr	NA
+Macha2014f	IS064	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	74.0484	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	10788.1773	NA	nmol/l*hr	NA
+Macha2014f	IS065	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	79.5848	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	9605.9113	NA	nmol/l*hr	NA
+Macha2014f	IS066	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	78.8927	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	9014.7783	NA	nmol/l*hr	NA
+Macha2014f	IS067	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	86.5052	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	14778.3251	NA	nmol/l*hr	NA
+Macha2014f	IS068	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	93.4256	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	12118.2266	NA	nmol/l*hr	NA
+Macha2014f	IS069	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	103.8062	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11379.3103	NA	nmol/l*hr	NA
+Macha2014f	IS070	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	107.9585	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	12561.5764	NA	nmol/l*hr	NA
+Macha2014f	IS071	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	112.1107	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11822.6601	NA	nmol/l*hr	NA
+Macha2014f	IS072	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	99.654	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	11083.7438	NA	nmol/l*hr	NA
+Macha2014f	IS073	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	98.2699	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	9901.4778	NA	nmol/l*hr	NA
+Macha2014f	IS074	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	94.8097	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	8719.2118	NA	nmol/l*hr	NA
+Macha2014f	IS075	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	155.7093	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	7832.5123	NA	nmol/l*hr	NA
+Macha2014f	IS076	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	6.0837	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	601.4518	NA	nmol	Scatter plot C
+Macha2014f	IS077	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	7.6046	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	-5.761	NA	nmol	NA
+Macha2014f	IS078	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	11.4068	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	294.3888	NA	nmol	NA
+Macha2014f	IS079	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	9.1255	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	599.1474	NA	nmol	NA
+Macha2014f	IS080	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	17.4905	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	1350.386	NA	nmol	NA
+Macha2014f	IS081	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	11.4068	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	2718.6312	NA	nmol	NA
+Macha2014f	IS082	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	32.6996	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	2702.5003	NA	nmol	NA
+Macha2014f	IS083	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	20.5323	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	3923.8392	NA	nmol	NA
+Macha2014f	IS084	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	21.2928	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	4529.3237	NA	nmol	NA
+Macha2014f	IS085	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	25.0951	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	4071.8977	NA	nmol	NA
+Macha2014f	IS086	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	30.4183	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	4219.3801	NA	nmol	NA
+Macha2014f	IS087	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	28.8973	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	5584.1687	NA	nmol	NA
+Macha2014f	IS088	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	43.346	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	5573.2227	NA	nmol	NA
+Macha2014f	IS089	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	47.9087	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	2690.9782	NA	nmol	NA
+Macha2014f	IS090	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	69.2015	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	5553.6352	NA	nmol	NA
+Macha2014f	IS091	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	60.8365	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	8135.7299	NA	nmol	NA
+Macha2014f	IS092	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	54.7529	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	7988.8236	NA	nmol	NA
+Macha2014f	IS093	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	50.1901	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	8749.856	NA	nmol	NA
+Macha2014f	IS094	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	79.8479	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	8575.8728	NA	nmol	NA
+Macha2014f	IS095	NA	NA	EMP50	24.0	NA	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	71.4829	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	11915.5433	NA	nmol	NA
+Macha2014f	IS096	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	59.3156	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	12076.2761	NA	nmol	NA
+Macha2014f	IS097	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	79.0875	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	13424.9337	NA	nmol	NA
+Macha2014f	IS098	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	98.8593	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	12652.3793	NA	nmol	NA
+Macha2014f	IS099	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	95.057	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	14624.9568	NA	nmol	NA
+Macha2014f	IS100	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	86.692	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	15540.3848	NA	nmol	NA
+Macha2014f	IS101	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	93.5361	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	17353.3817	NA	nmol	NA
+Macha2014f	IS102	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	74.5247	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	17367.7843	NA	nmol	NA
+Macha2014f	IS103	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	74.5247	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	18276.8752	NA	nmol	NA
+Macha2014f	IS104	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	79.0875	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	18121.9034	NA	nmol	NA
+Macha2014f	IS105	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	50.9506	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	19658.3708	NA	nmol	NA
+Macha2014f	IS106	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	107.9848	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	17796.9812	NA	nmol	NA
+Macha2014f	IS107	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	112.5475	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	17490.4943	NA	nmol	NA
+Macha2014f	IS108	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	103.4221	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	23406.4984	NA	nmol	NA
+Macha2014f	IS109	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	100.3802	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	26287.5907	NA	nmol	NA
+Macha2014f	IS110	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	155.8935	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	13063.717	NA	nmol	NA

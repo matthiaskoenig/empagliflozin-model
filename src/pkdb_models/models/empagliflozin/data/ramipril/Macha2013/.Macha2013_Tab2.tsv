@@ -1,0 +1,5 @@
+study	group	count	measurement	substance	tissue	intervention	geometric_mean_ratio	lower_limit	upper_limit	unit	method	comments
+Macha2013	rami	23	auc_inf	empagliflozin	plasma	VER, EMP1	102.95	98.87	107.2	percent	HPLC MS/MS	not uploaded
+Macha2013	rami	23	cmax	empagliflozin	plasma	VER, EMP1	92.39	85.38	99.97	percent	HPLC MS/MS	not uploaded
+Macha2013	rami	23	auc_inf	empagliflozin	plasma	EMPM5, RAM, RAM5	96.55	93.05	100.18	percent	HPLC MS/MS	not uploaded
+Macha2013	rami	23	cmax	empagliflozin	plasma	EMPM5, RAM, RAM5	104.47	97.65	111.77	percent	HPLC MS/MS	not uploaded

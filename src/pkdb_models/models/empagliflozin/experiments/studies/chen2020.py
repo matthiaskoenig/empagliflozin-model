@@ -2,7 +2,6 @@ from typing import Dict
 
 from sbmlsim.data import DataSet, load_pkdb_dataframe
 from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
 
 from pkdb_models.models.empagliflozin.experiments.base_experiment import (
     EmpagliflozinSimulationExperiment,
@@ -19,23 +18,26 @@ from pkdb_models.models.empagliflozin.helpers import run_experiments
 class Chen2020(EmpagliflozinSimulationExperiment):
     """Simulation experiment of Chen2020."""
 
-    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy, actual value not reported)
+    fpg = EmpagliflozinSimulationExperiment.fpg_healthy
     bodyweights = {
         "Fasting_T": 62.93,
         "Fasting_R": 62.93,
         "Fed_T": 60.99,
         "Fed_R": 60.99,
     }  # [kg]
-
-    colors = {
-        "Fasting_T": "black",
-        "Fasting_R": "tab:blue",
-        "Fed_T": "tab:green",
-        "Fed_R": "tab:orange",
-    }
     groups = list(bodyweights.keys())
 
-    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (Healthy)
+    fasting_key = {
+        "Fasting": "fasted",
+        "Fed": "fed",
+    }
+
+    symbols = {
+        "T": "s",  # square
+        "R": "D",  # diamond
+    }
+
+    gfr = EmpagliflozinSimulationExperiment.gfr_healthy
 
     def datasets(self) -> Dict[str, DataSet]:
         dsets = {}
@@ -43,39 +45,32 @@ class Chen2020(EmpagliflozinSimulationExperiment):
             df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
             for label, df_label in df.groupby("label"):
                 dset = DataSet.from_df(df_label, self.ureg)
-
-                # unit conversion to mole/l
                 if label.endswith("EMP10"):
-                   dset.unit_conversion("mean", 1 / self.Mr.emp)
+                    dset.unit_conversion("mean", 1 / self.Mr.emp)
                 dsets[f"{label}"] = dset
-
-        # console.print(dsets)
-        # console.print(dsets.keys())
         return dsets
 
     def simulations(self) -> Dict[str, TimecourseSim]:
         Q_ = self.Q_
         tcsims = {}
 
-        # Single dosing
         for group, bodyweight in self.bodyweights.items():
+            condition, _ = group.split("_")  # "Fasting" or "Fed"
             tcsims[f"po_emp10_{group}"] = TimecourseSim(
                 [Timecourse(
-                start=0,
-                end=73 * 60,  # [min]
-                steps=500,
-                changes={
-                    **self.default_changes(),
-                    "BW": Q_(bodyweight, "kg"),
-                    "[KI__fpg]": Q_(self.fpg_healthy, "mM"),  # healthy reference value
-                    # "KI__f_renal_function": Q_(self.gfr, "dimensionless")
-                    "PODOSE_emp": Q_(10, "mg"),
-                },
-            )]
+                    start=0,
+                    end=73 * 60,  # [min]
+                    steps=500,
+                    changes={
+                        **self.default_changes(),
+                        "BW": Q_(bodyweight, "kg"),
+                        "[KI__fpg]": Q_(self.fpg_healthy, "mM"),
+                        "GU__f_absorption": Q_(self.fasting_map[self.fasting_key[condition]], "dimensionless"),
+                        "PODOSE_emp": Q_(10, "mg"),
+                    },
+                )]
             )
 
-
-        # console.print(tcsims.keys())
         return tcsims
 
     def fit_mappings(self) -> Dict[str, FitMapping]:
@@ -104,7 +99,6 @@ class Chen2020(EmpagliflozinSimulationExperiment):
                     coadministration=Coadministration.NONE,
                 ),
             )
-        # console.print(mappings)
         return mappings
 
     def figures(self) -> Dict[str, Figure]:
@@ -117,15 +111,17 @@ class Chen2020(EmpagliflozinSimulationExperiment):
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp, min=-0.05)
 
         for group in self.groups:
-            # simulation
+            condition, formulation = group.split("_")  # "Fasting"/"Fed", "T"/"R"
+            color = self.fasting_colors[self.fasting_key[condition]]
+            marker = self.symbols[formulation]
+
             plots[0].add_data(
                 task=f"task_po_emp10_{group}",
                 xid="time",
                 yid=f"[Cve_emp]",
                 label=f"10 mg Emp ({group})",
-                color=self.colors[group],
+                color=color,
             )
-            # data
             plots[0].add_data(
                 dataset=f"{group}_EMP10",
                 xid="time",
@@ -133,13 +129,13 @@ class Chen2020(EmpagliflozinSimulationExperiment):
                 yid_sd="mean_sd",
                 count="count",
                 label=f"10 mg Emp ({group})",
-                color=self.colors[group]
+                color=color,
+                marker=marker,
             )
 
-        return {
-            fig.sid: fig,
-        }
+        return {fig.sid: fig}
 
 
 if __name__ == "__main__":
-    run_experiments(Chen2020, output_dir=Chen2020.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Chen2020, output_dir=RESULTS_PATH_SIMULATION)

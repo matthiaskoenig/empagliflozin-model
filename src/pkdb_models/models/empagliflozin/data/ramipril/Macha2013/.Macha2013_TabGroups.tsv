@@ -1,0 +1,24 @@
+study	name	parent	measurement_type	group_count	choice	count	substance	mean	median	min	max	sd	unit	comments
+Macha2013	all	NA	species	59	homo sapiens	59	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	all	NA	sex	59	M	27	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	all	NA	sex	59	F	32	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	all	NA	healthy	59	Y	59	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	all	NA	smoking amount (cigarettes)	59	NA	59	NA	NA	NA	NA	10.0	NA	1/day	NA
+Macha2013	rami	all	species	23	homo sapiens	23	NA	NA	NA	NA	NA	NA	NA	One subject discontinued the study after the first treatment period due to a knee ligament rupture.
+Macha2013	rami	all	sex	23	M	8	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	rami	all	sex	23	F	15	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	rami	all	age	23	NA	23	NA	NA	43.0	21.0	52.0	NA	yr	NA
+Macha2013	rami	all	weight	23	NA	23	NA	NA	69.0	57.0	97.0	NA	kg	NA
+Macha2013	rami	all	bmi	23	NA	23	NA	NA	24.6	19.7	29.7	NA	kg/m^2	NA
+Macha2013	vera	all	species	16	homo sapiens	16	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	vera	all	sex	16	M	8	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	vera	all	sex	16	F	8	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	vera	all	age	16	NA	16	NA	NA	31.0	20.0	50.0	NA	yr	NA
+Macha2013	vera	all	weight	16	NA	16	NA	NA	71.0	55.0	94.0	NA	kg	NA
+Macha2013	vera	all	bmi	16	NA	16	NA	NA	23.75	21.4	28.4	NA	kg/m^2	NA
+Macha2013	dig	all	species	20	homo sapiens	20	NA	NA	NA	NA	NA	NA	NA	One subject was excluded from the pharmacokinetic analysis set (but included in safety analyses) because the predose plasma concentration of digoxin after treatment B in this subject was _x0003_5% of Cmax.
+Macha2013	dig	all	sex	20	M	11	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	dig	all	sex	20	F	9	NA	NA	NA	NA	NA	NA	NA	NA
+Macha2013	dig	all	age	20	NA	20	NA	NA	35.5	20.0	50.0	NA	yr	NA
+Macha2013	dig	all	weight	20	NA	20	NA	NA	76.0	55.0	99.0	NA	kg	NA
+Macha2013	dig	all	bmi	20	NA	20	NA	NA	24.6	19.7	29.7	NA	kg/m^2	NA

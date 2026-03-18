@@ -83,6 +83,29 @@ parameters_pk = [
         unit="1/min",
     ),
 
+    # kidney metabolism
+    # FitParameter(
+    #     pid="KI__EMPIM_k",
+    #     lower_bound=1,
+    #     start_value=10,
+    #     upper_bound=100,
+    #     unit="1/min",
+    # ),
+    FitParameter(
+        pid="KI__EMP2EG_Vmax",
+        lower_bound=1E-3,
+        start_value=0.01,
+        upper_bound=100,
+        unit="mmol/min/l",
+    ),
+    FitParameter(
+        pid="KI__EMP2EG_Km_emp",
+        lower_bound=1E-3,
+        start_value=0.02,
+        upper_bound=1,
+        unit="mM",
+    ),
+
     # kidney removal
     FitParameter(
         pid="KI__EMPEX_k",

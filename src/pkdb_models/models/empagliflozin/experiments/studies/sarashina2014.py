@@ -129,6 +129,8 @@ class Sarashina2014(EmpagliflozinSimulationExperiment):
         plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
         plots[2].set_yaxis(self.label_uge, unit=self.unit_uge)
 
+        plots[1].xaxis.max = 78
+
         for kp, sid in enumerate(self.info):
             name = self.info[sid]
             for group in self.groups:
@@ -158,4 +160,5 @@ class Sarashina2014(EmpagliflozinSimulationExperiment):
 
 
 if __name__ == "__main__":
-    run_experiments(Sarashina2014, output_dir=Sarashina2014.__name__)
+    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
+    run_experiments(Sarashina2014, output_dir=RESULTS_PATH_SIMULATION)
