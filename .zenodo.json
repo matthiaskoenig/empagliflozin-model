@@ -3,6 +3,7 @@
   "title": "Physiologically based pharmacokinetic/ pharmacodynamic (PBPK/PD) model of empagliflozin",
   "creators": [
     {
+      "orcid": "0009-0009-3917-4482",
       "affiliation": "Brown University, Providence, Rohde Island",
       "name": "Alejandro, Jennesse"
     },
@@ -10,6 +11,11 @@
       "orcid": "0009-0005-7959-3164",
       "affiliation": "Humboldt-University Berlin, Institute for Theoretical Biology, Berlin",
       "name": "Elias, Michelle"
+    },
+    {
+      "orcid": "0009-0007-6659-7638",
+      "affiliation": "Charité – Universitätsmedizin Berlin, Charité Medical Faculty, Berlin",
+      "name": "Babaeva, Mariia"
     },
     {
       "orcid": "0000-0003-1725-179X",
