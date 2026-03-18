@@ -2,7 +2,7 @@
 # Dockerfile
 # --------------------------------------------------------
 # Build and push image
-#   docker build -f Dockerfile -t matthiaskoenig/empagliflozin:0.5.3 -t matthiaskoenig/empagliflozin:latest .
+#   docker build -f Dockerfile -t matthiaskoenig/empagliflozin:0.5.4 -t matthiaskoenig/empagliflozin:latest .
 #   docker login
 #   docker push --all-tags matthiaskoenig/empagliflozin
 # --------------------------------------------------------

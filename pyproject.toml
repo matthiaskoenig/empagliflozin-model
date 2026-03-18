@@ -4,13 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "empagliflozin-model"
-version = "0.5.3"
+version = "0.5.4"
 description = "Python utilities for computational models in SBML."
 readme = "README.md"
 requires-python = ">=3.14"
 authors = [
-    {name="Ennie Tensil", email="enniejoana@gmail.com"},
+    {name="Jennesse Alejandro", email="jennesse_alejandro@alumni.brown.edu"},
     {name="Michelle Elias", email="eliasmic@hu-berlin.de"},
+    {name="Mariia Babaeva", email="mariia.babaeva@charite.de"},
 	{name="Matthias König", email="konigmatt@googlemail.com"},
 ]
 maintainers = [
