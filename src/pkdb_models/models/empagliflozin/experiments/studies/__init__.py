@@ -1,3 +1,5 @@
+"""Simulation experiments of the clinical studies, one module per publication."""
+
 from .ayoub2017 import Ayoub2017
 from .brand2012 import Brand2012
 from .chen2015a import Chen2015a
@@ -8,11 +10,11 @@ from .hailat2022 import Hailat2022
 from .heise2013 import Heise2013
 from .heise2013a import Heise2013a
 from .heise2015 import Heise2015
-from .li2020 import Li2020
 from .jiang2023b import Jiang2023b
 from .kim2021 import Kim2021
 from .kim2023 import Kim2023
 from .laffel2018 import Laffel2018
+from .li2020 import Li2020
 from .macha2013d import Macha2013d
 from .macha2013e import Macha2013e
 from .macha2014 import Macha2014
@@ -25,3 +27,33 @@ from .sarashina2014 import Sarashina2014
 from .seman2013 import Seman2013
 from .vanderAartvanderBeek2020 import vanderAartvanderBeek2020
 from .zhao2015 import Zhao2015
+
+__all__ = [
+    "Ayoub2017",
+    "Brand2012",
+    "Chen2015a",
+    "Chen2020",
+    "ElDash2021",
+    "Friedrich2013",
+    "Hailat2022",
+    "Heise2013",
+    "Heise2013a",
+    "Heise2015",
+    "Jiang2023b",
+    "Kim2021",
+    "Kim2023",
+    "Laffel2018",
+    "Li2020",
+    "Macha2013d",
+    "Macha2013e",
+    "Macha2014",
+    "Macha2014b",
+    "Macha2014f",
+    "Macha2015a",
+    "Macha2015b",
+    "Sarashina2013",
+    "Sarashina2014",
+    "Seman2013",
+    "Zhao2015",
+    "vanderAartvanderBeek2020",
+]

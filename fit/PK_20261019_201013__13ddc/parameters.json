@@ -1,0 +1,35 @@
+{
+  "sets": [
+    {
+      "sid": "PK_20261019_201013__13ddc_0",
+      "values": {
+        "ftissue_emp": 1.1101678139683655,
+        "Kp_emp": 0.23816000087915748,
+        "ftissue_deep_emp": 0.11260873463907274,
+        "Kp_deep_emp": 0.41894686647952384,
+        "GU__EMPABS_k": 0.012901614815903274,
+        "GU__F_emp_abs": 0.4384406102332507,
+        "GU__METEXC_k": 0.0007858149292070191,
+        "GU__FED_f_absorption": 0.5496474541385112,
+        "EMP2EG_k": 0.01764617281900584,
+        "KI__EMPSEC_f": 1.3109407805228122,
+        "KI__EGEX_f": 1.6620148462099695
+      },
+      "units": {
+        "ftissue_emp": "l/(min)",
+        "Kp_emp": "dimensionless",
+        "ftissue_deep_emp": "l/(min)",
+        "Kp_deep_emp": "dimensionless",
+        "GU__EMPABS_k": "1/(min)",
+        "GU__F_emp_abs": "dimensionless",
+        "GU__METEXC_k": "1/(min)",
+        "GU__FED_f_absorption": "dimensionless",
+        "EMP2EG_k": "1/(min)",
+        "KI__EMPSEC_f": "dimensionless",
+        "KI__EGEX_f": "dimensionless"
+      },
+      "cost": 76.8686284779559,
+      "provenance": "optimization 'PK_20261019_201013__13ddc', run '0'"
+    }
+  ]
+}

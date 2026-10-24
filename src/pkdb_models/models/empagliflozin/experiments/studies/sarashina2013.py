@@ -1,107 +1,104 @@
-from typing import Dict
+"""Simulation experiment of the study Sarashina2013."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.empagliflozin import MODEL
 from pkdb_models.models.empagliflozin.experiments.base_experiment import (
     EmpagliflozinSimulationExperiment,
 )
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData, Coadministration
-
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.empagliflozin.helpers import run_experiments
 
 
 class Sarashina2013(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Sarashina2013."""
-    doses = {
+    """Simulation experiment of Sarashina2013.
+
+    Single rising doses of empagliflozin (1 mg to 100 mg) and placebo in healthy
+    Japanese men (n=6 per dose, placebo n=12), tablets after an overnight fast
+    of >= 10 hr. Body weights are the medians of the groups (Table 1). The
+    group with an oral glucose tolerance test (10 mg, 75 g glucose 1 hr after
+    the dose) is not simulated (the model has no glucose load). The mean
+    plasma glucose of the day (AUEC0-24 2480 mg*h/dl, 5.7 mM) is the healthy
+    fasting glucose of the model with its mean difference to the fasting
+    glucose (5.0 + 0.7 mM).
+    """
+
+    doses: ClassVar[dict[str, float]] = {
         "placebo": 0,
         "EMP1": 1,
         "EMP5": 5,
         "EMP10": 10,
         "EMP25": 25,
         "EMP100": 100,
-        # "OGTT10": 10, not using this subset
     }
-    bodyweights = {
+    bodyweights: ClassVar[dict[str, float]] = {
         "placebo": 55.7,
         "EMP1": 60.4,
         "EMP5": 66,
         "EMP10": 63.1,
         "EMP25": 66.4,
         "EMP100": 66,
-        # "OGTT10": 56.8,
     }  # [kg]
-    interventions = list(doses.keys())
-    colors = {
-        "placebo": "black",
-        "EMP1": "tab:blue",
-        "EMP5": "tab:green",
-        "EMP10": "tab:red",
-        "EMP25": "tab:purple",
-        "EMP100": "darkgrey",
-        # "OGTT10": "grey"
-    }
-    info = {
+    interventions: ClassVar[list[str]] = list(doses.keys())
+    info: ClassVar[dict[str, str]] = {
         "[Cve_emp]": "empagliflozin",
         "Aurine_emp": "empagliflozin_urine",
         "KI__UGE": "uge",
     }
 
-    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects, assuming 5 mM)
-    bodyweight = 78  # [kg]
-    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (healthy subjects, assuming 100 ml/min)
+    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects)
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1", "Fig2", "Tab3A"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
 
                 # unit conversion
                 if label.startswith("empagliflozin_urine"):
                     dset.unit_conversion("mean", 1 / self.Mr.emp)
 
-                dsets[f"{label}"] = dset
-
-        # console.print(dsets)
-        # console.print(dsets.keys())
+                dsets[label] = dset
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
-
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
         for intervention, dose in self.doses.items():
-            tcsims[intervention] = TimecourseSim(
-                [Timecourse(
-                    start=0,
-                    end=75 * 60,  # [min]
-                    steps=500,
-                    changes={
-                        **self.default_changes(),
-                        "BW": Q_(self.bodyweight, "kg"),
-                        "[KI__fpg]": Q_(self.fpg, "mM"),
-                        # "KI__f_renal_function": Q_(self.gfr / 100, "dimensionless"),  # [0, 1]  <=> [0, 100] gfr
-                        "PODOSE_emp": Q_(dose, "mg"),
-                    },
-                )]
+            simulations[intervention] = Simulation(
+                time_unit="hr",
+                end=75,
+                preinit_changes={
+                    **self.default_changes(),
+                    "BW": Q(self.bodyweights[intervention], "kg"),
+                    "[KI__fpg]": Q(self.fpg, "mM"),
+                    "PODOSE_emp": Q(dose, "mg"),
+                },
             )
+        return simulations
 
-        return tcsims
-
-    def fit_mappings(self) -> Dict[str, FitMapping]:
-
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
-        for kp, sid in enumerate(self.info):
-            name = self.info[sid]
+        for sid, name in self.info.items():
             for intervention in self.interventions:
-
                 if name.startswith("empagliflozin") and intervention == "placebo":
                     continue
 
@@ -116,46 +113,61 @@ class Sarashina2013(EmpagliflozinSimulationExperiment):
                         count="count",
                     ),
                     observable=FitData(
-                        self, task=f"task_{intervention}", xid="time", yid=sid,
+                        self,
+                        task=f"task_{intervention}",
+                        xid="time",
+                        yid=sid,
                     ),
-                    metadata=EmpagliflozinMappingMetaData(
-                        tissue=Tissue.PLASMA if name == "empagliflozin" else Tissue.URINE,
+                    metadata=PKPDMappingMetaData(
+                        tissue=Tissue.PLASMA
+                        if name == "empagliflozin"
+                        else Tissue.URINE,
                         route=Route.PO,
                         application_form=ApplicationForm.TABLET,
                         dosing=Dosing.SINGLE,
                         health=Health.HEALTHY,
-                        fasting=Fasting.NR,
+                        fasting=Fasting.FASTED,
                         coadministration=Coadministration.NONE,
                     ),
                 )
-
-        # console.print(mappings)
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig1_2_Tab3A",
             num_rows=1,
-            num_cols=3,
+            num_cols=4,
             name=f"{self.__class__.__name__} (Healthy)",
+            # one legend per row, right of the grid (the panels show the same
+            # doses)
+            settings={"legend_scope": "row"},
         )
-        Figure.legend_fontsize = 10
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
-        plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
-        plots[2].set_yaxis(self.label_uge, unit=self.unit_uge)
+        # Fig1B
+        plots[1].set_yaxis(
+            self.label_emp_plasma, unit=self.unit_emp, scale="log", min=1e-3
+        )
+        plots[2].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
+        plots[3].set_yaxis(self.label_uge, unit=self.unit_uge)
 
-        for kp, sid in enumerate(self.info):
-            name = self.info[sid]
-
-            for intervention in self.interventions:
-                dose = self.doses[intervention]
+        panels = [
+            ("[Cve_emp]", "empagliflozin", plots[0]),
+            ("[Cve_emp]", "empagliflozin", plots[1]),
+            ("Aurine_emp", "empagliflozin_urine", plots[2]),
+            ("KI__UGE", "uge", plots[3]),
+        ]
+        for sid, name, plot in panels:
+            for intervention, dose in self.doses.items():
                 color = self.dose_colors[dose]
                 dose_label = "Placebo" if dose == 0 else f"{dose} mg Emp"
 
-                # simulation (no legend entry)
-                plots[kp].add_data(
+                # simulation
+                plot.add_data(
                     task=f"task_{intervention}",
                     xid="time",
                     yid=sid,
@@ -163,27 +175,25 @@ class Sarashina2013(EmpagliflozinSimulationExperiment):
                     color=color,
                 )
 
+                # no empagliflozin data for placebo
                 if name.startswith("empagliflozin") and intervention == "placebo":
                     continue
 
-                # data
-                plots[kp].add_data(
+                # data (the legend entries of the plasma and the glucose, the
+                # urine has the same markers)
+                plot.add_data(
                     dataset=f"{name}_{intervention}",
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
-                    label=dose_label,
+                    label=None if "urine" in name else dose_label,
                     color=color,
                     linestyle="" if "urine" in name else "--",
                 )
 
-        return {
-            fig.sid: fig,
-        }
-
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Sarashina2013, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Sarashina2013, output_dir=Sarashina2013.__name__)

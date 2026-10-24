@@ -1,152 +1,161 @@
-from typing import Dict
+"""Simulation experiment of the study Macha2015b."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-from sbmlutils.console import console
+from typing import ClassVar, override
 
-from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
-from pkdb_models.models.empagliflozin.experiments.metadata import (
-    Tissue, Route, Dosing, ApplicationForm, Health, Fasting, Coadministration, EmpagliflozinMappingMetaData
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
 )
-from pkdb_models.models.empagliflozin.helpers import run_experiments
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.empagliflozin import MODEL
+from pkdb_models.models.empagliflozin.experiments.base_experiment import (
+    EmpagliflozinSimulationExperiment,
+)
 
 
 class Macha2015b(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Macha2015b."""
+    """Simulation experiment of Macha2015b.
 
-    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects)
-    # fpg = 7  # [mM] (healthy subjects, application with food)
-    interventions = ["emp50", "emp50, piog45"]
+    Interaction of multiple doses of empagliflozin with pioglitazone in healthy
+    subjects (study 1 of the paper, 20 white men, median 86.5 and 81.5 kg in the
+    two sequences, Table I). Empagliflozin 50 mg qd for 5 days (A), directly
+    followed by empagliflozin 50 mg with pioglitazone 45 mg qd for 7 days (B);
+    the profiles are of the last dose of each period. Both arms are simulated
+    as 5 doses: with a half-life of 9-12 hr the steady state is reached after
+    5 doses, the 7 further days of B do not change it. Pioglitazone does not
+    change the exposure of empagliflozin (GMR AUC 1.00, Cmax 0.93, Table II):
+    the arm B is the simulation of A without an interaction factor, an
+    interaction validation. Fasted overnight for A and C; B not stated,
+    assumed fasted as A.
+    """
 
-    colors = {
+    #: median body weight of the 20 subjects (86.5 and 81.5 kg, Table I)
+    bodyweight = 84.0  # [kg]
+
+    interventions: ClassVar[list[str]] = ["emp50", "emp50, piog45"]
+
+    colors: ClassVar[dict[str, str]] = {
         "emp50": "black",
         "emp50, piog45": "tab:blue",
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
-        for fig_id in ["Fig1"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
-            for label, df_label in df.groupby("label"):
-                dset = DataSet.from_df(df_label, self.ureg)
-                dsets[label] = dset
-
-        # console.print(dsets)
-        # console.print(dsets.keys())
+        df = self.load_dataframe("Fig1")
+        for label, df_label in df.groupby("label"):
+            label = str(label)
+            dsets[self.to_sid(label)] = DataSet.from_df(df_label, self.ureg)
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
-        dose = 50  # [mg]
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
+        dose = Q(50, "mg")
 
-        # Single dosing
         for intervention in self.interventions:
-            tc0 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=500,
-                changes={
+            # a dose every 24 hr for 5 days, the time is relative to the last
+            # dose; pioglitazone without an interaction factor (no effect)
+            simulations[self.to_sid(f"po_emp50_{intervention}")] = Simulation(
+                time_unit="hr",
+                end=126,
+                preinit_changes={
                     **self.default_changes(),
-                    "[KI__fpg]": Q_(self.fpg_healthy, "mM"),  # healthy reference value
-                    "KI__f_renal_function": Q_(1.0, "dimensionless"), # healthy
-                    "PODOSE_emp": Q_(dose, "mg"),
+                    "BW": Q(self.bodyweight, "kg"),
+                    "[KI__fpg]": Q(self.fpg_healthy, "mM"),  # healthy reference value
+                    "KI__f_renal_function": Q(1.0, "dimensionless"),  # healthy
+                    "PODOSE_emp": dose,
                 },
+                changes=[self.add_doses([24, 48, 72, 96], {"PODOSE_emp": dose})],
+                time_shift=-96,
             )
-            tc1 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                },
-            )
-            tc2 = Timecourse(
-                start=0,
-                end=30 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                },
-            )
+        return simulations
 
-            tcsims[f"po_emp50_{intervention}"] = TimecourseSim(
-               [tc0] + [tc1 for _ in range(3)] + [tc2],
-               time_offset=-4*24*60
-            )
-            # console.print(tcsims.keys())
-        return tcsims
-
-    def fit_mappings(self) -> Dict[str, FitMapping]:
-            mappings = {}
-            for intervention in self.interventions:
-                mappings[f"fm_po_emp50_{intervention}"] = FitMapping(
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
+        mappings = {}
+        for intervention in self.interventions:
+            mappings[self.to_sid(f"fm_po_emp50_{intervention}")] = FitMapping(
+                self,
+                reference=FitData(
                     self,
-                    reference=FitData(
-                        self,
-                        dataset=f"empagliflozin_{intervention}",
-                        xid="time",
-                        yid="mean",
-                        yid_sd="mean_sd",
-                        count="count",
-                    ),
-                    observable=FitData(
-                        self, task=f"task_po_emp50_{intervention}", xid="time", yid=f"[Cve_emp]",
-                    ),
-                    metadata=EmpagliflozinMappingMetaData(
-                        tissue=Tissue.PLASMA,
-                        route=Route.PO,
-                        application_form=ApplicationForm.TABLET,
-                        dosing=Dosing.MULTIPLE,
-                        health=Health.HEALTHY,
-                        fasting=Fasting.FASTED,  # overnight fast
-                        coadministration=Coadministration.NONE if intervention == "emp50" else Coadministration.PIOGLITAZONE,
-                    ),
-                )
-            # console.print(mappings)
-            return mappings
-
-    def figures(self) -> Dict[str, Figure]:
-            fig = Figure(
-                experiment=self,
-                sid="Fig1",
-                name=f"{self.__class__.__name__}",
-            )
-            plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time, min=-24), legend=True)
-            plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
-
-            # simulation
-            plots[0].add_data(
-                task=f"task_po_emp50_emp50",
-                xid="time",
-                yid=f"[Cve_emp]",
-                label=f"50mg Emp",
-                color="black",
-            )
-
-            label_map = {
-                "emp50": "50 mg Emp",
-                "emp50, piog45": "50 mg Emp + Piog 45 mg",
-            }
-
-            for intervention in self.interventions:
-                # data
-                plots[0].add_data(
-                    dataset=f"empagliflozin_{intervention}",
+                    dataset=self.to_sid(f"empagliflozin_{intervention}"),
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
-                    label=label_map[intervention],
-                    color=self.colors[f"{intervention}"],
-                )
+                ),
+                observable=FitData(
+                    self,
+                    task=self.to_sid(f"task_po_emp50_{intervention}"),
+                    xid="time",
+                    yid="[Cve_emp]",
+                ),
+                metadata=PKPDMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    application_form=ApplicationForm.TABLET,
+                    dosing=Dosing.MULTIPLE,
+                    health=Health.HEALTHY,
+                    fasting=Fasting.FASTED,  # overnight fast
+                    coadministration=Coadministration.NONE
+                    if intervention == "emp50"
+                    else Coadministration.PIOGLITAZONE,
+                ),
+            )
+        return mappings
 
-            return {
-                fig.sid: fig,
-            }
+    @override
+    def figures(self) -> dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="Fig1",
+            name=f"{self.__class__.__name__} (Healthy)",
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time, min=-24), legend=True
+        )
+        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+
+        # simulation
+        plots[0].add_data(
+            task="task_po_emp50_emp50",
+            xid="time",
+            yid="[Cve_emp]",
+            label="50 mg Emp",
+            color="black",
+        )
+
+        label_map = {
+            "emp50": "50 mg Emp",
+            "emp50, piog45": "50 mg Emp + Piog 45 mg",
+        }
+
+        for intervention in self.interventions:
+            # data
+            plots[0].add_data(
+                dataset=self.to_sid(f"empagliflozin_{intervention}"),
+                xid="time",
+                yid="mean",
+                yid_sd="mean_sd",
+                count="count",
+                label=label_map[intervention],
+                color=self.colors[intervention],
+            )
+
+        return self.figures_by_sid(fig)
+
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Macha2015b, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Macha2015b, output_dir=Macha2015b.__name__)

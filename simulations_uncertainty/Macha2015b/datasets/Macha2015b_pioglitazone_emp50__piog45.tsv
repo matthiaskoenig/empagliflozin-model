@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.0	hr		130.0			70.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.33	hr		460.0			450.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	0.67	hr		850.0			410.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	1.0	hr		1420.0			440.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	1.5	hr		1840.0			330.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	2.0	hr		1920.0			340.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	2.5	hr		1830.0			290.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	3.0	hr		1770.0			310.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	4.0	hr		1540.0			290.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	6.0	hr		920.0			180.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	8.0	hr		670.0			170.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	10.0	hr		480.0			110.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	12.0	hr		360.0			130.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	14.0	hr		250.0			80.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	24.0	hr		90.0			30.0		ng/ml	ng/ml	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	pioglitazone 	plasma	HPLC MS/MS	pioglitazone_emp50, piog45	36.0	hr		60.0					ng/ml	ng/ml	dimensionless

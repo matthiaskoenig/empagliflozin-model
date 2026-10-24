@@ -1,0 +1,18 @@
+study	group	count	measurement	substance	tissue	intervention	time	time_unit	mean	mean_sd	method	label	comments	mean_unit	count_unit
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	0.0	hr			HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	0.333333333333333	hr	226.43124		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	0.666666666666667	hr	665.8689		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	1.0	hr	811.7031		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	1.5	hr	827.0416		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	2.0	hr	767.54004		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	2.5	hr	723.38495		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	3.0	hr	637.0204		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	4.0	hr	552.56146		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	6.0	hr	358.6916		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	8.0	hr	262.68686		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	10.0	hr	195.46945		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	12.0	hr	149.35812		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	24.0	hr	47.335644		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	36.0	hr	20.147923		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	48.0	hr	8.3120165		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5	72.0	hr	3.837953		HPLC MS/MS	empagliflozin_emp25_multi		nmol/L	dimensionless

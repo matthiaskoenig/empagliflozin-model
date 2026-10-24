@@ -1,10 +1,6 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	8.0	hr	NA	0.0	NA	NA	NA	mg	NA
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	12.0	hr	NA	NA	NA	NA	NA	mg	NA
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	24.0	hr	NA	44.3	15.1506	NA	NA	mg	NA
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	34.0	hr	NA	NA	NA	NA	NA	mg	NA
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	48.0	hr	NA	NA	NA	NA	NA	mg	NA
-Sarashina2013	NA	placebo	12.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	72.0	hr	NA	174.0	40.542	NA	NA	mg	NA
+Sarashina2013	NA	placebo	9.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	24.0	hr	NA	44.3	NA	15.1506	NA	mg	Table 4: Ae0-24 0.0443 (34.2 %CV) g, n=9; Ae0-72 0.174 (23.3 %CV) g, n=8
+Sarashina2013	NA	placebo	8.0	placebo	cumulative amount 	glucose	urine	HPLC MS/MS	uge_placebo	72.0	hr	NA	174.0	NA	40.542	NA	mg	Table 4: Ae0-24 0.0443 (34.2 %CV) g, n=9; Ae0-72 0.174 (23.3 %CV) g, n=8
 Sarashina2013	NA	EMP1	6.0	EMP1	cumulative amount 	glucose	urine	HPLC MS/MS	uge_EMP1	2.0	hr	NA	2439.02439024386	NA	NA	NA	mg	NA
 Sarashina2013	NA	EMP1	6.0	EMP1	cumulative amount 	glucose	urine	HPLC MS/MS	uge_EMP1	4.0	hr	NA	3658.53658536582	NA	NA	NA	mg	NA
 Sarashina2013	NA	EMP1	6.0	EMP1	cumulative amount 	glucose	urine	HPLC MS/MS	uge_EMP1	6.0	hr	NA	9756.09756097558	NA	NA	NA	mg	NA

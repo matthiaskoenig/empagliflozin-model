@@ -1,0 +1,17 @@
+study	group	count	measurement	substance	tissue	intervention	time	time_unit	mean	mean_sd	method	label	comments	mean_unit	count_unit
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	0.0	hr			HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	0.333333333333333	hr	125.414406		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	0.666666666666667	hr	444.0538		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	1.0	hr	584.7201		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	1.5	hr	664.3695		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	2.0	hr	649.1059		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	2.5	hr	627.05804		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	3.0	hr	593.14575		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	4.0	hr	504.98917		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	6.0	hr	325.28152		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	8.0	hr	225.23721		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	10.0	hr	162.47173		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	12.0	hr	116.66473		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	24.0	hr	29.941948		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	36.0	hr	9.3208685		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless
+Macha2013	vera	16.0	concentration	empagliflozin	plasma	VER, EMP1	48.0	hr	3.9516938		HPLC MS/MS	empagliflozin_emp25_single, ver120_single		nmol/L	dimensionless

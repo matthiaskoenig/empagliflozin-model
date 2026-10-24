@@ -1,40 +1,35 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	se	sd	unit	comments
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	0.3	hr	NA	32.1	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	0.6	hr	NA	111.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	1.0	hr	NA	450.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	1.5	hr	NA	657.3	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	2.0	hr	NA	710.3	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	2.5	hr	NA	615.0	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	3.0	hr	NA	556.7	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	4.0	hr	NA	493.2	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	6.0	hr	NA	408.5	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	8.0	hr	NA	276.1	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	10.0	hr	NA	202.1	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	12.0	hr	NA	117.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	24.0	hr	NA	44.2	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	72.0	hr	NA	41.9	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	96.0	hr	NA	48.7	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	120.0	hr	NA	44.9	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	144.0	hr	NA	57.0	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	168.0	hr	NA	53.2	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	0.3	hr	NA	132.7	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	0.6	hr	NA	551.3	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	1.0	hr	NA	694.3	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	1.5	hr	NA	662.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	2.0	hr	NA	599.0	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	2.5	hr	NA	519.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	3.0	hr	NA	456.1	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	4.0	hr	NA	397.8	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	6.0	hr	NA	265.5	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	8.0	hr	NA	207.4	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	10.0	hr	NA	122.9	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	12.0	hr	NA	38.8	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	24.0	hr	NA	35.1	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	72.0	hr	NA	36.6	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	96.0	hr	NA	43.4	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	120.0	hr	NA	50.2	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	144.0	hr	NA	51.7	NA	NA	NA	nmol/l	NA
-Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	168.0	hr	NA	47.9	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	0.0	hr	NA	42.2	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	0.3	hr	NA	112.9	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	0.6	hr	NA	449.3	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	1.0	hr	NA	649.6	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	1.5	hr	NA	696.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	2.0	hr	NA	614.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	2.5	hr	NA	553.3	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	3.0	hr	NA	492.7	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	4.0	hr	NA	410.1	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	6.0	hr	NA	274.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	8.0	hr	NA	203.3	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	12.0	hr	NA	117.1	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp	24.0	hr	NA	39.2	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	0.3	hr	NA	140.3	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	0.6	hr	NA	554.5	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	1.0	hr	NA	693.6	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	1.5	hr	NA	665.1	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	2.0	hr	NA	597.3	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	2.5	hr	NA	522.4	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	3.0	hr	NA	461.2	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	4.0	hr	NA	397.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	6.0	hr	NA	272.2	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	8.0	hr	NA	208.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	12.0	hr	NA	126.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	24.0	hr	NA	43.4	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	48.0	hr	NA	43.4	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	72.0	hr	NA	39.8	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	96.0	hr	NA	47.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	120.0	hr	NA	47.0	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	144.0	hr	NA	50.5	NA	NA	NA	nmol/l	NA
+Macha2013e	NA	all	18.0	EMP25R7, WAR25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp, war	168.0	hr	NA	47.0	NA	NA	NA	nmol/l	NA
 Macha2013e	NA	all	18.0	WAR25	concentration	 r-warfarin	plasma	HPLC MS/MS	r_warfarin	0.3	hr	NA	819.0	NA	NA	NA	ng/ml	NA
 Macha2013e	NA	all	18.0	WAR25	concentration	 r-warfarin	plasma	HPLC MS/MS	r_warfarin	0.6	hr	NA	1177.9	NA	NA	NA	ng/ml	NA
 Macha2013e	NA	all	18.0	WAR25	concentration	 r-warfarin	plasma	HPLC MS/MS	r_warfarin	1.0	hr	NA	1205.5	NA	NA	NA	ng/ml	NA

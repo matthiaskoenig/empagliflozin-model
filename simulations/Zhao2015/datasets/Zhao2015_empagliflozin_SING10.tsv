@@ -1,0 +1,18 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	0.16	hr		19.48				re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	0.33	hr		114.7			24.2	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	0.5	hr		240.1			112.0	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	0.66	hr		324.5			137.0	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	1.0	hr		397.1			122.0	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	1.5	hr		384.3			78.6	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	2.0	hr		348.4			45.5	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	2.5	hr		319.5			69.9	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	3.0	hr		251.0			49.1	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	4.0	hr		190.3			44.9	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	6.0	hr		127.6			24.1	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	8.0	hr		94.12			16.2	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	12.0	hr		54.79			17.0	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	16.0	hr		33.55			8.26	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	24.0	hr		20.38			8.31	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	36.0	hr		6.323			5.86	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless
+Zhao2015		EMP10	9.0	SING10	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_SING10	48.0	hr		4.064			2.35	re-digitized from the vector graphics of the PDF (pkdb_data 	nmol/l	nmol/l	dimensionless

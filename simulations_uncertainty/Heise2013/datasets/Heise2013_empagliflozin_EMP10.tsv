@@ -1,0 +1,35 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.38	hr		17.57					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.48	hr		68.02					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.7	hr		98.07					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.44	hr		238.1					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	2.94	hr		163.7					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	4.01	hr		145.3					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	6.04	hr		108.5					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	8.07	hr		76.61					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	12.02	hr		47.62					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	15.97	hr		33.03					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	23.98	hr		17.57					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	30.07	hr		11.64					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	35.95	hr		7.37					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	47.91	hr		4.18					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	96.0	hr		20.53				pre-dose sample of day 5: nominal time of the Methods, digitized at 95.55 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	120.0	hr		21.88				pre-dose sample of day 6: nominal time of the Methods, digitized at 119.58 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	144.0	hr		23.76				pre-dose sample of day 7: nominal time of the Methods, digitized at 143.61 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	168.0	hr		22.91				pre-dose sample of day 8: nominal time of the Methods, digitized at 167.65 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	192.0	hr		26.04				pre-dose sample of day 9: nominal time of the Methods, digitized at 192.10 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	192.1	hr		55.63					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	192.32	hr		97.18					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	192.53	hr		169.8					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	193.39	hr		275.7					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	194.88	hr		200.2					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	195.84	hr		168.2					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	197.87	hr		122.1					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	199.8	hr		88.69					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	203.85	hr		55.63					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	207.91	hr		46.75					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	215.92	hr		27.51					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	221.8	hr		17.41					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	227.89	hr		11.02					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	239.85	hr		6.366					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	251.92	hr		3.711					nmol/l	nmol/l	dimensionless

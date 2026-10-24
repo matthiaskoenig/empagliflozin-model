@@ -1,48 +1,60 @@
+"""Collect the data of the empagliflozin studies from the PK-DB study folders.
+
+The studies are copied from a `pkdb_data` checkout (`PKDB_DATA`, else
+`../pkdb_data`, see `pkpdsim.data.studies_dir`) into the data folder of the
+model, see `pkpdsim.data.collect_tsv_files`.
+Besides the empagliflozin studies, studies of other substances have
+empagliflozin groups: Kim2023 and vanderAartvanderBeek2020 (dapagliflozin),
+Heise2015 (hydrochlorothiazide) and Macha2013 (ramipril), the data of the
+experiment Macha2013d.
+"""
+
 from pathlib import Path
-from pkdb_models.models.data import collect_tsv_files
 
-def collect_empagliflozin_data():
-    common_parent: Path = Path(__file__).parents[5]
-    source_dir = common_parent / "pkdb_data" / "studies" / "empagliflozin"
-    target_dir = Path(__file__).parent / "empagliflozin"
-    collect_tsv_files(source_dir=source_dir, target_dir=target_dir)
+from pkpdsim.data import collect_tsv_files
+from pkpdsim.data import studies_dir as pkdb_studies_dir
 
-    # Collect Kim2023 (dapagliflozin)
-    def is_Kim2023(study_name) -> bool:
-        return study_name == "Kim2023"
+from pkdb_models.models.empagliflozin import (
+    DATA_PATH_DAPAGLIFLOZIN,
+    DATA_PATH_EMPAGLIFLOZIN,
+    DATA_PATH_HCTZ,
+    DATA_PATH_RAMIPRIL,
+)
+
+#: the studies of other substances which the empagliflozin experiments use
+DAPAGLIFLOZIN_STUDIES = {"Kim2023", "vanderAartvanderBeek2020"}
+HYDROCHLOROTHIAZIDE_STUDIES = {"Heise2015"}
+RAMIPRIL_STUDIES = {"Macha2013"}
+
+
+def collect_data(studies_dir: Path | None = None) -> None:
+    """Copy the data of the empagliflozin studies into the data folder of the model.
+
+    Args:
+        studies_dir: the `studies` folder of pkdb_data, by default the one of
+            the checkout `pkpdsim.data.studies_dir` finds.
+    """
+    if studies_dir is None:
+        studies_dir = pkdb_studies_dir()
     collect_tsv_files(
-        source_dir=common_parent / "pkdb_data" / "studies" / "dapagliflozin",
-        target_dir=Path(__file__).parent / "dapagliflozin",
-        filter_study=is_Kim2023,
+        source_dir=studies_dir / "empagliflozin", target_dir=DATA_PATH_EMPAGLIFLOZIN
+    )
+    collect_tsv_files(
+        source_dir=studies_dir / "dapagliflozin",
+        target_dir=DATA_PATH_DAPAGLIFLOZIN,
+        filter_study=lambda study: study in DAPAGLIFLOZIN_STUDIES,
+    )
+    collect_tsv_files(
+        source_dir=studies_dir / "hydrochlorothiazide",
+        target_dir=DATA_PATH_HCTZ,
+        filter_study=lambda study: study in HYDROCHLOROTHIAZIDE_STUDIES,
+    )
+    collect_tsv_files(
+        source_dir=studies_dir / "ramipril",
+        target_dir=DATA_PATH_RAMIPRIL,
+        filter_study=lambda study: study in RAMIPRIL_STUDIES,
     )
 
-    # Collect Heise2015 (hydrochlorothiazide)
-    def is_Heise2015(study_name) -> bool:
-        return study_name == "Heise2015"
-    collect_tsv_files(
-        source_dir=common_parent / "pkdb_data" / "studies" / "hydrochlorothiazide",
-        target_dir=Path(__file__).parent / "hydrochlorothiazide",
-        filter_study=is_Heise2015,
-    )
-
-    # Collect vanderAartvanderBeek2020 (dapagliflozin)
-    def is_vanderAartvanderBeek2020(study_name) -> bool:
-        return study_name == "vanderAartvanderBeek2020"
-    collect_tsv_files(
-        source_dir=common_parent / "pkdb_data" / "studies" / "dapagliflozin",
-        target_dir=Path(__file__).parent / "dapagliflozin",
-        filter_study=is_vanderAartvanderBeek2020,
-    )
-
-    # Collect Macha2013 (ramipril) for Macha2013d
-    def is_Macha2013(study_name) -> bool:
-        return study_name == "Macha2013"
-    collect_tsv_files(
-        source_dir=common_parent / "pkdb_data" / "studies" / "ramipril",
-        target_dir=Path(__file__).parent / "ramipril",
-        filter_study=is_Macha2013,
-    )
 
 if __name__ == "__main__":
-    collect_empagliflozin_data()
-
+    collect_data()

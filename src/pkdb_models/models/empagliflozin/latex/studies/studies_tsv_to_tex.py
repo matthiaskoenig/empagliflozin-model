@@ -1,10 +1,12 @@
+"""Module for creating the latex table of the studies used for modeling empagliflozin."""
+
 from pathlib import Path
+
 import pandas as pd
 
 
 def create_latex_table(df: pd.DataFrame) -> str:
     """Transform .tsv into .tex table."""
-
     latex_header = r"""\begin{landscape}
 \begin{table}[H]
 \tiny
@@ -44,47 +46,76 @@ renal threshold for glucose (\emph{RTG}).
 \arrayrulecolor{black}\toprule"""
 
     # Rename columns
-    df = df.rename(columns={
-        "study": "Study",
-        "pmid": "PubMed",
-        "pkdb": "PK-DB",
-        "substance": "Substance",
-        "route": "Route",
-        "dosing": "Dosing",
-        "dose": "Dose [mg]",
-        "healthy": "H",
-        "renal impairment": "RI",
-        "hepatic impairment": "HI",
-        "t2dm": "T2",
-        "empagliflozin plasma": "EMP P",
-        "empagliflozin urine": "EMP U",
-        "empagliflozin bile": "EMP B",
-        "empagliflozin feces": "EMP F",
-        "fasting": "Fast",
-        "UGE": "UGE",
-        "FPG": "FPG",
-        "RTg": "RTG",
-    })
+    df = df.rename(
+        columns={
+            "study": "Study",
+            "pmid": "PubMed",
+            "pkdb": "PK-DB",
+            "substance": "Substance",
+            "route": "Route",
+            "dosing": "Dosing",
+            "dose": "Dose [mg]",
+            "healthy": "H",
+            "renal impairment": "RI",
+            "hepatic impairment": "HI",
+            "t2dm": "T2",
+            "empagliflozin plasma": "EMP P",
+            "empagliflozin urine": "EMP U",
+            "empagliflozin bile": "EMP B",
+            "empagliflozin feces": "EMP F",
+            "fasting": "Fast",
+            "UGE": "UGE",
+            "FPG": "FPG",
+            "RTg": "RTG",
+        }
+    )
 
     columns_bool = [
-        "H", "RI", "HI", "T2",
-        "EMP P", "EMP U", "EMP B", "EMP F",
-        "UGE", "FPG", "RTG",
+        "H",
+        "RI",
+        "HI",
+        "T2",
+        "EMP P",
+        "EMP U",
+        "EMP B",
+        "EMP F",
+        "UGE",
+        "FPG",
+        "RTG",
     ]
     for col in columns_bool:
-        df[col] = df[col].apply(lambda x: r"\checkmark" if str(x).strip().upper() == "TRUE" else "")
+        df[col] = df[col].apply(
+            lambda x: r"\checkmark" if str(x).strip().upper() == "TRUE" else ""
+        )
 
     # Select and order columns for output
     output_columns = [
-        "Study", "PubMed", "PK-DB", "Substance", "Route", "Dosing", "Dose [mg]", "Fast",
-        "EMP P", "EMP U", "EMP B", "EMP F",
-        "H", "RI", "HI", "T2",
-        "UGE", "FPG", "RTG",
+        "Study",
+        "PubMed",
+        "PK-DB",
+        "Substance",
+        "Route",
+        "Dosing",
+        "Dose [mg]",
+        "Fast",
+        "EMP P",
+        "EMP U",
+        "EMP B",
+        "EMP F",
+        "H",
+        "RI",
+        "HI",
+        "T2",
+        "UGE",
+        "FPG",
+        "RTG",
     ]
     df = df[output_columns]
 
     # Header row
-    column_headers = " & ".join([f"\\textbf{{{col}}}" for col in df.columns.tolist()]) + r" \\"
+    column_headers = (
+        " & ".join([f"\\textbf{{{col}}}" for col in df.columns.tolist()]) + r" \\"
+    )
     latex_body = (
         "\n"
         "\\hiderowcolors\n"
@@ -107,14 +138,17 @@ renal threshold for glucose (\emph{RTG}).
         pkdb = values[2]
         values[2] = f"\\href{{https://identifiers.org/pkdb:{pkdb}}}{{{pkdb}}}"
 
-        row_str = " & ".join(
-            v.replace("TRUE", r"\checkmark").replace("-", "")
-            for v in values
-        ) + r" \\"
+        row_str = (
+            " & ".join(
+                v.replace("TRUE", r"\checkmark").replace("-", "") for v in values
+            )
+            + r" \\"
+        )
 
         # fix for long name
-        row_str = row_str.replace("vanderAartvanderBeek2020 ",
-                                  r"vanderAart\-vanderBeek2020 ")
+        row_str = row_str.replace(
+            "vanderAartvanderBeek2020 ", r"vanderAart\-vanderBeek2020 "
+        )
 
         latex_body += row_str + "\n"
 
@@ -129,14 +163,13 @@ renal threshold for glucose (\emph{RTG}).
 
 
 if __name__ == "__main__":
-    tsv_path = Path(__file__).parent / 'studies_for_modeling.tsv'
-    latex_path = Path(__file__).parent / 'studies_for_modeling.tex'
+    tsv_path = Path(__file__).parent / "studies_for_modeling.tsv"
+    latex_path = Path(__file__).parent / "studies_for_modeling.tex"
 
     columns = [
         "study",
         "pmid",
         "pkdb",
-
         "substance",
         "route",
         "dosing",
@@ -144,17 +177,14 @@ if __name__ == "__main__":
         "combination",
         "species",
         "fasting",
-
         "healthy",
         "renal impairment",
         "hepatic impairment",
         "t2dm",
-
         "empagliflozin plasma",
         "empagliflozin urine",
         "empagliflozin bile",
         "empagliflozin feces",
-
         "UGE",
         "FPG",
         "glucose plasma",
@@ -162,7 +192,9 @@ if __name__ == "__main__":
     ]
 
     df = pd.read_csv(
-        tsv_path, sep="\t", skiprows=1,
+        tsv_path,
+        sep="\t",
+        skiprows=1,
         usecols=columns,
         engine="python",
         dtype={"pmid": str},
@@ -172,5 +204,5 @@ if __name__ == "__main__":
 
     latex_str = create_latex_table(df)
 
-    with open(latex_path, 'w') as f_tex:
+    with open(latex_path, "w") as f_tex:
         f_tex.write(latex_str)

@@ -1,0 +1,435 @@
+\section{Methods: Empagliflozin PBPK/PD model: fit PD}
+
+\subsection{Parameters and data}
+
+4 parameters were optimized: EC50 reduction in RTG (\texttt{KI\_\_RTG\_E50}), baseline RTG (\texttt{KI\_\_RTG\_base}), FPG effect on RTG (\texttt{KI\_\_RTG\_m\_fpg}) and maximal relative reduction of the RTG (\texttt{KI\_\_RTG\_max\_inhibition}). The parameters of the adopted fit PK\_20261019\_201013\_\_13ddc were fixed at their fitted values.
+
+A fit mapping is a curve of a study, the data and the observable of the model it is compared with. The fit has 28 fit mappings of training data with 142 data points, whose residuals enter the objective; 14 fit mappings of validation data with 101 data points, which were simulated and evaluated with the fitted parameters but not fitted; and 34 fit mappings of outliers with 136 data points, data the fit dropped as not usable, which were evaluated like the validation data so that the decision to drop them can be checked. The fit was set up and run with sbmlsim \cite{Koenig2026_sbmlsim}.
+
+\subsection{Objective function}
+
+The parameters were estimated by minimizing the objective function
+
+\begin{equation}
+F(\vec{p}) = \frac{1}{2} \sum_{k} \sum_{i} \rho\left(w_{i,k}\, r_{i,k}(\vec{p})^2\right)
+\end{equation}
+
+where $k$ runs over the fit mappings of the training data and $i$ over their data points, $r_{i,k}$ is the residual, $w_{i,k} = w_k\, w^{p}_{i,k}$ the weight of the data point and $\rho$ the loss function, applied to the squared weighted residual $z = w_{i,k}\, r_{i,k}^2$. The loss function is linear, $\rho(z) = z$, i.e. a standard least squares problem.
+
+The residuals are normalized by the mean $\overline{y}_k$ of the data of their curve, which makes curves of different quantities and magnitudes comparable:
+
+\begin{equation}
+r_{i,k} = \frac{y_{i,k} - f_k(x_{i,k}, \vec{p})}{\overline{y}_k}
+\end{equation}
+
+The weight of curve $k$ is $w_k = n_k / N_k$, the weight $n_k$ of its fit mapping (the weight its fit mapping collection assigns, 1 by default, or, for a collection which uses the weights of its mappings, the weight of the mapping, by default the number of subjects of its data) divided by the number $N_k$ of its data points.
+
+A data point is weighted with the inverse of its coefficient of variation, $w^{p}_{i,k} = |y_{i,k}| / \sigma_{i,k}$, with $\sigma_{i,k}$ the standard deviation of the data point, or its standard error for data without a standard deviation. An error of zero is missing, a missing error of a curve with errors is replaced by the largest error of the curve, and the data points of a curve without errors have the weight $w^{p}_{i,k} = 2$, the weight of a coefficient of variation of 0.5.
+
+\subsection{Optimization}
+
+The optimizer searched the parameters in log10 space within their bounds; bounds, values and intervals are given in the units of the fit parameters, the units of the table of the parameters.
+
+The objective was minimized in 3 runs with differential evolution \cite{Storn1997} of SciPy \cite{Virtanen2020} within the bounds of the parameters, with the strategy \texttt{best1bin}, a population of 15 times the number of parameters, at most 1000 generations, the relative tolerance 0.01 of convergence, the recombination constant 0.7 and a mutation dithered between 0.5 and 1. The initial population of a run was drawn by latin hypercube sampling \cite{McKay1979}, with a seed of every run derived from the seed 1234 of the fit. The best member of the final population was polished with the L-BFGS-B method of SciPy.
+
+The convergence of the runs was assessed from the traces of their cost and the waterfall plot of their final costs, and the parameter set with the lowest cost was used.
+
+The models were simulated with libRoadRunner \cite{Welsh2023} and its integrator CVODE \cite{Hindmarsh2005} with the relative tolerance $10^{-6}$ and the absolute tolerances $10^{-12}$ of an amount, $10^{-12}$ of a concentration and $10^{-6}$ of the other states, which for a species in a concentration is multiplied by the initial volume of its compartment. It ran with the variable step size of libRoadRunner, i.e. with an output at every step of the integrator. A data point at the time of a change after the start of a simulation, e.g. a dose or the reset of a collection, was compared with the state before the change, except the first data point of a curve with data at later times, which starts a collection and was compared with the state after the change.
+
+\subsection{Goodness of fit}
+
+The goodness of fit is given per kind of data (training data, validation data and outliers) by metrics over its $n$ data points with the residuals $e_i = y_i - f(x_i, \hat{\vec{p}})$ at the fitted parameters $\hat{\vec{p}}$, the mean squared error, its root and the root mean squared error normalized by the mean $\overline{y}_{k(i)}$ of the data of the curve of a point:
+
+\begin{equation}
+\mathrm{MSE} = \frac{1}{n} \sum_{i=1}^{n} e_i^2, \quad \mathrm{RMSE} = \sqrt{\mathrm{MSE}}, \quad \mathrm{NRMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\frac{e_i}{\overline{y}_{k(i)}}\right)^2}
+\end{equation}
+
+The root mean square of the residuals of the objective, i.e. what the fit minimizes, and the coefficient of determination:
+
+\begin{equation}
+\mathrm{RMSE}_w = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \rho\left(w_i\, r_i^2\right)}, \quad R^2 = 1 - \frac{\sum_{i} e_i^2}{\sum_{i} \left(y_i - \overline{y}\right)^2}
+\end{equation}
+
+The predictions of a non-linear model are no linear regression of the data, so $R^2$ can be negative: the prediction is worse than the mean of the data. The information criteria of Akaike \cite{Akaike1974} and Schwarz \cite{Schwarz1978} with the number $n_p$ of fitted parameters are those of a least squares fit with normally distributed residuals, up to an additive constant, so only differences between models fitted to the same data are meaningful:
+
+\begin{equation}
+\mathrm{AIC} = n \ln(\mathrm{MSE}) + 2 n_p, \quad \mathrm{BIC} = n \ln(\mathrm{MSE}) + n_p \ln(n)
+\end{equation}
+
+The percentage of the data points whose prediction $f_i = f(x_i, \hat{\vec{p}})$ lies within twofold of the data is taken over the $n_+$ data points with positive data $y_i > 0$ and a positive prediction $f_i > 0$; the others have no ratio and are not counted, and a kind of data without such a point has no percentage:
+
+\begin{equation}
+P_2 = \frac{100}{n_+} \left|\left\{ i : \frac{1}{2} \le \frac{f_i}{y_i} \le 2 \right\}\right|
+\end{equation}
+
+The goodness of fit plot shows the predictions against the data on logarithmic axes, with the lines of twofold $f = 2y$ and $f = y/2$. The Bland-Altman plot \cite{Bland1986} shows the ratio of prediction and data as $d_i = \log_{10}(f_i / y_i)$ against the geometric mean $\sqrt{f_i\, y_i}$ for the data points with positive values, with the bias $\overline{d}$ and the limits of agreement $\overline{d} \pm 1.96\, s_d$, with the sample standard deviation $s_d$ of $d_i$, of the training data; they are read as the fold factors $10^{\overline{d}}$ and $10^{\overline{d} \pm 1.96\, s_d}$.
+
+\subsection{Identifiability}
+
+The identifiability of the parameters was analysed with the profile likelihood \cite{Raue2009,Kreutz2013}. The profile of a parameter is the lowest objective with the parameter fixed:
+
+\begin{equation}
+\mathrm{PL}(p_j) = \min_{p_{l \neq j}} F(\vec{p})
+\end{equation}
+
+At every point of a scan the other parameters were re-optimized from the previous point with the least squares optimizer of SciPy with the relative step 0.05. A scan ran from the optimum in both directions in the space of the optimizer, with steps in decades of the parameter, starting at 0.1. A step which raised the objective by more than 0.2 of the distance between the objective at the optimum and the threshold was reduced by the factor 2 and repeated, down to 0.01, and the step after one which raised it by less than that divided by the factor was enlarged by the factor, up to 1. A scan stopped at the threshold, at the bound of the parameter, at a point which failed or after 50 points.
+
+The confidence intervals are the values at which the profile crosses the threshold of the likelihood ratio test
+
+\begin{equation}
+F_{\mathrm{thr}} = F_{\min} + \frac{\chi^2_{\alpha}(\mathrm{df})}{2}
+\end{equation}
+
+with $F_{\min}$ the lowest objective of the fit and of all profiles and $\chi^2_{\alpha}(\mathrm{df})$ the quantile of the $\chi^2$ distribution at the confidence level $\alpha = 0.95$ with df = 1 degrees of freedom, i.e. 1.92 above the lowest objective. The threshold has this confidence level if $F$ is the negative log-likelihood of the data up to a constant, i.e. if the weighted residuals are independent and normally distributed with unit variance; otherwise the level is approximate. A crossing is interpolated between two points of the profile, on the logarithm of a parameter on a logarithmic scale. A parameter is identifiable if its profile reaches the threshold within the scan on both sides of the optimum, i.e. its confidence interval is finite; practically non-identifiable towards the lower bound if its profile reaches the threshold above the optimum but not below it within the scan, which ends at the lower bound or after 50 points; practically non-identifiable towards the upper bound if its profile reaches the threshold below the optimum but not above it within the scan, which ends at the upper bound or after 50 points; practically non-identifiable if its profile reaches the threshold on neither side within the scans, which end at the bounds or after 50 points, and is not flat; and structurally non-identifiable if its profile is flat on both sides. A side of a profile is flat if it rises by less than 0.05 of the distance between the lowest objective and the threshold, and a profile with a point which failed or did not converge is not classified. The profile likelihood is preferred over the intervals of the Fisher information, its intervals are invariant under a transformation of the parameters and can be asymmetric \cite{Wieland2021}.
+
+The Fisher information is the local alternative to the profiles: it is the Gauss-Newton approximation of the curvature of the objective at the optimum, from the Jacobian $J$ of the weighted residuals of the training data with respect to the parameters $\vec{p}$ in the space of the optimizer, computed by central finite differences with the step $h_j = \epsilon \max(|p_j|, 1),\ \epsilon = 10^{-6}$ of the parameter $p_j$:
+
+\begin{equation}
+I = J^\top J, \quad \mathrm{cov} = \sigma^2 I^{-1}, \quad \sigma^2 = \frac{2 F}{n - n_p}
+\end{equation}
+
+with the number $n$ of data points of the training data and the number $n_p$ of parameters. The information has rank 4 of 4, the number of its eigenvalues above $10^{-8}$ of the largest one, and the condition number 341; the covariance of an information of a lower rank is computed with the pseudo-inverse. The Wald intervals are $\hat{p}_j \pm t_{(1+\alpha)/2,\, n-n_p}\, \mathrm{SE}_j$ with the standard errors $\mathrm{SE}_j = \sqrt{\mathrm{cov}_{jj}}$ at the confidence level $\alpha = 0.95$, transformed back into the units of the fit parameters.
+
+\subsection{Provenance}
+
+The fit PD\_20261019\_212349\_\_c28ac was run on 2026-10-19 19:23:52 UTC with sbmlsim 0.10.0 \cite{Koenig2026_sbmlsim}, libRoadRunner 2.10.0 \cite{Welsh2023}, SciPy 1.18.1 \cite{Virtanen2020}, NumPy 2.5.3 \cite{Harris2020} and Python 3.14.4 (seed 1234). The models and data were those of commit \texttt{08c12f842598ef533d44304f41ec501edf0f670d} of \texttt{/home/mkoenig/git/pkdb\_models-empagliflozin}; their SHA-256 checksums are listed in Table~\ref{tab:checksums:PD_20261019_212349__c28ac}. The fit kept the values \texttt{ftissue\_emp} = 1.11017, \texttt{Kp\_emp} = 0.23816, \texttt{ftissue\_deep\_emp} = 0.112609, \texttt{Kp\_deep\_emp} = 0.418947, \texttt{GU\_\_EMPABS\_k} = 0.0129016, \texttt{GU\_\_F\_emp\_abs} = 0.438441, \texttt{GU\_\_METEXC\_k} = $7.86 \cdot 10^{-4}$, \texttt{GU\_\_FED\_f\_absorption} = 0.549647, \texttt{EMP2EG\_k} = 0.0176462, \texttt{KI\_\_EMPSEC\_f} = 1.31094 and \texttt{KI\_\_EGEX\_f} = 1.66201 of the model fixed.
+
+\begin{longtable}{ll}
+\caption{SHA-256 checksums of the models and data of the fit PD\_20261019\_212349\_\_c28ac, their first 12 characters; the full checksums are in the provenance of the result (optimization\_result.json).}\label{tab:checksums:PD_20261019_212349__c28ac} \\
+\toprule
+File & SHA-256 \\
+\midrule
+\endfirsthead
+\multicolumn{2}{l}{\small\tablename~\thetable{} (continued)} \\
+\toprule
+File & SHA-256 \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_Fig1.tsv} & \texttt{faf8a67de950...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_Fig2.tsv} & \texttt{7419518c5dc2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_Tab2.tsv} & \texttt{e4b13d62892b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_Tab3.tsv} & \texttt{ea1325423a66...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_TabGroups.tsv} & \texttt{e6e46d776a7a...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_TabInterventions.tsv} & \texttt{00fa9049fea8...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/Kim2023/.Kim2023\_TabS2.tsv} & \texttt{aa635231e391...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/vanderAartvanderBeek2020/.vanderAartvanderBeek2020\_Fig3.tsv} & \texttt{2bd012174836...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/vanderAartvanderBeek2020/.vanderAartvanderBeek2020\_TabGroups.tsv} & \texttt{033515791883...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/vanderAartvanderBeek2020/.vanderAartvanderBeek2020\_TabIndividuals.tsv} & \texttt{77b6cfffbdb8...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/dapagliflozin/vanderAartvanderBeek2020/.vanderAartvanderBeek2020\_TabInterventions.tsv} & \texttt{86f743929d49...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Ayoub2017/.Ayoub2017\_Fig6.tsv} & \texttt{830026ab86aa...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Ayoub2017/.Ayoub2017\_Tab1.tsv} & \texttt{2191c2e86f41...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Ayoub2017/.Ayoub2017\_TabGroups.tsv} & \texttt{ab84d27300d7...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Ayoub2017/.Ayoub2017\_TabInterventions.tsv} & \texttt{2eebacd7400e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_Fig2.tsv} & \texttt{f1b64174e094...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_Fig3.tsv} & \texttt{b8564d1b1a50...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_Fig4.tsv} & \texttt{0f0f7ba3c41f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_Fig5.tsv} & \texttt{d32555572f67...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_Tab1.tsv} & \texttt{edca065d782f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_TabGroups.tsv} & \texttt{ee2e1d8b121f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Brand2012/.Brand2012\_TabInterventions.tsv} & \texttt{a0113deb79ef...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_Fig1.tsv} & \texttt{57d1bcb1699e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_Fig2.tsv} & \texttt{46fa14430531...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_Tab1.tsv} & \texttt{4274ba8eabce...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_Tab2.tsv} & \texttt{e867dab9f8cb...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_Tab2A.tsv} & \texttt{056a6134d497...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_TabGroups.tsv} & \texttt{6996658d26dc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2015a/.Chen2015a\_TabInterventions.tsv} & \texttt{0a85f5e98b81...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2020/.Chen2020\_Fig2.tsv} & \texttt{4bec8b2edb45...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2020/.Chen2020\_Tab3.tsv} & \texttt{fe8023eb0c58...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2020/.Chen2020\_TabGroups.tsv} & \texttt{febcf7e197e5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Chen2020/.Chen2020\_TabInterventions.tsv} & \texttt{4f5508a75efa...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_Fig4.tsv} & \texttt{23df1284387a...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_Fig4A.tsv} & \texttt{814ff7de2b71...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_Tab2.tsv} & \texttt{e225cf2b5de6...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_Tab2A.tsv} & \texttt{0fd121878a39...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_Tab3.tsv} & \texttt{75e407f845f1...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_TabGroups.tsv} & \texttt{4e30f7c4ce3e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_TabIndividuals.tsv} & \texttt{56829d1f73fc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/ElDash2021/.ElDash2021\_TabInterventions.tsv} & \texttt{4b1eda3294a7...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_Fig2.tsv} & \texttt{ce73993247d4...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_Fig3.tsv} & \texttt{90be18b86d0b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_Fig4.tsv} & \texttt{7d30a98b6ffe...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_Tab1.tsv} & \texttt{d1d9552db4ea...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_TabGroups.tsv} & \texttt{f8ea11cf65e0...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Friedrich2013/.Friedrich2013\_TabInterventions.tsv} & \texttt{434be09ad515...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Hailat2022/.Hailat2022\_Fig3.tsv} & \texttt{139bc766d99d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Hailat2022/.Hailat2022\_Tab1.tsv} & \texttt{e0b77505411f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Hailat2022/.Hailat2022\_TabGroups.tsv} & \texttt{8b29e335ec42...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Hailat2022/.Hailat2022\_TabInterventions.tsv} & \texttt{3876a660e5fb...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_Fig1.tsv} & \texttt{6413d99630e7...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_Fig2.tsv} & \texttt{b0d17dede829...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_Fig3.tsv} & \texttt{ed0a136d5efc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_Fig4.tsv} & \texttt{a620d58de7e6...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_Tab6.tsv} & \texttt{ff90e467e3d3...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_TabGroups.tsv} & \texttt{a9d281bb0721...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013/.Heise2013\_TabInterventions.tsv} & \texttt{0fbec9a9334c...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Fig1.tsv} & \texttt{d7ef90c081ca...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Fig2.tsv} & \texttt{66764cc30622...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Fig3.tsv} & \texttt{e992233a9aed...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Fig4.tsv} & \texttt{f11821054eb6...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Fig5.tsv} & \texttt{198d2c12a5e2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_Tab2.tsv} & \texttt{6c183fd83c95...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_TabGroups.tsv} & \texttt{31996969859e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Heise2013a/.Heise2013a\_TabInterventions.tsv} & \texttt{7213cbe2ee96...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_Fig2.tsv} & \texttt{bf9f8abfed43...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_Fig3.tsv} & \texttt{d0e372fceddf...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_Tab2.tsv} & \texttt{aee5392d871d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_TabGroups.tsv} & \texttt{c2d1464f4014...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_TabIndividuals.tsv} & \texttt{659b312ed557...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Jiang2023b/.Jiang2023b\_TabInterventions.tsv} & \texttt{892e79317068...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_Fig3.tsv} & \texttt{15c006f54d5b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_Fig4.tsv} & \texttt{b9e087186bd9...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_Tab1.tsv} & \texttt{93751dfde883...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_TabGroups.tsv} & \texttt{273123c26d6a...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_TabIndividuals.tsv} & \texttt{0bd41eeee9de...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Kim2021/.Kim2021\_TabInterventions.tsv} & \texttt{4c4dad71776d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_Fig1.tsv} & \texttt{ecc2db7ac712...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_Fig2.tsv} & \texttt{2b0f88f25bf3...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_Fig3.tsv} & \texttt{b25c2a39c8f6...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_Tab2.tsv} & \texttt{29a57164aeee...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_Tab3.tsv} & \texttt{5dfd88cb9326...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_TabGroups.tsv} & \texttt{0bdd74a75fb5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Laffel2018/.Laffel2018\_TabInterventions.tsv} & \texttt{42e5e466779f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Li2020/.Li2020\_Fig2.tsv} & \texttt{f6a0bc9ad8e0...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Li2020/.Li2020\_Fig3.tsv} & \texttt{13a4e31ce31c...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Li2020/.Li2020\_Tab3.tsv} & \texttt{f4f5e90d19a1...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Li2020/.Li2020\_TabGroups.tsv} & \texttt{e40e7e0fc7fc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Li2020/.Li2020\_TabInterventions.tsv} & \texttt{dc30a2e7e11d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_Fig2.tsv} & \texttt{5eba5b683159...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_Fig3.tsv} & \texttt{a7baa9ad84c1...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_Tab1.tsv} & \texttt{5bba81ffec82...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_Tab3.tsv} & \texttt{7896cd6a0da5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_Tab4.tsv} & \texttt{f5441082ceda...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_TabGroups.tsv} & \texttt{469a88aeb4e7...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2013e/.Macha2013e\_TabInterventions.tsv} & \texttt{aeedec7c1ba5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014/.Macha2014\_Fig2.tsv} & \texttt{64103c1b3835...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014/.Macha2014\_Tab1.tsv} & \texttt{482297f66665...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014/.Macha2014\_Tab3.tsv} & \texttt{c89423f30f44...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014/.Macha2014\_TabGroups.tsv} & \texttt{aa804cc647f2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014/.Macha2014\_TabInterventions.tsv} & \texttt{977f0b85a2db...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Fig1.tsv} & \texttt{7984385f17ef...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Fig2.tsv} & \texttt{5f6cb4a3b7a4...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Fig3.tsv} & \texttt{d4cfdc0a58e0...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Fig4.tsv} & \texttt{3eb1173888bf...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Tab2.tsv} & \texttt{31975c12e873...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Tab2A.tsv} & \texttt{bd22c15fe9b7...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_Tab3.tsv} & \texttt{9635c12ff03b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_TabGroups.tsv} & \texttt{ed54e906b8bc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014b/.Macha2014b\_TabInterventions.tsv} & \texttt{603876050f2d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Fig1.tsv} & \texttt{486c6e92cd65...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Fig2.tsv} & \texttt{45fb47931361...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Fig3.tsv} & \texttt{06452568f722...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Tab2.tsv} & \texttt{e07df4ea2ace...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Tab2A.tsv} & \texttt{4818f5711ffc...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_Tab3.tsv} & \texttt{baa87c63714f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_TabGroups.tsv} & \texttt{da12d850fb3a...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_TabIndividuals.tsv} & \texttt{8ad7624005d0...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2014f/.Macha2014f\_TabInterventions.tsv} & \texttt{c031bba350a4...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_Fig1.tsv} & \texttt{64dc19c03c72...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_Fig2.tsv} & \texttt{013016491f42...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_Tab1.tsv} & \texttt{649990a63a30...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_Tab3.tsv} & \texttt{0dbd04083a8c...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_TabGroups.tsv} & \texttt{255c9ce6f0ee...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015a/.Macha2015a\_TabInterventions.tsv} & \texttt{f2e343c95254...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_Fig1.tsv} & \texttt{3188f476d4ff...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_Fig2.tsv} & \texttt{8c345124298b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_Tab2.tsv} & \texttt{0cce3a48008b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_Tab3.tsv} & \texttt{26fcd8a60d80...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_TabGroups.tsv} & \texttt{dbb37920ec4d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Macha2015b/.Macha2015b\_TabInterventions.tsv} & \texttt{3aa158e0c03b...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_Fig1.tsv} & \texttt{625ee750d33c...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_Fig2.tsv} & \texttt{be4ca6647519...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_Tab3.tsv} & \texttt{e7344722f126...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_Tab3A.tsv} & \texttt{e94b66f82261...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_Tab4.tsv} & \texttt{167a08800632...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_TabGroups.tsv} & \texttt{b6589c4c6e2e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2013/.Sarashina2013\_TabInterventions.tsv} & \texttt{f34554ff6454...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Fig1.tsv} & \texttt{c15ac607e233...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Fig1a.tsv} & \texttt{95428928bacb...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Fig1b.tsv} & \texttt{2d77b9683cf3...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Fig2.tsv} & \texttt{60a1f380087e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Fig3.tsv} & \texttt{ea969a16f891...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Tab2.tsv} & \texttt{26a04cc5bcec...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Tab2A.tsv} & \texttt{28e5726006c5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Tab3.tsv} & \texttt{43e1c2002719...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_Tab4.tsv} & \texttt{43e1c2002719...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_TabGroups.tsv} & \texttt{5239cd993a79...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_TabIndividuals.tsv} & \texttt{d3ba6b5a9c42...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Sarashina2014/.Sarashina2014\_TabInterventions.tsv} & \texttt{8f4432e2a943...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Fig1.tsv} & \texttt{6689b6ff1369...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Fig1B.tsv} & \texttt{cbfa4e727ac3...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Fig2.tsv} & \texttt{26e9fb34bb19...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Fig3.tsv} & \texttt{8f6f4a009c76...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Fig4.tsv} & \texttt{2855782ec180...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_FigFDA.tsv} & \texttt{3307049f5fb2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_FigS2.tsv} & \texttt{f6220577dd43...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_Tab2.tsv} & \texttt{58b3dae648c4...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_TabGroups.tsv} & \texttt{dbdbdc5278c5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Seman2013/.Seman2013\_TabInterventions.tsv} & \texttt{1aa149a8084d...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_Fig1.tsv} & \texttt{a4b3adb4b3b2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_Fig2.tsv} & \texttt{1e60ba0b71b2...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_Fig3.tsv} & \texttt{22e8fc0b167e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_Tab2.tsv} & \texttt{f50819960480...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_Tab2A.tsv} & \texttt{898bbb3de684...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_TabGroups.tsv} & \texttt{10036e554ebe...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/empagliflozin/Zhao2015/.Zhao2015\_TabInterventions.tsv} & \texttt{580c944a9681...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Fig2.tsv} & \texttt{9a4c50ada866...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Fig3.tsv} & \texttt{2c65a0ec9ef3...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Fig4.tsv} & \texttt{8a0cb6a070e5...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Tab1.tsv} & \texttt{9af04c16cfb8...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Tab3.tsv} & \texttt{55f53bccd224...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Tab3A.tsv} & \texttt{0de829681d4f...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_Tab4.tsv} & \texttt{4dbd8f06fbf0...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_TabGroups.tsv} & \texttt{d77f4251d594...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/hydrochlorothiazide/Heise2015/.Heise2015\_TabInterventions.tsv} & \texttt{36a7fdc8e888...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Fig1.tsv} & \texttt{85e4de7ac42e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Fig2.tsv} & \texttt{8f2eeeb33441...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Fig3.tsv} & \texttt{c82a126e2ac4...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Tab1.tsv} & \texttt{5ea0ef78b354...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Tab2.tsv} & \texttt{6147a2f4e148...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_Tab3.tsv} & \texttt{621e637eef09...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_TabGroups.tsv} & \texttt{2d2a7b78ab5e...} \\
+\texttt{pkdb\_models/models/empagliflozin/data/ramipril/Macha2013/.Macha2013\_TabInterventions.tsv} & \texttt{8d1bec3da575...} \\
+\texttt{pkdb\_models/models/empagliflozin/models/output/models/empagliflozin\_body\_flat.xml} & \texttt{0266983f38cf...} \\
+\end{longtable}
+
+\section{Results: Empagliflozin PBPK/PD model: fit PD}
+
+\subsection{Parameters}
+
+\begin{longtable}{llrlrl}
+\caption{Parameters of the fit PD\_20261019\_212349\_\_c28ac, the parameter set PD\_20261019\_212349\_\_c28ac\_0, cost 117, with their bounds in the optimization. The 95\% confidence intervals are those of the profile likelihood, LB and UB an interval which is open towards the lower or the upper bound, and the Wald intervals of the Fisher information for a parameter without a profile. Identifiable is the classification of the profile: yes, no (LB) or no (UB) if the profile does not reach the threshold towards the lower or the upper bound, no if it reaches it on neither side, structural if it is flat.}\label{tab:parameters:PD_20261019_212349__c28ac} \\
+\toprule
+Parameter & Description & Value [95\% CI] & Unit & Bounds & Identifiable \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\small\tablename~\thetable{} (continued)} \\
+\toprule
+Parameter & Description & Value [95\% CI] & Unit & Bounds & Identifiable \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\texttt{KI\_\_RTG\_E50} & EC50 reduction in RTG & 4.09e-06 [3.27e-06, 5.34e-06] & mmol/l & [1e-07, 0.0001] & yes \\
+\texttt{KI\_\_RTG\_base} & baseline RTG & 11.7 [11.6, 11.9] & mmol/l & [8, 14] & yes \\
+\texttt{KI\_\_RTG\_m\_fpg} & FPG effect on RTG & 2.42 [2.06, 2.88] & dimensionless & [0.1, 5] & yes \\
+\texttt{KI\_\_RTG\_max\_inhibition} & maximal relative reduction of the RTG & 0.693 [0.674, 0.714] & dimensionless & [0.3, 0.95] & yes \\
+\end{longtable}
+
+\subsection{Data}
+
+\begin{longtable}{lrrrr}
+\caption{Data of the fit PD\_20261019\_212349\_\_c28ac: the number of fit mappings and, in parentheses, of data points per study and kind. The training data enters the cost, the validation data and the outliers are evaluated only.}\label{tab:data:PD_20261019_212349__c28ac} \\
+\toprule
+Study & Training & Validation & Outlier & Total \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\small\tablename~\thetable{} (continued)} \\
+\toprule
+Study & Training & Validation & Outlier & Total \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+ElDash2021 & - & - & 34 (136) & 34 (136) \\
+Heise2013 & 5 (15) & - & - & 5 (15) \\
+Heise2013a & 4 (12) & - & - & 4 (12) \\
+Kim2023 & 1 (1) & 1 (1) & - & 2 (2) \\
+Macha2014b & 1 (8) & 3 (24) & - & 4 (32) \\
+Macha2014f & 1 (8) & 4 (32) & - & 5 (40) \\
+Macha2015a & 2 (8) & - & - & 2 (8) \\
+Sarashina2013 & 6 (47) & - & - & 6 (47) \\
+Sarashina2014 & - & 4 (32) & - & 4 (32) \\
+Seman2013 & 8 (43) & 2 (12) & - & 10 (55) \\
+Total & 28 (142) & 14 (101) & 34 (136) & 76 (379) \\
+\end{longtable}
+
+\subsection{Goodness of fit}
+
+\begin{longtable}{lrrrrrrrrrr}
+\caption{Goodness of fit of the fit PD\_20261019\_212349\_\_c28ac per kind of data, the parameter set PD\_20261019\_212349\_\_c28ac\_0. The cost is defined on the training data only, 2-fold is the percentage of the data points with a positive value and prediction whose prediction is within twofold of the data.}\label{tab:metrics:PD_20261019_212349__c28ac} \\
+\toprule
+Kind & n & cost & MSE & RMSE & NRMSE & RMSE\_w & R\ensuremath{^{2}} & 2-fold [\%] & AIC & BIC \\
+\midrule
+\endfirsthead
+\multicolumn{11}{l}{\small\tablename~\thetable{} (continued)} \\
+\toprule
+Kind & n & cost & MSE & RMSE & NRMSE & RMSE\_w & R\ensuremath{^{2}} & 2-fold [\%] & AIC & BIC \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+training & 142 & 117 & 581 & 24.1 & 0.472 & 1.28 & 0.678 & 88.0 & 911.9 & 923.7 \\
+validation & 101 & - & 819 & 28.6 & 0.593 & 1.1 & 0.557 & 94.1 & 685.6 & 696.0 \\
+outlier & 136 & - & 348 & 18.7 & 4.05 & 3.3 & -8.42 & 19.9 & 803.9 & 815.5 \\
+\end{longtable}
+
+\subsection{Figures}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{plots/traces.png}
+\caption{Cost of the optimizers over their steps, fit PD\_20261019\_212349\_\_c28ac. The cost of every optimization run over its steps. Runs which end at the same cost found the same optimum; a run which stops much higher is stuck in a local minimum.}
+\label{fig:traces:PD_20261019_212349__c28ac}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{plots/waterfall.png}
+\caption{Cost of the optimization runs, ordered, fit PD\_20261019\_212349\_\_c28ac. The final cost of the runs, ordered. A flat plateau at the left is the global optimum found repeatedly, which is the evidence that the multistart converged; steps to the right are local minima.}
+\label{fig:waterfall:PD_20261019_212349__c28ac}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{plots/goodness_of_fit.png}
+\caption{Prediction against the measured data points, per kind of fit mapping, with the agreement of the training data, the lines of twofold and the metrics of the panel, fit PD\_20261019\_212349\_\_c28ac. Within twofold of the data are 117 of the 133 training data points (88.0\%), 95 of the 101 validation data points (94.1\%) and 27 of the 136 outlier data points (19.9\%); only the data points with a positive value and prediction are counted. Prediction against measurement, one point per data point, with a panel per kind of fit mapping. The points scatter around the diagonal when the model describes the data; a systematic deviation from it is a systematic error of the model. The band is the agreement of the training data, i.e. the same band the Bland-Altman plot draws, here as lines parallel to the diagonal. The dark red dotted lines are twofold, prediction = 2 x measurement and prediction = measurement / 2; the caption states the points between them of every kind. A point which is zero or negative is not drawn on the logarithmic axes and not counted, the title of a panel then states the points drawn of all. The validation panel shows how the fit describes data it was not fitted on, the outlier panel the data the fit dropped. The box of a panel carries its R\ensuremath{^{2}}, its normalized RMSE, the RMSE of the residuals of the cost, its fold errors GMFE and AFE and the percentages of its points within twofold and within two standard deviations of the data.}
+\label{fig:goodness_of_fit:PD_20261019_212349__c28ac}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{plots/bland_altman.png}
+\caption{Agreement of prediction and measurement as a ratio, per kind of fit mapping, with the agreement of the training data and the agreement of the panel, fit PD\_20261019\_212349\_\_c28ac. The ratio of prediction and measurement over the geometric mean of the two, i.e. the goodness of fit with the diagonal turned into the horizontal. The band is the same, the bias and the limits of agreement \texttt{bias \ensuremath{\pm} 1.96 SD} of the training data as fold factors. A bias away from 1 is a systematic over- or underprediction, wide limits are a large scatter, and a trend over the mean is a model which describes the large or the small values better. The box of a panel carries the bias and the SD of its own points as fold factors and the share of them inside the limits of agreement of the training data.}
+\label{fig:bland_altman:PD_20261019_212349__c28ac}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{plots/profiles.png}
+\caption{Profile likelihood of every parameter: the cost with the parameter fixed and the other parameters optimized, the threshold of the confidence level and the confidence interval, fit PD\_20261019\_212349\_\_c28ac. One profile per parameter. A profile which crosses the dashed threshold on both sides gives a finite confidence interval; one which stays below it up to a bound is practically non-identifiable; a flat profile is structurally non-identifiable, the parameter is compensated by the others.}
+\label{fig:profiles:PD_20261019_212349__c28ac}
+\end{figure}
+
+\subsection{Provenance}
+
+\begin{longtable}{ll}
+\caption{Provenance of the fit PD\_20261019\_212349\_\_c28ac: the versions it ran with and the revision of its models and data; the SHA-256 checksums of the models and data are listed in Table~\ref{tab:checksums:PD_20261019_212349__c28ac}.}\label{tab:provenance:PD_20261019_212349__c28ac} \\
+\toprule
+Item & Value \\
+\midrule
+\endfirsthead
+\multicolumn{2}{l}{\small\tablename~\thetable{} (continued)} \\
+\toprule
+Item & Value \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Fit & \texttt{PD\_20261019\_212349\_\_c28ac} \\
+Created & 2026-10-19 19:23:52 UTC \\
+Seed & 1234 \\
+Python & 3.14.4 \\
+sbmlsim & 0.10.0 \\
+libRoadRunner & 2.10.0 \\
+SciPy & 1.18.1 \\
+NumPy & 2.5.3 \\
+Repository & \texttt{/home/mkoenig/git/pkdb\_models-empagliflozin} \\
+Commit & \texttt{08c12f842598ef533d44304f41ec501edf0f670d} \\
+Uncommitted changes & no \\
+\end{longtable}
+
+\bibliographystyle{unsrt}
+\bibliography{references}

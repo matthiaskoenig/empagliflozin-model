@@ -1,0 +1,10 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	2.0	hr		0.0017741899713911					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	4.0	hr		0.0126411035461622					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	6.0	hr		0.0321571932314653					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	8.0	hr		0.0533365860149476					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	12.0	hr		0.0846066842607172					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	24.0	hr		0.123638863631323					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	34.0	hr		0.14448559579517					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	48.0	hr		0.158790002439511					µmole	µmole	dimensionless
+Seman2013		EMP0.5	6.0	EMP0.5	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_EMP0.5	72.0	hr		0.169213368521434					µmole	µmole	dimensionless

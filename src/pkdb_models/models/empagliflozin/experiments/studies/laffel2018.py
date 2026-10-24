@@ -1,122 +1,148 @@
-from typing import Dict
+"""Simulation experiment of the study Laffel2018."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
+from typing import ClassVar, override
+
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
 from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
+from sbmlsim.simulation import Simulation
 
-from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData, Coadministration
-from pkdb_models.models.empagliflozin.helpers import run_experiments
+from pkdb_models.models.empagliflozin import MODEL
+from pkdb_models.models.empagliflozin.experiments.base_experiment import (
+    EmpagliflozinSimulationExperiment,
+)
 
 
 class Laffel2018(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Laffel2018."""
+    """Simulation experiment of Laffel2018 (pediatric T2DM)."""
 
-    groups = {
-        "EMP5":  {"dose": 5,  "bw": 90.0,  "fpg": 8.5, "gfr": 178.3},
+    #: dose [mg], body weight [kg], fasting plasma glucose [mM] and eGFR
+    #: [ml/min/1.73 m2] of the groups (Table 1); the renal function is the
+    #: eGFR normalized to the body surface over the GFR of healthy adults (the
+    #: GFR of the model scales with the body weight, the absolute GFR of the
+    #: adolescents of 90-111 kg would be about 210-260 ml/min)
+    groups: ClassVar[dict[str, dict[str, float]]] = {
+        "EMP5": {"dose": 5, "bw": 90.0, "fpg": 8.5, "gfr": 178.3},
         "EMP10": {"dose": 10, "bw": 111.0, "fpg": 8.6, "gfr": 162.3},
-        "EMP25": {"dose": 25, "bw": 91.1,  "fpg": 6.4, "gfr": 157.3},
+        "EMP25": {"dose": 25, "bw": 91.1, "fpg": 6.4, "gfr": 157.3},
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
-        for fig_id in ["Fig1"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
-            for label, df_label in df.groupby("label"):
-                dset = DataSet.from_df(df_label, self.ureg)
-                # if label.startswith("EMP"):
-                #    dset.unit_conversion("mean", 1 / self.Mr.emp)
-                dsets[f"{label}"] = dset
+        df = self.load_dataframe("Fig1")
+        for label, df_label in df.groupby("label"):
+            label = str(label)
+            dsets[label] = DataSet.from_df(df_label, self.ureg)
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
         for group, params in self.groups.items():
-            tcsims[f"po_{group}"] = TimecourseSim(
-                [Timecourse(
-                    start=0,
-                    end=50 * 60,  # [min]
-                    steps=500,
-                    changes={
-                        **self.default_changes(),
-                        "BW": Q_(params["bw"], "kg"),
-                        "[KI__fpg]": Q_(params["fpg"], "mM"),
-                        "KI__f_renal_function": Q_(params["gfr"] / 100, "dimensionless"),
-                        "PODOSE_emp": Q_(params["dose"], "mg"),
-                    },
-                )]
+            simulations[f"po_{group}"] = Simulation(
+                time_unit="hr",
+                end=50,
+                preinit_changes={
+                    **self.default_changes(),
+                    "BW": Q(params["bw"], "kg"),
+                    "[KI__fpg]": Q(params["fpg"], "mM"),
+                    "KI__f_renal_function": Q(
+                        params["gfr"] / self.gfr_healthy, "dimensionless"
+                    ),
+                    "PODOSE_emp": Q(params["dose"], "mg"),
+                },
             )
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
-        for group, params in self.groups.items():
-            mappings[f"fm_po_{group}"] = FitMapping(
+        for group in self.groups:
+            mappings[f"fm_laffel2018_po_{group}"] = FitMapping(
                 self,
                 reference=FitData(
                     self,
                     dataset=f"{group}_concentration",
                     xid="time",
                     yid="mean",
-                    yid_sd="mean_sd",
+                    yid_sd=None,  # the figure has no SD
                     count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_po_{group}", xid="time", yid="[Cve_emp]",
+                    self,
+                    task=f"task_po_{group}",
+                    xid="time",
+                    yid="[Cve_emp]",
                 ),
-                metadata=EmpagliflozinMappingMetaData(
+                metadata=PKPDMappingMetaData(
                     tissue=Tissue.PLASMA,
                     route=Route.PO,
                     application_form=ApplicationForm.TABLET,
                     dosing=Dosing.SINGLE,
                     health=Health.T2DM,
-                    fasting=Fasting.FED,
+                    # dosed in the morning before breakfast
+                    fasting=Fasting.FASTED,
                     coadministration=Coadministration.NONE,
                 ),
             )
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig1",
+            num_cols=2,
             name=f"{self.__class__.__name__} (T2DM, Pediatric)",
         )
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
+        # linear (a) and semi-log (b) as in the paper
         plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots[1].set_yaxis(
+            self.label_emp_plasma, unit=self.unit_emp, scale="log", min=1e-3
+        )
 
-        for group, params in self.groups.items():
-            dose = params["dose"]
-            color = self.dose_colors[dose]
-            label = f"{dose} mg Emp"
+        for plot in plots:
+            for group, params in self.groups.items():
+                dose = params["dose"]
+                color = self.dose_colors[dose]
+                label = f"{dose} mg Emp"
 
-            # simulation
-            plots[0].add_data(
-                task=f"task_po_{group}",
-                xid="time",
-                yid="[Cve_emp]",
-                label=label,
-                color=color,
-            )
-            # data
-            plots[0].add_data(
-                dataset=f"{group}_concentration",
-                xid="time",
-                yid="mean",
-                yid_sd="mean_sd",
-                count="count",
-                label=label,
-                color=color,
-            )
+                # simulation
+                plot.add_data(
+                    task=f"task_po_{group}",
+                    xid="time",
+                    yid="[Cve_emp]",
+                    label=label,
+                    color=color,
+                )
+                # data
+                plot.add_data(
+                    dataset=f"{group}_concentration",
+                    xid="time",
+                    yid="mean",
+                    yid_sd=None,  # the figure has no SD
+                    count="count",
+                    label=label,
+                    color=color,
+                )
 
-        return {
-            fig.sid: fig,
-        }
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Laffel2018, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Laffel2018, output_dir=Laffel2018.__name__)

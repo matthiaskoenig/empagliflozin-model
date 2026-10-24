@@ -1,0 +1,2 @@
+study	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	min	max	mean_sd	mean_se	cv	comments	mean_unit	median_unit	count_unit
+Zhao2015	EMP25	9.0	MULTI25	cumulative amount	empagliflozin	urine	HPLC MS/MS	empagliflozin_urine_MULTI25	216.0	hr	11.864921746960029				2.847581219270406			fe0-24 x dose / Mr (Table II); day 1 single dose, day 9 at steady state	µmole	µmole	dimensionless

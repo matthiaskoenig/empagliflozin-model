@@ -1,29 +1,59 @@
-from typing import Dict
+"""Simulation experiment of the study Chen2015a."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Simulation
+
+from pkdb_models.models.empagliflozin import MODEL
 from pkdb_models.models.empagliflozin.experiments.base_experiment import (
     EmpagliflozinSimulationExperiment,
 )
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData
-
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.empagliflozin.helpers import run_experiments
 
 
 class Chen2015a(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Chen2015a."""
+    """Simulation experiment of Chen2015a.
 
-    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects, assuming 5 mM)
+    Mass balance of eight healthy men (79 kg): a single oral solution of 50 mg
+    empagliflozin with about 100 µCi [14C]-empagliflozin after an overnight
+    fast of 10 hr (no food until 4 hr after the dose). Plasma (Fig2), urine
+    and feces (Fig1) of empagliflozin (LC-MS/MS) and of the total
+    radioactivity, the metabolites by radiochromatography (Table 2).
+
+    The glucuronide in plasma is the sum of the glucuronides M626/1, M626/2 and
+    M626/3 of Table 2 (2, 6 and 12 hr). The curve "EG_plasma" of the curation
+    is the plasma radioactivity minus the empagliflozin of the LC-MS/MS assay
+    (zero up to 1 hr, where the assays disagree): it underestimates the
+    glucuronides of Table 2 about twofold. The glucuronide in urine is the
+    urinary radioactivity minus empagliflozin (26.5 % of the dose at 96 hr, the
+    glucuronides of Table 2 are 23.1 %, the rest are oxidative metabolites).
+    No glucuronide is found in the feces: the fecal curves are the fecal
+    radioactivity times the fraction of empagliflozin (82.9 %) of the pooled
+    feces, "EG_feces" (the remaining 17.1 %, oxidative metabolites and
+    unidentified radioactivity) is not mapped.
+    """
+
+    fpg = EmpagliflozinSimulationExperiment.fpg_healthy  # [mM] (healthy subjects)
     bodyweight = 79  # [kg]
-    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (healthy subjects, assuming 100 ml/min)
 
-    info = {
+    #: the glucuronides of empagliflozin in Table 2
+    glucuronides: ClassVar[list[str]] = ["C14-M626/1", "C14-M626/2", "C14-M626/3"]
+
+    # datasets are named "<species>_<tissue>"
+    info: ClassVar[dict[str, str]] = {
         # Fig2
         "[Cve_emptot]": "EMPTOT_plasma",
         "[Cve_emp]": "EMP_plasma",
@@ -31,92 +61,106 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
         # Fig1
         "Afeces_emptot": "EMPTOT_feces",
         "Afeces_emp": "EMP_feces",
-        "Afeces_eg": "EG_feces",
         "Aurine_emptot": "EMPTOT_urine",
         "Aurine_emp": "EMP_urine",
         "Aurine_eg": "EG_urine",
     }
-    colors = {
+    colors: ClassVar[dict[str, str]] = {
         "[Cve_emptot]": "black",
         "[Cve_emp]": "tab:blue",
         "[Cve_eg]": "tab:orange",
         # Fig1
         "Afeces_emptot": "black",
         "Afeces_emp": "tab:blue",
-        "Afeces_eg": "tab:orange",
         "Aurine_emptot": "black",
-        "Aurine_emp":  "tab:blue",
+        "Aurine_emp": "tab:blue",
         "Aurine_eg": "tab:orange",
     }
+    tissues: ClassVar[dict[str, Tissue]] = {
+        "plasma": Tissue.PLASMA,
+        "urine": Tissue.URINE,
+        "feces": Tissue.FECES,
+    }
+    # panel of the figure by tissue
+    panels: ClassVar[dict[str, int]] = {"plasma": 0, "urine": 1, "feces": 2}
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1", "Fig2"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
+                dsets[label] = dset
 
-                dsets[f"{label}"] = dset
+        # the glucuronides in plasma, the sum of Table 2
+        df = self.load_dataframe("Tab2")
+        df = df[df.substance.isin(self.glucuronides)]
+        df_eg = df[df.substance == self.glucuronides[0]].copy()
+        df_eg["mean"] = df.groupby("time")["mean"].sum().loc[df_eg.time].to_numpy()
+        df_eg["substance"] = "empagliflozin-glucuronide"
+        df_eg["label"] = "EG_plasma_Tab2"
+        dsets["EG_plasma_Tab2"] = DataSet.from_df(df_eg, self.ureg)
 
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
 
-        tcsims[f"po_C14EMP"] = TimecourseSim(
-            [Timecourse(
-                start=0,
-                end=180 * 60,  # [min]
-                steps=2000,
-                changes={
-                    **self.default_changes(),
-                    "BW": Q_(self.bodyweight, "kg"),
-                    "[KI__fpg]": Q_(self.fpg, "mM"),
-                    "KI__f_renal_function": Q_(self.gfr/100, "dimensionless"),   # [0, 1]  <=> [0, 100] gfr
-                    "PODOSE_emp": Q_(50, "mg"),  # radioactive empagliflozin dose and nonradioactive (49.1 + 0.9)
-                },
-            )]
+        simulations["po_C14EMP"] = Simulation(
+            time_unit="hr",
+            end=180,
+            preinit_changes={
+                **self.default_changes(),
+                "BW": Q(self.bodyweight, "kg"),
+                "[KI__fpg]": Q(self.fpg, "mM"),
+                # 49.1 mg empagliflozin plus 0.9 mg [14C]-empagliflozin
+                "PODOSE_emp": Q(50, "mg"),
+            },
         )
 
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
-
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
-        for sid, name in self.info.items():
-            if name.endswith("_plasma"):
-                tissue = Tissue.PLASMA
-            elif name.endswith("_urine"):
-                tissue = Tissue.URINE
-            elif name.endswith("_feces"):
-                tissue = Tissue.FECES
-
+        datasets = {name: sid for sid, name in self.info.items()}
+        # the glucuronides of Table 2
+        datasets["EG_plasma_Tab2"] = "[Cve_eg]"
+        for name, sid in datasets.items():
+            tissue = name.split("_")[1]
             mappings[f"fm_po_emp_{name}"] = FitMapping(
                 self,
                 reference=FitData(
                     self,
-                    dataset=f"{name}",
+                    dataset=name,
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
                 ),
                 observable=FitData(
-                    self, task=f"task_po_C14EMP", xid="time", yid=f"{sid}",
+                    self,
+                    task="task_po_C14EMP",
+                    xid="time",
+                    yid=sid,
                 ),
-                metadata=EmpagliflozinMappingMetaData(
-                    tissue=tissue,
+                metadata=PKPDMappingMetaData(
+                    tissue=self.tissues[tissue],
                     route=Route.PO,
                     application_form=ApplicationForm.SOLUTION,
                     dosing=Dosing.SINGLE,
                     health=Health.HEALTHY,
-                    fasting=Fasting.NR,
+                    fasting=Fasting.FASTED,
+                    coadministration=Coadministration.NONE,
                 ),
             )
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig1_2",
@@ -124,36 +168,30 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
             num_cols=3,  # plasma | urine | feces
             name=f"{self.__class__.__name__} (Healthy)",
         )
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
-        plots[0].set_yaxis(label="Plasma", unit=self.unit_emp)
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
+        plots[0].set_xaxis(self.label_time, unit=self.unit_time, min=-0.05, max=25)
+        plots[1].set_xaxis(self.label_time, unit=self.unit_time, min=-0.05, max=150)
+        plots[0].set_yaxis(label="Plasma", unit=self.unit_emp, min=-0.05)
         plots[1].set_yaxis(label="Urine", unit=self.unit_emp_urine)
         plots[2].set_yaxis(label="Feces", unit=self.unit_emp_feces)
-        plots[0].xaxis.min = -0.05
-        plots[0].xaxis.max = 25
-        plots[0].yaxis.min = -0.05
-        plots[1].xaxis.min = -0.05
-        plots[1].xaxis.max = 150
+
+        # the glucuronides of Table 2
+        plots[0].add_data(
+            dataset="EG_plasma_Tab2",
+            xid="time",
+            yid="mean",
+            yid_sd="mean_sd",
+            count="count",
+            label="50 mg Emp (EG, Tab2)",
+            color=self.colors["[Cve_eg]"],
+            marker="s",
+        )
 
         for sid, name in self.info.items():
-            if name.endswith("_plasma"):
-                kp = 0
-            elif name.endswith("_urine"):
-                kp = 1
-            elif name.endswith("_feces"):
-                kp = 2
-
-            label_map = {
-                "emptot": "EMPTOT",
-                "_eg": "EG",
-            }
-
-            # determine species
-            species = "EMP"
-            for k, v in label_map.items():
-                if k in sid.lower() or k in name.lower():
-                    species = v
-                    break
-
+            species, tissue = name.split("_")
+            kp = self.panels[tissue]
             label = f"50 mg Emp ({species})"
 
             # simulation
@@ -172,15 +210,15 @@ class Chen2015a(EmpagliflozinSimulationExperiment):
                 yid="mean",
                 yid_sd="mean_sd",
                 count="count",
-                label=label,
+                # the difference of radioactivity and empagliflozin, an outlier
+                label="50 mg Emp (EG, difference)" if name == "EG_plasma" else label,
                 color=self.colors[sid],
+                marker="x" if name == "EG_plasma" else "o",
             )
 
-        return {
-            fig.sid: fig,
-        }
+        fig.settings = {**fig.settings, "legend_position": "outside"}
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Chen2015a, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Chen2015a, output_dir=Chen2015a.__name__)

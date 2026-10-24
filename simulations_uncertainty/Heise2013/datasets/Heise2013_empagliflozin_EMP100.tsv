@@ -1,0 +1,41 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.38	hr		501.8					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.48	hr		969.5					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.7	hr		1773.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.02	hr		2510.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.55	hr		2249.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	2.08	hr		2071.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	2.94	hr		1943.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	4.01	hr		1997.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	6.04	hr		1299.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	7.96	hr		996.5					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	12.02	hr		570.4					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	15.97	hr		367.7					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	23.98	hr		218.3					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	29.96	hr		138.2					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	35.95	hr		88.28					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	47.91	hr		56.91					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	96.0	hr		237.1				pre-dose sample of day 5: nominal time of the Methods, digitized at 95.55 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	120.0	hr		267.0				pre-dose sample of day 6: nominal time of the Methods, digitized at 119.58 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	144.0	hr		284.6				pre-dose sample of day 7: nominal time of the Methods, digitized at 143.61 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	168.0	hr		257.4				pre-dose sample of day 8: nominal time of the Methods, digitized at 167.65 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	192.0	hr		371.1				pre-dose sample of day 9: nominal time of the Methods, digitized at 192.10 h	nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	192.1	hr		750.5					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	192.32	hr		1311.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	192.53	hr		1709.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	192.85	hr		2376.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	193.39	hr		2420.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	193.81	hr		1979.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	194.88	hr		2228.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	195.84	hr		2052.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	197.87	hr		1725.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	199.8	hr		1143.0					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	203.75	hr		660.3					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	207.81	hr		453.8					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	215.82	hr		303.5					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	221.8	hr		192.1					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	227.78	hr		126.1					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	239.85	hr		89.91					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	251.92	hr		44.46					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	263.67	hr		24.76					nmol/l	nmol/l	dimensionless
+Heise2013		all	9.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	287.92	hr		14.7					nmol/l	nmol/l	dimensionless

@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	0.25	hr		63.8				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	0.5	hr		247.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	0.75	hr		401.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	1.0	hr		506.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	1.5	hr		651.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	2.0	hr		725.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	2.5	hr		734.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	3.0	hr		707.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	4.0	hr		693.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	6.0	hr		474.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	8.0	hr		357.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	10.0	hr		274.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	12.0	hr		209.0				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	16.0	hr		120.2				digitized copy (pkdb_data), agrees with the figure	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	24.0	hr		62.4				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	36.0	hr		23.9				digitized copy (pkdb_data), agrees with the figure	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	48.0	hr		12.5				digitized copy (pkdb_data), agrees with the figure	nmol/l	nmol/l	dimensionless
+Seman2013		EMP50	14.0	EMP50	concentration	empagliflozin	plasma	HPLC MS/MS	fed_EMP50	72.0	hr		4.3				vector graphics of the PDF (Fig4), nominal times	nmol/l	nmol/l	dimensionless

@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	0.33	hr		31.7				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	0.66	hr		245.6				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	1.0	hr		418.6				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	1.5	hr		515.6				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	2.0	hr		532.3				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	2.5	hr		745.6				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	3.0	hr		564.4				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	4.0	hr		775.1				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	6.0	hr		598.4				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	8.0	hr		493.7				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	10.0	hr		402.2				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	12.0	hr		333.7				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	14.0	hr		273.8				vector graphics of the PDF, panel A (linear)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	24.0	hr		165.6				vector graphics of the PDF, insert (semilog)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	36.0	hr		76.1				vector graphics of the PDF, insert (semilog)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	48.0	hr		43.4				vector graphics of the PDF, insert (semilog)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	72.0	hr		18.9				vector graphics of the PDF, insert (semilog)	nmol/l	nmol/l	dimensionless
+Sarashina2014		severe	8.0	EMP25	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_severe	96.0	hr		9.8				vector graphics of the PDF, insert (semilog)	nmol/l	nmol/l	dimensionless

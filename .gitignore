@@ -1,7 +1,11 @@
-.venv
-.idea
-*.pyc
-__pycache__
+.venv/
 /results/
-src/pkdb_models/models/empagliflozin/results/
-src/pkdb_models/models/empagliflozin/models/results/empagliflozin_model.omex
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+/site/
+.idea/
+.vscode/
+.DS_Store

@@ -1,112 +1,126 @@
-from typing import Dict
+"""Simulation experiment of the study Heise2013a."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
+from typing import ClassVar, override
 
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
+from sbmlsim.plot import Axis, Figure
+from sbmlsim.simulation import Change, Simulation
+
+from pkdb_models.models.empagliflozin import MODEL
 from pkdb_models.models.empagliflozin.experiments.base_experiment import (
     EmpagliflozinSimulationExperiment,
 )
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData, Coadministration
-
-from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
-
-from pkdb_models.models.empagliflozin.helpers import run_experiments
 
 
 class Heise2013a(EmpagliflozinSimulationExperiment):
     """Simulation experiment of Heise2013a."""
-    fpgs = {
-        # using MDG values
-        "Placebo": 152.1/18,  # 153.9/18,  # [mM]
-        "EMP10": 164.8/18,  #  186.2/18,  # [mM]
-        "EMP25": 166.3/18,  #  167.5/18,  # [mM]
-        "EMP100": 149.4/18,  #  149.4/18,  # [mM]
+
+    #: fasting plasma glucose (FPG) at baseline, Table 1 [mM]
+    fpgs: ClassVar[dict[str, float]] = {
+        "Placebo": 153.9 / 18,
+        "EMP10": 186.2 / 18,
+        "EMP25": 167.5 / 18,
+        "EMP100": 150.0 / 18,
     }
-    bodyweights = {
+    #: mean daily glucose (MDG) at baseline, Table 1 [mM]; below the FPG in
+    #: the 10 mg group
+    mdgs: ClassVar[dict[str, float]] = {
+        "Placebo": 152.1 / 18,
+        "EMP10": 164.8 / 18,
+        "EMP25": 166.3 / 18,
+        "EMP100": 149.4 / 18,
+    }
+    #: creatinine clearance (Cockcroft-Gault) at baseline, Table 1 [ml/min];
+    #: with the total body weight (BMI 29.5-30.6) it overestimates the GFR
+    crcls: ClassVar[dict[str, float]] = {
+        "Placebo": 133.3,
+        "EMP10": 114.0,
+        "EMP25": 130.2,
+        "EMP100": 122.6,
+    }
+    bodyweights: ClassVar[dict[str, float]] = {
         "Placebo": 89.3,  # [kg]
         "EMP10": 89.6,  # [kg]
         "EMP25": 89.6,  # [kg]
         "EMP100": 92.4,  # [kg]
     }
-    doses = {
+    doses: ClassVar[dict[str, float]] = {
         "Placebo": 0,  # [mg]
         "EMP10": 10,  # [mg]
         "EMP25": 25,  # [mg]
         "EMP100": 100,  # [mg]
     }
-    colors = {
-        "Placebo": "black",
-        "EMP10": "tab:red",
-        "EMP25": "tab:orange",
-        "EMP100": "tab:green",
-    }
-    info = {
+    info: ClassVar[dict[str, str]] = {
         "[Cve_emp]": "empagliflozin",
         "KI__UGE": "uge",
     }
-    interventions = list(bodyweights.keys())
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1", "Fig2"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
-                dsets[f"{label}"] = dset
+                dsets[label] = dset
 
-        # console.print(dsets)
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
 
         for intervention, dose in self.doses.items():
-            tc0 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=500,
-                changes={
+            # a dose every 24 hr for 28 days, the urinary glucose is collected
+            # from dose to dose and reset after the last one
+            simulations[intervention] = Simulation(
+                time_unit="hr",
+                end=748,
+                preinit_changes={
                     **self.default_changes(),
-                    "BW": Q_(self.bodyweights[intervention], "kg"),
-                    "[KI__fpg]": Q_(self.fpgs[intervention], "mM"),
-                    # "KI__f_renal_function": Q_(self.gfr/100, "dimensionless"),
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "KI__glc_urine": Q_(0, "mmole"),
+                    "BW": Q(self.bodyweights[intervention], "kg"),
+                    "[KI__fpg]": Q(self.fpgs[intervention], "mM"),
+                    "KI__PG_delta": Q(
+                        self.mdgs[intervention] - self.fpgs[intervention], "mM"
+                    ),
+                    "KI__f_renal_function": Q(
+                        self.crcls[intervention] / self.gfr_healthy, "dimensionless"
+                    ),
+                    "PODOSE_emp": Q(dose, "mg"),
+                    "KI__glc_urine": Q(0, "mmole"),
                 },
+                changes=[
+                    Change([672], {"KI__glc_urine": Q(0, "mmole")}),
+                    Change(
+                        [24 * k for k in range(1, 28)],
+                        {"KI__glc_urine": Q(0, "mmole")},
+                    ),
+                    self.add_doses(
+                        [24 * k for k in range(1, 28)], {"PODOSE_emp": Q(dose, "mg")}
+                    ),
+                ],
             )
-            tc1 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "KI__glc_urine": Q_(0, "mmole"),
-                },
-            )
-            tc2 = Timecourse(
-                start=0,
-                end=100 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "KI__glc_urine": Q_(0, "mmole"),
-                },
-            )
-            tcsims[intervention] = TimecourseSim(
-                [tc0] + [tc1 for _ in range(26)] + [tc2],
-            )
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
 
         for intervention, dose in self.doses.items():
-            for k, sid in enumerate(self.info):
-                name = self.info[sid]
+            for sid, name in self.info.items():
                 if name == "empagliflozin" and dose == 0:
                     continue
 
@@ -121,91 +135,98 @@ class Heise2013a(EmpagliflozinSimulationExperiment):
                         count="count",
                     ),
                     observable=FitData(
-                        self, task=f"task_{intervention}", xid="time", yid=sid,
+                        self,
+                        task=f"task_{intervention}",
+                        xid="time",
+                        yid=sid,
                     ),
-                    metadata=EmpagliflozinMappingMetaData(
+                    metadata=PKPDMappingMetaData(
                         tissue=Tissue.URINE if name == "uge" else Tissue.PLASMA,
                         route=Route.PO,
                         application_form=ApplicationForm.TABLET,
                         dosing=Dosing.MULTIPLE,
                         health=Health.T2DM,
-                        fasting=Fasting.NR,
+                        fasting=Fasting.FASTED,  # overnight fast
                         coadministration=Coadministration.NONE,
                     ),
                 )
 
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
-        figures = {}
-        subplots = ["all", "start", "end"]
-        for subplot in subplots:
+    @override
+    def figures(self) -> dict[str, Figure]:
+        # time window of the figures: x limits of the plasma (linear and
+        # semi-log as in the paper) and of the urine plot, lower limit of the
+        # linear plasma concentration
+        xlimits = {
+            "all": [(-10, 750), (-10, 750), (-10, 680)],
+            "start": [(-1, 27), (-1, 27), (-1, 27)],
+            "end": [(645, 750), (645, 750), (645, 675)],
+        }
+        ymins = {"all": -0.2, "start": -0.1, "end": -0.1}
+
+        figures = []
+        for subplot, xlims in xlimits.items():
             fig = Figure(
                 experiment=self,
                 sid=f"Fig1_2_{subplot}",
                 num_rows=1,
-                num_cols=2,
+                num_cols=3,
                 name=f"{self.__class__.__name__} (T2DM)",
             )
-            plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
-            plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
-            plots[1].set_yaxis(self.label_uge, unit=self.unit_uge)
-
-
-            if subplot == "start":
-                for kp in [0, 1]:
-                    plots[0].yaxis.min = -0.1
-                    plots[kp].xaxis.min = -1
-                    plots[kp].xaxis.max = 27
-            elif subplot == "end":
-                for kp in [0, 1]:
-                    plots[0].yaxis.min = -0.1
-                    plots[kp].xaxis.min = 645
-                    plots[0].xaxis.max = 700
-                    plots[1].xaxis.max = 675
-            elif subplot == "all":
-                for kp in [0, 1]:
-                    plots[0].yaxis.min = -0.2
-                    plots[kp].xaxis.min = -10
-                    plots[0].xaxis.max = 700
-                    plots[1].xaxis.max = 680
+            # the legends inside the panels cover data
+            fig.settings = {**fig.settings, "legend_position": "outside"}
+            plots = fig.create_plots(
+                xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+            )
+            for kp, (xmin, xmax) in enumerate(xlims):
+                plots[kp].set_xaxis(
+                    self.label_time, unit=self.unit_time, min=xmin, max=xmax
+                )
+            plots[0].set_yaxis(
+                self.label_emp_plasma, unit=self.unit_emp, min=ymins[subplot]
+            )
+            plots[1].set_yaxis(
+                self.label_emp_plasma, unit=self.unit_emp, scale="log", min=1e-3
+            )
+            plots[2].set_yaxis(self.label_uge, unit=self.unit_uge, max=150)
+            panels = {"empagliflozin": plots[:2], "uge": plots[2:]}
 
             for intervention, dose in self.doses.items():
                 dose_label = "Placebo" if dose == 0 else f"{dose} mg Emp"
                 color = self.dose_colors[dose]
 
-                for k, sid in enumerate(self.info):
-                    name = self.info[sid]
+                for sid, name in self.info.items():
+                    for plot in panels[name]:
+                        # simulation
+                        plot.add_data(
+                            task=f"task_{intervention}",
+                            xid="time",
+                            yid=sid,
+                            label=dose_label,
+                            color=color,
+                        )
 
-                    # simulation
-                    plots[k].add_data(
-                        task=f"task_{intervention}",
-                        xid="time",
-                        yid=sid,
-                        label=dose_label,
-                        color=color,
-                    )
+                        # data
+                        if name == "empagliflozin" and dose == 0:
+                            continue
 
-                    # data
-                    if name == "empagliflozin" and dose == 0:
-                        continue
+                        # the plasma data have a SD only at some points
+                        plot.add_data(
+                            dataset=f"{name}_{intervention}",
+                            xid="time",
+                            yid="mean",
+                            yid_sd="mean_sd" if name == "uge" else None,
+                            count="count",
+                            label=dose_label,
+                            color=color,
+                            linestyle="" if name == "uge" else "--",
+                        )
 
-                    plots[k].add_data(
-                        dataset=f"{name}_{intervention}",
-                        xid="time",
-                        yid="mean",
-                        yid_sd="mean_sd",
-                        count="count",
-                        label=dose_label,
-                        color=color,
-                        linestyle="" if "uge" in name else "--",
-                    )
+            figures.append(fig)
 
-            figures[fig.sid] = fig
-
-        return figures
+        return self.figures_by_sid(*figures)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Heise2013a, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Heise2013a, output_dir=Heise2013a.__name__)

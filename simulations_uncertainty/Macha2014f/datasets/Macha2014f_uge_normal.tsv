@@ -1,0 +1,9 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	4.0	hr		13000.0					mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	8.0	hr		39122.1374045801	49874.0458015268	10751.9083969467	3801.373669088796		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	12.0	hr		58206.106870229	69660.3053435115	11454.1984732825	4049.670706757328		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	24.0	hr		102576.335877862	124072.519083969	21496.183206107	7600.048457333321		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	36.0	hr		143129.770992366	173538.167938931	30408.396946565	10750.991842964208		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	48.0	hr		169370.229007633	210637.404580152	41267.175572519	14590.149843872015		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	72.0	hr		200858.778625954	249385.496183206	48526.717557252	17156.785526728592		mg	mg	dimensionless
+Macha2014f		normal	8.0	EMP50	cumulative amount	glucose	urine	HPLC MS/MS	uge_normal	96.0	hr		234732.82442748	315339.694656488	80606.870229008	28498.83227457779		mg	mg	dimensionless

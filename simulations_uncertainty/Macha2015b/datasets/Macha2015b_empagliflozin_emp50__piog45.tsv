@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.0	hr		95.49					nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.33	hr		152.74			69.8		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	0.67	hr		521.09			292.1		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	1.0	hr		857.69			323.8		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	1.5	hr		1149.88			260.3		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	2.0	hr		1188.09			171.4		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	2.5	hr		1124.75			127.0		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	3.0	hr		1016.95			146.0		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	4.0	hr		852.13			139.7		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	6.0	hr		566.94			76.2		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	8.0	hr		421.45			50.8		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	10.0	hr		326.72			44.4		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	12.0	hr		251.05			31.8		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	14.0	hr		194.46			31.8		nmol/l	nmol/l	dimensionless
+Macha2015b		all	17.0	emp50, piog45	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_emp50, piog45	24.0	hr		82.81					nmol/l	nmol/l	dimensionless

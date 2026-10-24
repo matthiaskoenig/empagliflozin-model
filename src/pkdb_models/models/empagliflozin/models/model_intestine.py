@@ -1,18 +1,28 @@
-"""Empagliflozin intestine model."""
+"""Intestine model of empagliflozin: dissolution, absorption and fecal excretion."""
+
 import numpy as np
-import pandas as pd
-from sbmlutils.converters import odefac
+from sbmlutils.factory import (
+    AssignmentRule,
+    Compartment,
+    Model,
+    Parameter,
+    RateRule,
+    Reaction,
+    Species,
+    UnitDefinition,
+    create_model,
+)
+from sbmlutils.metadata import (
+    BQB,
+    SBO,
+)
 
-from sbmlutils.cytoscape import visualize_sbml
-from sbmlutils.factory import *
-from sbmlutils.metadata import *
-
-from pkdb_models.models.empagliflozin.models import annotations
-from pkdb_models.models.empagliflozin.models import templates
+from pkdb_models.models.empagliflozin.models import annotations, templates
+from pkdb_models.models.empagliflozin.models.fits import FITS
 
 
 class U(templates.U):
-    """UnitDefinitions"""
+    """Units of the intestine model."""
 
     per_hr = UnitDefinition("per_hr", "1/hr")
     mg_per_min = UnitDefinition("mg_per_min", "mg/min")
@@ -24,23 +34,33 @@ _m = Model(
     notes="""
     # Model for empagliflozin absorption
 
-    - absorption empagliflozin (emp), ~60% fraction absorbed
+    - Dissolution of the oral dose and absorption of empagliflozin; the
+      fraction absorbed `F_emp_abs` of the empagliflozin of the lumen is
+      absorbed, the rest is excreted in the feces after the transit through
+      the intestine (`METEXC_k`). After an oral solution of 50 mg of
+      14C-empagliflozin 41.2 % of the radioactivity is recovered in the feces,
+      34.2 % of the dose as unchanged empagliflozin, no glucuronide; 54.4 % in
+      the urine [Chen2015a]. The fecal excretion is slow: 10.9, 29.0, 37.9 and
+      39.9 % of the dose at 48, 72, 96 and 120 hr.
+    - Food (`fed`) slows the absorption (`FED_f_absorption`): a high fat
+      breakfast lowers Cmax by 29 % and delays tmax from 1.0 to 2.5 hr, the AUC
+      is lowered by 10 % [Seman2013]; a Chinese high fat meal lowers Cmax by
+      20 % and the AUC by 5 % [Chen2020].
     """
     + templates.terms_of_use,
     creators=templates.creators,
     units=U,
     model_units=templates.model_units,
-    annotations=annotations.model + [
+    annotations=[
+        *annotations.model,
         # tissue
-        (BQB.OCCURS_IN, "fma/FMA:45615"),  # gut
         (BQB.OCCURS_IN, "bto/BTO:0000545"),  # gut
         (BQB.OCCURS_IN, "NCIT:C12736"),  # intestine
         (BQB.OCCURS_IN, "fma/FMA:7199"),  # intestine
         (BQB.OCCURS_IN, "bto/BTO:0000648"),  # intestine
-
         (BQB.HAS_PROPERTY, "NCIT:C79369"),  # Pharmacokinetics: Absorption
         (BQB.HAS_PROPERTY, "NCIT:C79372"),  # Pharmacokinetics: Excretion
-    ]
+    ],
 )
 
 _m.compartments = [
@@ -84,29 +104,12 @@ _m.compartments = [
         annotations=annotations.compartments["feces"],
     ),
     Compartment(
-        "Ventero",
-        1.0,
-        name="intestinal lining (enterocytes)",
-        sboTerm=SBO.PHYSICAL_COMPARTMENT,
-        unit=U.liter,
-        constant=False,
-    ),
-    Compartment(
         "Vapical",
         np.nan,
         name="apical membrane (intestinal membrane enterocytes)",
         sboTerm=SBO.PHYSICAL_COMPARTMENT,
         unit=U.m2,
         annotations=annotations.compartments["apical"],
-        spatialDimensions=2,
-    ),
-    Compartment(
-        "Vbaso",
-        np.nan,
-        name="basolateral membrane (intestinal membrane enterocytes)",
-        sboTerm=SBO.PHYSICAL_COMPARTMENT,
-        unit=U.m2,
-        annotations=annotations.compartments["basolateral"],
         spatialDimensions=2,
     ),
     Compartment(
@@ -125,11 +128,12 @@ _m.compartments = [
 
 _m.species = [
     Species(
-        f"emp_stomach",
+        "emp_stomach",
+        metaId="meta_emp_stomach",
         initialConcentration=0.0,
         compartment="Vstomach",
         substanceUnit=U.mmole,
-        name=f"empagliflozin (stomach)",
+        name="empagliflozin (stomach)",
         hasOnlySubstanceUnits=True,
         sboTerm=SBO.SIMPLE_CHEMICAL,
         annotations=annotations.species["emp"],
@@ -138,8 +142,19 @@ _m.species = [
     Species(
         "emp_lumen",
         initialConcentration=0.0,
-        name="empagliflozin (intestinal volume)",
+        name="empagliflozin (intestinal lumen)",
         compartment="Vlumen",
+        substanceUnit=U.mmole,
+        hasOnlySubstanceUnits=False,
+        sboTerm=SBO.SIMPLE_CHEMICAL,
+        annotations=annotations.species["emp"],
+        port=True,
+    ),
+    Species(
+        "emp_ext",
+        initialConcentration=0.0,
+        name="empagliflozin (plasma)",
+        compartment="Vext",
         substanceUnit=U.mmole,
         hasOnlySubstanceUnits=False,
         sboTerm=SBO.SIMPLE_CHEMICAL,
@@ -157,208 +172,189 @@ _m.species = [
         annotations=annotations.species["emp"],
         port=True,
     ),
-    Species(
-        "emp_ext",
-        initialConcentration=0.0,
-        name="empagliflozin (plasma)",
-        compartment="Vext",
-        substanceUnit=U.mmole,
-        hasOnlySubstanceUnits=False,
-        sboTerm=SBO.SIMPLE_CHEMICAL,
-        annotations=annotations.species["emp"],
-        port=True,
-    ),
-    Species(
-        "eg_lumen",
-        initialConcentration=0.0,
-        name="empagliflozin glucuronide (intestinal volume)",
-        compartment="Vlumen",
-        substanceUnit=U.mmole,
-        hasOnlySubstanceUnits=False,
-        sboTerm=SBO.SIMPLE_CHEMICAL,
-        annotations=annotations.species["eg"],
-        port=True,
-    ),
-    Species(
-        "eg_feces",
-        initialConcentration=0.0,
-        name="empagliflozin glucuronide (feces)",
-        compartment="Vfeces",
-        substanceUnit=U.mmole,
-        hasOnlySubstanceUnits=True,
-        sboTerm=SBO.SIMPLE_CHEMICAL,
-        annotations=annotations.species["eg"],
-        port=True,
-    ),
 ]
 
 _m.parameters = [
     Parameter(
-        f"F_emp_abs",
-        0.65,
-        U.dimensionless,
+        "F_emp_abs",
+        **FITS.parameter("GU__F_emp_abs", unit=U.dimensionless),
         constant=True,
         sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        name=f"fraction absorbed empagliflozin",
+        name="fraction absorbed empagliflozin",
         notes="""
-        Fraction absorbed, i.e., only a fraction of the empagliflozin in the intestinal lumen
-        is absorbed. This parameter determines how much of the empagliflozin is excreted.
-        
-        `F_emp_abs` of dose is absorbed. `(1-F_emp_abs)` is excreted in feces.
+        Fraction absorbed: `F_emp_abs` of the empagliflozin of the intestinal
+        lumen is absorbed, `(1 - F_emp_abs)` is excreted in the feces. The
+        absolute bioavailability is not known; the radioactivity of the urine
+        (54.4 %) and the oxidative metabolites of the feces (3.6 %) give a
+        fraction absorbed of about 0.58 of the oral solution [Chen2015a].
         """,
     ),
     Parameter(
         "EMPABS_k",
-        0.01,
-        unit=U.per_min,
+        **FITS.parameter("GU__EMPABS_k", unit=U.per_min),
         name="rate of empagliflozin absorption",
         sboTerm=SBO.KINETIC_CONSTANT,
+        notes="""
+        First-order rate of the empagliflozin leaving the lumen, absorbed
+        (`F_emp_abs`) or to the fecal transit: tmax 1.0-1.5 hr fasted
+        [Seman2013, Heise2013].
+        """,
     ),
     Parameter(
         "METEXC_k",
-        0.001,
-        unit=U.per_min,
-        name="rate of empagliflozin fecal excretion",
+        **FITS.parameter("GU__METEXC_k", unit=U.per_min),
+        name="rate of the fecal transit",
         sboTerm=SBO.KINETIC_CONSTANT,
+        notes="""
+        Transit of the empagliflozin which is not absorbed through the
+        intestine into the feces, `n_chain` steps with this rate (mean transit
+        time of about 70 hr): 10.9, 29.0, 37.9 and 39.9 % of the dose in the
+        feces at 48, 72, 96 and 120 hr [Chen2015a].
+        """,
+    ),
+    Parameter(
+        "fed",
+        0.0,
+        unit=U.dimensionless,
+        name="fed state (0 fasted, 1 fed)",
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        notes="""
+        The dose is taken in the fasted state (0) or with a meal (1). The effect
+        of food on the absorption rate is `FED_f_absorption`.
+        """,
+    ),
+    Parameter(
+        "FED_f_absorption",
+        **FITS.parameter("GU__FED_f_absorption", unit=U.dimensionless),
+        name="fed effect on the absorption rate",
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+        notes="""
+        Factor of the absorption rate with food: Cmax 0.71 and the AUC 0.90 of
+        the fasted state, tmax 2.5 instead of 1.0 hr [Seman2013]; Cmax 0.80,
+        AUC 0.95 [Chen2020]. The fraction absorbed is not changed.
+        """,
     ),
     Parameter(
         "f_absorption",
-        1,
+        np.nan,
         unit=U.dimensionless,
-        name="scaling factor absorption rate dap",
-        sboTerm=SBO.KINETIC_CONSTANT,
-        notes="""
-        1.0: normal absorption corresponding to tablet under fasting conditions.
-        food decreases the absorption rate, i.e. < 1.0.
-        """
+        constant=False,
+        name="factor of the absorption rate",
+        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
     ),
 ]
 
-_m.rules.append(
-    AssignmentRule(
-        "absorption",
-        value="f_absorption * EMPABS_k * Vgu * emp_lumen",
-        unit=U.mmole_per_min,
-        name="absorption empagliflozin",
-    ),
+_m.rules.extend(
+    [
+        AssignmentRule(
+            "f_absorption",
+            "1 dimensionless + fed * (FED_f_absorption - 1 dimensionless)",
+            unit=U.dimensionless,
+        ),
+        AssignmentRule(
+            "absorption",
+            value="f_absorption * EMPABS_k * Vlumen * emp_lumen",
+            unit=U.mmole_per_min,
+            name="empagliflozin leaving the lumen",
+        ),
+    ]
 )
 
 _m.reactions = [
     Reaction(
         "EMPABS",
-        name="absorption empagliflozin",
+        name="absorption empagliflozin (EMPABS)",
         equation="emp_lumen -> emp_ext",
         sboTerm=SBO.TRANSPORT_REACTION,
         compartment="Vapical",
         formula=("F_emp_abs * absorption", U.mmole_per_min),
     ),
     Reaction(
-        sid=f"EMPEXC",
-        name=f"excretion empagliflozin (feces)",
+        sid="EMPEXC",
+        name="empagliflozin to the fecal transit (EMPEXC)",
         compartment="Vlumen",
-        equation=f"emp_lumen -> emp_intestine_0",
+        equation="emp_lumen -> emp_intestine_0",
         sboTerm=SBO.TRANSPORT_REACTION,
-        pars=[],
         formula=(
-            f"(1 dimensionless - F_emp_abs) * absorption",
+            "(1 dimensionless - F_emp_abs) * absorption",
             U.mmole_per_min,
         ),
     ),
-    Reaction(
-        sid=f"EGEXC",
-        name=f"excretion empagliflozin glucuronide (feces)",
-        compartment="Vlumen",
-        equation=f"eg_lumen -> eg_intestine_0",
-        sboTerm=SBO.TRANSPORT_REACTION,
-        pars=[],
-        formula=(
-            f"METEXC_k * Vgu * eg_lumen",
-            U.mmole_per_min,
-        ),
-    )
 ]
 
-substance_info = {
-    "emp": "empagliflozin",
-    "eg": "empagliflozin glucuronide",
-}
-
-
+#: the steps of the fecal transit
 n_chain = 5
 for k in range(n_chain):
     _m.compartments.append(
         Compartment(
             f"Vintestine_{k}",
             1.2825 * 0.9 / n_chain,  # 0.0171 [l/kg] * 75 kg * 0.9,
-            name="intestinal lumen",
+            name=f"intestinal lumen (transit {k})",
             sboTerm=SBO.PHYSICAL_COMPARTMENT,
             unit=U.liter,
             constant=True,
             annotations=annotations.compartments["gu_lumen"],
         )
     )
-    for sid, name in substance_info.items():
-        _m.species.append(
-            Species(
-                f"{sid}_intestine_{k}",
-                initialConcentration=0.0,
-                name=f"{name} (intestine)",
-                compartment=f"Vintestine_{k}",
-                substanceUnit=U.mmole,
-                hasOnlySubstanceUnits=False,
-                sboTerm=SBO.SIMPLE_CHEMICAL,
-                annotations=annotations.species[sid],
-            )
+    _m.species.append(
+        Species(
+            f"emp_intestine_{k}",
+            initialConcentration=0.0,
+            name=f"empagliflozin (intestinal transit {k})",
+            compartment=f"Vintestine_{k}",
+            substanceUnit=U.mmole,
+            hasOnlySubstanceUnits=False,
+            sboTerm=SBO.SIMPLE_CHEMICAL,
+            annotations=annotations.species["emp"],
         )
-
-        if k < n_chain - 1:
-            product = f"{sid}_intestine_{k + 1}"
-        else:
-            product = f"{sid}_feces"
-        _m.reactions.append(
-            Reaction(
-                sid=f"{sid.upper()}EXC_{k}",
-                name=f"excretion {name} {k}",
-                compartment=f"Vintestine_{k}",
-                equation=f"{sid}_intestine_{k} -> {product}",
-                sboTerm=SBO.TRANSPORT_REACTION,
-                formula=(
-                    f"METEXC_k * Vintestine_{k} * {sid}_intestine_{k}",
-                    U.mmole_per_min,
-                )
-            )
+    )
+    product = f"emp_intestine_{k + 1}" if k < n_chain - 1 else "emp_feces"
+    _m.reactions.append(
+        Reaction(
+            sid=f"EMPEXC_{k}",
+            name=f"fecal transit empagliflozin {k}",
+            compartment=f"Vintestine_{k}",
+            equation=f"emp_intestine_{k} -> {product}",
+            sboTerm=SBO.TRANSPORT_REACTION,
+            formula=(
+                f"METEXC_k * Vintestine_{k} * emp_intestine_{k}",
+                U.mmole_per_min,
+            ),
         )
+    )
 
 
-_m.parameters.extend([
-    Parameter(
-        f"PODOSE_emp",
-        0,
-        U.mg,
-        constant=False,
-        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        name=f"oral dose empagliflozin [mg]",
-        port=True,
-    ),
-    Parameter(
-        f"Ka_dis_emp",
-        2.0,
-        U.per_hr,
-        constant=True,
-        sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
-        name=f"Ka_dis [1/hr] dissolution empagliflozin",
-        port=True
-    ),
-    Parameter(
-        f"Mr_emp",
-        450.909,
-        U.g_per_mole,
-        constant=True,
-        name=f"Molecular weight empagliflozin [g/mole]",
-        sboTerm=SBO.MOLECULAR_MASS,
-        port=True,
-    ),
-])
+_m.parameters.extend(
+    [
+        Parameter(
+            "PODOSE_emp",
+            0,
+            U.mg,
+            constant=False,
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            name="oral dose empagliflozin [mg]",
+            port=True,
+        ),
+        Parameter(
+            "Ka_dis_emp",
+            2.0,
+            U.per_hr,
+            constant=True,
+            sboTerm=SBO.QUANTITATIVE_SYSTEMS_DESCRIPTION_PARAMETER,
+            name="dissolution rate empagliflozin",
+            port=True,
+        ),
+        Parameter(
+            "Mr_emp",
+            450.909,
+            U.g_per_mole,
+            constant=True,
+            name="Molecular weight empagliflozin [g/mole]",
+            sboTerm=SBO.MOLECULAR_MASS,
+            port=True,
+        ),
+    ]
+)
 
 # -------------------------------------
 # Dissolution of tablet/dose in stomach
@@ -367,159 +363,39 @@ _m.reactions.extend(
     [
         # fraction dose available for absorption from stomach
         Reaction(
-            sid=f"dissolution_emp",
-            name=f"dissolution empagliflozin",
+            sid="dissolution_emp",
+            name="dissolution empagliflozin",
             formula=(
-                f"Ka_dis_emp/60 min_per_hr * PODOSE_emp/Mr_emp",
+                "Ka_dis_emp/60 min_per_hr * PODOSE_emp/Mr_emp",
                 U.mmole_per_min,
             ),
-            equation=f"emp_stomach -> emp_lumen",
+            equation="emp_stomach -> emp_lumen",
             compartment="Vgu",
             notes="""Swallowing, dissolution of tablet, and transport into intestine.
             Overall process describing the rates of this processes.
-            """
+            """,
         ),
     ]
 )
 _m.rate_rules.append(
-    RateRule(f"PODOSE_emp", f"-dissolution_emp * Mr_emp", U.mg_per_min),
+    RateRule("PODOSE_emp", "-dissolution_emp * Mr_emp", U.mg_per_min),
 )
 
 model_intestine = _m
 
 
-def empagliflozin_layout(dx=200, dy=200) -> pd.DataFrame:
-
-    delta_y = 0.5 * dy
-    delta_x = 1.0 * dx
-
-    x_left   = 0 * delta_x                       # stomach + plasma column centre
-    x_lumen  = 1 * delta_x                       # lumen column centre
-    x_chain0 = 2 * delta_x                       # first chain segment
-    x_feces  = x_chain0 + n_chain * delta_x      # feces column
-
-    x_border_left_lumen = x_left  + 0.5 * delta_x
-    x_border_lumen_int  = x_lumen + 0.5 * delta_x
-
-    positions = [
-        ["emp_ext",         x_left,                  1.3 * delta_y],   # plasma species
-        ["emp_stomach",     x_left,                  3.3 * delta_y],   # stomach species
-
-        # Boundary reactions
-        ["EMPABS",          x_border_left_lumen,     2.0 * delta_y], # plasma → lumen border
-        ["dissolution_emp", x_border_left_lumen,     4 * delta_y], # stomach → lumen border
-
-        # Lumen column
-        ["emp_lumen",       x_lumen,                 1 * delta_y],
-        ["eg_lumen",        x_lumen,                 3 * delta_y],
-
-        # Boundary reactions
-        ["EMPEXC",          x_border_lumen_int,      1.6 * delta_y],
-        ["EGEXC",           x_border_lumen_int,      3.7 * delta_y],
-    ]
-
-    # Intestinal chain
-    for k in range(n_chain):
-        x = x_chain0 + k * delta_x
-        positions += [
-            [f"emp_intestine_{k}", x, 1 * delta_y],
-            [f"EMPEXC_{k}",        x, 2 * delta_y],
-            [f"eg_intestine_{k}",  x, 3 * delta_y],
-            [f"EGEXC_{k}",         x, 4 * delta_y],
-        ]
-
-    # Feces
-    positions += [
-        ["emp_feces", x_feces, 1.5 * delta_y],
-        ["eg_feces",  x_feces, 3 * delta_y],
-    ]
-
-    df = pd.DataFrame(positions, columns=["id", "x", "y"])
-    df.set_index("id", inplace=True)
-
-    return df
-
-
-def empagliflozin_annotations(dx=200, dy=200) -> list:
-    COLOR_STOMACH = "#1f77b4"
-    COLOR_INTESTINE = "#FFFFFF"
-    COLOR_BLOOD = "#FF796C"
-    COLOR_FECES = "#8c564b"
-
-    kwargs = {
-        "type": cyviz.AnnotationShapeType.ROUND_RECTANGLE,
-        "opacity": 20,
-        "border_color": "#000000",
-        "border_thickness": 2,
-    }
-
-    dy = 0.5 * dy
-    dx = 1.0 * dx
-
-    x_left   = 0 * dx
-    x_lumen  = 1 * dx
-    x_chain0 = 2 * dx
-    x_feces  = x_chain0 + n_chain * dx
-
-    left_box_left   = x_left  - 0.5 * dx
-    left_box_right  = x_left  + 0.5 * dx   # = lumen_left
-    lumen_right     = x_lumen + 0.5 * dx   # = intestine_left
-    int_right       = x_feces - 0.5 * dx   # = feces_left
-    feces_right     = x_feces + 0.5 * dx
-
-    full_top    = 0.5 * dy
-    full_height = 4.0 * dy
-    plasma_height = 2.0 * dy
-    stomach_height = 2.0 * dy
-
-    annotations = [
-        # Plasma
-        cyviz.AnnotationShape(
-            x_pos=left_box_left, y_pos=full_top,
-            width=left_box_right - left_box_left, height=plasma_height,
-            fill_color=COLOR_BLOOD, **kwargs
-        ),
-        # Stomach
-        cyviz.AnnotationShape(
-            x_pos=left_box_left, y_pos=full_top + plasma_height,
-            width=left_box_right - left_box_left, height=stomach_height,
-            fill_color=COLOR_STOMACH, **kwargs
-        ),
-        # Lumen
-        cyviz.AnnotationShape(
-            x_pos=left_box_right, y_pos=full_top,
-            width=lumen_right - left_box_right, height=full_height,
-            fill_color=COLOR_INTESTINE, **kwargs
-        ),
-        # intestine
-        cyviz.AnnotationShape(
-            x_pos=lumen_right, y_pos=full_top,
-            width=int_right - lumen_right, height=full_height,
-            fill_color=COLOR_INTESTINE, **kwargs
-        ),
-        # Feces
-        cyviz.AnnotationShape(
-            x_pos=int_right, y_pos=full_top,
-            width=feces_right - int_right, height=full_height,
-            fill_color=COLOR_FECES, **kwargs
-        ),
-    ]
-    return annotations
-
-
 if __name__ == "__main__":
+    from sbmlode import OdeSystem
+
     from pkdb_models.models.empagliflozin import MODEL_BASE_PATH
-    from sbmlutils import cytoscape as cyviz
 
     results = create_model(
         filepath=MODEL_BASE_PATH / f"{model_intestine.sid}.xml",
-        model=model_intestine, sbml_level=3, sbml_version=2
+        model=model_intestine,
+        sbml_level=3,
+        sbml_version=2,
     )
-    # ODE equations
-    ode_factory = odefac.SBML2ODE.from_file(sbml_file=results.sbml_path)
-    ode_factory.to_markdown(md_file=results.sbml_path.parent / f"{results.sbml_path.stem}.md")
 
-    # Visualize
-    cyviz.visualize_sbml(sbml_path=results.sbml_path, delete_session=False)
-    cyviz.apply_layout(layout=empagliflozin_layout())
-    cyviz.add_annotations(annotations=empagliflozin_annotations())
+    # ODE equations
+    ode_system = OdeSystem.from_sbml(results.sbml_path)
+    ode_system.write(results.sbml_path.parent / f"{results.sbml_path.stem}.md")

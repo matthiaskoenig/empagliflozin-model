@@ -1,87 +1,101 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.30769	hr	NA	246.11399	152.84974	93.26425	38.212435	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.61538	hr	NA	121.56238	308.29016	186.72778	77.07254	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.61538	hr	NA	277.00279	254.12515	22.87764	63.5312875	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.23077	hr	NA	245.51614	276.00638	30.49024	69.001595	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.84615	hr	NA	214.02949	260.26305	46.23356	65.0657625	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	2.4616154	hr	NA	182.54285	228.7764	46.23355	57.1941	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	3.07692	hr	NA	151.0562	181.945	30.8888	45.48625	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	4.30769	hr	NA	103.62694	134.51574	30.8888	33.628935	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	6.15385	hr	NA	71.34316	102.43125	31.08809	25.6078125	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	8.61538	hr	NA	54.20486	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	10.46154	hr	NA	37.46513	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	12.30769	hr	NA	5.18135	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	16.30769	hr	NA	2.59067	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	24.30769	hr	NA	0.1	NA	NA	NA	nmol/l	negative value set to small value
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.30769	hr	NA	59.58549	152.84974	93.26425	38.212435	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.61538	hr	NA	292.54683	416.89916	124.35233	104.22479	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.92308	hr	NA	478.676	572.53886	93.86286	143.134715	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.23077	hr	NA	572.14029	804.90235	232.76206	201.2255875	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.84615	hr	NA	664.8067	617.77601	47.0306899999999	154.4440025	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.4616154	hr	NA	602.43125	555.20128	47.22997	138.80032	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	3.07692	hr	NA	493.22439	446.39299	46.8314	111.5982475	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	4.30769	hr	NA	305.89876	399.16301	93.26425	99.7907525	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	6.15385	hr	NA	211.04026	304.50379	93.46353	76.1259475	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	8.61538	hr	NA	147.46911	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	10.46154	hr	NA	115.18533	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	12.30769	hr	NA	82.70227	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	16.30769	hr	NA	49.4227	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	24.30769	hr	NA	12.95337	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.30769	hr	NA	230.56995	541.25149	310.68154	98.8185501187606	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.61538	hr	NA	992.0287	2375.04982	1383.02112	433.622787204195	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.92308	hr	NA	1660.2232	2685.93065	1025.70745	490.381601633171	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.23077	hr	NA	1924.27262	2980.86887	1056.59625	544.229707021311	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.53846	hr	NA	2483.65883	2669.78876	186.12993	487.434509208582	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	2.15385	hr	NA	2125.74731	2234.35632	108.60901	407.93578598941	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	3.38462	hr	NA	1580.90873	1891.78956	310.88083	345.391938688258	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	4.61538	hr	NA	1238.14269	1471.50259	233.3599	268.658387323425	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	6.15385	hr	NA	941.80949	1128.33798	186.52849	206.005388045271	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	8.61538	hr	NA	691.51056	878.43762	186.92706	160.380033278384	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	10.46154	hr	NA	550.41849	659.42607	109.00758	120.39417784866	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	12.30769	hr	NA	409.32642	580.31088	170.98446	105.949786447225	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	16.30769	hr	NA	251.29534	391.39099	140.09565	71.4578913424263	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	24.30769	hr	NA	137.3057	215.02591	77.72021	39.2581804516919	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.0	hr	NA	44.2207	167.29762	123.07692	41.824405	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.25131	hr	NA	167.37817	321.22433	153.84616	80.3060825	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.00524	hr	NA	198.38905	352.31575	153.9267	88.0789375	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.00524	hr	NA	290.69674	321.70761	31.01087	80.4269025	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.75916	hr	NA	260.16915	260.41079	0.241640000000018	65.1026975	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	650.7644	hr	NA	214.33749	245.34837	31.01088	61.3370925	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	652.27225	hr	NA	199.43617	214.82078	15.38461	53.705195	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	654.28272	hr	NA	138.54209	184.53484	45.99275	46.13371	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	656.29319	hr	NA	108.41724	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	658.05236	hr	NA	93.59646	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	660.06283	hr	NA	94.24084	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.0	hr	NA	74.98993	336.60894	261.61901	84.152235	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.0	hr	NA	121.14378	705.92026	584.77648	176.480065	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.25131	hr	NA	259.68586	859.92751	600.24165	214.9818775	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.75393	hr	NA	490.61619	813.93476	323.31857	203.48369	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.00524	hr	NA	567.61981	644.94563	77.32582	161.2364075	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.25654	hr	NA	629.23882	614.41804	14.82078	153.60451	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	651.01571	hr	NA	537.49497	537.8977	0.40273000000002	134.474425	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	652.02094	hr	NA	460.89408	461.45791	0.563830000000053	115.3644775	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	653.5288	hr	NA	353.68506	277.64801	76.03705	69.4120025	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	655.79058	hr	NA	246.71768	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	658.30366	hr	NA	201.36931	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	660.31414	hr	NA	140.47523	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	664.08377	hr	NA	126.29883	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	671.87435	hr	NA	82.64197	NA	NA	NA	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.0	hr	NA	59.60532	336.52839	276.92307	61.441396814632	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.0	hr	NA	228.83609	767.21708	538.38099	140.074033739749	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.25131	hr	NA	459.68586	1859.76641	1400.08055	339.545338149134	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.50262	hr	NA	1152.0741	2705.92026	1553.84616	494.031188404081	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.75393	hr	NA	1829.07773	3029.07773	1200.0	553.031400385848	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.75393	hr	NA	2121.38542	2813.93476	692.54934	513.751847799962	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	649.50785	hr	NA	2121.62706	2490.93838	369.31132	454.781046693792	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	650.01047	hr	NA	1891.01893	2229.56101	338.54208	407.060286170334	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	650.51309	hr	NA	1798.87233	2091.26057	292.38824	381.810195936704	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	651.26702	hr	NA	1737.57551	1983.971	246.39549	362.221890045361	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	652.27225	hr	NA	1660.97463	1569.23077	91.74386	286.501030220067	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	654.03141	hr	NA	1246.15385	1139.02537	107.12848	207.956629573223	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	656.04188	hr	NA	908.33669	1001.28876	92.9520700000001	182.809480142792	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	658.05236	hr	NA	770.51953	801.93315	31.4136199999999	146.412291955391	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	660.06283	hr	NA	586.54853	556.98752	29.56101	101.691542984287	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	664.08377	hr	NA	403.22191	359.56504	43.65687	65.6472944327491	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	672.37696	hr	NA	252.03383	178.81595	73.21788	32.647176485572	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	684.18848	hr	NA	132.74265	136.52839	3.78574	24.9265596476209	nmol/l	NA
-Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	696.25131	hr	NA	90.45509	NA	NA	NA	nmol/l	NA
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.36	hr	NA	71.8	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.57	hr	NA	147.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	0.82	hr	NA	237.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.32	hr	NA	251.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	1.83	hr	NA	227.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	2.35	hr	NA	196.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	2.83	hr	NA	165.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	3.84	hr	NA	126.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	5.85	hr	NA	92.8	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	7.87	hr	NA	69.4	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	9.86	hr	NA	54.7	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	11.89	hr	NA	39.7	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	15.93	hr	NA	25.7	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	24.0	hr	NA	15.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	647.92	hr	NA	18.4	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.2	hr	NA	24.5	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.7	hr	NA	148.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	648.97	hr	NA	207.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.45	hr	NA	255.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	649.94	hr	NA	232.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	650.44	hr	NA	219.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	650.94	hr	NA	200.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	651.94	hr	NA	173.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	653.92	hr	NA	123.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	655.94	hr	NA	88.6	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	657.95	hr	NA	70.9	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	659.92	hr	NA	53.1	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	663.95	hr	NA	34.1	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	671.95	hr	NA	20.6	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	683.95	hr	NA	8.49	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP10	16.0	EMP10	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10	695.97	hr	NA	4.75	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.04	hr	NA	78.2	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.32	hr	NA	294.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.55	hr	NA	471.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.86	hr	NA	575.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.28	hr	NA	684.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.8	hr	NA	588.0	727.0	139.0	34.75	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.33	hr	NA	494.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.85	hr	NA	433.0	557.0	124.0	31.0	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	3.84	hr	NA	320.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	5.81	hr	NA	232.0	301.6	69.6	17.4	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	7.87	hr	NA	169.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	9.86	hr	NA	134.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	11.91	hr	NA	97.8	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	15.9	hr	NA	60.9	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	24.0	hr	NA	34.8	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	647.91	hr	NA	46.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.21	hr	NA	84.6	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.4	hr	NA	250.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.74	hr	NA	477.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.9	hr	NA	582.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.4	hr	NA	636.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.89	hr	NA	535.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	650.44	hr	NA	552.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	650.97	hr	NA	527.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	651.96	hr	NA	442.0	486.8	44.8	11.2	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	653.92	hr	NA	332.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	655.9	hr	NA	220.0	277.2	57.2	14.3	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	657.94	hr	NA	179.0	222.8	43.8	10.95	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	659.95	hr	NA	127.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	663.92	hr	NA	87.4	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	671.95	hr	NA	48.7	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	683.95	hr	NA	22.2	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	695.99	hr	NA	12.6	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	719.94	hr	NA	3.56	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.04	hr	NA	250.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.29	hr	NA	1010.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.59	hr	NA	1700.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	0.8	hr	NA	1980.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.32	hr	NA	2560.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	1.83	hr	NA	2170.0	2696.0	526.0	96.03402174923913	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	2.31	hr	NA	1880.0	2242.0	362.0	66.09185527229005	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	2.83	hr	NA	1630.0	1936.0	306.0	55.86770086552694	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	3.86	hr	NA	1270.0	1505.0	235.0	42.90493367123801	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	5.83	hr	NA	967.0	1158.0	191.0	34.87166949449558	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	7.91	hr	NA	729.0	900.0	171.0	31.22018577779447	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	9.86	hr	NA	563.0	701.0	138.0	25.19523764523764	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	11.87	hr	NA	442.0	582.0	140.0	25.560386016907753	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	15.88	hr	NA	287.0	390.0	103.0	18.805141141010704	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	23.95	hr	NA	170.0	239.3	69.3	12.652391078369337	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	647.91	hr	NA	215.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.21	hr	NA	484.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.44	hr	NA	1210.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	648.7	hr	NA	1920.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	649.02	hr	NA	2230.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	649.58	hr	NA	2240.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	649.94	hr	NA	1990.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	650.44	hr	NA	1870.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	650.94	hr	NA	1800.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	651.94	hr	NA	1720.0	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	653.92	hr	NA	1280.0	1585.0	305.0	55.68512667969189	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	655.94	hr	NA	918.0	1156.0	238.0	43.45265622874318	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	657.94	hr	NA	778.0	1011.0	233.0	42.5397852995679	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	659.95	hr	NA	586.0	791.0	205.0	37.42770809618635	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	663.94	hr	NA	389.0	540.0	151.0	27.56870206109336	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	671.95	hr	NA	237.0	338.0	101.0	18.43999276934059	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	683.97	hr	NA	101.0	151.1	50.1	9.146966710336274	nmol/l	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	696.01	hr	NA	59.8	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	719.99	hr	NA	22.9	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)
+Heise2013a	NA	EMP100	30.0	EMP100	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP100	744.04	hr	NA	11.5	NA	NA	NA	nmol/l	central value from Fig. 1B (semi-log)

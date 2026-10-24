@@ -1,0 +1,35 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	mean_unit	value_unit	count_unit
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.04	hr		78.2				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.32	hr		294.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.55	hr		471.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	0.86	hr		575.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.28	hr		684.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	1.8	hr		588.0	727.0	139.0	34.75	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.33	hr		494.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	2.85	hr		433.0	557.0	124.0	31.0	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	3.84	hr		320.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	5.81	hr		232.0	301.6	69.6	17.4	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	7.87	hr		169.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	9.86	hr		134.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	11.91	hr		97.8				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	15.9	hr		60.9				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	24.0	hr		34.8				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	647.91	hr		46.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.21	hr		84.6				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.4	hr		250.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.74	hr		477.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	648.9	hr		582.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.4	hr		636.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	649.89	hr		535.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	650.44	hr		552.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	650.97	hr		527.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	651.96	hr		442.0	486.8	44.8	11.2	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	653.92	hr		332.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	655.9	hr		220.0	277.2	57.2	14.3	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	657.94	hr		179.0	222.8	43.8	10.95	central value from Fig. 1B (semi-log); sd from the error bar caps of Fig. 1A (linear)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	659.95	hr		127.0				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	663.92	hr		87.4				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	671.95	hr		48.7				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	683.95	hr		22.2				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	695.99	hr		12.6				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless
+Heise2013a		EMP25	16.0	EMP25	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25	719.94	hr		3.56				central value from Fig. 1B (semi-log)	nmol/l	nmol/l	dimensionless

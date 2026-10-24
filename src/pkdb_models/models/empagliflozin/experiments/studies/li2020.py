@@ -1,135 +1,174 @@
-from typing import Dict
+"""Simulation experiment of the study Li2020."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
+from typing import ClassVar, override
+
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
 from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
+from sbmlsim.simulation import Simulation
 
-from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData, Coadministration
-from pkdb_models.models.empagliflozin.helpers import run_experiments
+from pkdb_models.models.empagliflozin import MODEL
+from pkdb_models.models.empagliflozin.experiments.base_experiment import (
+    EmpagliflozinSimulationExperiment,
+)
 
 
 class Li2020(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Li2020."""
-    bodyweights = {
+    """Simulation experiment of Li2020.
+
+    Bioequivalence of a generic (test) and the brand-named (reference) tablet of
+    25 mg empagliflozin in healthy Chinese subjects, in a fasting and a fed arm
+    of 24 subjects each (crossover of test and reference in each arm).
+
+    Fasting arm: overnight fast, the dose with 240 ml water containing 20 %
+    glucose and 60 ml of 20 % glucose every hour until 4 hr (about 100 g oral
+    glucose). Fed arm: a high-fat, high-calorie breakfast 30 min before the
+    dose. Both arms have the same tmax of 4 hr (2-6 hr) and the same Cmax and
+    AUC, i.e. the glucose drink delays the absorption as the meal does: the
+    fasting arm is simulated with the absorption of the fed state.
+
+    Only the reference is mapped: test and reference are the same subjects and
+    bioequivalent, and the test curves are hidden behind the reference curves
+    of the figures (not digitizable).
+    """
+
+    bodyweights: ClassVar[dict[str, float]] = {
         "fasting": 58.2,
         "fed": 59.9,
     }  # [kg]
-    conditions = ["fasting", "fed"]
-    interventions = ["test", "ref"]
+    conditions: ClassVar[list[str]] = ["fasting", "fed"]
 
-    fasting_key = {
+    #: the fasting state of the study (metadata) by arm
+    fasting_key: ClassVar[dict[str, str]] = {
         "fasting": "fasted",
         "fed": "fed",
     }
-
-    symbols = {
-        "test": "s",  # square
-        "ref": "D",   # diamond
+    #: the state of the intestine in the simulation: the oral glucose load of the
+    #: fasting arm delays the absorption like a meal (tmax 4 hr in both arms)
+    absorption_key: ClassVar[dict[str, str]] = {
+        "fasting": "fed",
+        "fed": "fed",
     }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig2", "Fig3"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
+                label = str(label)
                 dset = DataSet.from_df(df_label, self.ureg)
                 if label.startswith("empagliflozin"):
                     dset.unit_conversion("mean", 1 / self.Mr.emp)
                 dsets[label] = dset
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
+        for condition in self.conditions:
+            simulations[f"po_emp25_{condition}"] = Simulation(
+                time_unit="hr",
+                end=73,
+                preinit_changes={
+                    **self.default_changes(),
+                    "BW": Q(self.bodyweights[condition], "kg"),
+                    "[KI__fpg]": Q(self.fpg_healthy, "mM"),
+                    "KI__f_renal_function": Q(1.0, "dimensionless"),
+                    "GU__fed": Q(
+                        self.fasting_map[self.absorption_key[condition]],
+                        "dimensionless",
+                    ),
+                    "PODOSE_emp": Q(25, "mg"),
+                },
+            )
+        return simulations
 
-        for intervention in self.interventions:
-            for condition in self.conditions:
-                tcsims[f"po_emp25_{intervention}_{condition}"] = TimecourseSim(
-                    Timecourse(
-                        start=0,
-                        end=73 * 60,  # [min]
-                        steps=500,
-                        changes={
-                            **self.default_changes(),
-                            "BW": Q_(self.bodyweights[condition], "kg"),
-                            "[KI__fpg]": Q_(self.fpg_healthy, "mM"),
-                            "KI__f_renal_function": Q_(1.0, "dimensionless"),
-                            "GU__f_absorption": Q_(self.fasting_map[self.fasting_key[condition]], "dimensionless"),
-                            "PODOSE_emp": Q_(25, "mg"),
-                        },
-                    )
-                )
-
-        return tcsims
-
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
-        for intervention in self.interventions:
-            for condition in self.conditions:
-                mappings[f"fm_po_emp25_{intervention}_{condition}"] = FitMapping(
+        for condition in self.conditions:
+            mappings[f"fm_po_emp25_ref_{condition}"] = FitMapping(
+                self,
+                reference=FitData(
                     self,
-                    reference=FitData(
-                        self,
-                        dataset=f"empagliflozin_{intervention}_{condition}",
-                        xid="time",
-                        yid="mean",
-                        yid_sd="mean_sd",
-                        count="count",
-                    ),
-                    observable=FitData(
-                        self, task=f"task_po_emp25_{intervention}_{condition}", xid="time", yid=f"[Cve_emp]",
-                    ),
-                    metadata=EmpagliflozinMappingMetaData(
-                        tissue=Tissue.PLASMA,
-                        route=Route.PO,
-                        application_form=ApplicationForm.TABLET,
-                        dosing=Dosing.SINGLE,
-                        health=Health.HEALTHY,
-                        fasting=Fasting.FASTED if condition == "fasting" else Fasting.FED,
-                        coadministration=Coadministration.NONE,
-                    ),
-                )
-        return mappings
-
-    def figures(self) -> Dict[str, Figure]:
-        fig = Figure(
-            experiment=self,
-            sid="Fig2_3",
-            name=f"{self.__class__.__name__} (Healthy)",
-        )
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
-        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
-
-        for intervention in self.interventions:
-            for condition in self.conditions:
-                color = self.fasting_colors[self.fasting_key[condition]]
-                symbol = self.symbols[intervention]
-
-                plots[0].add_data(
-                    task=f"task_po_emp25_{intervention}_{condition}",
-                    xid="time",
-                    yid=f"[Cve_emp]",
-                    label=f"25 mg Emp ({condition}, {intervention})",
-                    color=color,
-                )
-                plots[0].add_data(
-                    dataset=f"empagliflozin_{intervention}_{condition}",
+                    dataset=f"empagliflozin_ref_{condition}",
                     xid="time",
                     yid="mean",
                     yid_sd="mean_sd",
                     count="count",
-                    label=f"25 mg Emp ({condition}, {intervention})",
+                ),
+                observable=FitData(
+                    self,
+                    task=f"task_po_emp25_{condition}",
+                    xid="time",
+                    yid="[Cve_emp]",
+                ),
+                metadata=PKPDMappingMetaData(
+                    tissue=Tissue.PLASMA,
+                    route=Route.PO,
+                    application_form=ApplicationForm.TABLET,
+                    dosing=Dosing.SINGLE,
+                    health=Health.HEALTHY,
+                    # the fasting arm fasted overnight, but drank about 100 g
+                    # glucose with and after the dose
+                    fasting=Fasting.FASTED if condition == "fasting" else Fasting.FED,
+                    coadministration=Coadministration.NONE,
+                ),
+            )
+        return mappings
+
+    @override
+    def figures(self) -> dict[str, Figure]:
+        fig = Figure(
+            experiment=self,
+            sid="Fig2_3",
+            num_cols=2,
+            name=f"{self.__class__.__name__} (Healthy)",
+        )
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
+        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots[1].set_yaxis(self.label_emp_plasma, unit=self.unit_emp, scale="log")
+
+        for plot in plots:
+            for condition in self.conditions:
+                color = self.fasting_colors[self.fasting_key[condition]]
+                label = {
+                    "fasting": "25 mg Emp (fasting, glucose drink)",
+                    "fed": "25 mg Emp (fed)",
+                }[condition]
+                plot.add_data(
+                    task=f"task_po_emp25_{condition}",
+                    xid="time",
+                    yid="[Cve_emp]",
+                    label=label,
                     color=color,
-                    marker=symbol,
+                )
+                plot.add_data(
+                    dataset=f"empagliflozin_ref_{condition}",
+                    xid="time",
+                    yid="mean",
+                    yid_sd="mean_sd",
+                    count="count",
+                    label=label,
+                    color=color,
                 )
 
-        return {fig.sid: fig}
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Li2020, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Li2020, output_dir=Li2020.__name__)

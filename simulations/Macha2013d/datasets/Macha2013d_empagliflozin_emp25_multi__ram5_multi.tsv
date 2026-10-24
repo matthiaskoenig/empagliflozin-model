@@ -1,0 +1,18 @@
+study	group	count	measurement	substance	tissue	intervention	time	time_unit	mean	mean_sd	method	label	comments	mean_unit	count_unit
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	0.0	hr	47.974415		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	0.333333333333333	hr	193.80864		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	0.666666666666667	hr	594.86676		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	1.0	hr	777.1589		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	1.5	hr	817.4414		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	2.0	hr	773.2943		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	2.5	hr	736.82043		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	3.0	hr	646.61523		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	4.0	hr	544.8829		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	6.0	hr	347.17505		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	8.0	hr	249.25403		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	10.0	hr	187.79088		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	12.0	hr	135.9253		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	24.0	hr	43.492367		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	36.0	hr	16.309969		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	48.0	hr	6.3930397		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless
+Macha2013	rami	23.0	concentration	empagliflozin	plasma	EMPM5, RAM, RAM5	72.0	hr	1.9136535		HPLC MS/MS	empagliflozin_emp25_multi, ram5_multi		nmol/L	dimensionless

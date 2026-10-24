@@ -1,0 +1,2 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	cilow	ciup	comments	mean_unit	value_unit	count_unit
+Kim2023		Group1	18.0	EP25	cumulative amount	glucose	urine	LC MS/MS	uge_EP25	1.0	day		57738.29		11599.2506829401	2733.96960486322	53240.91	62235.67	day5, 24 hr urinary glucose	mg	mg	dimensionless

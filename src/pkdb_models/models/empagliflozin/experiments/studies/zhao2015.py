@@ -1,174 +1,196 @@
-from typing import Dict
+"""Simulation experiment of the study Zhao2015."""
 
-from sbmlsim.data import DataSet, load_pkdb_dataframe
-from sbmlsim.fit import FitMapping, FitData
-from sbmlutils.console import console
+from typing import ClassVar, override
+
+from pkpdsim.metadata import (
+    ApplicationForm,
+    Coadministration,
+    Dosing,
+    Fasting,
+    Health,
+    PKPDMappingMetaData,
+    Route,
+    Tissue,
+)
+from sbmlsim import Q
+from sbmlsim.data import DataSet
+from sbmlsim.fit import FitData, FitMapping
 from sbmlsim.plot import Axis, Figure
-from sbmlsim.simulation import Timecourse, TimecourseSim
+from sbmlsim.simulation import Change, Simulation
 
-from pkdb_models.models.empagliflozin.experiments.base_experiment import EmpagliflozinSimulationExperiment
-from pkdb_models.models.empagliflozin.experiments.metadata import Tissue, Route, Dosing, ApplicationForm, Health, \
-    Fasting, EmpagliflozinMappingMetaData, Coadministration
-from pkdb_models.models.empagliflozin.helpers import run_experiments
+from pkdb_models.models.empagliflozin import MODEL
+from pkdb_models.models.empagliflozin.experiments.base_experiment import (
+    EmpagliflozinSimulationExperiment,
+)
 
 
 class Zhao2015(EmpagliflozinSimulationExperiment):
-    """Simulation experiment of Zhao2015."""
-    bodyweights = {
+    """Simulation experiment of Zhao2015.
+
+    Single and multiple doses of 10 mg and 25 mg empagliflozin once daily in
+    Chinese patients with T2DM (n=9 per dose, eGFR >= 80 ml/min/1.73 m2,
+    background metformin, sulfonylurea or acarbose without an interaction).
+    A single dose on day 1 (profile and urine 0-24 hr, `SING`), then once
+    daily on days 3 to 9 (7 doses at 48 to 192 hr, profile and urine 192-216
+    hr at steady state, `MULTI`), fasted overnight; one simulation per dose.
+    Body weight and fasting plasma glucose are the means of Table I. The
+    exposure is 1.4-1.9 times that of white patients (as in the Japanese
+    studies).
+    """
+
+    bodyweights: ClassVar[dict[str, float]] = {
         "MULTI10": 74.0,  # [kg]
         "MULTI25": 67.0,  # [kg]
     }
-    fpgs = {
-        "MULTI10": 166.67/180,  # [mM]
-        "MULTI25": 160.56/180,  # [mM]
+    #: fasting plasma glucose, 166.67 and 160.56 mg/dl (Table I)
+    fpgs: ClassVar[dict[str, float]] = {
+        "MULTI10": 166.67 / 18,  # [mM]
+        "MULTI25": 160.56 / 18,  # [mM]
     }
-    doses = {
+    doses: ClassVar[dict[str, int]] = {
         "MULTI10": 10,
         "MULTI25": 25,
     }
-    # colors = {
-    #     "MULTI10": "tab:blue",
-    #     "MULTI25": "tab:orange",
-    # }
-    gfr = EmpagliflozinSimulationExperiment.gfr_healthy  # [ml/min] (healthy subjects, assuming 100 ml/min)
-    interventions = list(bodyweights.keys())
-    info = {
+    interventions: ClassVar[list[str]] = list(bodyweights.keys())
+    info: ClassVar[dict[str, str]] = {
         "[Cve_emp]": "empagliflozin",
         "Aurine_emp": "empagliflozin_urine",
     }
+    #: the data of day 1 (single dose) and of day 9 (steady state)
+    days: ClassVar[dict[str, Dosing]] = {
+        "SING": Dosing.SINGLE,
+        "MULTI": Dosing.MULTIPLE,
+    }
 
-    def datasets(self) -> Dict[str, DataSet]:
+    @override
+    def datasets(self) -> dict[str, DataSet]:
         dsets = {}
         for fig_id in ["Fig1", "Tab2A"]:
-            df = load_pkdb_dataframe(f"{self.sid}_{fig_id}", data_path=self.data_path)
+            df = self.load_dataframe(fig_id)
             for label, df_label in df.groupby("label"):
-                dset = DataSet.from_df(df_label, self.ureg)
-                dsets[f"{label}"] = dset
-
-        # console.print(dsets)
+                label = str(label)
+                dsets[label] = DataSet.from_df(df_label, self.ureg)
         return dsets
 
-    def simulations(self) -> Dict[str, TimecourseSim]:
-        Q_ = self.Q_
-        tcsims = {}
+    @override
+    def simulations(self) -> dict[str, Simulation]:
+        simulations = {}
 
         for intervention, dose in self.doses.items():
-            tc0 = Timecourse(
-                start=0,
-                end=48 * 60,  # [min]
-                steps=500,
-                changes={
+            # doses at 0 hr and every 24 hr from 48 to 192 hr, the urine is
+            # collected from dose to dose
+            simulations[intervention] = Simulation(
+                time_unit="hr",
+                end=267,
+                preinit_changes={
                     **self.default_changes(),
-                    "BW": Q_(self.bodyweights[intervention], "kg"),
-                    "[KI__fpg]": Q_(self.fpgs[intervention], "mM"),
-                    # "KI__f_renal_function": Q_(self.gfr/100, "dimensionless"),
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "Aurine_emp": Q_(0, "mmole"),
+                    "BW": Q(self.bodyweights[intervention], "kg"),
+                    "[KI__fpg]": Q(self.fpgs[intervention], "mM"),
+                    "PODOSE_emp": Q(dose, "mg"),
+                    "Aurine_emp": Q(0, "mmole"),
                 },
+                changes=[
+                    Change(
+                        [48 + 24 * k for k in range(7)], {"Aurine_emp": Q(0, "mmole")}
+                    ),
+                    self.add_doses(
+                        [48 + 24 * k for k in range(7)], {"PODOSE_emp": Q(dose, "mg")}
+                    ),
+                ],
             )
-            tc1 = Timecourse(
-                start=0,
-                end=24 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "Aurine_emp": Q_(0, "mmole"),
-                },
-            )
-            tc2 = Timecourse(
-                start=0,
-                end=75 * 60,  # [min]
-                steps=500,
-                changes={
-                    "PODOSE_emp": Q_(dose, "mg"),
-                    "Aurine_emp": Q_(0, "mmole"),
-                },
-            )
-            tcsims[f"{intervention}"] = TimecourseSim(
-                [tc0] + [tc1 for _ in range(6)] + [tc2],
-                # time_offset=-8*24*60,
-            )
-        return tcsims
+        return simulations
 
-    def fit_mappings(self) -> Dict[str, FitMapping]:
+    @override
+    def fit_mappings(self) -> dict[str, FitMapping]:
         mappings = {}
 
-        for intervention in self.interventions:
-            for k, sid in enumerate(self.info):
-                name = self.info[sid]
-                mappings[f"fm_{name}_{intervention}"] = FitMapping(
-                    self,
-                    reference=FitData(
+        for intervention, dose in self.doses.items():
+            for sid, name in self.info.items():
+                for day, dosing in self.days.items():
+                    mappings[f"fm_{name}_{day}{dose}"] = FitMapping(
                         self,
-                        dataset=f"{name}_{intervention}",
-                        xid="time",
-                        yid="mean",
-                        yid_sd="mean_sd",
-                        count="count",
-                    ),
-                    observable=FitData(
-                        self, task=f"task_{intervention}", xid="time", yid=sid,
-                    ),
-                    metadata=EmpagliflozinMappingMetaData(
-                        tissue=Tissue.URINE if "urine" in intervention else Tissue.PLASMA,
-                        route=Route.PO,
-                        application_form=ApplicationForm.TABLET,
-                        dosing=Dosing.MULTIPLE,
-                        health=Health.T2DM,
-                        fasting=Fasting.FASTED,
-                        coadministration=Coadministration.NONE,
-                    ),
-                )
+                        reference=FitData(
+                            self,
+                            dataset=f"{name}_{day}{dose}",
+                            xid="time",
+                            yid="mean",
+                            yid_sd="mean_sd",
+                            count="count",
+                        ),
+                        observable=FitData(
+                            self,
+                            task=f"task_{intervention}",
+                            xid="time",
+                            yid=sid,
+                        ),
+                        metadata=PKPDMappingMetaData(
+                            tissue=Tissue.URINE if "urine" in name else Tissue.PLASMA,
+                            route=Route.PO,
+                            application_form=ApplicationForm.TABLET,
+                            dosing=dosing,
+                            health=Health.T2DM,
+                            fasting=Fasting.FASTED,
+                            coadministration=Coadministration.NONE,
+                        ),
+                    )
         return mappings
 
-    def figures(self) -> Dict[str, Figure]:
+    @override
+    def figures(self) -> dict[str, Figure]:
         fig = Figure(
             experiment=self,
             sid="Fig1",
             num_rows=1,
-            num_cols=2,
+            num_cols=3,
             name=f"{self.__class__.__name__} (T2DM)",
+            # one legend per row, right of the grid (the panels show the same
+            # doses)
+            settings={"legend_scope": "row"},
         )
-        plots = fig.create_plots(xaxis=Axis(self.label_time, unit=self.unit_time), legend=True)
-        plots[0].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
-        plots[1].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
+        plots = fig.create_plots(
+            xaxis=Axis(self.label_time, unit=self.unit_time), legend=True
+        )
+        # plasma of day 1 (single dose) and day 9 (steady state), urine
+        plots[0].set_xaxis(self.label_time, unit=self.unit_time, min=-2, max=50)
+        plots[1].set_xaxis(self.label_time, unit=self.unit_time, min=190, max=266)
+        plots[2].set_xaxis(self.label_time, unit=self.unit_time, max=225)
+        for kp in [0, 1]:
+            plots[kp].set_yaxis(self.label_emp_plasma, unit=self.unit_emp)
+        plots[2].set_yaxis(self.label_emp_urine, unit=self.unit_emp_urine)
 
-        plots[1].xaxis.max = 225
-
-        for intervention in self.interventions:
-            dose = self.doses[intervention]
+        panels = [
+            ("[Cve_emp]", "empagliflozin", ["SING"], plots[0]),
+            ("[Cve_emp]", "empagliflozin", ["MULTI"], plots[1]),
+            ("Aurine_emp", "empagliflozin_urine", ["SING", "MULTI"], plots[2]),
+        ]
+        for intervention, dose in self.doses.items():
             color = self.dose_colors[dose]
             dose_label = f"{dose} mg Emp"
-
-            for k, sid in enumerate(self.info):
-                name = self.info[sid]
-
+            for sid, name, days, plot in panels:
                 # simulation
-                plots[k].add_data(
+                plot.add_data(
                     task=f"task_{intervention}",
                     xid="time",
                     yid=sid,
                     label=dose_label,
                     color=color,
                 )
+                # data (one legend entry per dose, the urine has the same
+                # markers)
+                for kd, day in enumerate(days):
+                    plot.add_data(
+                        dataset=f"{name}_{day}{dose}",
+                        xid="time",
+                        yid="mean",
+                        yid_sd="mean_sd",
+                        count="count",
+                        label=dose_label if kd == 0 and sid == "[Cve_emp]" else None,
+                        color=color,
+                        linestyle="" if "urine" in name else "--",
+                    )
 
-                # data
-                plots[k].add_data(
-                    dataset=f"{name}_{intervention}",
-                    xid="time",
-                    yid="mean",
-                    yid_sd="mean_sd",
-                    count="count",
-                    label=dose_label,
-                    color=color,
-                    linestyle="" if "urine" in name else "--",
-                )
-
-        return {
-            fig.sid: fig,
-        }
+        return self.figures_by_sid(fig)
 
 
 if __name__ == "__main__":
-    from pkdb_models.models.empagliflozin import RESULTS_PATH_SIMULATION
-    run_experiments(Zhao2015, output_dir=RESULTS_PATH_SIMULATION)
+    MODEL.run_experiments(Zhao2015, output_dir=Zhao2015.__name__)

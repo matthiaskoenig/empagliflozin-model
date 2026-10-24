@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmpagliflozinParameterScan | sbmlsim experiment</title>
+<style>
+:root {
+  --bg: #ffffff; --bg-soft: #f6f7f9; --bg-card: #ffffff;
+  --fg: #1b1f24; --fg-soft: #5b6472; --line: #e3e6ea;
+  --accent: #3b5bdb; --training: #2f9e44; --validation: #1c7ed6; --outlier: #e8590c;
+  --excluded: #868e96;
+  --radius: 10px; --shadow: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c; --bg-soft: #1a1e24; --bg-card: #1a1e24;
+    --fg: #e6e9ee; --fg-soft: #9aa4b2; --line: #2a3038;
+    --accent: #748ffc; --training: #51cf66; --validation: #4dabf7; --outlier: #ff922b;
+    --excluded: #adb5bd;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.top {
+  position: sticky; top: 0; z-index: 20; background: var(--bg);
+  border-bottom: 1px solid var(--line); padding: 14px 24px 0;
+}
+.top .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; }
+.top h1 { margin: 0; font-size: 20px; font-weight: 650; letter-spacing: -.01em; }
+.top .sub { color: var(--fg-soft); font-size: 13px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.badge {
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px;
+  padding: 2px 10px; font-size: 12px; color: var(--fg-soft); white-space: nowrap;
+}
+.badge b { color: var(--fg); font-weight: 600; }
+.badge.failed, .badge.failed b { color: var(--outlier); border-color: var(--outlier); }
+nav.sections { display: flex; gap: 4px; margin-top: 12px; }
+nav.sections a {
+  padding: 8px 14px; border-bottom: 2px solid transparent; color: var(--fg-soft);
+  font-size: 14px; font-weight: 550;
+}
+nav.sections a.active { color: var(--fg); border-bottom-color: var(--accent); }
+.search { display: flex; gap: 8px; align-items: center; padding: 10px 0 12px; }
+.search input {
+  flex: 1; max-width: 460px; padding: 8px 12px; font-size: 14px; color: var(--fg);
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+}
+.search input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.chip {
+  border: 1px solid var(--line); background: var(--bg-soft); color: var(--fg-soft);
+  border-radius: 999px; padding: 5px 12px; font-size: 12.5px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { color: #fff; border-color: transparent; }
+.chip[data-kind="training"][aria-pressed="true"] { background: var(--training); }
+.chip[data-kind="validation"][aria-pressed="true"] { background: var(--validation); }
+.chip[data-kind="outlier"][aria-pressed="true"] { background: var(--outlier); }
+.chip[data-kind="excluded"][aria-pressed="true"] { background: var(--excluded); }
+#hits { color: var(--fg-soft); font-size: 12.5px; margin-left: auto; }
+
+main { padding: 24px; max-width: 1400px; margin: 0 auto; }
+section { margin-bottom: 44px; scroll-margin-top: 150px; }
+section > h2 {
+  font-size: 17px; font-weight: 650; margin: 0 0 4px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 14px; font-weight: 600; color: var(--fg-soft); margin: 26px 0 10px;
+     text-transform: uppercase; letter-spacing: .04em; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px; margin-bottom: 16px;
+}
+/* a heading which opens a card sits at the padding of the card */
+.card > h3:first-child { margin-top: 0; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        margin-bottom: 16px; }
+/* the gap of the grid is the space between its cards */
+.grid > .card { margin-bottom: 0; }
+.card.wide { grid-column: 1 / -1; }
+
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+/* two tables in one card, e.g. the networks and their arrays */
+table + table { margin-top: 24px; }
+th, td { text-align: left; padding: 7px 12px 7px 0; border-bottom: 1px solid var(--line); }
+th { color: var(--fg-soft); font-weight: 600; white-space: nowrap; }
+th[data-sort] { cursor: pointer; user-select: none; }
+th[data-sort]:hover { color: var(--fg); }
+th[data-sort]::after { content: " ⇅"; opacity: .35; }
+th[data-sort].asc::after { content: " ↑"; opacity: 1; }
+th[data-sort].desc::after { content: " ↓"; opacity: 1; }
+td.num, th.num { text-align: right; padding-right: 18px; font-variant-numeric: tabular-nums; }
+tbody tr:hover { background: var(--bg-soft); }
+tr.total td { font-weight: 650; border-top: 2px solid var(--line); }
+
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 20px; font-size: 13.5px;
+      margin: 0; }
+.kv dt { color: var(--fg-soft); }
+.kv dd { margin: 0; word-break: break-word; white-space: pre-line; }
+
+.tag { border-radius: 999px; padding: 1px 9px; font-size: 11.5px; font-weight: 600; color: #fff; }
+.tag.training { background: var(--training); }
+.tag.validation { background: var(--validation); }
+.tag.outlier { background: var(--outlier); }
+.tag.excluded { background: var(--excluded); }
+.warn { color: var(--outlier); }
+
+/* what a value means, on the header of a column or next to a figure */
+.hint {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; margin-left: 4px; border-radius: 50%;
+  border: 1px solid var(--line); color: var(--fg-soft);
+  font-size: 10px; font-weight: 700; line-height: 1; cursor: help;
+  position: relative; vertical-align: middle; user-select: none;
+}
+.hint:hover, .hint:focus { border-color: var(--accent); color: var(--accent); }
+.hint::after {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  width: max-content; max-width: 320px; padding: 8px 10px;
+  border-radius: 6px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--fg); box-shadow: 0 4px 16px rgb(0 0 0 / 18%);
+  font-size: 12px; font-weight: 400; line-height: 1.45; text-align: left;
+  white-space: normal; opacity: 0; visibility: hidden; transition: opacity .12s;
+  z-index: 20; pointer-events: none;
+}
+.hint:hover::after, .hint:focus::after { opacity: 1; visibility: visible; }
+/* a tooltip of the last columns would leave the page */
+td:last-child .hint::after, th:last-child .hint::after { left: auto; right: 0; transform: none; }
+/* on a phone a wide table scrolls inside its card and not the page; the
+   tooltips of its header open downwards, into the table, not above the card */
+@media (max-width: 700px) {
+  .card { overflow-x: auto; }
+  th .hint::after { bottom: auto; top: calc(100% + 8px); }
+  /* the header of a phone is not sticky, it would cover half of the screen,
+     and its rows wrap; the gutter is 16px */
+  header.top { position: static; padding: 12px 16px 0; }
+  main { padding: 16px; }
+  footer { padding: 8px 16px 24px; }
+  section { scroll-margin-top: 16px; }
+  nav.sections { overflow-x: auto; }
+  nav.sections a { padding: 8px 10px; white-space: nowrap; }
+  .search { flex-wrap: wrap; }
+  .search input { flex-basis: 100%; max-width: none; }
+}
+
+figure { margin: 0; }
+figure img {
+  width: 100%; height: auto; background: #fff; border: 1px solid var(--line);
+  border-radius: 8px; cursor: zoom-in;
+}
+figcaption { color: var(--fg-soft); font-size: 12.5px; margin-top: 6px; }
+
+.mapping { }
+.mapping header { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 10px; }
+.mapping header .name { font-weight: 650; }
+.mapping header .exp { color: var(--fg-soft); font-size: 13px; }
+.mapping .metrics { margin-left: auto; display: flex; gap: 14px; font-size: 12.5px; color: var(--fg-soft); }
+.mapping .metrics b { color: var(--fg); font-weight: 600; }
+.hidden { display: none !important; }
+.failed { color: var(--outlier); }
+.empty { color: var(--fg-soft); font-style: italic; padding: 16px 0; }
+
+pre.code {
+  margin: 0; padding: 14px 16px; overflow-x: auto; max-height: 70vh;
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px; line-height: 1.5; tab-size: 4;
+}
+#lightbox {
+  position: fixed; inset: 0; background: rgba(8,10,14,.86); z-index: 50;
+  display: none; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 8px; }
+footer { color: var(--fg-soft); font-size: 12.5px; padding: 8px 24px 32px; max-width: 1400px; margin: 0 auto; }
+</style>
+<style>
+  /* an interactive figure is a page of its own, shown in place of the image */
+  figure iframe { width: 100%; height: 520px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg-card); }
+  /* a figure of one panel is not stretched to the width of the page, a figure
+     of many panels still uses it */
+  #figures figure img { width: auto; max-width: 100%; max-height: 70vh; display: block; margin: 0 auto; }
+  .mapping header .exp a + a::before { content: "·"; color: var(--fg-soft); margin: 0 6px; }
+</style>
+</head>
+<body data-items="figures">
+
+<header class="top">
+  <div class="row">
+    <h1>EmpagliflozinParameterScan</h1>
+    <span class="sub">simulation experiment</span>
+    <div class="badges">
+<span class="badge">models <b>1</b></span>
+<span class="badge">datasets <b>0</b></span>
+<span class="badge">figures <b>8</b></span>
+    </div>
+  </div>
+  <nav class="sections">
+<a href="#overview">Overview</a>
+<a href="#figures">Figures</a>
+<a href="#code">Code</a>
+  </nav>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search figures, models, datasets …" autocomplete="off">
+    <span id="hits"></span>
+  </div>
+</header>
+
+<main>
+
+<section id="overview">
+  <h2>Overview</h2>
+
+  <h3>Models</h3>
+  <div class="card">
+    <table data-filter="row">
+      <thead><tr><th data-sort="text">model</th><th data-sort="text">source</th></tr></thead>
+      <tbody>
+      <tr><td class="mono">model</td><td><a href="../../../../src/pkdb_models/models/empagliflozin/models/output/models/empagliflozin_body_flat.xml" title="../../../../src/pkdb_models/models/empagliflozin/models/output/models/empagliflozin_body_flat.xml">empagliflozin_body_flat.xml</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Datasets</h3>
+  <div class="card">
+    <p class="empty">The experiment has no datasets.</p>
+  </div>
+</section>
+
+<section id="figures">
+  <h2>Figures (8)</h2>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__renal__timecourse</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__renal__timecourse.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__renal__timecourse.svg" alt="fig_emp_po__renal__timecourse">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__hepatic__timecourse</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__hepatic__timecourse.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__hepatic__timecourse.svg" alt="fig_emp_po__hepatic__timecourse">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__dose__timecourse</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__dose__timecourse.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__dose__timecourse.svg" alt="fig_emp_po__dose__timecourse">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__food__timecourse</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__food__timecourse.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__food__timecourse.svg" alt="fig_emp_po__food__timecourse">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__renal</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__renal.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__renal.svg" alt="fig_emp_po__renal">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__hepatic</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__hepatic.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__hepatic.svg" alt="fig_emp_po__hepatic">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__dose</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__dose.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__dose.svg" alt="fig_emp_po__dose">
+    </figure>
+  </div>
+  <div class="card mapping" data-filter="card">
+    <header>
+      <span class="name mono">fig_emp_po__food</span>
+      <span class="exp">
+<a href="EmpagliflozinParameterScan_fig_emp_po__food.svg">svg</a>      </span>
+    </header>
+    <figure>
+      <img loading="lazy" src="EmpagliflozinParameterScan_fig_emp_po__food.svg" alt="fig_emp_po__food">
+    </figure>
+  </div>
+  <p class="empty hidden" data-empty>No figure matches the search.</p>
+</section>
+
+<section id="code">
+  <h2>Code</h2>
+  <div class="card">
+    <p><a href="../../../../src/pkdb_models/models/empagliflozin/experiments/scans/scan_parameter.py" title="../../../../src/pkdb_models/models/empagliflozin/experiments/scans/scan_parameter.py">scan_parameter.py</a></p>
+    <pre class="code"><code>&#34;&#34;&#34;Parameter scans of the empagliflozin model.
+
+The renal function, the degree of cirrhosis, the oral dose and the absorption
+(food effect) are scanned after a single oral dose of empagliflozin, every scan
+again for fasting plasma glucose levels from 5 to 11 mM for the urinary glucose
+excretion (UGE). The matplotlib figures show the timecourses of the scans and
+the pharmacokinetic parameters of `empagliflozin_pk` together with the data of
+the studies.
+
+In a run over the draws of the fitted parameters (`run_simulation
+pkdb_models.models.empagliflozin --uncertainty`) every point of a scan is
+simulated for every draw; the figures draw the median of the draws with the
+band of their quantiles.
+&#34;&#34;&#34;
+
+from collections.abc import Callable
+from functools import partial
+from pathlib import Path
+from typing import Any, ClassVar, Literal, NotRequired, TypedDict, override
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from matplotlib.axes import Axes
+from matplotlib.cm import ScalarMappable
+from matplotlib.colors import Colormap, LinearSegmentedColormap, LogNorm, Normalize
+from matplotlib.lines import Line2D
+from matplotlib.ticker import ScalarFormatter
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+from pint.errors import DimensionalityError
+from pkpdsim.scan import point_band, point_timecourse, scan_dimensions, start_values
+from sbmlsim import Q
+from sbmlsim.plot.serialization_matplotlib import FigureMPL
+from sbmlsim.result import ScanResult
+from sbmlsim.simulation import Dimension, Scan, Simulation
+from sbmlsim.units import Quantity
+
+from pkdb_models.models.empagliflozin import DATA_PATH_EMPAGLIFLOZIN, MODEL
+from pkdb_models.models.empagliflozin.empagliflozin_pk import summarize
+from pkdb_models.models.empagliflozin.experiments.base_experiment import (
+    EmpagliflozinSimulationExperiment,
+)
+from pkdb_models.models.empagliflozin.models.fits import FITS
+
+#: pharmacokinetic parameters and UGE of the studies, one file per scan
+STUDY_DATA_PATH = Path(__file__).parent / &#34;study_data&#34;
+
+#: markers of the studies, in the order of the studies in the data
+STUDY_MARKERS = (&#34;s&#34;, &#34;^&#34;, &#34;D&#34;, &#34;v&#34;, &#34;&lt;&#34;, &#34;&gt;&#34;, &#34;p&#34;, &#34;*&#34;, &#34;h&#34;, &#34;X&#34;)
+
+
+class ScanSpec(TypedDict):
+    &#34;&#34;&#34;Definition of a single parameter scan.&#34;&#34;&#34;
+
+    parameter: str
+    #: value of the reference simulation; the dose scan has none
+    default: NotRequired[float]
+    range: np.ndarray
+    scale: Literal[&#34;linear&#34;, &#34;log&#34;]
+    #: name of the colormap property of the experiment
+    colormap: str
+    units: str
+    label: str
+
+
+class EmpagliflozinParameterScan(EmpagliflozinSimulationExperiment):
+    &#34;&#34;&#34;Scan the effect of parameters on pharmacokinetics and pharmacodynamics.&#34;&#34;&#34;
+
+    #: pharmacokinetic parameters of the scans by simulation key, set by
+    #: `figures_mpl`
+    pk_dfs: dict[str, pd.DataFrame]
+
+    study_data_files: ClassVar[dict[str, str]] = {
+        &#34;renal_scan&#34;: str(STUDY_DATA_PATH / &#34;renal_parameters.tsv&#34;),
+        &#34;hepatic_scan&#34;: str(STUDY_DATA_PATH / &#34;hepatic_parameters.tsv&#34;),
+        &#34;dose_scan&#34;: str(STUDY_DATA_PATH / &#34;dose_parameters.tsv&#34;),
+        &#34;food_scan&#34;: str(STUDY_DATA_PATH / &#34;food_parameters.tsv&#34;),
+    }
+
+    # the individual data of the studies, from the data of the model
+    SARASHINA2014_FILE = str(
+        DATA_PATH_EMPAGLIFLOZIN / &#34;Sarashina2014&#34; / &#34;.Sarashina2014_Fig2.tsv&#34;
+    )
+    MACHA2014F_FILE = str(
+        DATA_PATH_EMPAGLIFLOZIN / &#34;Macha2014f&#34; / &#34;.Macha2014f_Fig2.tsv&#34;
+    )
+
+    num_points = 20
+    glucoses: ClassVar[list[int]] = [5, 6, 7, 8, 9, 10, 11]  # [mM]
+
+    scan_end = 24 * 60 * 7  # [min], one week
+    #: the output times of a run over the draws [min]: every 15 min in the
+    #: first day (absorption, maximum and the UGE at 24 hr), every hour after
+    #: it. The grid of `steps` for every draw of every point of the 32 scans
+    #: would need about 40 GB, this grid 2 GB.
+    times_uncertainty: ClassVar[tuple[float, ...]] = tuple(
+        np.unique(
+            np.concatenate([np.linspace(0, 1440, 97), np.linspace(1440, scan_end, 145)])
+        ).tolist()
+    )
+    #: the opacity of the bands of the draws of the fitted parameters
+    band_alpha = 0.15
+
+    substance_colors: ClassVar[dict[str, str]] = {
+        &#34;empagliflozin&#34;: &#34;black&#34;,
+        &#34;empagliflozin-glucuronide&#34;: &#34;#4A6FA5&#34;,
+    }
+    # labels, line styles and line widths of the substances in the panels of the
+    # pharmacokinetic parameters (the styles only for the half-life)
+    substance_labels: ClassVar[dict[str, str]] = {
+        &#34;empagliflozin&#34;: &#34;Emp&#34;,
+        &#34;empagliflozin-glucuronide&#34;: &#34;Eg&#34;,
+    }
+    substance_linestyles: ClassVar[dict[str, str]] = {
+        &#34;empagliflozin&#34;: &#34;-&#34;,
+        &#34;empagliflozin-glucuronide&#34;: &#34;--&#34;,
+    }
+    substance_linewidths: ClassVar[dict[str, float]] = {
+        &#34;empagliflozin&#34;: 3.0,
+        &#34;empagliflozin-glucuronide&#34;: 1.5,
+    }
+
+    # Maps condition labels (lower-cased) in the food TSV to the x-axis values of
+    # the factor of the absorption rate: fasted/fasting is no effect (1.0), fed
+    # the fitted effect of food of the model (`GU__FED_f_absorption`).
+    food_map: ClassVar[dict[str, float]] = {
+        &#34;fasted&#34;: 1.0,
+        &#34;fasting&#34;: 1.0,
+        &#34;fed&#34;: FITS[&#34;GU__FED_f_absorption&#34;].value,
+    }
+
+    scan_map: ClassVar[dict[str, ScanSpec]] = {
+        &#34;renal_scan&#34;: {
+            &#34;parameter&#34;: &#34;KI__f_renal_function&#34;,
+            &#34;default&#34;: 1.0,
+            &#34;range&#34;: np.sort(
+                np.append(np.logspace(-1.5, np.log10(2.0), num=num_points), [1.0])
+            ),
+            &#34;scale&#34;: &#34;log&#34;,
+            &#34;colormap&#34;: &#34;renal_cmap&#34;,
+            &#34;units&#34;: &#34;dimensionless&#34;,
+            &#34;label&#34;: &#34;Renal Function [-]&#34;,
+        },
+        &#34;hepatic_scan&#34;: {
+            &#34;parameter&#34;: &#34;f_cirrhosis&#34;,
+            &#34;default&#34;: 0.0,
+            &#34;range&#34;: np.linspace(0, 0.9, num=num_points),
+            &#34;scale&#34;: &#34;linear&#34;,
+            &#34;colormap&#34;: &#34;cirrhosis_cmap&#34;,
+            &#34;units&#34;: &#34;dimensionless&#34;,
+            &#34;label&#34;: &#34;Cirrhosis Degree [-]&#34;,
+        },
+        &#34;dose_scan&#34;: {
+            &#34;parameter&#34;: &#34;PODOSE_emp&#34;,
+            &#34;range&#34;: np.sort(
+                np.append(
+                    np.logspace(np.log10(0.1), np.log10(800), num=num_points), [100]
+                )
+            ),
+            &#34;scale&#34;: &#34;log&#34;,
+            &#34;colormap&#34;: &#34;doses_cmap&#34;,
+            &#34;units&#34;: &#34;mg&#34;,
+            &#34;label&#34;: &#34;Oral Dose [mg]&#34;,
+        },
+        &#34;food_scan&#34;: {
+            # the effect of food on the absorption rate, in the fed state
+            &#34;parameter&#34;: &#34;GU__FED_f_absorption&#34;,
+            &#34;default&#34;: 1.0,
+            &#34;range&#34;: np.sort(np.append(np.linspace(0.1, 1.5, num=num_points), [1.0])),
+            &#34;scale&#34;: &#34;linear&#34;,
+            &#34;colormap&#34;: &#34;food_cmap&#34;,
+            &#34;units&#34;: &#34;dimensionless&#34;,
+            &#34;label&#34;: &#34;Absorption Factor [-]&#34;,
+        },
+    }
+
+    #: further changes of the scans: the food scan is in the fed state
+    scan_changes: ClassVar[dict[str, dict[str, float]]] = {
+        &#34;food_scan&#34;: {&#34;GU__fed&#34;: 1.0},
+    }
+
+    #: oral dose of the scans [mg]; the dose scan scans the dose
+    scan_doses: ClassVar[dict[str, float]] = {
+        &#34;renal_scan&#34;: 50,
+        &#34;hepatic_scan&#34;: 50,
+        &#34;food_scan&#34;: 10,
+    }
+
+    @property
+    def food_cmap(self) -&gt; LinearSegmentedColormap:
+        &#34;&#34;&#34;Colormap ranging from dark deep red (low absorption) to light pastel red (high absorption).&#34;&#34;&#34;
+        return LinearSegmentedColormap.from_list(
+            &#34;food_cmap&#34;,
+            [&#34;#800100&#34;, &#34;#c22223&#34;, &#34;#e78789&#34;, &#34;#fbe8e6&#34;],
+        )
+
+    @staticmethod
+    def _scan_name(scan_key: str) -&gt; str:
+        &#34;&#34;&#34;Name of a scan in the keys of simulations and figures, e.g. `renal`.&#34;&#34;&#34;
+        return scan_key.removesuffix(&#34;_scan&#34;)
+
+    def _sim_key(self, scan_key: str) -&gt; str:
+        &#34;&#34;&#34;Key of the simulation of a scan, e.g. `scan_po_renal`.&#34;&#34;&#34;
+        return f&#34;scan_po_{self._scan_name(scan_key)}&#34;
+
+    def _gfr_bsa_to_f_renal(self, gfr_bsa: np.ndarray) -&gt; np.ndarray:
+        &#34;&#34;&#34;Renal function of a GFR normalized to the body surface area.&#34;&#34;&#34;
+        return np.asarray(gfr_bsa, dtype=float) / self.gfr_healthy
+
+    @override
+    def simulations(self) -&gt; dict[str, Scan]:
+        scans: dict[str, Scan] = {}
+        for scan_key in self.scan_map:
+            scans[self._sim_key(scan_key)] = self._scan(scan_key)
+
+        # scans with different glucose levels for UGE
+        for glc in self.glucoses:
+            for scan_key in self.scan_map:
+                scans[f&#34;{self._sim_key(scan_key)}_glc{glc}&#34;] = self._scan(
+                    scan_key, changes={&#34;[KI__fpg]&#34;: Q(glc, &#34;mM&#34;)}
+                )
+
+        return scans
+
+    def _scan(self, scan_key: str, changes: dict[str, Quantity] | None = None) -&gt; Scan:
+        &#34;&#34;&#34;Scan of a parameter after a single oral dose.
+
+        Args:
+            scan_key: key of the scan in `scan_map`.
+            changes: further changes of the simulations.
+        &#34;&#34;&#34;
+        scan_data = self.scan_map[scan_key]
+        dose = (
+            {&#34;PODOSE_emp&#34;: Q(self.scan_doses[scan_key], &#34;mg&#34;)}
+            if scan_key in self.scan_doses
+            else {}
+        )
+        grid: dict[str, Any] = (
+            {} if self.uncertainty is None else {&#34;times&#34;: self.times_uncertainty}
+        )
+        return Scan(
+            simulation=Simulation(
+                time_unit=&#34;min&#34;,
+                end=self.scan_end,
+                **grid,
+                preinit_changes={
+                    **self.default_changes(),
+                    **dose,
+                    **{
+                        pid: Q(value, &#34;dimensionless&#34;)
+                        for pid, value in self.scan_changes.get(scan_key, {}).items()
+                    },
+                    **(changes or {}),
+                },
+            ),
+            dimensions=[
+                Dimension(
+                    &#34;dim_scan&#34;,
+                    values={
+                        scan_data[&#34;parameter&#34;]: Q(
+                            scan_data[&#34;range&#34;], scan_data[&#34;units&#34;]
+                        )
+                    },
+                ),
+            ],
+        )
+
+    @override
+    def figures_mpl(self) -&gt; dict[str, FigureMPL]:
+        # the pharmacokinetic parameters of the scans (not of the scans of the
+        # glucose levels, which give the UGE), per draw in a run over the draws
+        self.pk_dfs = self.calculate_empagliflozin_pk(
+            scans=[self._sim_key(scan_key) for scan_key in self.scan_map]
+        )
+
+        return {
+            **self.figures_mpl_timecourses(),
+            **self.figures_mpl_pharmacokinetics(),
+        }
+
+    def figures_mpl_timecourses(self) -&gt; dict[str, FigureMPL]:
+        &#34;&#34;&#34;Timecourse plots for key variables as parameter scan.&#34;&#34;&#34;
+        return {
+            f&#34;fig_emp_po__{self._scan_name(scan_key)}__timecourse&#34;: (
+                self._plot_timecourse_scan(scan_key)
+            )
+            for scan_key in self.scan_map
+        }
+
+    def figures_mpl_pharmacokinetics(self) -&gt; dict[str, FigureMPL]:
+        &#34;&#34;&#34;Visualize dependency of pharmacokinetics parameters.&#34;&#34;&#34;
+        pk_parameters = [&#34;auc_inf_obs&#34;, &#34;cmax&#34;, &#34;tmax&#34;, &#34;thalf&#34;]
+
+        # one figure per scan
+        return {
+            f&#34;fig_emp_po__{self._scan_name(scan_key)}&#34;: self._plot_scan_combined(
+                scan_key, pk_parameters
+            )
+            for scan_key in self.scan_map
+        }
+
+    def _across(self) -&gt; str | None:
+        &#34;&#34;&#34;Get the dimension of the draws of the fitted parameters, `None` without.&#34;&#34;&#34;
+        return None if self.uncertainty is None else self.uncertainty.id
+
+    def _scandim(self, res: ScanResult) -&gt; str:
+        &#34;&#34;&#34;Get the dimension of a scan, the one besides the draws.&#34;&#34;&#34;
+        (scandim,) = scan_dimensions(res, self._across())
+        return scandim
+
+    def _scanned(self, res: ScanResult, parameter_id: str) -&gt; Quantity:
+        &#34;&#34;&#34;Get the values of the scanned parameter at the points of a scan.&#34;&#34;&#34;
+        values = start_values(res, parameter_id)
+        across = self._across()
+        if across is not None:
+            values = values.isel({across: 0})
+        return Q(values.values, res.units[parameter_id])
+
+    def _band(
+        self, res: ScanResult, sid: str, point: dict[str, int]
+    ) -&gt; tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+        &#34;&#34;&#34;Get the timecourse of a point of a scan with the band of its draws.
+
+        Returns:
+            The time, the lower quantile, the values (the median of the draws in
+            a run over them) and the upper quantile, the values without draws.
+        &#34;&#34;&#34;
+        run = self.uncertainty
+        if run is None:
+            time, values = point_timecourse(res, sid, **point)
+            return time, values, values, values
+        return point_band(res, sid, across=run.id, quantiles=run.quantiles, **point)
+
+    def _summary(
+        self, df: pd.DataFrame, key: str, unit: str
+    ) -&gt; tuple[Quantity, Quantity, Quantity]:
+        &#34;&#34;&#34;Get a parameter at the points of a scan, the median and the band of the draws.
+
+        Returns:
+            The values (the median of the draws in a run over them), and the
+            lower and the upper quantile, the values without draws.
+        &#34;&#34;&#34;
+        run = self.uncertainty
+        if run is None:
+            values = Q(df[key].to_numpy(dtype=float), unit)
+            return values, values, values
+        summary = summarize(df, key, run.quantiles)
+        median, lower, upper = (
+            Q(summary[column].to_numpy(), unit)
+            for column in [&#34;median&#34;, &#34;lower&#34;, &#34;upper&#34;]
+        )
+        return median, lower, upper
+
+    def _colormap(self, scan_data: ScanSpec) -&gt; Colormap:
+        &#34;&#34;&#34;Colormap of a scan, a property of the experiment.&#34;&#34;&#34;
+        return getattr(self, scan_data[&#34;colormap&#34;])
+
+    @staticmethod
+    def _norm(scan_data: ScanSpec) -&gt; Normalize:
+        &#34;&#34;&#34;Normalization of the colors of a scan to the scanned range.&#34;&#34;&#34;
+        rmin, rmax = scan_data[&#34;range&#34;][0], scan_data[&#34;range&#34;][-1]
+        if scan_data[&#34;scale&#34;] == &#34;linear&#34;:
+            return Normalize(vmin=rmin, vmax=rmax, clip=False)
+        if scan_data[&#34;scale&#34;] == &#34;log&#34;:
+            return LogNorm(vmin=rmin, vmax=rmax, clip=False)
+        raise ValueError(f&#34;Unsupported scale: &#39;{scan_data[&#39;scale&#39;]}&#39;&#34;)
+
+    @staticmethod
+    def _color_value(
+        value: float, rmin: float, rmax: float, scale: Literal[&#34;linear&#34;, &#34;log&#34;]
+    ) -&gt; float:
+        &#34;&#34;&#34;Position of a value of a scan in the scanned range, in [0, 1].&#34;&#34;&#34;
+        if scale == &#34;linear&#34;:
+            return (value - rmin) / np.abs(rmax - rmin)
+        if scale == &#34;log&#34;:
+            return (np.log10(value) - np.log10(rmin)) / np.abs(
+                np.log10(rmax) - np.log10(rmin)
+            )
+        raise ValueError(f&#34;Unsupported scale: &#39;{scale}&#39;&#34;)
+
+    @staticmethod
+    def _dose_mg(res: ScanResult) -&gt; float:
+        &#34;&#34;&#34;Oral dose of the first simulation of a scan [mg].&#34;&#34;&#34;
+        values = start_values(res, &#34;PODOSE_emp&#34;).values
+        dose = Q(values.flat[0], res.units[&#34;PODOSE_emp&#34;])
+        return dose.to(&#34;mg&#34;).magnitude
+
+    def _add_dose_annotation(self, ax: Axes, res: ScanResult) -&gt; None:
+        &#34;&#34;&#34;Annotate the oral dose of a scan in the lower right corner.&#34;&#34;&#34;
+        ax.text(
+            0.98,
+            0.02,
+            f&#34;Dose: {self._dose_mg(res):.0f} mg&#34;,
+            transform=ax.transAxes,
+            fontsize=12,
+            verticalalignment=&#34;bottom&#34;,
+            horizontalalignment=&#34;right&#34;,
+            bbox={
+                &#34;boxstyle&#34;: &#34;round&#34;,
+                &#34;facecolor&#34;: &#34;white&#34;,
+                &#34;alpha&#34;: 0.8,
+                &#34;edgecolor&#34;: &#34;gray&#34;,
+            },
+        )
+
+    @staticmethod
+    def _set_log_xaxis(ax: Axes, scan_key: str) -&gt; None:
+        &#34;&#34;&#34;Log scale of the x-axis with plain numbers as labels.&#34;&#34;&#34;
+        ax.set_xscale(&#34;log&#34;)
+        formatter = ScalarFormatter()
+        formatter.set_scientific(False)
+        ax.xaxis.set_major_formatter(formatter)
+        if scan_key == &#34;dose_scan&#34;:
+            ax.set_xticks([0.1, 1, 10, 100, 800])
+            ax.set_xticklabels([&#34;0.1&#34;, &#34;1&#34;, &#34;10&#34;, &#34;100&#34;, &#34;800&#34;])
+
+    @staticmethod
+    def _study_legend_handles(study_markers: dict[str, str]) -&gt; list[Line2D]:
+        &#34;&#34;&#34;Legend handles of the studies, sorted by study.&#34;&#34;&#34;
+        return [
+            Line2D(
+                [],
+                [],
+                marker=marker,
+                color=&#34;white&#34;,
+                markerfacecolor=&#34;white&#34;,
+                markeredgecolor=&#34;black&#34;,
+                markeredgewidth=0.8,
+                markersize=8,
+                linestyle=&#34;&#34;,
+                label=study,
+            )
+            for study, marker in sorted(study_markers.items())
+        ]
+
+    def _plot_timecourse_scan(self, scan_key: str) -&gt; FigureMPL:
+        &#34;&#34;&#34;Create timecourse plot for a parameter scan.&#34;&#34;&#34;
+        sids = [
+            &#34;[Cve_emp]&#34;,
+            &#34;[Cve_eg]&#34;,
+            &#34;Aurine_emp&#34;,
+            &#34;Aurine_eg&#34;,
+            &#34;Afeces_emp&#34;,
+        ]
+
+        scan_data = self.scan_map[scan_key]
+        scan_range = scan_data[&#34;range&#34;]
+        rmin, rmax = scan_range[0], scan_range[-1]
+        cmap = self._colormap(scan_data)
+
+        # 1 row x multiple columns
+        nrows = 1
+        ncols = len(sids)
+        figsize = (6 * ncols, 6 * nrows)
+
+        f, axes = plt.subplots(
+            nrows=nrows,
+            ncols=ncols,
+            figsize=figsize,
+            sharey=False,
+            sharex=False,
+            dpi=150,
+            squeeze=False,
+        )
+        f.subplots_adjust(
+            top=0.88, bottom=0.1, left=0.08, right=0.98, hspace=0.3, wspace=0.35
+        )
+
+        # get data
+        res = self.results[f&#34;task_{self._sim_key(scan_key)}&#34;]
+        units = res.units
+
+        # scanned dimension
+        scandim = self._scandim(res)
+        par_vec = self._scanned(res, scan_data[&#34;parameter&#34;])
+
+        for k_sid, sid in enumerate(sids):
+            ax: Axes = axes[0, k_sid]
+
+            ymax = 0.0
+            # the reference simulation (the dose scan has none)
+            t_vec_default = c_vec_default = None
+            for k_par, par in enumerate(par_vec):
+                time, lower, values, upper = self._band(res, sid, {scandim: k_par})
+                t_vec = Q(time, units[&#34;time&#34;]).to(self.units[&#34;time&#34;])
+                c_vec = Q(values, units[sid]).to(self.units[sid])
+                c_upper = Q(upper, units[sid]).to(self.units[sid])
+
+                # update ymax, with the band of the draws
+                cmax = np.nanmax(c_upper.magnitude)
+                if cmax &gt; ymax:
+                    ymax = cmax
+
+                if scan_key != &#34;dose_scan&#34; and np.isclose(
+                    scan_data[&#34;default&#34;], par.magnitude
+                ):
+                    color = &#34;black&#34;
+                    t_vec_default, c_vec_default = t_vec, c_vec
+                else:
+                    # color by the position in the scanned range
+                    color = cmap(
+                        self._color_value(par.magnitude, rmin, rmax, scan_data[&#34;scale&#34;])
+                    )
+
+                if self.uncertainty is not None:
+                    ax.fill_between(
+                        t_vec.magnitude,
+                        Q(lower, units[sid]).to(self.units[sid]).magnitude,
+                        c_upper.magnitude,
+                        color=color,
+                        alpha=self.band_alpha,
+                        linewidth=0,
+                    )
+                ax.plot(
+                    t_vec.magnitude,
+                    c_vec.magnitude,
+                    color=color,
+                    linewidth=2.0,
+                )
+
+            # reference simulation on top
+            if t_vec_default is not None and c_vec_default is not None:
+                ax.plot(
+                    t_vec_default.magnitude,
+                    c_vec_default.magnitude,
+                    color=&#34;black&#34;,
+                    linewidth=2.0,
+                )
+
+            ax.set_xlabel(
+                f&#34;{self.label_time} [{self.units[&#39;time&#39;]}]&#34;,
+                fontdict=self.font,
+            )
+            ax.tick_params(axis=&#34;x&#34;, labelsize=self.tick_font_size)
+            ax.tick_params(axis=&#34;y&#34;, labelsize=self.tick_font_size)
+
+            ax.set_ylabel(
+                f&#34;{self.labels[sid]} [{self.units[sid]}]&#34;,
+                fontdict=self.font,
+            )
+
+            ax.set_ylim(bottom=0.0, top=1.05 * ymax)
+
+            if k_sid in [0, 1]:
+                ax.set_xlim(left=-1, right=50)
+            elif k_sid in [2, 3]:
+                ax.set_xlim(left=-1, right=70)
+
+            if scan_key in self.scan_doses:
+                self._add_dose_annotation(ax, res)
+
+        # add colorbar
+        cb_ax = f.add_axes(rect=(0.1, 1.0, 0.85, 0.03))
+        cb_ax.set_in_layout(True)
+
+        cbar = f.colorbar(
+            ScalarMappable(norm=self._norm(scan_data), cmap=cmap),
+            cax=cb_ax,
+            orientation=&#34;horizontal&#34;,
+        )
+        # the gradient as vector cells: matplotlib rasterizes it into an
+        # embedded image, which some SVG viewers do not show; the edges of
+        # the cells in their color close the seams between them
+        if cbar.solids is not None:
+            cbar.solids.set_rasterized(False)
+            cbar.solids.set_edgecolor(&#34;face&#34;)
+
+        # ticks
+        ticks = [rmin, rmax]
+        if scan_key != &#34;dose_scan&#34; and scan_data[&#34;default&#34;] not in ticks:
+            ticks.append(scan_data[&#34;default&#34;])
+            ticks = sorted(ticks)
+        cbar.set_ticks(ticks)
+        # three significant digits, e.g. 0.0316 for the lowest renal function
+        # and 0.1 for the lowest dose
+        tick_labels = [f&#34;{tick:.3g}&#34; for tick in ticks]
+        cbar.set_ticklabels(tick_labels, size=15, weight=&#34;normal&#34;)
+        cbar.ax.set_xlabel(scan_data[&#34;label&#34;], size=15, weight=&#34;bold&#34;)
+
+        if scan_key != &#34;dose_scan&#34;:
+            cbar.ax.axvline(x=scan_data[&#34;default&#34;], color=&#34;black&#34;, linewidth=2)
+
+        return f
+
+    def _plot_scan_combined(self, scan_key: str, pk_parameters: list[str]) -&gt; FigureMPL:
+        &#34;&#34;&#34;Create combined figure with all PK parameters, UGE, and (renal only) cl_renal.&#34;&#34;&#34;
+        is_renal = scan_key == &#34;renal_scan&#34;
+        ncols = 6 if is_renal else 5
+        figsize = (6 * ncols, 6)
+
+        f, axes = plt.subplots(
+            nrows=1,
+            ncols=ncols,
+            figsize=figsize,
+            dpi=150,
+            layout=&#34;constrained&#34;,
+            squeeze=False,
+        )
+        axes = axes.flatten()
+
+        # Columns 0-3: PK parameters (auc_inf_obs, cmax, tmax, thalf)
+        for k, pk_key in enumerate(pk_parameters):
+            self._plot_pk_subplot(axes[k], scan_key, pk_key)
+
+        # Column 4: UGE
+        self._plot_uge_subplot(axes[4], scan_key)
+
+        # Column 5 (renal only): cl_renal
+        if is_renal:
+            self._plot_cl_renal_subplot(axes[5], scan_key)
+
+        return f
+
+    def _molar_mass_for_substance(self, substance: str) -&gt; Quantity | None:
+        &#34;&#34;&#34;Molar mass of a substance of the study data, None for an unknown one.&#34;&#34;&#34;
+        return {
+            &#34;empagliflozin&#34;: self.Mr.emp,
+            &#34;empagliflozin-glucuronide&#34;: self.Mr.eg,
+            &#34;eg&#34;: self.Mr.eg,
+            &#34;total empagliflozin&#34;: self.Mr.emp,
+        }.get(substance.lower())
+
+    def _convert_pk_quantity(
+        self, y: Quantity, pk_key: str, substance: str
+    ) -&gt; Quantity:
+        &#34;&#34;&#34;Convert to the unit of a pharmacokinetic parameter.
+
+        A mass is converted to an amount of substance (and an amount to a mass)
+        with the molar mass of the substance.
+        &#34;&#34;&#34;
+        target_unit = self.pk_units[pk_key]
+        try:
+            return y.to(target_unit)
+        except DimensionalityError:
+            molar_mass = self._molar_mass_for_substance(substance)
+            if molar_mass is None:
+                raise
+            try:
+                return (y / molar_mass).to(target_unit)
+            except DimensionalityError:
+                return (y * molar_mass).to(target_unit)
+
+    def _convert_study_value_to_target_unit(
+        self, value: float, unit_str: str, pk_key: str, substance: str
+    ) -&gt; float:
+        &#34;&#34;&#34;Convert a study data value from its TSV unit to the target pk_unit.&#34;&#34;&#34;
+        return self._convert_pk_quantity(
+            Q(value, unit_str), pk_key, substance
+        ).magnitude
+
+    def _study_value(
+        self,
+        value: float,
+        unit: str | float | None,
+        pk_key: str,
+        substance: str,
+        factor: float,
+    ) -&gt; float:
+        &#34;&#34;&#34;Value of the study data in the unit of the parameter, scaled by a factor.
+
+        A value without unit is used as it is.
+        &#34;&#34;&#34;
+        if pd.notna(unit):
+            y = self._convert_study_value_to_target_unit(
+                value, str(unit), pk_key, substance
+            )
+        else:
+            y = float(value)
+        return y * factor
+
+    def _condition_map(self, scan_key: str) -&gt; dict[str, float]:
+        &#34;&#34;&#34;Position of the conditions of the study data (lower case) on the x-axis.
+
+        The dose scan has no conditions, the dose is the position.
+        &#34;&#34;&#34;
+        if scan_key == &#34;renal_scan&#34;:
+            return {
+                &#34;normal&#34;: self.renal_map[&#34;Normal renal function&#34;],
+                &#34;mild&#34;: self.renal_map[&#34;Mild renal impairment&#34;],
+                &#34;moderate&#34;: self.renal_map[&#34;Moderate renal impairment&#34;],
+                &#34;severe&#34;: self.renal_map[&#34;Severe renal impairment&#34;],
+            }
+        if scan_key == &#34;hepatic_scan&#34;:
+            return {
+                &#34;normal&#34;: self.cirrhosis_map[&#34;Control&#34;],
+                &#34;mild&#34;: self.cirrhosis_map[&#34;Mild cirrhosis&#34;],
+                &#34;moderate&#34;: self.cirrhosis_map[&#34;Moderate cirrhosis&#34;],
+                &#34;severe&#34;: self.cirrhosis_map[&#34;Severe cirrhosis&#34;],
+            }
+        if scan_key == &#34;food_scan&#34;:
+            # fed/fasted condition labels at their f_absorption x-axis positions
+            return dict(self.food_map)
+        return {}
+
+    @staticmethod
+    def _condition(row: pd.Series) -&gt; str | None:
+        &#34;&#34;&#34;Condition of a row of the study data in lower case.&#34;&#34;&#34;
+        condition = row.get(&#34;condition&#34;, None)
+        return condition.lower() if pd.notna(condition) else None
+
+    @staticmethod
+    def _study_markers(df: pd.DataFrame) -&gt; dict[str, str]:
+        &#34;&#34;&#34;Markers of the studies of the study data.&#34;&#34;&#34;
+        return {
+            study: STUDY_MARKERS[i % len(STUDY_MARKERS)]
+            for i, study in enumerate(df[&#34;study&#34;].unique())
+        }
+
+    def _add_study_data_to_plot(
+        self, ax: Axes, scan_key: str, substance: str, parameter: str
+    ) -&gt; tuple[float | None, dict[str, str]]:
+        &#34;&#34;&#34;Add study data points to PK parameter plots.
+
+        For the scans with a fixed dose, `cmax` and `auc_inf_obs` of the studies
+        are scaled to the dose of the scan, the other parameters are only shown
+        for studies with the dose of the scan.
+
+        Returns:
+            The maximum of the plotted data (None without data of the parameter)
+            and the markers of the studies.
+        &#34;&#34;&#34;
+        df = pd.read_csv(self.study_data_files[scan_key], sep=&#34;\t&#34;, comment=&#34;#&#34;)
+        df = df[(df[&#34;substance&#34;] == substance) &amp; (df[&#34;parameter&#34;] == parameter)]
+        if len(df) == 0:
+            return None, {}
+
+        # dose of the scan for the scaling (not used by the dose scan)
+        sim_dose = self._dose_mg(self.results[f&#34;task_{self._sim_key(scan_key)}&#34;])
+        condition_map = self._condition_map(scan_key)
+
+        # parameters which are scaled to the dose of the scan
+        scalable_params = [&#34;cmax&#34;, &#34;auc_inf_obs&#34;]
+
+        study_marker_map = self._study_markers(df)
+        substance_color = self.substance_colors.get(substance, &#34;black&#34;)
+
+        # Track maximum y-value for axis scaling
+        max_y = 0.0
+        for _, row in df.iterrows():
+            if scan_key == &#34;dose_scan&#34;:
+                # the position is the dose, no scaling
+                x_pos = row[&#34;dose&#34;]
+                factor = 1.0
+            else:
+                condition = self._condition(row)
+                if condition not in condition_map:
+                    continue
+                x_pos = condition_map[condition]
+
+                # Scale PK values if study dose differs from simulation dose
+                study_dose = row.get(&#34;dose&#34;, np.nan)
+                dose_ratio = (
+                    sim_dose / study_dose
+                    if pd.notna(study_dose) and study_dose &gt; 0
+                    else 1.0
+                )
+                if (
+                    pd.notna(study_dose)
+                    and study_dose != sim_dose
+                    and parameter not in scalable_params
+                ):
+                    continue
+                factor = dose_ratio if parameter in scalable_params else 1.0
+
+            # the unit of the value is the unit of the row of the TSV
+            convert = partial(
+                self._study_value,
+                unit=row.get(&#34;unit&#34;, None),
+                pk_key=parameter,
+                substance=substance,
+                factor=factor,
+            )
+            y_top = _plot_study_row(
+                ax,
+                row,
+                x_pos,
+                marker=study_marker_map.get(row[&#34;study&#34;], &#34;s&#34;),
+                color=substance_color,
+                convert=convert,
+            )
+            if y_top is not None:
+                max_y = max(max_y, y_top)
+
+        return max_y, study_marker_map
+
+    def _add_uge_study_data_to_plot(
+        self, ax: Axes, scan_key: str
+    ) -&gt; tuple[float | None, dict[str, str]]:
+        &#34;&#34;&#34;Add study data points to UGE plots.
+
+        For the scans with a fixed dose only the data of the dose of the scan is
+        shown; the color is the glucose level of the subjects (diabetes status).
+
+        Returns:
+            The maximum of the plotted data (None without UGE data) and the
+            markers of the studies.
+        &#34;&#34;&#34;
+        df = pd.read_csv(self.study_data_files[scan_key], sep=&#34;\t&#34;, comment=&#34;#&#34;)
+        df = df[df[&#34;parameter&#34;] == &#34;UGE_24&#34;]
+        if len(df) == 0:
+            return None, {}
+
+        # dose of the scan (not used by the dose scan)
+        sim_dose = self._dose_mg(
+            self.results[f&#34;task_{self._sim_key(scan_key)}_glc{self.glucoses[0]}&#34;]
+        )
+        condition_map = self._condition_map(scan_key)
+
+        # glucose level [mM] of the subjects by diabetes status
+        diabetes_map = {
+            &#34;N&#34;: 5,  # Normal/healthy
+            &#34;T2DM&#34;: 8,  # Type 2 diabetes
+            &#34;T1DM&#34;: 8,  # Type 1 diabetes
+        }
+
+        study_marker_map = self._study_markers(df)
+
+        max_y = 0.0
+        for _, row in df.iterrows():
+            study_dose = row.get(&#34;dose&#34;, np.nan)
+            if scan_key == &#34;dose_scan&#34;:
+                x_pos = row[&#34;dose&#34;]
+            else:
+                condition = self._condition(row)
+                if condition not in condition_map:
+                    continue
+                # only the data of the dose of the scan, for the food scan also
+                # data without dose
+                if scan_key == &#34;food_scan&#34;:
+                    if pd.notna(study_dose) and study_dose != sim_dose:
+                        continue
+                elif pd.isna(study_dose) or study_dose != sim_dose:
+                    continue
+                x_pos = condition_map[condition]
+
+            diabetes_status = row.get(&#34;diabetes&#34;, &#34;N&#34;)
+            if pd.isna(diabetes_status):
+                diabetes_status = &#34;N&#34;
+            glucose_level = diabetes_map.get(diabetes_status, 5)
+            face_color = self.glucose_colors.get(glucose_level, self.glucose_colors[5])
+
+            y_top = _plot_study_row(
+                ax,
+                row,
+                x_pos,
+                marker=study_marker_map.get(row[&#34;study&#34;], &#34;s&#34;),
+                color=face_color,
+                convert=float,
+            )
+            if y_top is not None:
+                max_y = max(max_y, y_top)
+
+        return max_y, study_marker_map
+
+    def _plot_pk_subplot(self, ax: Axes, scan_key: str, pk_key: str) -&gt; None:
+        &#34;&#34;&#34;Plot a single PK parameter subplot with both substances.&#34;&#34;&#34;
+        scan_data = self.scan_map[scan_key]
+        sim_key = self._sim_key(scan_key)
+
+        # Only show reference line for non-dose scans
+        if scan_key != &#34;dose_scan&#34;:
+            ax.axvline(
+                x=scan_data[&#34;default&#34;], color=&#34;grey&#34;, linestyle=&#34;--&#34;, linewidth=1.5
+            )
+
+        res = self.results[f&#34;task_{sim_key}&#34;]
+        x_vec = self._scanned(res, scan_data[&#34;parameter&#34;])
+
+        substances = [&#34;empagliflozin&#34;, &#34;empagliflozin-glucuronide&#34;]
+        ymax = 0.0
+
+        # Plot both substances
+        df = self.pk_dfs[sim_key]
+        for substance in substances:
+            df_sub = df[df.substance == substance]
+            if len(df_sub) == 0:
+                continue
+
+            y, y_lower, y_upper = (
+                self._convert_pk_quantity(v, pk_key, substance)
+                for v in self._summary(
+                    df_sub, pk_key, df_sub[f&#34;{pk_key}_unit&#34;].to_numpy()[0]
+                )
+            )
+            color = self.substance_colors[substance]
+            if self.uncertainty is not None:
+                ax.fill_between(
+                    x_vec.magnitude,
+                    y_lower.magnitude,
+                    y_upper.magnitude,
+                    color=color,
+                    alpha=self.band_alpha,
+                    linewidth=0,
+                )
+
+            # Plot simulation line
+            is_thalf = pk_key == &#34;thalf&#34;
+            ax.plot(
+                x_vec.magnitude,
+                y.magnitude,
+                marker=&#34;o&#34;,
+                color=color,
+                markeredgecolor=color,
+                linestyle=self.substance_linestyles[substance] if is_thalf else &#34;-&#34;,
+                linewidth=self.substance_linewidths[substance] if is_thalf else 2.5,
+                markersize=7,
+                label=self.substance_labels[substance],
+            )
+
+            ymax = max(ymax, np.nanmax(y_upper.magnitude))
+
+        # Add study data for all substances
+        study_markers: dict[str, str] = {}
+        study_max_y = 0.0
+        if scan_key in self.study_data_files:
+            for substance in substances:
+                max_y_sub, study_info = self._add_study_data_to_plot(
+                    ax, scan_key, substance, pk_key
+                )
+                if max_y_sub is not None:
+                    study_max_y = max(study_max_y, max_y_sub)
+                study_markers.update(study_info)
+
+        # Sarashina2014 individual scatter
+        self._add_sarashina2014_aucinf_scatter(ax, scan_key, pk_key, study_markers)
+        if &#34;Sarashina2014&#34; in study_markers:
+            study_max_y = max(study_max_y, ax.get_ylim()[1])
+
+        # Macha2014f individual scatter (renal scan / auc_inf_obs only)
+        self._add_macha2014f_aucinf_scatter(ax, scan_key, pk_key, study_markers)
+
+        ymax = max(ymax, study_max_y)
+
+        # Formatting
+        ax.tick_params(axis=&#34;x&#34;, labelsize=self.tick_font_size)
+        ax.tick_params(axis=&#34;y&#34;, labelsize=self.tick_font_size)
+        ax.set_xlabel(scan_data[&#34;label&#34;], fontdict=self.scan_font)
+        ax.set_ylabel(
+            f&#34;{self.pk_labels[pk_key].capitalize()} [{self.pk_units[pk_key]}]&#34;,
+            fontdict=self.scan_font,
+        )
+        ax.set_ylim(bottom=0.0, top=1.05 * ymax)
+
+        if scan_data[&#34;scale&#34;] == &#34;log&#34;:
+            self._set_log_xaxis(ax, scan_key)
+
+        if scan_key in self.scan_doses:
+            self._add_dose_annotation(ax, res)
+
+        # Add legends
+        handles, labels = ax.get_legend_handles_labels()
+        if labels:
+            substance_labels = list(self.substance_labels.values())
+            substance_handles = [
+                handle
+                for handle, label in zip(handles, labels, strict=True)
+                if label in substance_labels
+            ]
+            substance_leg_labels = [
+                label for label in labels if label in substance_labels
+            ]
+
+            if substance_handles:
+                leg1 = ax.legend(
+                    substance_handles,
+                    substance_leg_labels,
+                    title=&#34;Substance&#34;,
+                    loc=&#34;upper left&#34;,
+                    bbox_to_anchor=(0, 0.97),
+                    fontsize=10,
+                    title_fontsize=11,
+                    framealpha=0.9,
+                )
+                ax.add_artist(leg1)
+
+            if study_markers:
+                ax.legend(
+                    self._study_legend_handles(study_markers),
+                    sorted(study_markers),
+                    title=&#34;Studies&#34;,
+                    loc=&#34;upper left&#34;,
+                    bbox_to_anchor=(0.20, 0.97),
+                    fontsize=9,
+                    title_fontsize=10,
+                    framealpha=0.9,
+                    ncol=2,
+                )
+
+        self._add_colorbar_strip(ax, scan_data)
+
+    def _plot_uge_subplot(self, ax: Axes, scan_key: str) -&gt; None:
+        &#34;&#34;&#34;Plot UGE subplot with multiple glucose levels.&#34;&#34;&#34;
+        scan_data = self.scan_map[scan_key]
+        sim_key = self._sim_key(scan_key)
+
+        if scan_key != &#34;dose_scan&#34;:
+            ax.axvline(
+                x=scan_data[&#34;default&#34;], color=&#34;grey&#34;, linestyle=&#34;--&#34;, linewidth=1.5
+            )
+
+        # Get x-axis values
+        res_sample = self.results[f&#34;task_{sim_key}_glc{self.glucoses[0]}&#34;]
+        x_vec = self._scanned(res_sample, scan_data[&#34;parameter&#34;])
+
+        # Plot UGE for each glucose level
+        for glc in self.glucoses:
+            res_glc = self.results[f&#34;task_{sim_key}_glc{glc}&#34;]
+            units = res_glc.units
+
+            # UGE values across scan dimension, at 24 hr (the time of the
+            # simulations is in min), the median and the band of the draws
+            scandim = self._scandim(res_glc)
+            uge = np.array(
+                [
+                    [v[np.argmin(np.abs(time - 1440))] for v in (lower, median, upper)]
+                    for time, lower, median, upper in (
+                        self._band(res_glc, &#34;KI__UGE&#34;, {scandim: k_par})
+                        for k_par in range(len(x_vec.magnitude))
+                    )
+                ]
+            )
+            uge = Q(uge, units[&#34;KI__UGE&#34;]).to(self.units[&#34;KI__UGE&#34;]).magnitude
+            uge_values = uge[:, 1]
+            if self.uncertainty is not None:
+                ax.fill_between(
+                    x_vec.magnitude,
+                    uge[:, 0],
+                    uge[:, 2],
+                    color=self.glucose_colors[glc],
+                    alpha=self.band_alpha,
+                    linewidth=0,
+                )
+
+            ax.plot(
+                x_vec.magnitude,
+                uge_values,
+                marker=&#34;o&#34;,
+                linestyle=&#34;-&#34;,
+                color=self.glucose_colors[glc],
+                linewidth=2,
+                markersize=6,
+                label=f&#34;{glc} mM&#34;,
+            )
+
+        # Formatting
+        ax.set_xlabel(scan_data[&#34;label&#34;], fontdict=self.scan_font)
+        ax.set_ylabel(
+            f&#34;{self.labels[&#39;KI__UGE&#39;]} (24h) [{self.units[&#39;KI__UGE&#39;]}]&#34;,
+            fontdict=self.scan_font,
+        )
+        ax.tick_params(axis=&#34;x&#34;, labelsize=self.tick_font_size)
+        ax.tick_params(axis=&#34;y&#34;, labelsize=self.tick_font_size)
+        ymax = ax.get_ylim()[1]
+
+        # Add study data if available
+        study_markers: dict[str, str] = {}
+        if scan_key in self.study_data_files:
+            study_max_y, study_info = self._add_uge_study_data_to_plot(ax, scan_key)
+            if study_max_y is not None:
+                ymax = max(ymax, study_max_y)
+            study_markers.update(study_info)
+
+        # the individual UGE0-24 of Macha2014f (Fig2C) is not drawn: its unit
+        # (nmol) is wrong and no unit gives the means of Table 2 (102 g in
+        # normal renal function, at most 26000 in the figure)
+
+        ax.set_ylim(bottom=0.0, top=1.05 * ymax)
+
+        if scan_data[&#34;scale&#34;] == &#34;log&#34;:
+            self._set_log_xaxis(ax, scan_key)
+
+        if scan_key in self.scan_doses:
+            self._add_dose_annotation(ax, res_sample)
+
+        # Add legends
+        handles, labels = ax.get_legend_handles_labels()
+        glucose_handles = [
+            handle
+            for handle, label in zip(handles, labels, strict=True)
+            if &#34;mM&#34; in label
+        ]
+        glucose_labels = [label for label in labels if &#34;mM&#34; in label]
+
+        if glucose_handles:
+            leg1 = ax.legend(
+                glucose_handles,
+                glucose_labels,
+                title=&#34;Plasma Glucose&#34;,
+                loc=&#34;upper left&#34;,
+                bbox_to_anchor=(0, 0.97),
+                fontsize=9,
+                title_fontsize=10,
+                framealpha=0.9,
+            )
+            ax.add_artist(leg1)
+
+        if study_markers:
+            ax.legend(
+                self._study_legend_handles(study_markers),
+                sorted(study_markers),
+                title=&#34;Studies&#34;,
+                loc=&#34;upper left&#34;,
+                bbox_to_anchor=(0.24, 0.97),
+                fontsize=9,
+                title_fontsize=10,
+                framealpha=0.9,
+            )
+
+        self._add_colorbar_strip(ax, scan_data)
+
+    def _add_colorbar_strip(self, ax: Axes, scan_data: ScanSpec) -&gt; None:
+        &#34;&#34;&#34;Add a colorbar strip at the top of a subplot.&#34;&#34;&#34;
+        height_frac = 0.03
+        range_vals = scan_data[&#34;range&#34;]
+        rmin, rmax = range_vals[0], range_vals[-1]
+
+        # Create inset axes for colorbar strip
+        strip_ax = inset_axes(
+            ax,
+            width=&#34;100%&#34;,
+            height=f&#34;{height_frac * 100:.2f}%&#34;,
+            loc=&#34;upper center&#34;,
+            borderpad=0,
+        )
+
+        # Draw colorbar gradient
+        if scan_data[&#34;scale&#34;] == &#34;log&#34;:
+            xs = np.geomspace(max(rmin, 1e-12), rmax, 256)
+        else:
+            xs = np.linspace(rmin, rmax, 256)
+
+        # vector cells, not an image: an image is embedded as a raster in the
+        # SVG, which some viewers do not show
+        strip_ax.pcolormesh(
+            np.linspace(0, 1, len(xs) + 1),
+            [0, 1],
+            xs[np.newaxis, :],
+            cmap=self._colormap(scan_data),
+            norm=self._norm(scan_data),
+            edgecolors=&#34;face&#34;,
+            linewidth=0,
+            rasterized=False,
+        )
+        strip_ax.set_xlim(0, 1)
+        strip_ax.set_ylim(0, 1)
+        strip_ax.set_axis_off()
+        strip_ax.set_zorder(ax.get_zorder() + 1)
+
+    def _add_sarashina2014_aucinf_scatter(
+        self, ax: Axes, scan_key: str, pk_key: str, study_markers: dict[str, str]
+    ) -&gt; None:
+        &#34;&#34;&#34;Plot individual AUC-inf scatter (Sarashina2014) on renal-scan AUC subplot.&#34;&#34;&#34;
+        if scan_key != &#34;renal_scan&#34; or pk_key != &#34;auc_inf_obs&#34;:
+            return
+
+        # the AUC of the 25 mg dose of the study is scaled to the dose of the scan
+        study_dose = 25.0  # [mg]
+        dose_scale = self.scan_doses[scan_key] / study_dose
+
+        df = pd.read_csv(self.SARASHINA2014_FILE, sep=&#34;\t&#34;, comment=&#34;#&#34;)
+        df_auc = df[
+            (df[&#34;x_measurement_type&#34;] == &#34;gfr&#34;)
+            &amp; (df[&#34;x_substance&#34;] == &#34;empagliflozin&#34;)
+            &amp; (df[&#34;y_measurement_type&#34;] == &#34;auc_inf&#34;)
+        ]
+        if df_auc.empty:
+            return
+
+        x_vals = self._gfr_bsa_to_f_renal(df_auc[&#34;x_value&#34;].astype(float).to_numpy())
+        y_qty = Q(df_auc[&#34;y_value&#34;].astype(float).to_numpy(), &#34;nmol/l*hr&#34;)
+        y_vals = (
+            self._convert_pk_quantity(y_qty, pk_key, &#34;empagliflozin&#34;).magnitude
+            * dose_scale
+        )
+
+        study_name = &#34;Sarashina2014&#34;
+        marker = &#34;^&#34;
+        study_markers[study_name] = marker
+
+        ax.scatter(
+            x_vals,
+            y_vals,
+            marker=marker,
+            facecolors=self.substance_colors[&#34;empagliflozin&#34;],
+            edgecolors=&#34;black&#34;,
+            linewidths=0.8,
+            s=50,
+            alpha=0.7,
+            zorder=5,
+            label=study_name,
+        )
+
+    def _plot_cl_renal_subplot(self, ax: Axes, scan_key: str) -&gt; None:
+        &#34;&#34;&#34;Plot renal clearance vs renal function (simulation + Macha2014f scatter).&#34;&#34;&#34;
+        scan_data = self.scan_map[scan_key]
+        sim_key = self._sim_key(scan_key)
+
+        # Reference line at default renal function
+        ax.axvline(x=scan_data[&#34;default&#34;], color=&#34;grey&#34;, linestyle=&#34;--&#34;, linewidth=1.5)
+
+        res = self.results[f&#34;task_{sim_key}&#34;]
+        x_values = self._scanned(res, scan_data[&#34;parameter&#34;]).magnitude
+
+        df = self.pk_dfs[sim_key]
+        df_sub = df[df.substance == &#34;empagliflozin&#34;]
+
+        cl_renal, cl_lower, cl_upper = (
+            v.to(&#34;ml/min&#34;).magnitude
+            for v in self._summary(
+                df_sub, &#34;cl_renal&#34;, df_sub[&#34;cl_renal_unit&#34;].to_numpy()[0]
+            )
+        )
+        if self.uncertainty is not None:
+            ax.fill_between(
+                x_values,
+                cl_lower,
+                cl_upper,
+                color=self.substance_colors[&#34;empagliflozin&#34;],
+                alpha=self.band_alpha,
+                linewidth=0,
+            )
+
+        ax.plot(
+            x_values,
+            cl_renal,
+            marker=&#34;o&#34;,
+            linestyle=&#34;-&#34;,
+            color=self.substance_colors[&#34;empagliflozin&#34;],
+            linewidth=2.5,
+            markersize=6,
+            label=&#34;Emp&#34;,
+            zorder=3,
+        )
+
+        ymax = float(np.nanmax(cl_upper)) if len(cl_upper) &gt; 0 else 1.0
+
+        df = pd.read_csv(self.MACHA2014F_FILE, sep=&#34;\t&#34;, comment=&#34;#&#34;)
+        df_cl = df[df[&#34;y_measurement_type&#34;] == &#34;clearance_renal&#34;]
+
+        study_markers: dict[str, str] = {}
+        if not df_cl.empty:
+            x_scatter = self._gfr_bsa_to_f_renal(
+                df_cl[&#34;x_value&#34;].astype(float).to_numpy()
+            )
+            y_scatter = df_cl[&#34;y_value&#34;].astype(float).to_numpy()
+
+            mask = y_scatter &gt; 0
+            x_scatter = x_scatter[mask]
+            y_scatter = y_scatter[mask]
+
+            if len(x_scatter) &gt; 0:
+                ax.scatter(
+                    x_scatter,
+                    y_scatter,
+                    marker=&#34;s&#34;,
+                    facecolors=self.substance_colors[&#34;empagliflozin&#34;],
+                    edgecolors=&#34;black&#34;,
+                    linewidths=0.8,
+                    s=50,
+                    alpha=0.7,
+                    zorder=5,
+                    label=&#34;Macha2014f&#34;,
+                )
+                study_markers[&#34;Macha2014f&#34;] = &#34;s&#34;
+                ymax = max(ymax, float(np.nanmax(y_scatter)))
+
+        self._add_dose_annotation(ax, res)
+
+        ax.set_xlabel(scan_data[&#34;label&#34;], fontdict=self.scan_font)
+        ax.set_ylabel(&#34;Renal Clearance Empagliflozin [ml/min]&#34;, fontdict=self.scan_font)
+        ax.tick_params(axis=&#34;x&#34;, labelsize=self.tick_font_size)
+        ax.tick_params(axis=&#34;y&#34;, labelsize=self.tick_font_size)
+        ax.set_ylim(bottom=0.0, top=1.05 * ymax)
+
+        if scan_data[&#34;scale&#34;] == &#34;log&#34;:
+            self._set_log_xaxis(ax, scan_key)
+
+        handles, labels = ax.get_legend_handles_labels()
+        sim_handles = [
+            handle
+            for handle, label in zip(handles, labels, strict=True)
+            if label == self.substance_labels[&#34;empagliflozin&#34;]
+        ]
+        sim_labels = [
+            label for label in labels if label == self.substance_labels[&#34;empagliflozin&#34;]
+        ]
+        if sim_handles:
+            leg1 = ax.legend(
+                sim_handles,
+                sim_labels,
+                loc=&#34;upper left&#34;,
+                bbox_to_anchor=(0, 0.97),
+                fontsize=10,
+                framealpha=0.9,
+            )
+            ax.add_artist(leg1)
+
+        if study_markers:
+            ax.legend(
+                self._study_legend_handles(study_markers),
+                sorted(study_markers),
+                title=&#34;Studies&#34;,
+                loc=&#34;upper left&#34;,
+                bbox_to_anchor=(0.20, 0.97),
+                fontsize=9,
+                title_fontsize=10,
+                framealpha=0.9,
+            )
+
+        self._add_colorbar_strip(ax, scan_data)
+
+    def _add_macha2014f_aucinf_scatter(
+        self, ax: Axes, scan_key: str, pk_key: str, study_markers: dict[str, str]
+    ) -&gt; None:
+        &#34;&#34;&#34;Plot individual AUC-inf scatter (Macha2014f) on renal-scan AUC subplot.&#34;&#34;&#34;
+        if scan_key != &#34;renal_scan&#34; or pk_key != &#34;auc_inf_obs&#34;:
+            return
+
+        df = pd.read_csv(self.MACHA2014F_FILE, sep=&#34;\t&#34;, comment=&#34;#&#34;)
+        df_auc = df[
+            (df[&#34;y_measurement_type&#34;] == &#34;auc_inf&#34;)
+            &amp; (df[&#34;x_measurement_type&#34;] == &#34;gfr&#34;)
+            &amp; (df[&#34;x_substance&#34;] == &#34;empagliflozin&#34;)
+        ]
+        if df_auc.empty:
+            return
+
+        x_vals = self._gfr_bsa_to_f_renal(df_auc[&#34;x_value&#34;].astype(float).to_numpy())
+        y_qty = Q(df_auc[&#34;y_value&#34;].astype(float).to_numpy(), &#34;nmol/l*hr&#34;)
+        y_vals = self._convert_pk_quantity(y_qty, pk_key, &#34;empagliflozin&#34;).magnitude
+
+        study_name = &#34;Macha2014f&#34;
+        used_markers = set(study_markers.values())
+        marker = next((m for m in STUDY_MARKERS if m not in used_markers), &#34;X&#34;)
+        study_markers[study_name] = marker
+
+        ax.scatter(
+            x_vals,
+            y_vals,
+            marker=marker,
+            facecolors=self.substance_colors[&#34;empagliflozin&#34;],
+            edgecolors=&#34;black&#34;,
+            linewidths=0.8,
+            s=50,
+            alpha=0.7,
+            zorder=5,
+            label=study_name,
+        )
+
+
+def _plot_study_row(
+    ax: Axes,
+    row: pd.Series,
+    x_pos: float,
+    marker: str,
+    color: str,
+    convert: Callable[[float], float],
+) -&gt; float | None:
+    &#34;&#34;&#34;Plot a row of the study data: mean (SD), median (range) or range.
+
+    Args:
+        ax: axes to plot in.
+        row: row of the study data.
+        x_pos: position on the x-axis.
+        marker: marker of the study.
+        color: face color of the marker.
+        convert: conversion of the values of the row to the plotted values.
+
+    Returns:
+        The upper end of the plotted data, None if the row has no value.
+    &#34;&#34;&#34;
+    has_min_max = pd.notna(row[&#34;min&#34;]) and pd.notna(row[&#34;max&#34;])
+
+    if pd.notna(row[&#34;mean&#34;]):
+        y_value = convert(row[&#34;mean&#34;])
+        # mean with optional SD error bars
+        if pd.notna(row[&#34;sd&#34;]):
+            y_err = convert(row[&#34;sd&#34;])
+            _plot_study_errorbar(ax, x_pos, y_value, y_err, marker, color, capsize=5)
+            return y_value + y_err
+        _plot_study_point(ax, x_pos, y_value, marker, color)
+        return y_value
+
+    if pd.notna(row[&#34;median&#34;]):
+        y_value = convert(row[&#34;median&#34;])
+        # median with optional min/max range
+        if has_min_max:
+            y_min = convert(row[&#34;min&#34;])
+            y_max = convert(row[&#34;max&#34;])
+            y_err = [[y_value - y_min], [y_max - y_value]]
+            _plot_study_errorbar(ax, x_pos, y_value, y_err, marker, color, capsize=0)
+            return y_max
+        _plot_study_point(ax, x_pos, y_value, marker, color)
+        return y_value
+
+    if has_min_max:
+        # only a range, plotted as a bar
+        y_min = convert(row[&#34;min&#34;])
+        y_max = convert(row[&#34;max&#34;])
+        y_mid = (y_min + y_max) / 2
+        y_err = [[y_mid - y_min], [y_max - y_mid]]
+        _plot_study_errorbar(ax, x_pos, y_mid, y_err, marker, color, capsize=5)
+        return y_max
+
+    return None
+
+
+def _plot_study_errorbar(
+    ax: Axes,
+    x_pos: float,
+    y_value: float,
+    y_err: float | list[list[float]],
+    marker: str,
+    color: str,
+    capsize: float,
+) -&gt; None:
+    &#34;&#34;&#34;Plot a value of the study data with error bars.&#34;&#34;&#34;
+    ax.errorbar(
+        x_pos,
+        y_value,
+        yerr=y_err,
+        fmt=marker,
+        markerfacecolor=color,
+        markeredgecolor=&#34;black&#34;,
+        markeredgewidth=0.8,
+        markersize=8,
+        ecolor=&#34;black&#34;,
+        capsize=capsize,
+        capthick=2,
+        alpha=0.9,
+    )
+
+
+def _plot_study_point(
+    ax: Axes, x_pos: float, y_value: float, marker: str, color: str
+) -&gt; None:
+    &#34;&#34;&#34;Plot a value of the study data without error bars.&#34;&#34;&#34;
+    ax.plot(
+        x_pos,
+        y_value,
+        marker=marker,
+        markerfacecolor=color,
+        markeredgecolor=&#34;black&#34;,
+        markeredgewidth=0.8,
+        markersize=8,
+        alpha=0.9,
+        linestyle=&#34;&#34;,
+    )
+
+
+if __name__ == &#34;__main__&#34;:
+    MODEL.run_experiments(
+        EmpagliflozinParameterScan, output_dir=EmpagliflozinParameterScan.__name__
+    )
+</code></pre>
+  </div>
+</section>
+
+</main>
+
+<footer>
+<a href="../index.html">all experiments</a> · <a href="../../../../src/pkdb_models/models/empagliflozin/experiments/scans/scan_parameter.py" title="../../../../src/pkdb_models/models/empagliflozin/experiments/scans/scan_parameter.py">scan_parameter.py</a>
+</footer>
+
+<div id="lightbox"><img alt=""></div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---- search and the filter chips ------------------------------------
+  const search = document.getElementById("search");
+  const hits = document.getElementById("hits");
+  const chips = Array.from(document.querySelectorAll(".chip"));
+  const cards = Array.from(document.querySelectorAll('[data-filter="card"]'));
+  const rows = Array.from(document.querySelectorAll('table[data-filter="row"] tbody tr'));
+  const empty = document.querySelector("[data-empty]");
+  const itemLabel = document.body.dataset.items || "items";
+
+  const haystack = new Map();
+  for (const node of [...cards, ...rows]) {
+    haystack.set(node, node.textContent.toLowerCase());
+  }
+
+  function activeKinds() {
+    return new Set(chips.filter((c) => c.getAttribute("aria-pressed") === "true")
+                        .map((c) => c.dataset.kind));
+  }
+
+  function matches(node, query, kinds) {
+    const kind = node.dataset.kind;
+    if (kind && !kinds.has(kind)) return false;
+    return !query || haystack.get(node).includes(query);
+  }
+
+  function apply() {
+    const query = search.value.trim().toLowerCase();
+    const kinds = activeKinds();
+    let shownCards = 0;
+    for (const node of cards) {
+      const show = matches(node, query, kinds);
+      node.classList.toggle("hidden", !show);
+      if (show) shownCards += 1;
+    }
+    for (const node of rows) {
+      node.classList.toggle("hidden", !matches(node, query, kinds));
+    }
+    if (empty) empty.classList.toggle("hidden", shownCards > 0 || cards.length === 0);
+    const filtering = Boolean(query) || (chips.length > 0 && kinds.size < chips.length);
+    hits.textContent = filtering
+      ? shownCards + " / " + cards.length + " " + itemLabel
+      : "";
+  }
+
+  search.addEventListener("input", apply);
+  for (const chip of chips) {
+    chip.addEventListener("click", () => {
+      chip.setAttribute("aria-pressed", chip.getAttribute("aria-pressed") === "true" ? "false" : "true");
+      apply();
+    });
+  }
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "/" && document.activeElement !== search) {
+      event.preventDefault();
+      search.focus();
+    } else if (event.key === "Escape") {
+      if (document.activeElement === search && search.value) { search.value = ""; apply(); }
+      closeLightbox();
+    }
+  });
+
+  // ---- sortable tables -------------------------------------------------
+  function cellValue(row, index, kind) {
+    const text = row.cells[index] ? row.cells[index].textContent.trim() : "";
+    if (kind !== "num") return text.toLowerCase();
+    // the AIC of a perfect fit is -inf, a cell without a value sorts last
+    if (text === "-inf") return Number.NEGATIVE_INFINITY;
+    const value = parseFloat(text);
+    return Number.isNaN(value) ? Number.POSITIVE_INFINITY : value;
+  }
+
+  for (const table of document.querySelectorAll("table")) {
+    const headers = Array.from(table.querySelectorAll("th[data-sort]"));
+    headers.forEach((th, index) => {
+      th.addEventListener("click", () => {
+        const body = table.tBodies[0];
+        if (!body) return;
+        const kind = th.dataset.sort;
+        const descending = th.classList.contains("asc");
+        for (const other of headers) other.classList.remove("asc", "desc");
+        th.classList.add(descending ? "desc" : "asc");
+        const sorted = Array.from(body.rows).sort((a, b) => {
+          const left = cellValue(a, index, kind);
+          const right = cellValue(b, index, kind);
+          if (left < right) return descending ? 1 : -1;
+          if (left > right) return descending ? -1 : 1;
+          return 0;
+        });
+        for (const row of sorted) body.appendChild(row);
+      });
+    });
+  }
+
+  // ---- the section the page is scrolled to -----------------------------
+  // a tab (data-tab) is not a section, its page marks the tab which is shown
+  const links = Array.from(document.querySelectorAll("nav.sections a:not([data-tab])"));
+  const sections = links.map((link) => document.querySelector(link.getAttribute("href")));
+  function scrollspy() {
+    let current = 0;
+    sections.forEach((section, index) => {
+      if (section && section.getBoundingClientRect().top < 200) current = index;
+    });
+    links.forEach((link, index) => link.classList.toggle("active", index === current));
+  }
+  window.addEventListener("scroll", scrollspy, { passive: true });
+  scrollspy();
+
+  // ---- click a figure to enlarge it ------------------------------------
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = lightbox.querySelector("img");
+  function closeLightbox() { lightbox.classList.remove("open"); lightboxImage.src = ""; }
+  for (const image of document.querySelectorAll("figure img")) {
+    image.addEventListener("click", () => {
+      lightboxImage.src = image.getAttribute("src");
+      lightbox.classList.add("open");
+    });
+  }
+  lightbox.addEventListener("click", closeLightbox);
+
+  apply();
+})();
+</script>
+</body>
+</html>

@@ -1,14 +1,14 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.0	hr	NA	NA	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.5	hr	NA	88.2882882882884	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.0	hr	NA	605.405405405405	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.5	hr	NA	1292.79279279279	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.0	hr	NA	1286.48648648648	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.5	hr	NA	1185.58558558558	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	3.0	hr	NA	1147.74774774774	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	4.0	hr	NA	1015.31531531531	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	6.0	hr	NA	832.432432432432	NA	NA	NA	nmol/l	NA
-Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	8.0	hr	NA	548.648648648648	NA	NA	NA	nmol/l	NA
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.0	hr	NA	88.2882882882884	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	0.5	hr	NA	605.405405405405	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.0	hr	NA	1292.79279279279	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	1.5	hr	NA	1286.48648648648	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.0	hr	NA	1185.58558558558	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	2.5	hr	NA	1147.74774774774	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	3.0	hr	NA	1015.31531531531	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	4.0	hr	NA	832.432432432432	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	6.0	hr	NA	548.648648648648	NA	NA	NA	nmol/l	0-8 hr corrected: the curated values were one sampling time late (Fig2A: trough at 0 hr, peak 1290 nmol/l at 1 hr); 8 hr digitized from the PNG
+Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	8.0	hr	NA	401.0	NA	NA	NA	nmol/l	8 hr digitized from the PNG (Fig2A, lost in the curation)
 Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	10.0	hr	NA	315.315315315315	NA	NA	NA	nmol/l	NA
 Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	12.0	hr	NA	239.639639639639	NA	NA	NA	nmol/l	NA
 Friedrich2013	NA	all	16.0	EMP50_D5	concentration	empagliflozin	plasma	HPLC MS/MS	empagliflozin_EMP50_D5	14.0	hr	NA	195.495495495495	NA	NA	NA	nmol/l	NA

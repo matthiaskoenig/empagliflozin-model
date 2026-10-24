@@ -1,0 +1,19 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	0.3	hr		840.4					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	0.6	hr		1219.9					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	1.0	hr		1174.7					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	1.5	hr		1102.4					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	2.0	hr		894.6					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	2.5	hr		831.3					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	3.0	hr		731.9					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	4.0	hr		506.0					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	6.0	hr		343.4					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	8.0	hr		244.0					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	10.0	hr		189.8					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	12.0	hr		144.6					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	24.0	hr		90.4					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	72.0	hr		63.3					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	96.0	hr		45.2					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	120.0	hr		36.1					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	144.0	hr		18.1					ng/ml	ng/ml	dimensionless
+Macha2013e		all	18.0	WAR25	concentration	s-warfarin	plasma	HPLC MS/MS	s_warfarin	168.0	hr		17.0					ng/ml	ng/ml	dimensionless

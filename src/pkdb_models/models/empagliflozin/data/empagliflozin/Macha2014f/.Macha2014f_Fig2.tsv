@@ -75,7 +75,7 @@ Macha2014f	IS073	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emaglifl
 Macha2014f	IS074	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	94.8097	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	8719.2118	NA	nmol/l*hr	NA
 Macha2014f	IS075	NA	1.0	EMP50	0.0	hr	gfr	empagliflozin	urine	HPLC MS/MS	emagliflozin_gfr	155.7093	NA	ml/min/(1.73*m^2)	auc_inf	NA	plasma	HPLC MS/MS	auc_empagliflozin	7832.5123	NA	nmol/l*hr	NA
 Macha2014f	IS076	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	6.0837	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	601.4518	NA	nmol	Scatter plot C
-Macha2014f	IS077	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	7.6046	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	-5.761	NA	nmol	NA
+Macha2014f	IS077	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	7.6046	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	-5.761	NA	nmol	unit is very likely mg, not nmole; 10000nmol glucose = 3mg glucose
 Macha2014f	IS078	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	11.4068	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	294.3888	NA	nmol	NA
 Macha2014f	IS079	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	9.1255	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	599.1474	NA	nmol	NA
 Macha2014f	IS080	NA	1.0	EMP50	24.0	hr	gfr	glucose	urine	HPLC MS/MS	glucose_gfr	17.4905	NA	ml/min/(1.73*m^2)	cumulative amount	NA	urine	HPLC MS/MS	uge_glucose	1350.386	NA	nmol	NA

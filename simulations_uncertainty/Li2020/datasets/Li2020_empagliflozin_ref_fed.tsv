@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	mean	median	mean_sd	mean_se	min	max	cv	comments	mean_unit	median_unit	count_unit
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	0.0	hr	0.0								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	0.33	hr	4.147178255479487e-06								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	0.67	hr	4.4465734771317495e-05								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	1.0	hr	0.00010822582827133634								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	1.5	hr	0.00023929440308354902								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	2.0	hr	0.0003490726510227119								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	2.5	hr	0.0004726009017340527								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	3.0	hr	0.000571290437760169								mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	4.0	hr	0.0006238509322280106		0.00013483873686264856	2.752373538784988e-05					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	6.0	hr	0.00046483880339492		9.758066483481145e-05	1.9918653209405892e-05					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	8.0	hr	0.0003597178144592367		7.540324100871794e-05	1.539157568378542e-05					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	12.0	hr	0.00021312504296875864		4.745968698784012e-05	9.687764049952429e-06					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	24.0	hr	6.608872300175866e-05		1.774193906087481e-05	3.6215733108010705e-06					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	36.0	hr	2.1135084906267116e-05		7.76209833913273e-06	1.5843551581361207e-06					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	48.0	hr	1.0423389198263952e-05		5.987904433045249e-06	1.2221978270560134e-06					mole/meter^3	ng/ml	dimensionless
+Li2020		fed	24.0	ref	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_ref_fed	72.0	hr	4.834678394088386e-06		5.100807480001508e-06	1.0412300486350903e-06					mole/meter^3	ng/ml	dimensionless

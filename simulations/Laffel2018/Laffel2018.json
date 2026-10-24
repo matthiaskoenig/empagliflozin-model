@@ -1,0 +1,1548 @@
+{
+  "experiment_id": "Laffel2018",
+  "base_path": "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin",
+  "data_path": [
+    "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/data/empagliflozin",
+    "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/data/dapagliflozin",
+    "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/data/hydrochlorothiazide",
+    "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/data/ramipril"
+  ],
+  "models": {
+    "model": {
+      "sid": null,
+      "name": null,
+      "language": "SBML",
+      "language_type": "SBML",
+      "source": {
+        "source": "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/models/output/models/empagliflozin_body_flat.xml",
+        "path": "/home/mkoenig/git/empagliflozin-model/src/pkdb_models/models/empagliflozin/models/output/models/empagliflozin_body_flat.xml",
+        "content": null
+      },
+      "base_path": null,
+      "changes": {},
+      "selections": [
+        "Afeces_emp",
+        "Afeces_emptot",
+        "Aurine_eg",
+        "Aurine_emp",
+        "Aurine_emptot",
+        "GU__FED_f_absorption",
+        "GU__fed",
+        "IVDOSE_emp",
+        "KI__EMPEX",
+        "KI__GFR",
+        "KI__GLCEX",
+        "KI__RTG",
+        "KI__UGE",
+        "KI__f_renal_function",
+        "KI__glc_urine",
+        "KI__pg",
+        "PODOSE_emp",
+        "[Cve_eg]",
+        "[Cve_emp]",
+        "[Cve_emptot]",
+        "[KI__fpg]",
+        "f_cirrhosis",
+        "time"
+      ],
+      "parameters": {}
+    }
+  },
+  "tasks": {
+    "task_po_EMP5": {
+      "sid": "model__po_EMP5",
+      "name": null,
+      "model": "model",
+      "simulation": "po_EMP5",
+      "observables": []
+    },
+    "task_po_EMP10": {
+      "sid": "model__po_EMP10",
+      "name": null,
+      "model": "model",
+      "simulation": "po_EMP10",
+      "observables": []
+    },
+    "task_po_EMP25": {
+      "sid": "model__po_EMP25",
+      "name": null,
+      "model": "model",
+      "simulation": "po_EMP25",
+      "observables": []
+    }
+  },
+  "observables": {},
+  "simulations": {
+    "po_EMP5": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 50,
+      "preinit_changes": {
+        "BW": {
+          "value": 90.0,
+          "unit": "kilogram"
+        },
+        "[KI__fpg]": {
+          "value": 8.5,
+          "unit": "millimolar"
+        },
+        "KI__f_renal_function": {
+          "value": 1.7653465346534654,
+          "unit": "dimensionless"
+        },
+        "PODOSE_emp": {
+          "value": 5,
+          "unit": "milligram"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    },
+    "po_EMP10": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 50,
+      "preinit_changes": {
+        "BW": {
+          "value": 111.0,
+          "unit": "kilogram"
+        },
+        "[KI__fpg]": {
+          "value": 8.6,
+          "unit": "millimolar"
+        },
+        "KI__f_renal_function": {
+          "value": 1.606930693069307,
+          "unit": "dimensionless"
+        },
+        "PODOSE_emp": {
+          "value": 10,
+          "unit": "milligram"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    },
+    "po_EMP25": {
+      "type": "Simulation",
+      "time_unit": "hr",
+      "start": 0.0,
+      "end": 50,
+      "preinit_changes": {
+        "BW": {
+          "value": 91.1,
+          "unit": "kilogram"
+        },
+        "[KI__fpg]": {
+          "value": 6.4,
+          "unit": "millimolar"
+        },
+        "KI__f_renal_function": {
+          "value": 1.5574257425742575,
+          "unit": "dimensionless"
+        },
+        "PODOSE_emp": {
+          "value": 25,
+          "unit": "milligram"
+        }
+      },
+      "changes": [],
+      "presimulation": null,
+      "times": null,
+      "steps": null,
+      "time_shift": 0.0
+    }
+  },
+  "data": {
+    "task_po_EMP5__time": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__IVDOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__IVDOSE_emp",
+      "index": "IVDOSE_emp",
+      "selection": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__PODOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__PODOSE_emp",
+      "index": "PODOSE_emp",
+      "selection": "PODOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__conc__Cve_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__conc__Cve_emp",
+      "index": "Cve_emp",
+      "selection": "[Cve_emp]",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__conc__Cve_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__conc__Cve_eg",
+      "index": "Cve_eg",
+      "selection": "[Cve_eg]",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__conc__Cve_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__conc__Cve_emptot",
+      "index": "Cve_emptot",
+      "selection": "[Cve_emptot]",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__Aurine_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__Aurine_emp",
+      "index": "Aurine_emp",
+      "selection": "Aurine_emp",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__Aurine_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__Aurine_eg",
+      "index": "Aurine_eg",
+      "selection": "Aurine_eg",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__Aurine_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__Aurine_emptot",
+      "index": "Aurine_emptot",
+      "selection": "Aurine_emptot",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__Afeces_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__Afeces_emp",
+      "index": "Afeces_emp",
+      "selection": "Afeces_emp",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__Afeces_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__Afeces_emptot",
+      "index": "Afeces_emptot",
+      "selection": "Afeces_emptot",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__glc_urine": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__glc_urine",
+      "index": "KI__glc_urine",
+      "selection": "KI__glc_urine",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__GLCEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__GLCEX",
+      "index": "KI__GLCEX",
+      "selection": "KI__GLCEX",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__UGE": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__UGE",
+      "index": "KI__UGE",
+      "selection": "KI__UGE",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__RTG": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__RTG",
+      "index": "KI__RTG",
+      "selection": "KI__RTG",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__conc__KI__fpg": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__conc__KI__fpg",
+      "index": "KI__fpg",
+      "selection": "[KI__fpg]",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__pg": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__pg",
+      "index": "KI__pg",
+      "selection": "KI__pg",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__EMPEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__EMPEX",
+      "index": "KI__EMPEX",
+      "selection": "KI__EMPEX",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__KI__GFR": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__KI__GFR",
+      "index": "KI__GFR",
+      "selection": "KI__GFR",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__GU__fed": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP5__GU__FED_f_absorption": {
+      "type": "TASK",
+      "sid": "task_po_EMP5__GU__FED_f_absorption",
+      "index": "GU__FED_f_absorption",
+      "selection": "GU__FED_f_absorption",
+      "unit": null,
+      "task": "task_po_EMP5",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__time": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__IVDOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__IVDOSE_emp",
+      "index": "IVDOSE_emp",
+      "selection": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__PODOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__PODOSE_emp",
+      "index": "PODOSE_emp",
+      "selection": "PODOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__conc__Cve_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__conc__Cve_emp",
+      "index": "Cve_emp",
+      "selection": "[Cve_emp]",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__conc__Cve_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__conc__Cve_eg",
+      "index": "Cve_eg",
+      "selection": "[Cve_eg]",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__conc__Cve_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__conc__Cve_emptot",
+      "index": "Cve_emptot",
+      "selection": "[Cve_emptot]",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__Aurine_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__Aurine_emp",
+      "index": "Aurine_emp",
+      "selection": "Aurine_emp",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__Aurine_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__Aurine_eg",
+      "index": "Aurine_eg",
+      "selection": "Aurine_eg",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__Aurine_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__Aurine_emptot",
+      "index": "Aurine_emptot",
+      "selection": "Aurine_emptot",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__Afeces_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__Afeces_emp",
+      "index": "Afeces_emp",
+      "selection": "Afeces_emp",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__Afeces_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__Afeces_emptot",
+      "index": "Afeces_emptot",
+      "selection": "Afeces_emptot",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__glc_urine": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__glc_urine",
+      "index": "KI__glc_urine",
+      "selection": "KI__glc_urine",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__GLCEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__GLCEX",
+      "index": "KI__GLCEX",
+      "selection": "KI__GLCEX",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__UGE": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__UGE",
+      "index": "KI__UGE",
+      "selection": "KI__UGE",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__RTG": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__RTG",
+      "index": "KI__RTG",
+      "selection": "KI__RTG",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__conc__KI__fpg": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__conc__KI__fpg",
+      "index": "KI__fpg",
+      "selection": "[KI__fpg]",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__pg": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__pg",
+      "index": "KI__pg",
+      "selection": "KI__pg",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__EMPEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__EMPEX",
+      "index": "KI__EMPEX",
+      "selection": "KI__EMPEX",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__KI__GFR": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__KI__GFR",
+      "index": "KI__GFR",
+      "selection": "KI__GFR",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__GU__fed": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP10__GU__FED_f_absorption": {
+      "type": "TASK",
+      "sid": "task_po_EMP10__GU__FED_f_absorption",
+      "index": "GU__FED_f_absorption",
+      "selection": "GU__FED_f_absorption",
+      "unit": null,
+      "task": "task_po_EMP10",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__time": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__time",
+      "index": "time",
+      "selection": "time",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__IVDOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__IVDOSE_emp",
+      "index": "IVDOSE_emp",
+      "selection": "IVDOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__PODOSE_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__PODOSE_emp",
+      "index": "PODOSE_emp",
+      "selection": "PODOSE_emp",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__conc__Cve_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__conc__Cve_emp",
+      "index": "Cve_emp",
+      "selection": "[Cve_emp]",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__conc__Cve_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__conc__Cve_eg",
+      "index": "Cve_eg",
+      "selection": "[Cve_eg]",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__conc__Cve_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__conc__Cve_emptot",
+      "index": "Cve_emptot",
+      "selection": "[Cve_emptot]",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__Aurine_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__Aurine_emp",
+      "index": "Aurine_emp",
+      "selection": "Aurine_emp",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__Aurine_eg": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__Aurine_eg",
+      "index": "Aurine_eg",
+      "selection": "Aurine_eg",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__Aurine_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__Aurine_emptot",
+      "index": "Aurine_emptot",
+      "selection": "Aurine_emptot",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__Afeces_emp": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__Afeces_emp",
+      "index": "Afeces_emp",
+      "selection": "Afeces_emp",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__Afeces_emptot": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__Afeces_emptot",
+      "index": "Afeces_emptot",
+      "selection": "Afeces_emptot",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__glc_urine": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__glc_urine",
+      "index": "KI__glc_urine",
+      "selection": "KI__glc_urine",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__GLCEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__GLCEX",
+      "index": "KI__GLCEX",
+      "selection": "KI__GLCEX",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__UGE": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__UGE",
+      "index": "KI__UGE",
+      "selection": "KI__UGE",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__RTG": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__RTG",
+      "index": "KI__RTG",
+      "selection": "KI__RTG",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__conc__KI__fpg": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__conc__KI__fpg",
+      "index": "KI__fpg",
+      "selection": "[KI__fpg]",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__pg": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__pg",
+      "index": "KI__pg",
+      "selection": "KI__pg",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__EMPEX": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__EMPEX",
+      "index": "KI__EMPEX",
+      "selection": "KI__EMPEX",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__f_renal_function": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__f_renal_function",
+      "index": "KI__f_renal_function",
+      "selection": "KI__f_renal_function",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__KI__GFR": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__KI__GFR",
+      "index": "KI__GFR",
+      "selection": "KI__GFR",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__f_cirrhosis": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__f_cirrhosis",
+      "index": "f_cirrhosis",
+      "selection": "f_cirrhosis",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__GU__fed": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__GU__fed",
+      "index": "GU__fed",
+      "selection": "GU__fed",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    },
+    "task_po_EMP25__GU__FED_f_absorption": {
+      "type": "TASK",
+      "sid": "task_po_EMP25__GU__FED_f_absorption",
+      "index": "GU__FED_f_absorption",
+      "selection": "GU__FED_f_absorption",
+      "unit": null,
+      "task": "task_po_EMP25",
+      "dataset": null,
+      "function": null,
+      "variables": null,
+      "parameters": {},
+      "sel": null
+    }
+  },
+  "figures": {
+    "Fig1": {
+      "sid": "Fig1",
+      "name": "Laffel2018 (T2DM, Pediatric)",
+      "num_rows": 1,
+      "num_cols": 2,
+      "width": null,
+      "height": null,
+      "settings": {},
+      "subplots": [
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1__plot0",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1__plot0_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1__plot0_yaxis",
+              "name": "Empagliflozin Plasma\n [\u00b5M]",
+              "label": "Empagliflozin Plasma\n",
+              "unit": "\u00b5M",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1__plot0_curve0",
+                "name": "5 mg Emp",
+                "x": "task_po_EMP5__time",
+                "y": "task_po_EMP5__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#F47C44ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#F47C44ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#F47C44ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1__plot0_curve1",
+                "name": "5 mg Emp (n=9)",
+                "x": "EMP5_concentration__time",
+                "y": "EMP5_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#F47C44ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#F47C44ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#F47C44ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1__plot0_curve2",
+                "name": "10 mg Emp",
+                "x": "task_po_EMP10__time",
+                "y": "task_po_EMP10__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#E76157ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#E76157ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#E76157ff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1__plot0_curve3",
+                "name": "10 mg Emp (n=8)",
+                "x": "EMP10_concentration__time",
+                "y": "EMP10_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#E76157ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#E76157ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#E76157ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1__plot0_curve4",
+                "name": "25 mg Emp",
+                "x": "task_po_EMP25__time",
+                "y": "task_po_EMP25__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#D24C6Aff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#D24C6Aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#D24C6Aff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1__plot0_curve5",
+                "name": "25 mg Emp (n=10)",
+                "x": "EMP25_concentration__time",
+                "y": "EMP25_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#D24C6Aff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#D24C6Aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#D24C6Aff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              }
+            ],
+            "areas": [],
+            "bands": []
+          },
+          "row": 1,
+          "col": 1,
+          "row_span": 1,
+          "col_span": 1
+        },
+        {
+          "sid": null,
+          "name": null,
+          "plot": {
+            "sid": "Fig1__plot1",
+            "name": null,
+            "xaxis": {
+              "sid": "Fig1__plot1_xaxis",
+              "name": "Time [hr]",
+              "label": "Time",
+              "unit": "hr",
+              "scale": "LINEAR",
+              "min": null,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis": {
+              "sid": "Fig1__plot1_yaxis",
+              "name": "Empagliflozin Plasma\n [\u00b5M]",
+              "label": "Empagliflozin Plasma\n",
+              "unit": "\u00b5M",
+              "scale": "LOG10",
+              "min": 0.001,
+              "max": null,
+              "grid": false,
+              "label_visible": true,
+              "ticks_visible": true
+            },
+            "yaxis_right": null,
+            "legend": true,
+            "facecolor": "#ffffffff",
+            "title_visible": true,
+            "curves": [
+              {
+                "sid": "Fig1__plot1_curve0",
+                "name": "5 mg Emp",
+                "x": "task_po_EMP5__time",
+                "y": "task_po_EMP5__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#F47C44ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#F47C44ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#F47C44ff",
+                    "second_color": null
+                  }
+                },
+                "order": 0
+              },
+              {
+                "sid": "Fig1__plot1_curve1",
+                "name": "5 mg Emp (n=9)",
+                "x": "EMP5_concentration__time",
+                "y": "EMP5_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#F47C44ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#F47C44ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#F47C44ff",
+                    "second_color": null
+                  }
+                },
+                "order": 1
+              },
+              {
+                "sid": "Fig1__plot1_curve2",
+                "name": "10 mg Emp",
+                "x": "task_po_EMP10__time",
+                "y": "task_po_EMP10__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#E76157ff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#E76157ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#E76157ff",
+                    "second_color": null
+                  }
+                },
+                "order": 2
+              },
+              {
+                "sid": "Fig1__plot1_curve3",
+                "name": "10 mg Emp (n=8)",
+                "x": "EMP10_concentration__time",
+                "y": "EMP10_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#E76157ff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#E76157ff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#E76157ff",
+                    "second_color": null
+                  }
+                },
+                "order": 3
+              },
+              {
+                "sid": "Fig1__plot1_curve4",
+                "name": "25 mg Emp",
+                "x": "task_po_EMP25__time",
+                "y": "task_po_EMP25__conc__Cve_emp",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "SOLID",
+                    "color": "#D24C6Aff",
+                    "thickness": 2.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "NONE",
+                    "fill": "#D24C6Aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#D24C6Aff",
+                    "second_color": null
+                  }
+                },
+                "order": 4
+              },
+              {
+                "sid": "Fig1__plot1_curve5",
+                "name": "25 mg Emp (n=10)",
+                "x": "EMP25_concentration__time",
+                "y": "EMP25_concentration__mean",
+                "xerr": null,
+                "yerr": null,
+                "over": [],
+                "yaxis_position": null,
+                "style": {
+                  "sid": null,
+                  "name": null,
+                  "base_style": null,
+                  "line": {
+                    "type": "DASH",
+                    "color": "#D24C6Aff",
+                    "thickness": 1.0
+                  },
+                  "marker": {
+                    "size": null,
+                    "type": "SQUARE",
+                    "fill": "#D24C6Aff",
+                    "line_color": "#000000ff",
+                    "line_thickness": null
+                  },
+                  "fill": {
+                    "color": "#D24C6Aff",
+                    "second_color": null
+                  }
+                },
+                "order": 5
+              }
+            ],
+            "areas": [],
+            "bands": []
+          },
+          "row": 1,
+          "col": 2,
+          "row_span": 1,
+          "col_span": 1
+        }
+      ]
+    }
+  }
+}

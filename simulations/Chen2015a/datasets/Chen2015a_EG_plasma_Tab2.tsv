@@ -1,0 +1,4 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	time	time_unit	value	mean	mean_pm	mean_sd	mean_se	comments	label	mean_unit	value_unit	count_unit
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	empagliflozin-glucuronide	plasma	radiochromatography/MS/MS	2.0	hr		298.8				mean concentration in nmol/l (Table 2 in brackets); 6.2 % of the sample radioactivity	EG_plasma_Tab2	nmol/l	nmol/l	dimensionless
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	empagliflozin-glucuronide	plasma	radiochromatography/MS/MS	6.0	hr		144.9				mean concentration in nmol/l (Table 2 in brackets); 5.0 % of the sample radioactivity	EG_plasma_Tab2	nmol/l	nmol/l	dimensionless
+Chen2015a		all	8.0	EMP50, C14EMP	concentration	empagliflozin-glucuronide	plasma	radiochromatography/MS/MS	12.0	hr		51.7				mean concentration in nmol/l (Table 2 in brackets); 5.2 % of the sample radioactivity	EG_plasma_Tab2	nmol/l	nmol/l	dimensionless

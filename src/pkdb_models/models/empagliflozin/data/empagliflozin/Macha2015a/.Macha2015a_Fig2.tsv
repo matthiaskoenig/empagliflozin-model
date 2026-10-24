@@ -4,8 +4,8 @@ Macha2015a	NA	all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge
 Macha2015a	NA	all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	8.0	hr	NA	19.1069963281917	25.7218045735977	6.614808245406	1.6537020613515	g	NA
 Macha2015a	NA	all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	12.0	hr	NA	29.0747540385747	39.2711087534915	10.1963547149168	2.5490886787292	g	NA
 Macha2015a	NA	all	16.0	EMP5	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP5	24.0	hr	NA	52.6382315642898	69.1738016891976	16.5355701249078	4.13389253122695	g	NA
-Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	0.0	hr	NA	0.275012639972146	NA	NA	NA	g	NA
+Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	0.0	hr	NA	0.0	NA	NA	NA	g	NA
 Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	4.0	hr	NA	9.69274507041086	12.7231058690913	3.03036079868044	0.75759019967011	g	NA
-Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	8.0	hr	NA	20.7611335361254	25.7218045735977	18.2349625773939	4.55874064434848	g	NA
-Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	12.0	hr	NA	31.0044840819235	38.9960961135193	26.5938383243956	6.6484595810989	g	NA
-Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	24.0	hr	NA	44.3704465018359	57.5983224063191	44.3704465018359	11.092611625459	g	NA
+Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	8.0	hr	NA	20.7611335361254	26.2611335361254	5.5	1.375	g	NA
+Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	12.0	hr	NA	31.0044840819235	39.0044840819235	8.0	2.0	g	NA
+Macha2015a	NA	all	16.0	EMP10	cumulative amount 	glucose	urine	enzymatic assay	uge_EMP10	24.0	hr	NA	44.3704465018359	57.7704465018359	13.4	3.35	g	NA

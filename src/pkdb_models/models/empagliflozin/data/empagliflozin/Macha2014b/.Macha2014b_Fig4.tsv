@@ -1,11 +1,11 @@
 study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	sd	se	unit	comments
 Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	4.0	hr	NA	3.1742243436754	NA	NA	NA	g	NA
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	12.0	hr	NA	14.3675417661097	NA	NA	NA	g	NA
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	24.0	hr	NA	26.0620525059665	NA	NA	NA	g	NA
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	42.0	hr	NA	42.6	NA	13.4616	NA	g	FDA table
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	60.0	hr	NA	61.4797136038186	NA	NA	NA	g	NA
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	72.0	hr	NA	70.835322195704	NA	NA	NA	g	NA
-Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	80.0	hr	NA	82.1957040572792	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	8.0	hr	NA	14.3675417661097	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	12.0	hr	NA	26.0620525059665	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	24.0	hr	NA	42.6	NA	13.4616	NA	g	FDA table
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	36.0	hr	NA	61.4797136038186	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	48.0	hr	NA	70.835322195704	NA	NA	NA	g	NA
+Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	72.0	hr	NA	82.1957040572792	NA	NA	NA	g	NA
 Macha2014b	NA	normal	12.0	EMP50	cumulative amount	glucose	urine	NR	uge_normal	96.0	hr	NA	87.3747016706444	NA	NA	NA	g	NA
 Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	4.0	hr	NA	9.52267303102624	NA	NA	NA	g	NA
 Macha2014b	NA	mild	8.0	EMP50	cumulative amount	glucose	urine	NR	uge_mild	8.0	hr	NA	20.2147971360381	NA	NA	NA	g	NA

@@ -1,0 +1,534 @@
+--------------------------------------------------------------------------------
+OptimizationProblem: PD
+--------------------------------------------------------------------------------
+Experiments
+	*** FitMappingCollection ***
+experiment: Ayoub2017
+mappings: ['fm_po_emp25']
+weights: [None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Brand2012
+mappings: ['fm_empagliflozin_EMP50_D5', 'fm_empagliflozin_EMP50_D10', 'fm_empagliflozin_urine_EMP50_D5', 'fm_empagliflozin_urine_EMP50_D10']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Chen2015a
+mappings: ['fm_po_emp_EMPTOT_plasma', 'fm_po_emp_EMP_plasma', 'fm_po_emp_EG_plasma', 'fm_po_emp_EMPTOT_feces', 'fm_po_emp_EMP_feces', 'fm_po_emp_EMPTOT_urine', 'fm_po_emp_EMP_urine', 'fm_po_emp_EG_urine', 'fm_po_emp_EG_plasma_Tab2']
+weights: [None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Chen2020
+mappings: ['fm_po_emp10_Fasting_T', 'fm_po_emp10_Fasting_R', 'fm_po_emp10_Fed_T', 'fm_po_emp10_Fed_R']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: ElDash2021
+mappings: ['po_EMP10_uge_morning', 'po_EMP10_uge_morning_S1', 'po_EMP10_uge_morning_S2', 'po_EMP10_uge_morning_S3', 'po_EMP10_uge_morning_S4', 'po_EMP10_uge_morning_S5', 'po_EMP10_uge_morning_S6', 'po_EMP10_uge_morning_S7', 'po_EMP10_uge_morning_S8', 'po_EMP10_uge_morning_S9', 'po_EMP10_uge_morning_S10', 'po_EMP10_uge_morning_S11', 'po_EMP10_uge_morning_S12', 'po_EMP10_uge_morning_S13', 'po_EMP10_uge_morning_S14', 'po_EMP10_uge_morning_S15', 'po_EMP10_uge_morning_S16', 'po_EMP10_uge_evening', 'po_EMP10_uge_evening_S1', 'po_EMP10_uge_evening_S2', 'po_EMP10_uge_evening_S3', 'po_EMP10_uge_evening_S4', 'po_EMP10_uge_evening_S5', 'po_EMP10_uge_evening_S6', 'po_EMP10_uge_evening_S7', 'po_EMP10_uge_evening_S8', 'po_EMP10_uge_evening_S9', 'po_EMP10_uge_evening_S10', 'po_EMP10_uge_evening_S11', 'po_EMP10_uge_evening_S12', 'po_EMP10_uge_evening_S13', 'po_EMP10_uge_evening_S14', 'po_EMP10_uge_evening_S15', 'po_EMP10_uge_evening_S16']
+weights: [16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+use_mapping_weights: True
+kind: outlier
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: ElDash2021
+mappings: ['po_EMP10_empagliflozin_morning', 'po_EMP10_empagliflozin_morning_S1', 'po_EMP10_empagliflozin_morning_S2', 'po_EMP10_empagliflozin_morning_S3', 'po_EMP10_empagliflozin_morning_S4', 'po_EMP10_empagliflozin_morning_S5', 'po_EMP10_empagliflozin_morning_S6', 'po_EMP10_empagliflozin_morning_S7', 'po_EMP10_empagliflozin_morning_S8', 'po_EMP10_empagliflozin_morning_S9', 'po_EMP10_empagliflozin_morning_S10', 'po_EMP10_empagliflozin_morning_S11', 'po_EMP10_empagliflozin_morning_S12', 'po_EMP10_empagliflozin_morning_S13', 'po_EMP10_empagliflozin_morning_S14', 'po_EMP10_empagliflozin_morning_S15', 'po_EMP10_empagliflozin_morning_S16', 'po_EMP10_empagliflozin_evening', 'po_EMP10_empagliflozin_evening_S1', 'po_EMP10_empagliflozin_evening_S2', 'po_EMP10_empagliflozin_evening_S3', 'po_EMP10_empagliflozin_evening_S4', 'po_EMP10_empagliflozin_evening_S5', 'po_EMP10_empagliflozin_evening_S6', 'po_EMP10_empagliflozin_evening_S7', 'po_EMP10_empagliflozin_evening_S8', 'po_EMP10_empagliflozin_evening_S9', 'po_EMP10_empagliflozin_evening_S10', 'po_EMP10_empagliflozin_evening_S11', 'po_EMP10_empagliflozin_evening_S12', 'po_EMP10_empagliflozin_evening_S13', 'po_EMP10_empagliflozin_evening_S14', 'po_EMP10_empagliflozin_evening_S15', 'po_EMP10_empagliflozin_evening_S16']
+weights: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Friedrich2013
+mappings: ['fm_empagliflozin_EMP50_D5', 'fm_empagliflozin_EMP50_D7', 'fm_empagliflozin_urine_EMP50_D5', 'fm_empagliflozin_urine_EMP50_D7']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Hailat2022
+mappings: ['fm_hailat2022_fasting_test', 'fm_hailat2022_fasting_reference', 'fm_hailat2022_fed_test', 'fm_hailat2022_fed_reference']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Heise2013
+mappings: ['fm_uge_Placebo', 'fm_uge_EMP2p5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100']
+weights: [12.0, 9.0, 9.0, 9.0, 9.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Heise2013
+mappings: ['fm_empagliflozin_EMP2p5', 'fm_empagliflozin_EMP10', 'fm_empagliflozin_EMP25', 'fm_empagliflozin_EMP100']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Heise2013a
+mappings: ['fm_uge_Placebo', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100']
+weights: [16.0, 16.0, 16.0, 30.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Heise2013a
+mappings: ['fm_empagliflozin_EMP10', 'fm_empagliflozin_EMP25', 'fm_empagliflozin_EMP100']
+weights: [None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Heise2015
+mappings: ['fm_po_emp25_emp25', 'fm_po_emp25_emp25_hctz25', 'fm_po_emp25_emp25_tor5']
+weights: [None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Jiang2023b
+mappings: ['fm_emp25_test', 'fm_emp25_ref']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Kim2021
+mappings: ['fm_po_emp25_E', 'fm_po_emp25_E__L']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Kim2023
+mappings: ['fm_uge_EP25']
+weights: [18.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Kim2023
+mappings: ['fm_uge_EV5__EP25']
+weights: [18.0]
+use_mapping_weights: True
+kind: validation
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Kim2023
+mappings: ['fm_emp25_EP25', 'fm_emp25_EV5__EP25']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Laffel2018
+mappings: ['fm_laffel2018_po_EMP5', 'fm_laffel2018_po_EMP10', 'fm_laffel2018_po_EMP25']
+weights: [None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Li2020
+mappings: ['fm_po_emp25_ref_fasting', 'fm_po_emp25_ref_fed']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2013d
+mappings: ['fm_po_emp25_emp25_single', 'fm_po_emp25_emp25_single__ver120_single', 'fm_po_emp25_emp25_multi', 'fm_po_emp25_emp25_multi__ram5_multi']
+weights: [None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2013e
+mappings: ['fm_po_emp25_emp', 'fm_po_emp25_emp__war']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014
+mappings: ['fm_po_EMP25', 'fm_po_EMP25_GEM', 'fm_po_EMP10_R', 'fm_po_EMP10_P', 'fm_po_EMP10_RIF', 'fm_po_EMP10_PROB', 'fm_po_EMP10_R_urine', 'fm_po_EMP10_PROB_urine']
+weights: [None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014b
+mappings: ['fm_uge_normal']
+weights: [12.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014b
+mappings: ['fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe']
+weights: [8.0, 8.0, 8.0]
+use_mapping_weights: True
+kind: validation
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014b
+mappings: ['fm_empagliflozin_normal', 'fm_empagliflozin_mild', 'fm_empagliflozin_moderate', 'fm_empagliflozin_severe', 'fm_empagliflozin_urine_normal', 'fm_empagliflozin_urine_mild', 'fm_empagliflozin_urine_moderate', 'fm_empagliflozin_urine_severe', 'fm_eg_urine_normal', 'fm_eg_urine_mild', 'fm_eg_urine_moderate', 'fm_eg_urine_severe', 'fm_emptot_urine_normal', 'fm_emptot_urine_mild', 'fm_emptot_urine_moderate', 'fm_emptot_urine_severe']
+weights: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014f
+mappings: ['fm_uge_normal']
+weights: [8.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014f
+mappings: ['fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe', 'fm_uge_esrd']
+weights: [7.0, 5.0, 6.0, 5.0]
+use_mapping_weights: True
+kind: validation
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2014f
+mappings: ['fm_empagliflozin_normal', 'fm_empagliflozin_mild', 'fm_empagliflozin_moderate', 'fm_empagliflozin_severe', 'fm_empagliflozin_esrd', 'fm_empagliflozin_urine_normal', 'fm_empagliflozin_urine_mild', 'fm_empagliflozin_urine_moderate', 'fm_empagliflozin_urine_severe', 'fm_empagliflozin_urine_esrd']
+weights: [None, None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2015a
+mappings: ['fm_po_uge_EMP5', 'fm_po_uge_EMP10']
+weights: [16.0, 16.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2015a
+mappings: ['fm_po_empagliflozin_EMP5', 'fm_po_empagliflozin_EMP10']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Macha2015b
+mappings: ['fm_po_emp50_emp50', 'fm_po_emp50_emp50__piog45']
+weights: [None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Sarashina2013
+mappings: ['fm_uge_placebo', 'fm_uge_EMP1', 'fm_uge_EMP5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100']
+weights: [8.0, 6.0, 6.0, 6.0, 6.0, 6.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Sarashina2013
+mappings: ['fm_empagliflozin_EMP1', 'fm_empagliflozin_EMP5', 'fm_empagliflozin_EMP10', 'fm_empagliflozin_EMP25', 'fm_empagliflozin_EMP100', 'fm_empagliflozin_urine_EMP1', 'fm_empagliflozin_urine_EMP5', 'fm_empagliflozin_urine_EMP10', 'fm_empagliflozin_urine_EMP25', 'fm_empagliflozin_urine_EMP100']
+weights: [None, None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Sarashina2014
+mappings: ['fm_uge_normal', 'fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe']
+weights: [8.0, 8.0, 8.0, 8.0]
+use_mapping_weights: True
+kind: validation
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Sarashina2014
+mappings: ['fm_empagliflozin_normal', 'fm_empagliflozin_mild', 'fm_empagliflozin_moderate', 'fm_empagliflozin_severe', 'fm_empagliflozin_urine_normal', 'fm_empagliflozin_urine_mild', 'fm_empagliflozin_urine_moderate', 'fm_empagliflozin_urine_severe']
+weights: [None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Seman2013
+mappings: ['fm_uge_placebo', 'fm_uge_EMP0p5', 'fm_uge_EMP2p5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP50', 'fm_uge_EMP100', 'fm_uge_EMP200']
+weights: [17.0, 6.0, 6.0, 6.0, 6.0, 5.0, 5.0, 6.0]
+use_mapping_weights: True
+kind: training
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Seman2013
+mappings: ['fm_uge_EMP400', 'fm_uge_EMP800']
+weights: [6.0, 6.0]
+use_mapping_weights: True
+kind: validation
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Seman2013
+mappings: ['fm_empagliflozin_EMP0p5', 'fm_empagliflozin_EMP2p5', 'fm_empagliflozin_EMP10', 'fm_empagliflozin_EMP25', 'fm_empagliflozin_EMP50', 'fm_empagliflozin_EMP100', 'fm_empagliflozin_EMP200', 'fm_empagliflozin_EMP400', 'fm_empagliflozin_EMP800', 'fm_empagliflozin_urine_EMP0p5', 'fm_empagliflozin_urine_EMP2p5', 'fm_empagliflozin_urine_EMP10', 'fm_empagliflozin_urine_EMP25', 'fm_empagliflozin_urine_EMP50', 'fm_empagliflozin_urine_EMP100', 'fm_empagliflozin_urine_EMP200', 'fm_empagliflozin_urine_EMP400', 'fm_empagliflozin_urine_EMP800', 'fm_empagliflozin_fed_EMP50', 'fm_empagliflozin_fasted_EMP50']
+weights: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: vanderAartvanderBeek2020
+mappings: ['fm_emp10_S1', 'fm_emp10_S2', 'fm_emp10_S3', 'fm_emp10_S4', 'fm_emp10_S5', 'fm_emp10_S6']
+weights: [None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+	*** FitMappingCollection ***
+experiment: Zhao2015
+mappings: ['fm_empagliflozin_SING10', 'fm_empagliflozin_MULTI10', 'fm_empagliflozin_urine_SING10', 'fm_empagliflozin_urine_MULTI10', 'fm_empagliflozin_SING25', 'fm_empagliflozin_MULTI25', 'fm_empagliflozin_urine_SING25', 'fm_empagliflozin_urine_MULTI25']
+weights: [None, None, None, None, None, None, None, None]
+use_mapping_weights: True
+kind: excluded
+fit_parameters: {}
+Parameters
+	FitParameter<KI__RTG_E50 = 2.5e-06 [1e-07 - 0.0001]>
+	FitParameter<KI__RTG_base = 10.5 [8 - 14]>
+	FitParameter<KI__RTG_m_fpg = 2.4 [0.1 - 5]>
+	FitParameter<KI__RTG_max_inhibition = 0.69 [0.3 - 0.95]>
+FitSettings:
+	residual: NORMALIZED
+	parameter_scale: LOG10
+	loss_function: LINEAR
+	weighting_curves: ['MAPPING', 'POINTS']
+	weighting_points: ERROR_WEIGHTING
+	variable_step_size: True
+	relative_tolerance: 1e-06
+	absolute_tolerance: {'amount': 1e-12, 'concentration': 1e-12, 'other': 1e-06, 'ids': {}}
+	initial_time_step: 0.0
+	data_at_change: before
+Mappings: 76 (28 training, 14 validation, 34 outlier)
+Data
+	experiment_keys: ['ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'ElDash2021', 'Heise2013', 'Heise2013', 'Heise2013', 'Heise2013', 'Heise2013', 'Heise2013a', 'Heise2013a', 'Heise2013a', 'Heise2013a', 'Kim2023', 'Kim2023', 'Macha2014b', 'Macha2014b', 'Macha2014b', 'Macha2014b', 'Macha2014f', 'Macha2014f', 'Macha2014f', 'Macha2014f', 'Macha2014f', 'Macha2015a', 'Macha2015a', 'Sarashina2013', 'Sarashina2013', 'Sarashina2013', 'Sarashina2013', 'Sarashina2013', 'Sarashina2013', 'Sarashina2014', 'Sarashina2014', 'Sarashina2014', 'Sarashina2014', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013', 'Seman2013']
+	mapping_keys: ['po_EMP10_uge_morning', 'po_EMP10_uge_morning_S1', 'po_EMP10_uge_morning_S2', 'po_EMP10_uge_morning_S3', 'po_EMP10_uge_morning_S4', 'po_EMP10_uge_morning_S5', 'po_EMP10_uge_morning_S6', 'po_EMP10_uge_morning_S7', 'po_EMP10_uge_morning_S8', 'po_EMP10_uge_morning_S9', 'po_EMP10_uge_morning_S10', 'po_EMP10_uge_morning_S11', 'po_EMP10_uge_morning_S12', 'po_EMP10_uge_morning_S13', 'po_EMP10_uge_morning_S14', 'po_EMP10_uge_morning_S15', 'po_EMP10_uge_morning_S16', 'po_EMP10_uge_evening', 'po_EMP10_uge_evening_S1', 'po_EMP10_uge_evening_S2', 'po_EMP10_uge_evening_S3', 'po_EMP10_uge_evening_S4', 'po_EMP10_uge_evening_S5', 'po_EMP10_uge_evening_S6', 'po_EMP10_uge_evening_S7', 'po_EMP10_uge_evening_S8', 'po_EMP10_uge_evening_S9', 'po_EMP10_uge_evening_S10', 'po_EMP10_uge_evening_S11', 'po_EMP10_uge_evening_S12', 'po_EMP10_uge_evening_S13', 'po_EMP10_uge_evening_S14', 'po_EMP10_uge_evening_S15', 'po_EMP10_uge_evening_S16', 'fm_uge_Placebo', 'fm_uge_EMP2p5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100', 'fm_uge_Placebo', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100', 'fm_uge_EP25', 'fm_uge_EV5__EP25', 'fm_uge_normal', 'fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe', 'fm_uge_normal', 'fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe', 'fm_uge_esrd', 'fm_po_uge_EMP5', 'fm_po_uge_EMP10', 'fm_uge_placebo', 'fm_uge_EMP1', 'fm_uge_EMP5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP100', 'fm_uge_normal', 'fm_uge_mild', 'fm_uge_moderate', 'fm_uge_severe', 'fm_uge_placebo', 'fm_uge_EMP0p5', 'fm_uge_EMP2p5', 'fm_uge_EMP10', 'fm_uge_EMP25', 'fm_uge_EMP50', 'fm_uge_EMP100', 'fm_uge_EMP200', 'fm_uge_EMP400', 'fm_uge_EMP800']
+	xid_observable: ['time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time', 'time']
+	yid_observable: ['KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE', 'KI__UGE']
+	x_references: [array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([ 1440., 11520., 12960.]), array([ 1440., 11520., 12960.]), array([ 1440., 11520., 12960.]), array([ 1440., 11520., 12960.]), array([ 1440., 11520., 12960.]), array([ 1440., 38880., 40320.]), array([ 1440., 38880., 40320.]), array([ 1440., 38880., 40320.]), array([ 1440., 38880., 40320.]), array([1440.]), array([1440.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440.]), array([ 240.,  480.,  720., 1440.]), array([1440., 4320.]), array([ 120.,  240.,  360.,  480.,  720., 1440., 2040., 2880., 4320.]), array([ 120.,  240.,  360.,  480.,  720., 1440., 2040., 2880., 4320.]), array([ 120.,  240.,  360.,  480.,  720., 1440., 2040., 2880., 4320.]), array([ 120.,  240.,  360.,  480.,  720., 1440., 2040., 2880., 4320.]), array([ 120.,  240.,  360.,  480.,  720., 1440., 2040., 2880., 4320.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([ 240.,  480.,  720., 1440., 2160., 2880., 4320., 5760.]), array([1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.]), array([ 120.,  240.,  360.,  480.,  720., 1440.])]
+	y_references: [array([ 3.83684375,  6.26751875,  7.7524375 , 12.39640937]), array([ 0.5655,  2.3745,  5.1273, 21.6873]), array([1.892  , 2.7665 , 3.34225, 7.41125]), array([ 2.877 ,  5.0073,  6.7698, 10.7878]), array([1.3845 , 4.7635 , 5.24825, 6.80825]), array([ 9.28125, 12.61125, 14.10975, 18.87975]), array([3.348 , 5.639 , 6.9701, 8.8751]), array([1.8315, 4.0365, 5.1015, 7.6855]), array([ 6.885,  8.845,  9.693, 11.42 ]), array([4.9928, 6.3038, 6.8663, 9.8763]), array([ 6.6285,  9.2285, 10.037 , 12.389 ]), array([3.09825, 3.97825, 4.76715, 8.24715]), array([ 7.12675,  8.96275, 10.47475, 12.38655]), array([ 5.61 ,  7.71 , 10.059, 14.604]), array([3.031  , 3.65225, 4.23365, 7.09365]), array([ 0.0812 ,  0.97495,  3.90295, 11.7547 ]), array([ 2.75625, 13.42625, 17.33625, 28.43625]), array([ 2.56004375,  4.1537    ,  7.12656875, 15.41813125]), array([11.24  , 14.69  , 15.7375, 26.5625]), array([ 0.969  ,  2.56275,  8.41475, 25.90475]), array([ 2.574,  5.052,  6.131, 11.726]), array([1.04   , 1.391  , 2.71375, 5.12275]), array([ 1.7385 ,  2.87975,  7.27225, 11.72725]), array([ 0.041  ,  1.376  , 10.43225, 21.12725]), array([ 0.841 ,  2.416 ,  7.717 , 29.1295]), array([ 4.7    ,  6.03875,  8.425  , 27.275  ]), array([ 4.928  ,  7.1    , 10.04125, 24.60375]), array([2.3155, 4.9435, 6.3535, 9.8335]), array([ 4.69   ,  5.8885 ,  9.12175, 11.38975]), array([0.035  , 2.087  , 5.20575, 8.19575]), array([0.0224, 1.3809, 3.1151, 6.0851]), array([ 0.585  ,  1.59425,  3.30145, 11.50145]), array([1.0668, 1.8313, 2.7223, 4.6483]), array([ 4.1745,  5.2275,  7.3205, 11.8575]), array([5.2173913 , 0.86956522, 2.60869565]), array([46.50847458, 39.86440678, 37.96610169]), array([89.69491525, 84.47457627, 68.81355932]), array([78.30508475, 75.45762712, 72.61016949]), array([89.69491525, 93.96610169, 89.69491525]), array([4.84507, 4.     , 5.69014]), array([77.94085, 70.33521, 68.6407 ]), array([96.26761, 83.59155, 70.91549]), array([87.27183, 77.97606, 72.06056]), array([57.73829]), array([56.35122]), array([ 3.17422434, 14.36754177, 26.06205251, 42.6       , 61.4797136 ,
+       70.8353222 , 82.19570406, 87.37470167]), array([ 9.52267303, 20.21479714, 29.73747017, 36.2       , 56.63484487,
+       63.98568019, 76.18138425, 80.52505967]), array([ 5.01193317, 13.36515513, 22.88782816, 38.4       , 53.12649165,
+       65.48926014, 75.84725537, 79.02147971]), array([ 5.01193317, 15.20286396, 22.55369928, 40.2       , 56.46778043,
+       64.98806683, 76.34844869, 79.02147971]), array([ 13.        ,  39.1221374 ,  58.20610687, 102.57633588,
+       143.12977099, 169.37022901, 200.85877863, 234.73282443]), array([ 11.1259542 ,  25.96564885,  43.27862595,  66.36259542,
+        91.09541985, 113.35496183, 145.50763359, 164.46946565]), array([  3.62696183,  16.44845802,  26.42073282,  47.78989313,
+        66.30983206,  77.70671756, 101.92509924, 116.17120611]), array([ 2.20235115,  6.47618321, 10.75001527, 20.72229008, 29.2699542 ,
+       34.96839695, 44.94067176, 50.6391145 ]), array([0.77774046, 2.20235115, 2.20235115, 2.20235115, 3.62696183,
+       6.47618321, 7.90079389, 9.32540458]), array([ 8.03802767, 19.10699633, 29.07475404, 52.63823156]), array([ 9.69274507, 20.76113354, 31.00448408, 44.3704465 ]), array([0.0443, 0.174 ]), array([ 2.43902439,  3.65853659,  9.75609756, 12.19512195, 18.29268293,
+       19.51219512, 20.73170732, 21.95121951, 23.17073171]), array([ 1.2195122 ,  7.31707317, 15.85365854, 24.3902439 , 30.48780488,
+       42.68292683, 50.        , 53.65853659, 53.65853659]), array([ 1.2195122 ,  7.31707317, 13.41463415, 19.51219512, 31.70731707,
+       51.2195122 , 67.07317073, 73.17073171, 75.6097561 ]), array([  3.65853659,   7.31707317,  17.07317073,  25.6097561 ,
+        37.80487805,  60.97560976,  82.92682927,  98.7804878 ,
+       109.75609756]), array([  3.65853659,   7.31707317,  19.51219512,  28.04878049,
+        43.90243902,  74.3902439 , 117.07317073, 146.34146341,
+       185.36585366]), array([ 10.97056574,  32.94710898,  47.22159268,  77.92005439,
+       110.8175869 , 123.90223519, 151.15867305, 160.79067396]), array([  9.86571858,  24.14374345,  37.30983881,  65.80214737,
+        91.00116151, 106.27779824, 137.94300122, 149.78115527]), array([  6.56180062,  19.73497833,  34.00592085,  59.19431145,
+        85.49463158, 101.87611547, 132.43647129, 155.28414403]), array([ 3.26142384,  7.61707131, 11.97625995, 21.75344911, 30.42933228,
+       36.89552112, 46.53460438, 53.96399331]), array([0.06]), array([0.03873085, 0.07542324, 2.16892767, 2.13121605, 3.42462263,
+       3.19427599]), array([ 1.33213743,  5.40295374, 11.75787103, 15.82970656, 24.42897475,
+       30.1356599 ]), array([ 3.61521919,  8.60028742, 13.12772008, 19.02602102, 32.64806906,
+       47.48606199]), array([ 4.07183554,  8.14367107, 13.12772008, 19.48161813, 31.73483636,
+       56.16381112]), array([ 4.52845189,  9.05690377, 14.95520471, 24.04880087, 36.75659699,
+       63.46865349]), array([ 4.07183554, 11.33896629, 16.78065088, 25.87526627, 42.23599319,
+       78.08037671]), array([ 4.98506824, 11.33896629, 16.77963165, 27.24511533, 38.58408162,
+       68.49041411]), array([ 5.89830094, 12.70881535, 19.9759461 , 29.9837942 , 49.08625768,
+       89.95240182]), array([ 4.52845189,  9.51250089, 14.95418548, 22.22233547, 32.19145271,
+       61.18557174])]
+	y_errors: [array([2.63536434, 3.52843872, 3.67138119, 5.45640775]), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, array([2.90396379, 3.00833808, 3.73828786, 7.55633516]), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, array([5.22328666, 5.77450258, 5.93367723]), array([22.30508475, 25.15254237, 25.15254237]), array([18.50847458, 54.10169492, 30.84745763]), array([25.62711864, 37.49152542, 24.20338983]), array([30.84745763, 26.10169492, 26.10169492]), array([21.69415921, 31.38183747, 28.11712546]), array([26.76076141, 32.89045693, 29.80735558]), array([21.29780608, 31.10915819, 27.81249553]), array([21.43428997, 29.79789874, 29.79794979]), array([11.59925068]), array([11.59926358]), array([13.4616, 13.4616, 13.4616, 13.4616, 13.4616, 13.4616, 13.4616,
+       13.4616]), array([11.2944, 11.2944, 11.2944, 11.2944, 11.2944, 11.2944, 11.2944,
+       11.2944]), array([23.3088, 23.3088, 23.3088, 23.3088, 23.3088, 23.3088, 23.3088,
+       23.3088]), array([22.0296, 22.0296, 22.0296, 22.0296, 22.0296, 22.0296, 22.0296,
+       22.0296]), array([80.60687023, 10.7519084 , 11.45419847, 21.49618321, 30.40839695,
+       41.26717557, 48.52671756, 80.60687023]), array([ 8.17172519,  7.5781374 , 20.18198473, 18.46717557, 30.77422901,
+       32.7330687 , 29.07261069, 62.82137405]), array([ 9.97227481, 15.67071756, 21.36916031, 32.7660458 , 45.58754198,
+       51.28598473, 71.23053435, 78.35358779]), array([35.61526718, 35.61526718,  5.69844275,  8.54766412, 14.24610687,
+       19.94454962, 24.21838168, 35.61526718]), None, array([ 3.03152119,  6.61480825, 10.19635471, 16.53557012]), array([ 3.0303608,  5.5      ,  8.       , 13.4      ]), array([0.0151506, 0.040542 ]), array([7.31707317, 7.31707317, 7.31707317, 2.43902439, 3.65853659,
+       4.87804878, 4.87804878, 7.31707317, 7.31707317]), array([8.53658537, 8.53658537, 8.53658537, 8.53658537, 8.53658537,
+       7.31707317, 7.31707317, 7.31707317, 8.53658537]), array([14.63414634, 14.63414634, 14.63414634,  7.31707317, 14.63414634,
+        9.75609756,  7.31707317,  9.75609756, 12.19512195]), array([28.04878049, 28.04878049, 28.04878049,  7.31707317,  7.31707317,
+       10.97560976, 15.85365854, 21.95121951, 28.04878049]), array([46.34146341, 46.34146341,  2.43902439,  4.87804878, 10.97560976,
+       13.41463415, 15.85365854, 25.6097561 , 46.34146341]), array([ 5.50652993, 12.11436585, 16.51958979, 20.92481373, 35.24179155,
+       40.74478031, 53.96399331, 61.67667639]), array([59.47052324, 59.47052324, 12.11790702, 19.82704892, 27.53264965,
+       30.84010878, 47.3561574 , 59.47052324]), array([44.05578062, 44.05578062, 44.05578062, 13.21921301, 19.81996657,
+       35.24179155, 37.44440352, 44.05578062]), array([28.63749681,  4.40522394,  6.61137709, 12.11436585, 16.51604861,
+       19.82350775, 26.43134366, 28.63749681]), None, None, None, None, None, None, None, None, None, None]
+	y_errors_type: ['SD', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, 'SD', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', None, 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', 'SD', None, None, None, None, None, None, None, None, None, None]
+	weights: [array([5.82362551, 7.10514678, 8.44634441, 9.08759752]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([3.52627503, 5.52291649, 7.62548954, 8.16169793]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([0.5, 0.5, 0.5, 0.5]), array([3.99548533, 0.60234814, 1.7585693 ]), array([6.25531915, 4.75471698, 4.52830189]), array([14.53846154,  4.68421053,  6.69230769]), array([9.16666667, 6.03797468, 9.        ]), array([ 8.72307692, 10.8       , 10.30909091]), array([1.19112122, 0.67979873, 1.07932133]), array([15.53335972, 11.40516597, 12.28165754]), array([24.10704894, 14.33087959, 13.5987778 ]), array([40.71598832, 26.16830827, 24.18305975]), array([89.59968608]), array([87.44709982]), array([0.35369767, 1.60094734, 2.904044  , 4.74683544, 6.85056534,
+       7.89304268, 9.15890801, 9.73599368]), array([0.84313226, 1.78980708, 2.63293935, 3.20512821, 5.0144182 ,
+       5.66525714, 6.7450581 , 7.12964475]), array([0.21502322, 0.57339525, 0.98193936, 1.64744646, 2.27924611,
+       2.80963671, 3.25401803, 3.3901994 ]), array([0.22750904, 0.69011076, 1.02379069, 1.82481752, 2.56326853,
+       2.9500339 , 3.46572106, 3.58705922]), array([0.16127658, 3.63862265, 5.08163945, 4.77183949, 4.70691603,
+       4.10423603, 4.13913796, 2.9120697 ]), array([1.1913286 , 2.99809063, 1.87636638, 3.14435041, 2.59010526,
+       3.03013422, 4.37935144, 2.29079329]), array([0.22731535, 0.65601886, 0.77274716, 0.91157424, 0.90910023,
+       0.94697798, 0.89432415, 0.92665832]), array([0.04637796, 0.13637796, 1.41486224, 1.81824149, 1.54094489,
+       1.31496064, 1.39173229, 1.06637796]), array([1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25]), array([10.60593301, 11.5540742 , 11.40594059, 12.73333333]), array([12.79417959, 15.09900621, 15.50224204, 13.2449094 ]), array([11.69590643, 17.16738197]), array([0.22222222, 0.33333333, 0.88888889, 3.33333333, 3.33333333,
+       2.66666667, 2.83333333, 2.        , 2.11111111]), array([0.0952381 , 0.57142857, 1.23809524, 1.9047619 , 2.38095238,
+       3.88888889, 4.55555556, 4.88888889, 4.19047619]), array([0.05555556, 0.33333333, 0.61111111, 1.77777778, 1.44444444,
+       3.5       , 6.11111111, 5.        , 4.13333333]), array([0.08695652, 0.17391304, 0.4057971 , 2.33333333, 3.44444444,
+       3.7037037 , 3.48717949, 3.        , 2.60869565]), array([0.05263158, 0.10526316, 5.33333333, 3.83333333, 2.66666667,
+       3.6969697 , 4.92307692, 3.80952381, 2.66666667]), array([1.99228296, 2.71967261, 2.8585209 , 3.72381114, 3.14449357,
+       3.04093516, 2.80110243, 2.60699317]), array([0.16589258, 0.40597833, 3.07890123, 3.31880693, 3.305209  ,
+       3.44609025, 2.91288417, 2.51857806]), array([0.14894301, 0.44795434, 0.77188329, 4.47789981, 4.31356084,
+       2.89077572, 3.53688292, 3.52471666]), array([0.11388648, 1.72909968, 1.81146224, 1.79567378, 1.84240995,
+       1.86120043, 1.76058414, 1.88438234]), array([34.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([1.66666667, 1.66666667, 1.66666667, 1.66666667, 1.66666667,
+       1.66666667]), array([1.66666667, 1.66666667, 1.66666667, 1.66666667, 1.66666667,
+       1.66666667]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.])]
+	weights_points: [array([1.45590638, 1.7762867 , 2.1115861 , 2.27189938]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([0.88156876, 1.38072912, 1.90637239, 2.04042448]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([2., 2., 2., 2.]), array([0.99887133, 0.15058703, 0.43964232]), array([2.08510638, 1.58490566, 1.50943396]), array([4.84615385, 1.56140351, 2.23076923]), array([3.05555556, 2.01265823, 3.        ]), array([2.90769231, 3.6       , 3.43636364]), array([0.22333523, 0.12746226, 0.20237275]), array([2.91250495, 2.13846862, 2.30281079]), array([4.52007168, 2.68703992, 2.54977084]), array([4.07159883, 2.61683083, 2.41830597]), array([4.97776034]), array([4.85817221]), array([0.23579844, 1.06729822, 1.93602934, 3.16455696, 4.56704356,
+       5.26202845, 6.10593867, 6.49066245]), array([0.84313226, 1.78980708, 2.63293935, 3.20512821, 5.0144182 ,
+       5.66525714, 6.7450581 , 7.12964475]), array([0.21502322, 0.57339525, 0.98193936, 1.64744646, 2.27924611,
+       2.80963671, 3.25401803, 3.3901994 ]), array([0.22750904, 0.69011076, 1.02379069, 1.82481752, 2.56326853,
+       2.9500339 , 3.46572106, 3.58705922]), array([0.16127658, 3.63862265, 5.08163945, 4.77183949, 4.70691603,
+       4.10423603, 4.13913796, 2.9120697 ]), array([1.3615184 , 3.42638929, 2.14441872, 3.59354332, 2.96012029,
+       3.46301054, 5.00497307, 2.61804948]), array([0.36370456, 1.04963018, 1.23639546, 1.45851878, 1.45456037,
+       1.51516478, 1.43091864, 1.48265331]), array([0.06183728, 0.18183728, 1.88648298, 2.42432199, 2.05459319,
+       1.75328085, 1.85564305, 1.42183728]), array([2., 2., 2., 2., 2., 2., 2., 2.]), array([2.65148325, 2.88851855, 2.85148515, 3.18333333]), array([3.1985449 , 3.77475155, 3.87556051, 3.31122735]), array([2.92397661, 4.29184549]), array([0.33333333, 0.5       , 1.33333333, 5.        , 5.        ,
+       4.        , 4.25      , 3.        , 3.16666667]), array([0.14285714, 0.85714286, 1.85714286, 2.85714286, 3.57142857,
+       5.83333333, 6.83333333, 7.33333333, 6.28571429]), array([0.08333333, 0.5       , 0.91666667, 2.66666667, 2.16666667,
+       5.25      , 9.16666667, 7.5       , 6.2       ]), array([0.13043478, 0.26086957, 0.60869565, 3.5       , 5.16666667,
+       5.55555556, 5.23076923, 4.5       , 3.91304348]), array([0.07894737, 0.15789474, 8.        , 5.75      , 4.        ,
+       5.54545455, 7.38461538, 5.71428571, 4.        ]), array([1.99228296, 2.71967261, 2.8585209 , 3.72381114, 3.14449357,
+       3.04093516, 2.80110243, 2.60699317]), array([0.16589258, 0.40597833, 3.07890123, 3.31880693, 3.305209  ,
+       3.44609025, 2.91288417, 2.51857806]), array([0.14894301, 0.44795434, 0.77188329, 4.47789981, 4.31356084,
+       2.89077572, 3.53688292, 3.52471666]), array([0.11388648, 1.72909968, 1.81146224, 1.79567378, 1.84240995,
+       1.86120043, 1.76058414, 1.88438234]), array([2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.]), array([2., 2., 2., 2., 2., 2.])]
+	weights_curves: [4.0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 4.0, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 4.0, 3.0, 3.0, 3.0, 3.0, 5.333333333333333, 5.333333333333333, 5.333333333333333, 10.0, 18.0, 18.0, 1.5, 1.0, 1.0, 1.0, 1.0, 0.875, 0.625, 0.75, 0.625, 4.0, 4.0, 4.0, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 1.0, 1.0, 1.0, 1.0, 17.0, 1.0, 1.0, 1.0, 1.0, 0.8333333333333334, 0.8333333333333334, 1.0, 1.0, 1.0]
+--------------------------------------------------------------------------------
+Parameter sets: ['PD_20261019_212349__c28ac_0']
+--------------------------------------------------------------------------------
+             parameter          unit  PD_20261019_212349__c28ac_0
+           KI__RTG_E50            mM                     0.000004
+          KI__RTG_base            mM                    11.700356
+         KI__RTG_m_fpg dimensionless                     2.421633
+KI__RTG_max_inhibition dimensionless                     0.692919
+
+PD_20261019_212349__c28ac_0: cost = 116.99
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Metrics: PD_20261019_212349__c28ac_0
+--------------------------------------------------------------------------------
+              parameter_set       kind   n  k      cost        MSE      RMSE    NRMSE   RMSE_w        R2  within_2fold        AIC        BIC     GMFE      AFE  within_1.25fold  within_1.5fold  within_1sd  within_2sd
+PD_20261019_212349__c28ac_0   training 142  4 116.99037 581.321185 24.110603 0.472042 1.283648  0.677520     87.969925 911.873085 923.696394 1.795539 0.732385        45.864662       75.939850   49.333333   80.000000
+PD_20261019_212349__c28ac_0 validation 101  4       NaN 819.469788 28.626383 0.592892 1.095762  0.556966     94.059406 685.574411 696.034893 1.416775 0.943829        37.623762       58.415842   69.230769   94.230769
+PD_20261019_212349__c28ac_0    outlier 136  4       NaN 347.873570 18.651369 4.051294 3.299166 -8.418483     19.852941 803.850119 815.500738 4.002160 3.975278         4.411765        8.088235    0.000000   25.000000
+
+   experiment                  mapping       kind  n         MSE      RMSE    NRMSE   RMSE_w          R2  within_2fold         GMFE       AFE  within_1.25fold  within_1.5fold  within_1sd  within_2sd
+   ElDash2021     po_EMP10_uge_morning    outlier  4  340.137369 18.442813 2.438460 7.216531  -33.921482      0.000000     2.801531  2.801531         0.000000        0.000000    0.000000   25.000000
+   ElDash2021  po_EMP10_uge_morning_S1    outlier  4  274.962553 16.581995 2.229167 1.576259   -2.910548     25.000000     5.556761  5.556761         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S2    outlier  4  491.317238 22.165677 5.752836 4.067869 -108.497863      0.000000     5.756399  5.756399         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S3    outlier  4  383.284139 19.577644 3.078016 2.176486  -44.447229      0.000000     3.410620  3.410620         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S4    outlier  4  471.949211 21.724392 4.773411 3.375312 -119.601232      0.000000     4.957688  4.957688         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S5    outlier  4  180.586637 13.438253 0.979429 0.692561  -14.141390     75.000000     1.562585  1.461761        25.000000       50.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S6    outlier  4  408.865281 20.220417 3.257129 2.303138  -99.969475      0.000000     3.322741  3.322741         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S7    outlier  4  460.484179 21.458895 4.601210 3.253547 -102.843154      0.000000     4.707615  4.707615         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S8    outlier  4  324.461738 18.012821 1.955630 1.382839 -120.792241     50.000000     2.143704  2.143704        25.000000       25.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_morning_S9    outlier  4  385.989341 19.646611 2.802735 1.981833 -119.582673     25.000000     2.857791  2.857791         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S10    outlier  4  305.451730 17.477177 1.826103 1.291250  -71.151570     50.000000     2.079935  2.079935        25.000000       25.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S11    outlier  4  450.581930 21.226915 4.226196 2.988372 -117.133003      0.000000     4.140031  4.140031         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S12    outlier  4  303.074446 17.409033 1.787797 1.264164  -79.942580     50.000000     2.035822  2.035822        25.000000       25.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S13    outlier  4  279.381907 16.714721 1.760232 1.244672  -24.000940     25.000000     2.175632  2.175632         0.000000       25.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S14    outlier  4  478.724654 21.879777 4.859325 3.436061 -196.931014      0.000000     4.548976  4.548976         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S15    outlier  4  431.752141 20.778646 4.972812 3.516309  -19.431845      0.000000    14.070538 14.070538         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_morning_S16    outlier  4   77.846555  8.823069 0.569644 0.402799    0.077159     75.000000     1.671365  1.671365        25.000000       50.000000         NaN         NaN
+   ElDash2021     po_EMP10_uge_evening    outlier  4  316.085273 17.778787 2.430585 6.700805  -11.862109      0.000000     3.322368  3.322368         0.000000        0.000000    0.000000   25.000000
+   ElDash2021  po_EMP10_uge_evening_S1    outlier  4   92.648653  9.625417 0.564292 0.399015   -1.817443    100.000000     1.409761  1.198390        25.000000       50.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S2    outlier  4  201.905314 14.209339 1.501598 1.061790   -1.064517     25.000000     4.027020  4.027020         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S3    outlier  4  374.518714 19.352486 3.037709 2.147985  -32.371687      0.000000     3.512838  3.512838         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S4    outlier  4  553.277325 23.521848 9.163612 6.479653 -214.532534      0.000000     9.172507  9.172507         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S5    outlier  4  380.568827 19.508173 3.303985 2.336270  -23.442511      0.000000     4.273147  4.273147         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S6    outlier  4  246.391107 15.696850 1.904004 1.346334   -2.455390      0.000000    10.344050 10.344050         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S7    outlier  4  183.552869 13.548168 1.351320 0.955528   -0.432464     25.000000     4.201727  4.201727         0.000000       25.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S8    outlier  4  159.159072 12.615826 1.086664 0.768387   -0.904253     50.000000     2.161482  2.161482         0.000000        0.000000         NaN         NaN
+   ElDash2021  po_EMP10_uge_evening_S9    outlier  4  164.487841 12.825281 1.099161 0.777224   -1.784694     50.000000     2.014498  2.014498         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S10    outlier  4  404.689943 20.116907 3.432041 2.426819  -53.993101      0.000000     3.756179  3.756179         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S11    outlier  4  345.383690 18.584501 2.391058 1.690734  -48.417768     25.000000     2.654019  2.654019         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S12    outlier  4  470.060127 21.680870 5.586593 3.950318  -47.987327      0.000000    14.619443 14.619443         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S13    outlier  4  534.735132 23.124341 8.723286 6.168295 -103.180393      0.000000    22.197750 22.197750         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S14    outlier  4  435.334757 20.864677 4.914496 3.475073  -22.541653      0.000000     7.962584  7.962584         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S15    outlier  4  558.926116 23.641618 9.209196 6.511885 -311.782959      0.000000     8.711206  8.711206         0.000000        0.000000         NaN         NaN
+   ElDash2021 po_EMP10_uge_evening_S16    outlier  4  357.125582 18.897767 2.644894 1.870222  -40.120840     25.000000     2.944343  2.944343         0.000000        0.000000         NaN         NaN
+    Heise2013           fm_uge_Placebo   training  3   11.593179  3.404876 1.174682 2.192676   -2.631258      0.000000  3410.302745  0.000293         0.000000        0.000000  100.000000  100.000000
+    Heise2013            fm_uge_EMP2p5   training  3  770.325447 27.754737 0.669655 1.661177  -56.430147    100.000000     1.281099  0.780580         0.000000      100.000000   66.666667   66.666667
+    Heise2013             fm_uge_EMP10   training  3 3013.254707 54.893121 0.677740 2.489444  -37.274330    100.000000     1.367209  0.731417        50.000000       50.000000   66.666667   66.666667
+    Heise2013             fm_uge_EMP25   training  3 3337.492590 57.771036 0.765609 2.240652 -616.443224    100.000000     1.594980  1.594980         0.000000        0.000000    0.000000   66.666667
+    Heise2013            fm_uge_EMP100   training  3 3270.033218 57.184204 0.627580 1.887569 -805.617463    100.000000     1.323010  1.323010         0.000000      100.000000    0.000000   66.666667
+   Heise2013a           fm_uge_Placebo   training  3   23.948895  4.893761 1.010050 1.023540  -49.302708      0.000000 16184.708440  0.000062         0.000000        0.000000  100.000000  100.000000
+   Heise2013a             fm_uge_EMP10   training  3 3065.832551 55.369961 0.765777 2.893196 -186.436377      0.000000     2.317408  0.431517         0.000000        0.000000    0.000000   66.666667
+   Heise2013a             fm_uge_EMP25   training  3 3119.589062 55.853282 0.668169 3.273739  -28.121925    100.000000     1.085702  1.033805       100.000000      100.000000   66.666667   66.666667
+   Heise2013a            fm_uge_EMP100   training  3 2630.153935 51.285026 0.648334 4.108580  -66.098195    100.000000     1.151883  1.151883       100.000000      100.000000   66.666667   66.666667
+      Kim2023              fm_uge_EP25   training  1   65.897300  8.117715 0.140595 1.330832         NaN    100.000000     1.163596  0.859405       100.000000      100.000000  100.000000  100.000000
+      Kim2023         fm_uge_EV5__EP25 validation  1   45.301584  6.730645 0.119441 1.116930         NaN    100.000000     1.135642  0.880559       100.000000      100.000000  100.000000  100.000000
+   Macha2014b            fm_uge_normal   training  8  548.703966 23.424431 0.482867 1.424201    0.379268     87.500000     1.460158  1.460158        12.500000       87.500000  100.000000  100.000000
+   Macha2014b              fm_uge_mild validation  8 1783.026351 42.225897 0.905645 2.299578   -1.915624    100.000000     1.449015  1.449015        37.500000       37.500000    0.000000    0.000000
+   Macha2014b          fm_uge_moderate validation  8 1860.460570 43.133057 0.977106 1.737805   -1.601445     87.500000     1.626430  1.626430        12.500000       37.500000  100.000000  100.000000
+   Macha2014b            fm_uge_severe validation  8 1614.904055 40.185869 0.893530 1.652070   -1.272510     87.500000     1.501427  1.501427        25.000000       50.000000  100.000000  100.000000
+   Macha2014f            fm_uge_normal   training  8  662.950607 25.747827 0.214343 0.385993    0.881580    100.000000     1.173391  0.905782        75.000000      100.000000  100.000000  100.000000
+   Macha2014f              fm_uge_mild validation  8  204.877071 14.313528 0.173193 0.281128    0.924829    100.000000     1.182985  0.845319        75.000000      100.000000  100.000000  100.000000
+   Macha2014f          fm_uge_moderate validation  8   29.118853  5.396189 0.094587 0.087586    0.979828    100.000000     1.200267  0.975843        75.000000       87.500000  100.000000  100.000000
+   Macha2014f            fm_uge_severe validation  8   27.332973  5.228095 0.209156 0.226276    0.903110    100.000000     1.136185  1.092448        87.500000      100.000000  100.000000  100.000000
+   Macha2014f              fm_uge_esrd validation  8   13.521910  3.677215 0.847428 0.947453   -0.567677     87.500000     1.499629  1.367998        25.000000       50.000000         NaN         NaN
+   Macha2015a           fm_po_uge_EMP5   training  4    8.531850  2.920933 0.107330 0.368890    0.968497    100.000000     1.111278  0.938223       100.000000      100.000000  100.000000  100.000000
+   Macha2015a          fm_po_uge_EMP10   training  4   10.128609  3.182548 0.120290 0.467356    0.938151    100.000000     1.122226  0.913467       100.000000      100.000000  100.000000  100.000000
+Sarashina2013           fm_uge_placebo   training  2    0.000443  0.021054 0.192887 0.797056    0.894602    100.000000     1.144227  0.950082       100.000000      100.000000  100.000000  100.000000
+Sarashina2013              fm_uge_EMP1   training  9   70.633384  8.404367 0.574298 0.907119   -0.272158     55.555556     1.765833  0.581903        11.111111       22.222222    0.000000   50.000000
+Sarashina2013              fm_uge_EMP5   training  9  112.369312 10.600439 0.341621 0.670151    0.688385     88.888889     1.505568  0.833487        11.111111       66.666667    0.000000   75.000000
+Sarashina2013             fm_uge_EMP10   training  9  146.721775 12.112876 0.320405 0.682686    0.810034     88.888889     1.412800  0.900336        22.222222       88.888889   33.333333   83.333333
+Sarashina2013             fm_uge_EMP25   training  9  197.338727 14.047730 0.284814 0.500965    0.862832    100.000000     1.306693  0.798566        33.333333       77.777778   33.333333  100.000000
+Sarashina2013            fm_uge_EMP100   training  9 1023.193673 31.987399 0.460170 0.877964    0.734547    100.000000     1.471153  0.719332        22.222222       44.444444    0.000000   57.142857
+Sarashina2014            fm_uge_normal validation  8 1424.228216 37.738948 0.421824 0.710593    0.477557    100.000000     1.498669  0.667259        12.500000       50.000000   25.000000  100.000000
+Sarashina2014              fm_uge_mild validation  8 1068.432713 32.686889 0.420326 0.706797    0.551577    100.000000     1.470701  0.679948        12.500000       62.500000   33.333333  100.000000
+Sarashina2014          fm_uge_moderate validation  8 2003.421339 44.759595 0.602226 1.127154    0.208198     75.000000     1.839878  0.543514        12.500000       12.500000    0.000000   60.000000
+Sarashina2014            fm_uge_severe validation  8  144.691613 12.028783 0.452994 0.613057    0.519537     87.500000     1.739011  0.575039         0.000000        0.000000  100.000000  100.000000
+    Seman2013           fm_uge_placebo   training  1    0.000069  0.008304 0.138407 0.807047         NaN    100.000000     1.138407  1.138407       100.000000      100.000000         NaN         NaN
+    Seman2013            fm_uge_EMP0p5   training  6    1.498294  1.224048 0.665654 0.941377    0.174978     66.666667     3.675723  3.675723        16.666667       50.000000         NaN         NaN
+    Seman2013            fm_uge_EMP2p5   training  6   20.556876  4.533969 0.306048 0.432818    0.797103     83.333333     1.418992  1.044303        33.333333       83.333333         NaN         NaN
+    Seman2013             fm_uge_EMP10   training  6    8.103470  2.846660 0.137185 0.194008    0.964214    100.000000     1.106009  0.994913       100.000000      100.000000         NaN         NaN
+    Seman2013             fm_uge_EMP25   training  6    3.133551  1.770184 0.080024 0.113171    0.989894    100.000000     1.097565  1.045310       100.000000      100.000000         NaN         NaN
+    Seman2013             fm_uge_EMP50   training  6   17.697293  4.206815 0.165173 0.213238    0.955605    100.000000     1.117049  0.940949       100.000000      100.000000         NaN         NaN
+    Seman2013            fm_uge_EMP100   training  6   89.955451  9.484485 0.319015 0.411847    0.853065    100.000000     1.240268  0.858805        50.000000      100.000000         NaN         NaN
+    Seman2013            fm_uge_EMP200   training  6   31.529897  5.615149 0.201232 0.284585    0.929547    100.000000     1.159346  0.862556        66.666667      100.000000         NaN         NaN
+    Seman2013            fm_uge_EMP400 validation  6  220.340606 14.843874 0.429002 0.606701    0.725257    100.000000     1.376983  0.726225        16.666667       83.333333         NaN         NaN
+    Seman2013            fm_uge_EMP800 validation  6    1.163005  1.078427 0.044750 0.063286    0.996714    100.000000     1.057621  1.008475       100.000000      100.000000         NaN         NaN
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Optimization results: PD_20261019_212349__c28ac
+--------------------------------------------------------------------------------
+   run  success    duration        cost  KI__RTG_E50  KI__RTG_base  KI__RTG_m_fpg  KI__RTG_max_inhibition                                message                                                  x                          x0
+0    2     True  154.606222  116.990369     0.000004     11.700356       2.421633                0.692919  Optimization terminated successfully.  [4.0878624508887665e-06, 11.700356259611619, 2...  [2.5e-06, 10.5, 2.4, 0.69]
+1    0     True  194.129451  117.017881     0.000004     11.696827       2.450203                0.695081  Optimization terminated successfully.  [4.281563042918837e-06, 11.696827139212767, 2....  [2.5e-06, 10.5, 2.4, 0.69]
+2    1     True  263.817834  117.163370     0.000004     11.699468       2.374038                0.691726  Optimization terminated successfully.  [3.917665958460855e-06, 11.69946817157363, 2.3...  [2.5e-06, 10.5, 2.4, 0.69]
+--------------------------------------------------------------------------------
+Optimal parameters:
+	'KI__RTG_E50': Q(4.0878624508887665e-06, 'mmol/l'),  # [1e-07 - 0.0001]
+	'KI__RTG_base': Q(11.700356259611619, 'mmol/l'),  # [8 - 14]
+	'KI__RTG_m_fpg': Q(2.4216328133089666, 'dimensionless'),  # [0.1 - 5]
+	'KI__RTG_max_inhibition': Q(0.6929189654641364, 'dimensionless'),  # [0.3 - 0.95]
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Identifiability 'PD_20261019_212349__c28ac'
+--------------------------------------------------------------------------------
+parameter set: PD_20261019_212349__c28ac_0
+cost: 116.99
+cost_min: 116.99
+alpha: 0.95
+degrees of freedom: 1
+threshold: 118.911
+reoptimize: True
+duration: 137.4 s
+
+             parameter     value          unit  lower_bound  upper_bound  ci_lower  ci_upper identifiability  n_points   cost_min  converged
+           KI__RTG_E50  0.000004            mM 1.000000e-07       0.0001  0.000003  0.000005    identifiable        16 116.990369       True
+          KI__RTG_base 11.700356            mM 8.000000e+00      14.0000 11.550603 11.933806    identifiable         3 116.990369       True
+         KI__RTG_m_fpg  2.421633 dimensionless 1.000000e-01       5.0000  2.061815  2.877473    identifiable        13 116.990369       True
+KI__RTG_max_inhibition  0.692919 dimensionless 3.000000e-01       0.9500  0.673583  0.713856    identifiable         5 116.990369       True
+--------------------------------------------------------------------------------

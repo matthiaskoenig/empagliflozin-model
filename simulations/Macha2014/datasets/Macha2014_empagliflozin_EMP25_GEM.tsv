@@ -1,0 +1,17 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	0.3	hr		0.0					nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	0.6	hr		83.4			94.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	1.0	hr		221.7					nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	1.5	hr		461.4			201.2		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	2.0	hr		568.2			158.2		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	2.5	hr		630.0			165.2		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	3.0	hr		647.1			157.2		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	4.0	hr		630.7			147.2		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	6.0	hr		455.6			101.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	8.0	hr		347.8			82.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	10.0	hr		262.9			66.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	12.0	hr		219.6			51.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	23.0	hr		86.9			24.4		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	36.0	hr		33.4			10.3		nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	47.0	hr		18.9					nmol/l	nmol/l	dimensionless
+Macha2014		gemfibrozil	18.0	EMP25, GEM	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP25_GEM	71.0	hr		5.8					nmol/l	nmol/l	dimensionless

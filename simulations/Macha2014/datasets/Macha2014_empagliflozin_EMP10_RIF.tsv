@@ -1,0 +1,16 @@
+study	individual	group	count	intervention	measurement_type	substance	tissue	method	label	time	time_unit	value	mean	mean_pm	mean_se	mean_sd	comments	mean_unit	value_unit	count_unit
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	0.0	hr		0.0					nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	0.3	hr		121.4					nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	0.6	hr		447.7					nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	1.0	hr		504.9					nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	1.5	hr		442.8			110.9		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	2.0	hr		379.8			106.4		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	2.5	hr		331.5			92.9		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	3.0	hr		306.1			87.4		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	4.0	hr		254.4			70.8		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	6.0	hr		178.1			57.7		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	8.0	hr		135.1			49.3		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	12.0	hr		77.9			31.0		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	24.0	hr		17.7			11.3		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	36.0	hr		5.2			7.7		nmol/l	nmol/l	dimensionless
+Macha2014		rifampicin_probenecid	18.0	EMP10, RIF	concentration	empagliflozin	plasma	LC MS/MS	empagliflozin_EMP10_RIF	48.0	hr		2.5					nmol/l	nmol/l	dimensionless
